@@ -1,0 +1,47 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "login;tailand-flag",
+        "keyword": "Scenario",
+        "line": 265,
+        "name": "Tailand Flag",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 264
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 266,
+            "name": "auth Tailand page",
+            "result": {
+              "status": "passed",
+              "duration": 7020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 267,
+            "name": "verify the correct flag \"เข้าสู่ระบบ\" name",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Users",
+    "line": 1,
+    "id": "users",
+    "tags": [],
+    "uri": "user.feature",
+    "elements": [
+      {
+        "id": "users;create-user",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Create user",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on users tab",
+            "result": {
+              "status": "undefined",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter to user tab",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

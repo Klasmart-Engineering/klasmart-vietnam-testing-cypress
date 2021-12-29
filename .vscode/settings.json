@@ -1,0 +1,12 @@
+{
+    "cucumberautocomplete.steps": [
+        "cypress/integration/**/*.js"
+    ],
+    "cucumberautocomplete.syncfeatures": "cypress/integration/*.feature",
+    "cucumberautocomplete.strictGherkinValidation": true,
+    "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    },
+ }

@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Users",
+    "line": 1,
+    "id": "users",
+    "tags": [],
+    "uri": "users.feature",
+    "elements": [
+      {
+        "id": "users;create-user",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Create user",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 10090000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter to user tab and fill required fields as \"Maria\" \"Gimenez\" \"mariag@gmail.com\" and \"09786UYRET\"",
+            "result": {
+              "status": "passed",
+              "duration": 7076000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I create a new user and obtain \"User has been created successfully\" message",
+            "result": {
+              "status": "passed",
+              "duration": 3944000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
