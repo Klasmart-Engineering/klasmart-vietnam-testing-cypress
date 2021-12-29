@@ -313,7 +313,7 @@ class SignInPage {
     }
 
     goToKoreaPage(){
-        cy.visit("https://auth.kidsloop.live/?locale=ko&continue=https%3A%2F%2Fhub.alpha.kidsloop.net%2F%23%2F#/signin");
+        cy.visit("https://auth.kidsloop.live/?locale=ko&continue=https%3A%2F%2Fhub.alpha.kidsloop.net%2F%23%2F#/signin"); 
     }
 
     goToVietNamPage(){
