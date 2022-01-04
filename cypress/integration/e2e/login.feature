@@ -210,64 +210,58 @@
 
 
   #User should see the url and correct language selected for current flag  UD-T614
-@focus 
+
   Scenario: United Kingdom Flag
   Given auth United Kingdom page 
   When verify the correct flag "Sign In" name
 
 
   #User should see the url and correct language selected for current flag  UD-T4
-@focus 
+
   Scenario: Sri Lanka Flag
   Given auth Sri Lanka page 
   When verify the correct flag "Sign In" name
 
 
   #User should see the url and correct language selected for current flag  UD-T615
-@focus 
+
   Scenario: United States Flag
   Given auth United States page
   When verify the correct flag "Sign In" name
 
   #User should see the url and correct language selected for current flag  UD-T616
-@focus 
+
   Scenario: Korea Flag
   Given auth Korea page 
   When verify the correct flag "로그인" name
 
   #User should see the url and correct language selected for current flag  UD-T617
-@focus 
+
   Scenario: Viet Nam Flag
   Given auth Viet Nam page 
   When verify the correct flag "Đăng nhập" name
 
   #User should see the url and correct language selected for current flag  UD-T618
-@focus 
+
   Scenario: India Flag
   Given auth India page 
   When verify the correct flag "Sign In" name
 
   #User should see the url and correct language selected for current flag  UD-T619
-@focus 
+
   Scenario: Pakistan Flag
   Given auth Pakistan page 
   When verify the correct flag "Sign In" name
      
 
   #User should see the url and correct language selected for current flag  UD-T620
-@focus 
+
   Scenario: Indonesia Flag
   Given auth Indonesia page 
   When verify the correct flag "Masuk" name
 
    #User should see the url and correct language selected for current flag  UD-T621
-@focus 
+
   Scenario: Tailand Flag
   Given auth Tailand page 
   When verify the correct flag "เข้าสู่ระบบ" name
-  
-  
-  
-
-
-
