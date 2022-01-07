@@ -7,7 +7,8 @@ class HomePage {
     homeTab = 'body > div:nth-child(1) > div:nth-child(1) > nav:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > a:nth-child(1) > div:nth-child(2) > span:nth-child(1)';
     profileRoleTextOrgAdmin = '.MuiListItem-container > .MuiButtonBase-root > .MuiListItemText-root > .MuiListItemText-secondary'
     changeProfile = "button[aria-label='account of current user'] div"
-    selectSecondProfile = "div[id='customized-menu'] div div[role='button']"
+    selectSecondProfile = 'ul.MuiList-root.MuiList-dense.MuiList-padding > div'
+    //"div[id='customized-menu'] div div[role='button']"
     selectThirdProfile = "div[id='customized-menu'] div:nth-child(2) div:nth-child(2) span:nth-child(1)"
 
      /*----------------  End Web Element  ----------------*/
