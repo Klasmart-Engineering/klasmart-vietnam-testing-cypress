@@ -1,3 +1,24 @@
+ # Cypress setup on Windows
+Following steps to set cypress on windows machine:
+
+1.Install Download | Node.js 
+2.Install IDE https://code.visualstudio.com/Download
+3.Execute PowerShell 
+4.cd to your project folder e.g: cd kidsloop
+5.Run command Set-ExecutionPolicy Unrestricted -Scope Process (Set A to change your policies)
+6.Run  ./node_modules/.bin/cypress open (This command will execute cypress)
+
+NOTE: Most of the configuration files will be found on cypress.json
+e.g: video, screenshots, folders to be located, environments, etc
+
+# Plugins
+Cypress Real Events
+
+Cypress default events are simulated. That means that all events like cy.click or cy.type are fired from javascript. That's why these events will be untrusted (event.isTrusted will be false) and they can behave a little different from real native events. But for some cases, it can be impossible to use simulated events, for example, to fill a native alert or copy to the clipboard. This plugin solves this problem.
+
+Installation:
+https://github.com/dmtrKovalenko/cypress-real-events
+
 # cypress-cucumber-example
 Initial example of using Cypress with Cucumber.
 

@@ -25,7 +25,7 @@
       "fileSuffix": ".cucumber"
     },
       "compilerOptions": {
-        "types": ["cypress", "cypress-xpath"]
+        "types": ["cypress", "cypress-xpath", "cypress-real-events"]
     },
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": "cypress/integration/"

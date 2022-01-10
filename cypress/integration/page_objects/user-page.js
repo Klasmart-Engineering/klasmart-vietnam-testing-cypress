@@ -27,17 +27,19 @@ class UserPage {
   addFilterButton = ".MuiChip-label";
   columnFilter =
     "div[data-testid='ColumnSelectTextField'] div div[role='button']";
-  valuesFilter = ":nth-child(3) > .MuiInputBase-root > .MuiInputBase-input";
+  valuesFilter = ".MuiOutlinedInput-root.Mui-error";
+  valuesFilterInputs =
+    ":nth-child(3) > .MuiInputBase-root > .MuiInputBase-input";
   addFilterFinalButton =
     ".MuiButtonBase-root.MuiButton-root.MuiButton-contained";
   cancelFilterButton =
     "body div[role='presentation'] div div div:nth-child(1) span:nth-child(1) button:nth-child(1) span:nth-child(1) div:nth-child(1) span:nth-child(1)";
   labelFilterAdded =
     "span:nth-child(1) > span:nth-child(1) > span:nth-child(2)";
-  clearFilter = '[data-testid="statusChipLabel"] > .MuiSvgIcon-root > path';
+  clearFilter = ".MuiSvgIcon-root.MuiChip-deleteIcon";
   clearAllFilters =
     '[data-testid="clearFilters"] > .MuiIconButton-label > .MuiSvgIcon-root';
-  addMoreFilters = "span[title='Add Filter'] div[role='button']";
+  addMoreFilters = ".MuiSvgIcon-root.MuiChip-icon.MuiSvgIcon-colorAction";
   searchInput = "input[placeholder='Search']";
   moreActionsEdit = '[tabindex="0"] > .MuiTypography-root';
   moreActionsDelete = '[tabindex="-1"] > .MuiTypography-root';
@@ -288,6 +290,10 @@ class UserPage {
     cy.get(this.valuesFilter).should("be.visible").click();
   }
 
+  clickOnValuesFilterInputs() {
+    cy.get(this.valuesFilterInputs).should("be.visible").click();
+  }
+
   clickOnAddFilterButton() {
     cy.get(this.addFilterButton).should("be.visible").click();
   }
@@ -412,11 +418,17 @@ class UserPage {
   }
 
   addPhoneText(phone) {
-    cy.get(this.valuesFilter).should("be.visible").type(phone).type("{enter}");
+    cy.get(this.valuesFilterInputs)
+      .should("be.visible")
+      .type(phone)
+      .type("{enter}");
   }
 
   addEmailText(email) {
-    cy.get(this.valuesFilter).should("be.visible").type(email).type("{enter}");
+    cy.get(this.valuesFilterInputs)
+      .should("be.visible")
+      .type(email)
+      .type("{enter}");
   }
 
   editOrganizationRolesFilterValues() {
@@ -464,7 +476,7 @@ class UserPage {
   }
 
   editPhoneText(phone) {
-    cy.get(this.valuesFilter)
+    cy.get(this.valuesFilterInputs)
       .should("be.visible")
       .clear()
       .type(phone)
@@ -472,7 +484,7 @@ class UserPage {
   }
 
   editEmailText(email) {
-    cy.get(this.valuesFilter)
+    cy.get(this.valuesFilterInputs)
       .should("be.visible")
       .clear()
       .type(email)
@@ -485,6 +497,85 @@ class UserPage {
 
   getEditedLabelFilterTextEmail() {
     cy.get(this.labelFilterAdded).should("include.text", "alicetest@gmail.com");
+  }
+
+  clickClearAllFilters() {
+    cy.get(this.clearAllFilters).should("be.visible").click();
+  }
+
+  clickClearFilter() {
+    cy.get(this.clearFilter).should("be.visible").click();
+  }
+
+  getAddFilterLabelState() {
+    cy.get(this.addFilterButton).should("include.text", "Add Filter");
+  }
+
+  clickAddMoreFilters() {
+    cy.get(this.addMoreFilters).should("be.visible").click();
+  }
+
+  getFilterMouseOverText() {
+    cy.get(this.addFilterFinalButton).focused().realHover();
+    cy.contains("All columns already have a filter specified");
+  }
+
+  getFilterOrderValues() {
+    cy.get("ul[role='listbox']>li")
+      .should("have.length", 5)
+      .then(($els) => {
+        // we get a list of jQuery elements
+        // convert the jQuery object into a plain array
+        return (
+          Cypress.$.makeArray($els)
+            // extract inner text from each
+            .map((el) => el.innerText)
+        );
+      })
+      //.should('deep.equal', ['Organization Roles', 'Status', 'Schools', 'Email', 'Phone'])
+      .should("deep.equal", [
+        "Organization Roles",
+        "Schools",
+        "Email",
+        "Phone",
+        "Status",
+      ]);
+
+    // Lodash to get property "innerText"
+    // from every item in the array
+    cy.log("**using Lodash**");
+    cy.get("ul[role='listbox']>li")
+      .should("have.length", 5)
+      .then(($els) => {
+        // jQuery => Array => get "innerText" from each
+        return Cypress._.map(Cypress.$.makeArray($els), "innerText");
+      })
+      //.should('deep.equal', ['Organization Roles', 'Status', 'Schools', 'Email', 'Phone'])
+      .should("deep.equal", [
+        "Organization Roles",
+        "Schools",
+        "Email",
+        "Phone",
+        "Status",
+      ]);
+
+    cy.log("**using Lodash to convert and map**");
+    cy.get("ul[role='listbox']>li")
+      .should("have.length", 5)
+      .then(($els) => {
+        expect(Cypress.dom.isJquery($els), "jQuery input").to.be.true;
+        // Lodash can iterate over jQuery object
+        return Cypress._.map($els, "innerText");
+      })
+      .should("be.an", "array")
+      // .and('deep.equal', ['Organization Roles', 'Status', 'Schools', 'Email', 'Phone'])
+      .and("deep.equal", [
+        "Organization Roles",
+        "Schools",
+        "Email",
+        "Phone",
+        "Status",
+      ]);
   }
 }
 

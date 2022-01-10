@@ -161,7 +161,7 @@ And("Add filter for email {string}", (email) => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   userPage.clickOnEmailColumn();
-  userPage.clickOnValuesFilter();
+  userPage.clickOnValuesFilterInputs();
   userPage.addEmailText(email);
 });
 
@@ -169,7 +169,7 @@ And("Add filter for phone {string}", (phone) => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   userPage.clickOnPhoneColumn();
-  userPage.clickOnValuesFilter();
+  userPage.clickOnValuesFilterInputs();
   userPage.addPhoneText(phone);
 });
 
@@ -244,7 +244,7 @@ And("I check edited value was saved on status", () => {
 
 And("I edit value from added filter on phone as {string}", (phone) => {
   userPage.clickOnFilterLabel();
-  userPage.clickOnValuesFilter();
+  userPage.clickOnValuesFilterInputs();
   userPage.editPhoneText(phone);
   userPage.clickOnAddFilterFinalButton();
 });
@@ -255,7 +255,7 @@ And("I check edited value was saved on phone", () => {
 
 And("I edit value from added filter on email as {string}", (email) => {
   userPage.clickOnFilterLabel();
-  userPage.clickOnValuesFilter();
+  userPage.clickOnValuesFilterInputs();
   userPage.editEmailText(email);
   userPage.clickOnAddFilterFinalButton();
 });
@@ -268,7 +268,7 @@ And(
   "I edit value from added filter on email {string} but I press cancel",
   (email) => {
     userPage.clickOnFilterLabel();
-    userPage.clickOnValuesFilter();
+    userPage.clickOnValuesFilterInputs();
     userPage.editEmailText(email);
     userPage.clickOnCancelFilterButton();
     userPage.getEmailLabelFilterText();
@@ -279,7 +279,7 @@ And(
   "I edit value from added filter on phone {string} but I press cancel",
   (phone) => {
     userPage.clickOnFilterLabel();
-    userPage.clickOnValuesFilter();
+    userPage.clickOnValuesFilterInputs();
     userPage.editPhoneText(phone);
     userPage.clickOnCancelFilterButton();
     userPage.getPhoneLabelFilterText();
@@ -315,4 +315,67 @@ And("I edit status value as active but I press cancel", () => {
   userPage.selectActiveStatusValue();
   userPage.clickOnCancelFilterButton();
   userPage.getInactiveStatusLabelFilterText();
+});
+
+And("I clear the filter applied", () => {
+  userPage.clickClearFilter();
+  userPage.getAddFilterLabelState();
+});
+
+Then(
+  "Add all existent filters and email {string} and phone {string}",
+  (email, phone) => {
+    userPage.clickOnAddFilterButton();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnStatusColumn();
+    userPage.clickOnValuesFilter();
+    userPage.selectActiveStatusValue();
+    userPage.clickOnAddFilterFinalButton();
+    //Add status filter
+    userPage.clickAddMoreFilters();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnOrganizationRolesColumn();
+    userPage.clickOnValuesFilter();
+    userPage.selectionOfOrganizationRolesValues();
+    userPage.closeListItems();
+    userPage.clickOnAddFilterFinalButton();
+    //Add organization roles filter
+    userPage.clickAddMoreFilters();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnSchoolsColumn();
+    userPage.clickOnValuesFilter();
+    userPage.selectionOfSchoolValues();
+    userPage.closeListItems();
+    userPage.clickOnAddFilterFinalButton();
+    //Add schools filter
+    userPage.clickAddMoreFilters();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnEmailColumn();
+    userPage.clickOnValuesFilterInputs();
+    userPage.addEmailText(email);
+    userPage.clickOnAddFilterFinalButton();
+    //Add email filter
+    userPage.clickAddMoreFilters();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnPhoneColumn();
+    userPage.clickOnValuesFilterInputs();
+    userPage.addPhoneText(phone);
+    userPage.clickOnAddFilterFinalButton();
+    //Add phone filter
+  }
+);
+
+And("I clear all filters applied", () => {
+  userPage.clickClearAllFilters();
+  userPage.getAddFilterLabelState();
+});
+
+And("I check filter is disable", () => {
+  userPage.getFilterMouseOverText();
+});
+
+Then("I check the order of values is correct on users", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  userPage.getFilterOrderValues();
 });

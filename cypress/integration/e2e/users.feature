@@ -90,7 +90,7 @@ Feature: Users
     Then I search "Test" user to be deleted but I cancel it
 
 
-  #User should be able to add a filter on users for Schools UD-T432
+  #User should be able to add a filter on users for Schools UD-T432 and UD-T434
 
   Scenario: Add filter Schools
 
@@ -100,7 +100,7 @@ Feature: Users
     Then Filter is Added
     And I check that shools filter was added
 
-  #User should be able to add a filter on users for Organization roles UD-T412
+  #User should be able to add a filter on users for Organization roles UD-T412 and UD-T414
 
   Scenario: Add filter Organization Roles
 
@@ -184,7 +184,7 @@ Feature: Users
     And Add filter for status as inactive
     Then I press cancel button
 
-  #User should be able to edit filter on users for Organization roles UD-T409
+  #User should be able to edit filter on users for Organization roles UD-T409 and UD-T411
 
   Scenario: Edit filter Organization Roles
 
@@ -195,7 +195,7 @@ Feature: Users
     And I edit values from added filter on organization roles
     And I check edited value was saved on organization roles
 
-  #User should be able to edit filter on users for Schools UD-T429
+  #User should be able to edit filter on users for Schools UD-T429 and UD-T431
 
   Scenario: Edit filter Schools
 
@@ -288,3 +288,79 @@ Feature: Users
     And Add filter for status as inactive
     Then Filter is Added
     And I edit status value as active but I press cancel
+
+  #User should be able to clear email filter for users UD-T435
+
+  Scenario: Clear filter Email
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for email "lorenatest@test.com"
+    Then Filter is Added
+    And I clear the filter applied
+
+  #User should be able to clear organization roles filter for users UD-T408
+
+  Scenario: Clear filter Organization Roles
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for organization roles
+    Then Filter is Added
+    And I clear the filter applied
+
+  #User should be able to clear phone filter for users UD-T440
+
+  Scenario: Clear filter Phone
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for phone "+59834563"
+    Then Filter is Added
+    And I clear the filter applied
+
+  #User should be able to clear schools filter for users UD-T428
+
+  Scenario: Clear filter Schools
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for school
+    Then Filter is Added
+    And I clear the filter applied
+
+  #User should be able to clear status filter for users UD-T421
+
+  Scenario: Clear filter Status Active
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for status as active
+    Then Filter is Added
+    And I clear the filter applied
+
+  #User should be able to clear all filter for users UD-T407
+
+  Scenario: Clear all filters
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then Add all existent filters and email "lorenatest@test.com" and phone "+59834563"
+    And I clear all filters applied
+
+  #User should be able to disable filter for users UD-T415
+
+  Scenario: Disable filter
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then Add all existent filters and email "lorenatest@test.com" and phone "+59834563"
+    And I check filter is disable
+
+  #User should be able to see correct order for values on filters UD-T581 Defect AD-964
+
+  Scenario: Filter order values
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then I check the order of values is correct on users
