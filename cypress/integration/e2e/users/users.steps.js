@@ -59,7 +59,7 @@ Then("I cancel creation", () => {
 });
 
 And(
-  "fill all existent fields as {string} {string} {string} {string} {string} {string} and {string}",
+  "fill all existent fields as {string} {string} {string} {string} {string}",
   (
     givenName,
     familyName,
@@ -83,9 +83,6 @@ And(
     userPage.clickOnSchools();
     userPage.selectionSchools();
     userPage.closeListItems();
-    userPage.clickOnAlternativeContactInfo();
-    userPage.alternativeEmail(alternativeEmail);
-    userPage.alternativePhone(alternativePhone);
   }
 );
 
@@ -378,4 +375,154 @@ Then("I check the order of values is correct on users", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   userPage.getFilterOrderValues();
+});
+
+Then(
+  "I search {string} user to be edited {string} {string} {string} and get {string} message",
+  (search, givenName, familyName, shortCode, message) => {
+    userPage.searchInputText(search);
+    userPage.clickMoreActions();
+    userPage.clickOnMoreActionsEditButton();
+    userPage.editionGivenName(givenName);
+    userPage.editionFamilyName(familyName);
+    userPage.editionShortCode(shortCode);
+    userPage.clickOnPreferNotToSayGender();
+    userPage.clickOnRoles();
+    userPage.closeListItems();
+    userPage.clickOnEditionSaveButton();
+    userPage.getNotificationText(message);
+  }
+);
+
+Then(
+  "I search {string} user to be deleted on edition mode and get {string} message",
+  (search, message) => {
+    userPage.searchInputText(search);
+    userPage.clickMoreActions();
+    userPage.clickOnMoreActionsEditButton();
+    userPage.clickOnEditionDeleteButton();
+    userPage.sendDeleteText();
+    userPage.clickOnDeleteFinalButton();
+    userPage.getNotificationText(message);
+  }
+);
+
+Then(
+  "I search {string} user to be deleted on edition mode but I cancel",
+  (search) => {
+    userPage.searchInputText(search);
+    userPage.clickMoreActions();
+    userPage.clickOnMoreActionsEditButton();
+    userPage.clickOnEditionDeleteButton();
+    userPage.sendDeleteText();
+    userPage.clickOnCancelButtonPopUpEdition();
+    userPage.clickOnCancelButtonEdition();
+  }
+);
+
+And("I search {string}", (search) => {
+  userPage.searchInputText(search);
+  userPage.getUserSearch();
+});
+
+And("I add columns to be shown", () => {
+  userPage.clickOnAddColumns();
+  userPage.selectColumns();
+});
+
+And("I check locked columns {string} and {string} are present", () => {
+  userPage.getFirstColumnText();
+  userPage.getSecondColumnText();
+});
+
+And("I remove columns to be shown", () => {
+  userPage.clickOnRemoveOrganizationRolesColumnsButton();
+  userPage.clickOnRemoveSchoolColumnsButton();
+  userPage.clickOnRemoveContactInfoColumnsButton();
+  userPage.clickOnRemoveStatusColumnsButton();
+  userPage.clickOnRemoveJoinDateColumnsButton();
+});
+
+And("I sort column by asc and desc", () => {
+  userPage.sortFirstAsc();
+  userPage.sortFirstDesc();
+  userPage.sortSecondAsc();
+  userPage.sortSecondDesc();
+});
+
+And("I check all buttons from pagination", () => {
+  cy.wait(8000);
+  userPage.clickOnNextPage();
+  userPage.clickOnPreviousPage();
+  userPage.clickOnLastPage();
+  userPage.clickOnFirstPage();
+});
+
+Then("I check different rows per page", () => {
+  cy.wait(8000);
+  userPage.clickOnRowsPerPage();
+  userPage.clickOnTenPages();
+  userPage.clickOnRowsPerPage();
+  userPage.clickOnTwentyFivePages();
+  userPage.clickOnRowsPerPage();
+  userPage.clickOnFiftyPages();
+  userPage.clickOnRowsPerPage();
+  userPage.clickOnTwentyFivePages();
+});
+
+Then("I check first page pagination", () => {
+  cy.wait(8000);
+  userPage.clickOnLastPage();
+  userPage.clickOnFirstPage();
+  userPage.getNextPageButtonState();
+  userPage.getLastPageButtonState();
+});
+
+Then("I check last page pagination", () => {
+  cy.wait(8000);
+  userPage.clickOnLastPage();
+  userPage.getNextPageButtonState();
+  userPage.getLastPageButtonState();
+});
+
+Then("I check next page pagination", () => {
+  cy.wait(8000);
+  userPage.clickOnNextPage();
+  userPage.getNextPageButtonState();
+  userPage.getLastPageButtonState();
+  userPage.getPreviousPageButtonState();
+  userPage.getFirstPageButtonState();
+});
+
+Then("I check previous page pagination", () => {
+  cy.wait(8000);
+  userPage.clickOnNextPage();
+  userPage.clickOnPreviousPage();
+  userPage.clickOnNextPage();
+  userPage.clickOnNextPage();
+  userPage.clickOnNextPage();
+  userPage.clickOnPreviousPage();
+  userPage.clickOnPreviousPage();
+  userPage.getNextPageButtonState();
+  userPage.getLastPageButtonState();
+  userPage.getPreviousPageButtonState();
+  userPage.getFirstPageButtonState();
+});
+
+Then("Upload correct multiple CSV file", () => {
+  userPage.clickOnUploadCsvButton();
+  userPage.selectMultipleFixtureFile();
+  userPage.getValidationCsvText();
+  userPage.clickOnUploadCsvFinalButton();
+});
+
+And("I get {string} message", () => {
+  userPage.getNotificationText();
+});
+
+Then("Upload correct CSV file", () => {
+  userPage.clickOnUploadCsvButton();
+  userPage.selectFixtureFile();
+  userPage.getValidationCsvText();
+  userPage.clickOnUploadCsvFinalButton();
 });

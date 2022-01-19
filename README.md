@@ -1,4 +1,4 @@
- # Cypress setup on Windows
+# Cypress setup on Windows
 Following steps to set cypress on windows machine:
 
 1.Install Download | Node.js 

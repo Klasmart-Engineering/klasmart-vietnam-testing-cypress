@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 class UserPage {
   /*---------------  Start Web Element  ---------------*/
 
@@ -27,11 +28,11 @@ class UserPage {
   addFilterButton = ".MuiChip-label";
   columnFilter =
     "div[data-testid='ColumnSelectTextField'] div div[role='button']";
-  valuesFilter = ".MuiOutlinedInput-root.Mui-error";
+  valuesFilter = "div > div > div:nth-child(1) > div:nth-child(3) > div > div";
   valuesFilterInputs =
     ":nth-child(3) > .MuiInputBase-root > .MuiInputBase-input";
   addFilterFinalButton =
-    ".MuiButtonBase-root.MuiButton-root.MuiButton-contained";
+    "div:nth-child(2) > span > button > span.MuiButton-label > div > span";
   cancelFilterButton =
     "body div[role='presentation'] div div div:nth-child(1) span:nth-child(1) button:nth-child(1) span:nth-child(1) div:nth-child(1) span:nth-child(1)";
   labelFilterAdded =
@@ -48,8 +49,36 @@ class UserPage {
     ".MuiDialogActions-root > :nth-child(2) > .MuiButtonBase-root";
   cancelFinalDeleteButton =
     ":nth-child(1) > .MuiButtonBase-root > .MuiButton-label > .MuiBox-root > .MuiTypography-root";
+  saveEditionButton =
+    "span:nth-child(4) > button > span.MuiButton-label > div > span";
+  deleteEditionButton =
+    "span:nth-child(1) button:nth-child(1) span:nth-child(1) div:nth-child(1) span:nth-child(1)";
+  cancelEditionButton =
+    ":nth-child(6) > .MuiDialog-container > .MuiPaper-root > .MuiDialogActions-root > :nth-child(1) > .MuiButtonBase-root";
+  cancelEditFinalButton =
+    ".MuiDialogActions-root > :nth-child(3) > .MuiButtonBase-root";
+  addColumns =
+    ".MuiTableHead-root > .MuiTableRow-root > .MuiTableCell-paddingCheckbox > .MuiButtonBase-root > .MuiIconButton-label > .MuiSvgIcon-root";
+  nextPage = ".MuiTablePagination-root div > span:nth-child(3) > button";
+  previousPage = ".MuiTablePagination-root div > span:nth-child(2) > button";
+  lastPage = ".MuiTablePagination-root div > span:nth-child(4) > button";
+  firstPage = ".MuiTablePagination-root div > span:nth-child(1) > button";
+  rowsPerPage = ".MuiInputBase-root div[role='button']";
+  tenPages = "div[id='menu-'] li:nth-child(1)";
+  twentyFivePages = "div[id='menu-'] li:nth-child(2)";
+  fiftyPages = "div[id='menu-'] li:nth-child(3)";
+  uploadCsvButton = "span[title='Upload CSV'] button[type='button']";
+  dragAndDrop =
+    ".MuiTypography-root.MuiTypography-body1.MuiTypography-colorTextSecondary";
+  validationCsvText =
+    ".MuiAccordionSummary-content > .MuiBox-root > .MuiTypography-root";
+  uploadCsvFinalButton = "span[title='Upload file'] button[type='button']";
 
   /*----------------  End Web Element  ----------------*/
+
+  clickOnCreateUserButton() {
+    cy.xpath(this.createUserButton).should("be.visible").click();
+  }
 
   clickOnUsersTab() {
     cy.get(this.usersTab).should("be.visible").click();
@@ -89,6 +118,18 @@ class UserPage {
 
   clickOnRoles() {
     cy.get(this.rolesCheckboxs).should("be.visible").click();
+  }
+
+  clickOnPreferNotToSayGender() {
+    cy.get(this.preferNotToSayGender).should("be.visible").click();
+  }
+
+  clickOnFemaleGender() {
+    cy.get(this.femaleGender).should("be.visible").click();
+  }
+
+  clickOnMaleGender() {
+    cy.get(this.maleGender).should("be.visible").click();
   }
 
   selectionRoles() {
@@ -157,7 +198,7 @@ class UserPage {
 
   selectionSchools() {
     cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.text() == "Student") {
+      if ($el.text() == "A5 Schools") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
@@ -182,6 +223,7 @@ class UserPage {
   }
 
   alternativeEmail(alternativeEmail) {
+    cy.get(".MuiDialogContent-root").scrollTo("bottom");
     cy.get(this.alternativeEmailInput)
       .should("be.visible")
       .type(alternativeEmail)
@@ -189,6 +231,7 @@ class UserPage {
   }
 
   alternativePhone(alternativePhone) {
+    cy.get(".MuiDialogContent-root").scrollTo("bottom");
     cy.get(this.alternativePhoneInput)
       .should("be.visible")
       .type(alternativePhone)
@@ -196,14 +239,12 @@ class UserPage {
   }
 
   clickOnSchools() {
-    cy.get(this.schoolsMultipleList, { timeout: 50000 })
-      .should("be.visible")
-      .click();
+    cy.get(this.schoolsMultipleList).should("be.visible").click();
+    cy.wait(33000);
   }
 
   getShortCodeText() {
-    cy.wait(70000);
-    return cy.get(this.shortCodeText, { timeout: 70000 }).should("be.visible");
+    return cy.get(this.shortCodeText).scrollIntoView().should("be.visible");
   }
 
   clickOnAddFilterButton() {
@@ -287,10 +328,12 @@ class UserPage {
   }
 
   clickOnValuesFilter() {
+    cy.wait(2000);
     cy.get(this.valuesFilter).should("be.visible").click();
   }
 
   clickOnValuesFilterInputs() {
+    cy.wait(2000);
     cy.get(this.valuesFilterInputs).should("be.visible").click();
   }
 
@@ -349,7 +392,9 @@ class UserPage {
   }
 
   searchInputText(search) {
+    cy.viewport(1280, 750);
     cy.get(this.searchInput).should("be.visible").type(search).type("{enter}");
+    cy.wait(5000);
   }
 
   clickMoreActions() {
@@ -369,10 +414,12 @@ class UserPage {
 
   clickOnMoreActionsDeleteButton() {
     cy.get(this.moreActionsDelete).should("be.visible").click();
+    cy.wait(7000);
   }
 
   clickOnMoreActionsEditButton() {
     cy.get(this.moreActionsEdit).should("be.visible").click();
+    cy.wait(6000);
   }
 
   sendDeleteText() {
@@ -576,6 +623,369 @@ class UserPage {
         "Phone",
         "Status",
       ]);
+  }
+
+  editionGivenName(givenName) {
+    cy.get(this.givenNameInput)
+      .should("be.visible")
+      .clear()
+      .type(givenName)
+      .type("{enter}");
+  }
+
+  editionFamilyName(familyName) {
+    cy.get(this.familyNameInput)
+      .should("be.visible")
+      .clear()
+      .type(familyName)
+      .type("{enter}");
+  }
+
+  editionShortCode(shortCode) {
+    cy.get(this.shortCodeInput)
+      .should("be.visible")
+      .clear()
+      .type(shortCode)
+      .type("{enter}");
+  }
+
+  clickOnEditionSaveButton() {
+    cy.get(this.saveEditionButton).should("be.visible").click();
+  }
+
+  clickOnEditionDeleteButton() {
+    cy.get(this.deleteEditionButton).should("be.visible").click();
+  }
+
+  clickOnCancelButtonPopUpEdition() {
+    cy.get(this.cancelEditionButton).should("be.visible").click();
+  }
+
+  clickOnCancelButtonEdition() {
+    cy.get(this.cancelEditFinalButton).should("be.visible").click();
+  }
+
+  getUserSearch() {
+    cy.get("table td:nth-child(1)").each(($el) => {
+      if ($el.text() == "Andres") {
+        cy.log("User was found");
+        return;
+      } else {
+        $el.text() == "No records to display";
+        cy.log("No records to display");
+        return;
+      }
+    });
+  }
+
+  clickOnAddColumns() {
+    cy.viewport(1280, 750);
+    cy.get(this.addColumns).should("be.visible").click();
+  }
+
+  selectColumns() {
+    cy.get('[type="checkbox"]').check;
+  }
+
+  getFirstColumnText() {
+    return cy
+      .get("table thead:nth-child(1) tr th:nth-child(1)")
+      .contains("Given Name");
+  }
+
+  getSecondColumnText() {
+    return cy
+      .get("table thead:nth-child(1) tr th:nth-child(2)")
+      .contains("Family Name");
+  }
+
+  clickOnRemoveOrganizationRolesColumnsButton() {
+    cy.get("table thead:nth-child(1) tr th:nth-child(3)").each(($el) => {
+      if ($el.text() == "Organization Roles") {
+        cy.get(
+          "table thead:nth-child(1) tr th:nth-child(3) span button"
+        ).click();
+        cy.log("Organization Roles found");
+        return;
+      }
+    });
+  }
+
+  clickOnRemoveSchoolColumnsButton() {
+    cy.get("table thead:nth-child(1) tr th:nth-child(3)").each(($el) => {
+      if ($el.text() == "School") {
+        cy.get(
+          "table thead:nth-child(1) tr th:nth-child(3) span button"
+        ).click();
+        cy.log("School found");
+        return;
+      }
+    });
+  }
+
+  clickOnRemoveContactInfoColumnsButton() {
+    cy.get("table thead:nth-child(1) tr th:nth-child(3)").each(($el) => {
+      if ($el.text() == "Contact Info") {
+        cy.get(
+          "table thead:nth-child(1) tr th:nth-child(3) span button"
+        ).click();
+        cy.log("Contact Info found");
+        return;
+      }
+    });
+  }
+
+  clickOnRemoveStatusColumnsButton() {
+    cy.get("table thead:nth-child(1) tr th:nth-child(3)").each(($el) => {
+      if ($el.text() == "Status") {
+        cy.get(
+          "table thead:nth-child(1) tr th:nth-child(3) span button"
+        ).click();
+        cy.log("Status found");
+        return;
+      }
+    });
+  }
+
+  clickOnRemoveJoinDateColumnsButton() {
+    cy.get("table thead:nth-child(1) tr th:nth-child(3)").each(($el) => {
+      if ($el.text() == "Join Date") {
+        cy.get(
+          "table thead:nth-child(1) tr th:nth-child(3) span button"
+        ).click();
+        cy.log("Join Date found");
+        return;
+      }
+    });
+  }
+
+  sortFirstAsc() {
+    cy.get("tbody tr td:nth-child(1) span:nth-child(2)").then((items) => {
+      const unsortedItems = items
+        .map((index, html) => Cypress.$(html).text())
+        .get();
+      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
+      const sortedItems = unsortedItems.slice().sort();
+      expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(
+        sortedItems
+      );
+      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
+    });
+  }
+
+  sortFirstDesc() {
+    cy.get("table thead:nth-child(1) tr th:nth-child(1)").click();
+    cy.wait(5000);
+    cy.get("tbody tr td:nth-child(1) span:nth-child(2)").then((items) => {
+      const unsortedItems = items
+        .map((index, html) => Cypress.$(html).text())
+        .get();
+      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
+      const sortedItems = unsortedItems.reverse();
+      expect(unsortedItems, "Items are sorted in desc order").to.deep.equal(
+        sortedItems
+      );
+      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
+    });
+  }
+
+  sortSecondAsc() {
+    cy.get("table thead:nth-child(1) tr th:nth-child(2)").click();
+    cy.wait(8000);
+    cy.get("tbody tr td:nth-child(2)").then((items) => {
+      const unsortedItems = items
+        .map((index, html) => Cypress.$(html).text())
+        .get();
+      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
+      const sortedItems = unsortedItems.slice().sort();
+      expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(
+        sortedItems
+      );
+      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
+    });
+  }
+
+  sortSecondDesc() {
+    cy.get("table thead:nth-child(1) tr th:nth-child(2)").click();
+    cy.wait(8000);
+    cy.get("tbody tr td:nth-child(2)").then((items) => {
+      const unsortedItems = items
+        .map((index, html) => Cypress.$(html).text())
+        .get();
+      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
+      const sortedItems = unsortedItems.reverse();
+      expect(unsortedItems, "Items are sorted in desc order").to.deep.equal(
+        sortedItems
+      );
+      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
+    });
+  }
+
+  clickOnNextPage() {
+    cy.viewport(1280, 750);
+    cy.get(this.nextPage)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+  }
+
+  clickOnPreviousPage() {
+    cy.viewport(1280, 750);
+    cy.get(this.previousPage)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+  }
+
+  clickOnLastPage() {
+    cy.viewport(1280, 750);
+    cy.get(this.lastPage)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+  }
+
+  clickOnFirstPage() {
+    cy.viewport(1280, 750);
+    cy.get(this.firstPage)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+  }
+
+  clickOnRowsPerPage() {
+    cy.viewport(1280, 750);
+    cy.get(this.rowsPerPage)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+  }
+
+  clickOnTenPages() {
+    cy.viewport(1280, 750);
+    cy.get(this.tenPages)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+    cy.get("tbody tr").should("have.length", 10);
+  }
+
+  clickOnTwentyFivePages() {
+    cy.viewport(1280, 750);
+    cy.get(this.twentyFivePages)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+    cy.get("tbody tr").should("have.length", 25);
+  }
+
+  clickOnFiftyPages() {
+    cy.viewport(1280, 750);
+    cy.get(this.fiftyPages)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+    cy.get("tbody tr").should("have.length", 50);
+  }
+
+  getFirstPageButtonState() {
+    cy.viewport(1280, 750);
+    cy.get(this.firstPage)
+      .scrollIntoView()
+      .then(($btn) => {
+        if ($btn.is(":disabled")) {
+          cy.log("Button is disable");
+        } else {
+          $btn.prop("disabled", true);
+          cy.log("Button is enable");
+        }
+      });
+  }
+
+  getNextPageButtonState() {
+    cy.viewport(1280, 750);
+    cy.get(this.nextPage)
+      .scrollIntoView()
+      .then(($btn) => {
+        if ($btn.is(":disabled")) {
+          cy.log("Button is disable");
+        } else {
+          $btn.prop("disabled", true);
+          cy.log("Button is enable");
+        }
+      });
+  }
+
+  getPreviousPageButtonState() {
+    cy.viewport(1280, 750);
+    cy.get(this.previousPage)
+      .scrollIntoView()
+      .then(($btn) => {
+        if ($btn.is(":disabled")) {
+          cy.log("Button is disable");
+        } else {
+          $btn.prop("disabled", true);
+          cy.log("Button is enable");
+        }
+      });
+  }
+
+  getLastPageButtonState() {
+    cy.viewport(1280, 750);
+    cy.get(this.lastPage)
+      .scrollIntoView()
+      .then(($btn) => {
+        if ($btn.is(":disabled")) {
+          cy.log("Button is disable");
+        } else {
+          $btn.prop("disabled", true);
+          cy.log("Button is enable");
+        }
+      });
+  }
+
+  clickOnUploadCsvButton() {
+    cy.get(this.uploadCsvButton).should("be.visible").click();
+  }
+
+  selectMultipleFixtureFile() {
+    cy.get(this.dragAndDrop)
+      .should("be.visible")
+      .click({ force: true })
+      .attachFile("multiple_users_alpha.csv", {
+        subjectType: "drag-n-drop",
+        events: ["dragenter", "drop"],
+      });
+    cy.wait(10400);
+  }
+
+  getValidationCsvText() {
+    return cy
+      .get(this.validationCsvText)
+      .should("include.text", "All validations passed");
+  }
+
+  clickOnUploadCsvFinalButton() {
+    cy.get(this.uploadCsvFinalButton).should("be.visible").click();
+  }
+
+  selectFixtureFile() {
+    cy.get(this.dragAndDrop)
+      .should("be.visible")
+      .click({ force: true })
+      .attachFile("user_alpha.csv", {
+        subjectType: "drag-n-drop",
+        events: ["dragenter", "drop"],
+      });
+    cy.wait(4000);
   }
 }
 

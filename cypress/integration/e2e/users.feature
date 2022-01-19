@@ -6,8 +6,38 @@ Feature: Users
     #DATA SHOULD BE CHANGED FOR EACH RUN
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I fill required fields as "Santiago" "Javier" "sanjav@gmail.com" and "S4NT123"
+    And I fill required fields as "Alejandra" "Laguana" "alelagua@gmail.com" and "ALE3264"
     Then I create a new user and obtain "User has been created successfully" message
+
+  #User should be able to edit an existent user UD-T24
+
+  Scenario: Edit user
+    #DATA SHOULD BE CHANGED FOR EACH RUN
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for status as active
+    Then Filter is Added
+    Then I search "Alejandra" user to be edited "Luis" "Machado" "90457FRE" and get "User has been saved successfully" message
+
+  #User should be able to inactivate an existent user from edition mode UD-T32
+
+  Scenario: Inactive User from edition mode
+    #DATA SHOULD BE CHANGED FOR EACH RUN
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for status as active
+    Then Filter is Added
+    Then I search "Luis" user to be deleted on edition mode and get "User has been deleted successfully" message
+
+  #User should not be able to inactivate an existent user from edition mode UD-T33
+
+  Scenario: Inactive User from edition mode cancel
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for status as active
+    Then Filter is Added
+    Then I search "Tamara" user to be deleted on edition mode but I cancel
 
   #User should not be able to add the same exactly user UD-T529
 
@@ -15,9 +45,9 @@ Feature: Users
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I fill required fields as "Alicia" "Urtazu" "alicetest@gmail.com" and "T3EST45"
+    And I fill required fields as "Brenda" "Nicolson" "brendatest@gmail.com" and "BRE3453T"
     Then I create a new user and obtain "User has been created successfully" message
-    And I fill required fields as "Alicia" "Urtazu" "alicetest@gmail.com" and "T3EST45"
+    And I fill required fields as "Brenda" "Nicolson" "brendatest@gmail.com" and "BRE3453T"
     And "Short Code already exists." error message
     Then I have got "User already exists" error message
 
@@ -27,9 +57,9 @@ Feature: Users
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I fill only required fields as "Ariel" "Urtazu" and "testaut9@gmail.com"
+    And I fill only required fields as "Jimena" "Patineo" and "jimetest@gmail.com"
     Then I create a new user and obtain "User has been created successfully" message
-    And I fill only required fields as "Ariel" "Urtazu" and "testaut9@gmail.com"
+    And I fill only required fields as "Jimena" "Patineo" and "jimetest@gmail.com"
     Then I have got "User already exists" error message
 
 
@@ -42,13 +72,13 @@ Feature: Users
     And I fill optional fields "4B3J4"
 
 
-  #User should not see new user added UD-T20 DEFECT AD-1811
+  #User should not see new user added UD-T20
 
   Scenario: Cancel user creation
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And fill all existent fields as "Mauro" "Nogeira" "maunog@gmail.com" "457FDH" "non-binary" "nog@gmail.com" and "+59834563"
+    And fill all existent fields as "Mauro" "Nogeira" "maunog@gmail.com" "457FDH" "non-binary"
     Then I cancel creation
 
   #User should be able to inactive an user UD-T25
@@ -58,6 +88,7 @@ Feature: Users
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     And Add filter for status as active
+    Then Filter is Added
     Then I search "Test" user to be deleted and get "User has been deleted successfully" message
 
   #User should be able to add a filter on users for Active Status UD-T425
@@ -87,6 +118,7 @@ Feature: Users
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     And Add filter for status as active
+    Then Filter is Added
     Then I search "Test" user to be deleted but I cancel it
 
 
@@ -357,10 +389,142 @@ Feature: Users
     Then Add all existent filters and email "lorenatest@test.com" and phone "+59834563"
     And I check filter is disable
 
-  #User should be able to see correct order for values on filters UD-T581 Defect AD-964
+  #User should be able to see correct order for values on filters UD-T581 ----*** DEFECT AD-964 ***----
 
   Scenario: Filter order values
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     Then I check the order of values is correct on users
+
+  #User should be able to search any word by exact match of it UD-T30
+
+  Scenario: Search users
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And I search "Andres"
+
+  #User should be able to add columns UD-T26
+
+  Scenario: Add columns
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And I add columns to be shown
+    And I check locked columns "Given Name" and "Family Name" are present
+
+  #User should be able to remove columns UD-T28
+
+  Scenario: Remove columns
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And I remove columns to be shown
+    And I check locked columns "Given Name" and "Family Name" are present
+
+  #User should be able to sort data from users UD-T169
+
+  Scenario: Sorting
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And I sort column by asc and desc
+
+  #User should be able to see data paginated UD-T29
+
+  Scenario: Pagination
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And I check all buttons from pagination
+
+
+  #User should be able to paginate by rows per page UD-T162
+
+  Scenario: Rows Per Page
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then I check different rows per page
+
+  #User should be able to see correct pagination when applies ascending and descending order UD-T168
+
+  Scenario: Sorting and pagination
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And I sort column by asc and desc
+    And I check all buttons from pagination
+
+  #User should be able to search and see the pagination according to inserted searching UD-T167
+
+  Scenario: Search and pagination
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And I check all buttons from pagination
+    And I search "Test"
+
+  #User should be able to add multiple filter, search any user and change paginations that will no affect the result UD-T416
+
+  Scenario: Add multiple filters search and pagination
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then Add all existent filters and email "lorenatest@test.com" and phone "+5982325463"
+    And I search "Andres"
+    And I check all buttons from pagination
+
+  #User should be able to see first page from pagination UD-T166
+
+  Scenario: First page pagination
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then I check first page pagination
+
+  #User should be able to see last page from pagination UD-T165
+
+  Scenario: Last page pagination
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then I check last page pagination
+
+  #User should be able to see next page from pagination UD-T163
+
+  Scenario: Next page pagination
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then I check next page pagination
+
+  #User should be able to see previous page from pagination UD-T164
+
+  Scenario: Previous page pagination
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then I check previous page pagination
+
+  #User should be able to create multiple users UD-T406
+
+  Scenario: Create Multiple Users with CSV file
+    #FILE NEEDS TO BE CHANGED ON FIXTURE FOLDER OR TEST DEPENDING ON ENVIRONMENT
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then Upload correct multiple CSV file
+    And I get "Users have been added successfully" message
+
+  #User should be able to create a user using CSV file UD-T31
+
+  Scenario: Create User with CSV file
+
+    #FILE NEEDS TO BE CHANGED ON FIXTURE FOLDER OR TEST DEPENDING ON ENVIRONMENT
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    Then Upload correct CSV file
+    And I get "Users have been added successfully" message
+
+

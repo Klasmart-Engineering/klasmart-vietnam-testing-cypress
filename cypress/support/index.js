@@ -12,11 +12,19 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-import "cypress-real-events/support"
+import "cypress-real-events/support";
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-require('cypress-xpath')
+require("cypress-xpath");
+
+const chaiSorted = require("chai-sorted");
+chai.use(chaiSorted);
+
+Cypress.on("uncaught:exception", (err, runnable) => {
+  // returning false here prevents Cypress from failing the test
+  return false;
+});

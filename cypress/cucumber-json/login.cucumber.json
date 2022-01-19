@@ -10,7 +10,7 @@
       {
         "id": "login;tailand-flag",
         "keyword": "Scenario",
-        "line": 265,
+        "line": 263,
         "name": "Tailand Flag",
         "tags": [],
         "type": "scenario",
@@ -18,21 +18,21 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 266,
+            "line": 264,
             "name": "auth Tailand page",
             "result": {
               "status": "passed",
-              "duration": 3579000000
+              "duration": 8097000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 267,
+            "line": 265,
             "name": "verify the correct flag \"เข้าสู่ระบบ\" name",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 69000000
             }
           }
         ]
