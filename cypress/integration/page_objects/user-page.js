@@ -419,7 +419,7 @@ class UserPage {
 
   clickOnMoreActionsEditButton() {
     cy.get(this.moreActionsEdit).should("be.visible").click();
-    cy.wait(6000);
+    cy.wait(7000);
   }
 
   sendDeleteText() {

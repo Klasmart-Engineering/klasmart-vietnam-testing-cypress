@@ -46,5 +46,8 @@
     "jsdom": "^19.0.0",
     "multiple-cucumber-html-reporter": "^1.18.3",
     "prettier": "2.4.1"
+  },
+  "dependencies": {
+    "packagename": "^2.0.1"
   }
 }

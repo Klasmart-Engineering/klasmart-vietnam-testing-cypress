@@ -21,7 +21,8 @@
             "line": 7,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16402000000
             }
           },
           {
@@ -30,16 +31,18 @@
             "line": 8,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7099000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "I fill required fields as \"Mariana\" \"Laguana\" \"marilagua@gmail.com\" and \"MAR345LA\"",
+            "name": "I fill required fields as \"Alejandra\" \"Laguana\" \"alelagua@gmail.com\" and \"ALE3264\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14219000000
             }
           },
           {
@@ -48,7 +51,8 @@
             "line": 10,
             "name": "I create a new user and obtain \"User has been created successfully\" message",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 543000000
             }
           }
         ]
@@ -67,7 +71,8 @@
             "line": 16,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14762000000
             }
           },
           {
@@ -76,7 +81,8 @@
             "line": 17,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7035000000
             }
           },
           {
@@ -85,7 +91,8 @@
             "line": 18,
             "name": "Add filter for status as active",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5049000000
             }
           },
           {
@@ -94,16 +101,18 @@
             "line": 19,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 657000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "I search \"Mariana\" user to be edited \"Luis\" \"Benedetti\" \"6473RETD\" and get \"User has been saved successfully\" message",
+            "name": "I search \"Alejandra\" user to be edited \"Luis\" \"Machado\" \"90457FRE\" and get \"User has been saved successfully\" message",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 20860000000
             }
           }
         ]
@@ -122,7 +131,8 @@
             "line": 26,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13134000000
             }
           },
           {
@@ -131,7 +141,8 @@
             "line": 27,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6209000000
             }
           },
           {
@@ -140,7 +151,8 @@
             "line": 28,
             "name": "Add filter for status as active",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5443000000
             }
           },
           {
@@ -149,7 +161,8 @@
             "line": 29,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 775000000
             }
           },
           {
@@ -158,7 +171,8 @@
             "line": 30,
             "name": "I search \"Luis\" user to be deleted on edition mode and get \"User has been deleted successfully\" message",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 4 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:154498:76)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172859:19)\nFrom Your Spec Code:\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\users.feature:1705:56)"
             }
           }
         ]
@@ -177,7 +191,8 @@
             "line": 36,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 24214000000
             }
           },
           {
@@ -186,7 +201,8 @@
             "line": 37,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5651000000
             }
           },
           {
@@ -195,7 +211,8 @@
             "line": 38,
             "name": "Add filter for status as active",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6554000000
             }
           },
           {
@@ -204,7 +221,8 @@
             "line": 39,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 793000000
             }
           },
           {
@@ -213,7 +231,8 @@
             "line": 40,
             "name": "I search \"Tamara\" user to be deleted on edition mode but I cancel",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 17100000000
             }
           }
         ]
@@ -232,7 +251,8 @@
             "line": 46,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12938000000
             }
           },
           {
@@ -241,16 +261,18 @@
             "line": 47,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6174000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 48,
-            "name": "I fill required fields as \"Roberto\" \"Nicolson\" \"roberttest@gmail.com\" and \"R0RT023\"",
+            "name": "I fill required fields as \"Brenda\" \"Nicolson\" \"brendatest@gmail.com\" and \"BRE3453T\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14364000000
             }
           },
           {
@@ -259,16 +281,18 @@
             "line": 49,
             "name": "I create a new user and obtain \"User has been created successfully\" message",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1014000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 50,
-            "name": "I fill required fields as \"Roberto\" \"Nicolson\" \"roberttest@gmail.com\" and \"R0RT023\"",
+            "name": "I fill required fields as \"Brenda\" \"Nicolson\" \"brendatest@gmail.com\" and \"BRE3453T\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12489000000
             }
           },
           {
@@ -277,7 +301,8 @@
             "line": 51,
             "name": "\"Short Code already exists.\" error message",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2622000000
             }
           },
           {
@@ -286,7 +311,8 @@
             "line": 52,
             "name": "I have got \"User already exists\" error message",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 360000000
             }
           }
         ]
@@ -305,7 +331,8 @@
             "line": 58,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16028000000
             }
           },
           {
@@ -314,16 +341,18 @@
             "line": 59,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5815000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 60,
-            "name": "I fill only required fields as \"Lisa\" \"Patineo\" and \"lisatest@gmail.com\"",
+            "name": "I fill only required fields as \"Jimena\" \"Patineo\" and \"jimetest@gmail.com\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 15662000000
             }
           },
           {
@@ -332,16 +361,18 @@
             "line": 61,
             "name": "I create a new user and obtain \"User has been created successfully\" message",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1248000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 62,
-            "name": "I fill only required fields as \"Lisa\" \"Patineo\" and \"lisatest@gmail.com\"",
+            "name": "I fill only required fields as \"Jimena\" \"Patineo\" and \"jimetest@gmail.com\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10078000000
             }
           },
           {
@@ -350,7 +381,8 @@
             "line": 63,
             "name": "I have got \"User already exists\" error message",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 15851000000
             }
           }
         ]
@@ -369,7 +401,8 @@
             "line": 70,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12232000000
             }
           },
           {
@@ -378,7 +411,8 @@
             "line": 71,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7573000000
             }
           },
           {
@@ -387,7 +421,8 @@
             "line": 72,
             "name": "I fill optional fields \"4B3J4\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4604000000
             }
           }
         ]
@@ -397,12 +432,7 @@
         "keyword": "Scenario",
         "line": 77,
         "name": "Cancel user creation",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 76
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -412,7 +442,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 24116000000
+              "duration": 10409000000
             }
           },
           {
@@ -422,17 +452,17 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 5917000000
+              "duration": 16309000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 81,
-            "name": "fill all existent fields as \"Mauro\" \"Nogeira\" \"maunog@gmail.com\" \"457FDH\" \"non-binary\" \"nog@gmail.com\" and \"+59834563\"",
+            "name": "fill all existent fields as \"Mauro\" \"Nogeira\" \"maunog@gmail.com\" \"457FDH\" \"non-binary\"",
             "result": {
               "status": "passed",
-              "duration": 49877000000
+              "duration": 69272000000
             }
           },
           {
@@ -442,7 +472,7 @@
             "name": "I cancel creation",
             "result": {
               "status": "passed",
-              "duration": 295000000
+              "duration": 692000000
             }
           }
         ]
@@ -461,7 +491,8 @@
             "line": 88,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13349000000
             }
           },
           {
@@ -470,7 +501,8 @@
             "line": 89,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4755000000
             }
           },
           {
@@ -479,7 +511,8 @@
             "line": 90,
             "name": "Add filter for status as active",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5568000000
             }
           },
           {
@@ -488,7 +521,8 @@
             "line": 91,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 695000000
             }
           },
           {
@@ -497,7 +531,8 @@
             "line": 92,
             "name": "I search \"Test\" user to be deleted and get \"User has been deleted successfully\" message",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16960000000
             }
           }
         ]
@@ -516,7 +551,8 @@
             "line": 98,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12122000000
             }
           },
           {
@@ -525,7 +561,8 @@
             "line": 99,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4867000000
             }
           },
           {
@@ -534,7 +571,8 @@
             "line": 100,
             "name": "Add filter for status as active",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5740000000
             }
           },
           {
@@ -543,7 +581,8 @@
             "line": 101,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 695000000
             }
           },
           {
@@ -552,7 +591,8 @@
             "line": 102,
             "name": "I check that active status filter was added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 79000000
             }
           }
         ]
@@ -571,7 +611,8 @@
             "line": 108,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12524000000
             }
           },
           {
@@ -580,7 +621,8 @@
             "line": 109,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4941000000
             }
           },
           {
@@ -589,7 +631,8 @@
             "line": 110,
             "name": "Add filter for status as inactive",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6199000000
             }
           },
           {
@@ -598,7 +641,8 @@
             "line": 111,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 871000000
             }
           },
           {
@@ -607,7 +651,8 @@
             "line": 112,
             "name": "I check that inactive status filter was added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 81000000
             }
           }
         ]
@@ -626,7 +671,8 @@
             "line": 118,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13442000000
             }
           },
           {
@@ -635,7 +681,8 @@
             "line": 119,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4649000000
             }
           },
           {
@@ -644,7 +691,8 @@
             "line": 120,
             "name": "Add filter for status as active",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6005000000
             }
           },
           {
@@ -653,7 +701,8 @@
             "line": 121,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 678000000
             }
           },
           {
@@ -662,7 +711,8 @@
             "line": 122,
             "name": "I search \"Test\" user to be deleted but I cancel it",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 15869000000
             }
           }
         ]
@@ -681,7 +731,8 @@
             "line": 129,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12399000000
             }
           },
           {
@@ -690,7 +741,8 @@
             "line": 130,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5308000000
             }
           },
           {
@@ -699,7 +751,8 @@
             "line": 131,
             "name": "Add filter for school",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12796000000
             }
           },
           {
@@ -708,7 +761,8 @@
             "line": 132,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1066000000
             }
           },
           {
@@ -717,7 +771,8 @@
             "line": 133,
             "name": "I check that shools filter was added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 80000000
             }
           }
         ]
@@ -736,7 +791,8 @@
             "line": 139,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12233000000
             }
           },
           {
@@ -745,7 +801,8 @@
             "line": 140,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "CypressError: Cypress command timeout of `30000ms` exceeded.\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Users`\n    at cypressErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:175967:18)\n    at Object.errByPath (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:176036:10)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:177794:80"
             }
           },
           {
@@ -771,2018 +828,6 @@
             "keyword": "And ",
             "line": 143,
             "name": "I check that organization roles filter was added",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-filter-phone",
-        "keyword": "Scenario",
-        "line": 147,
-        "name": "Add filter Phone",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 149,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 150,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 151,
-            "name": "Add filter for phone \"+59834563\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 152,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 153,
-            "name": "I check that phone filter was added",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-filter-email",
-        "keyword": "Scenario",
-        "line": 157,
-        "name": "Add filter Email",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 159,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 160,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 161,
-            "name": "Add filter for email \"lorenatest@test.com\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 162,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 163,
-            "name": "I check that email filter was added",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-filter-email-cancel",
-        "keyword": "Scenario",
-        "line": 167,
-        "name": "Add filter Email Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 169,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 170,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 171,
-            "name": "Add filter for email \"lorenatest@test.com\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 172,
-            "name": "I press cancel button",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-filter-phone-cancel",
-        "keyword": "Scenario",
-        "line": 176,
-        "name": "Add filter Phone Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 178,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 179,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 180,
-            "name": "Add filter for phone \"+59834563\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 181,
-            "name": "I press cancel button",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-filter-schools-cancel",
-        "keyword": "Scenario",
-        "line": 185,
-        "name": "Add filter Schools Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 187,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 188,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 189,
-            "name": "Add filter for school",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 190,
-            "name": "I press cancel button",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-filter-organization-roles-cancel",
-        "keyword": "Scenario",
-        "line": 194,
-        "name": "Add filter Organization Roles Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 196,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 197,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 198,
-            "name": "Add filter for organization roles",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 199,
-            "name": "I press cancel button",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-filter-status-active-cancel",
-        "keyword": "Scenario",
-        "line": 203,
-        "name": "Add filter Status Active Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 205,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 206,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 207,
-            "name": "Add filter for status as active",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 208,
-            "name": "I press cancel button",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-filter-status-inactive-cancel",
-        "keyword": "Scenario",
-        "line": 212,
-        "name": "Add filter Status Inactive Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 214,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 215,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 216,
-            "name": "Add filter for status as inactive",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 217,
-            "name": "I press cancel button",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-organization-roles",
-        "keyword": "Scenario",
-        "line": 221,
-        "name": "Edit filter Organization Roles",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 223,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 224,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 225,
-            "name": "Add filter for organization roles",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 226,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 227,
-            "name": "I edit values from added filter on organization roles",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 228,
-            "name": "I check edited value was saved on organization roles",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-schools",
-        "keyword": "Scenario",
-        "line": 232,
-        "name": "Edit filter Schools",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 234,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 235,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 236,
-            "name": "Add filter for school",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 237,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 238,
-            "name": "I edit values from added filter on schools",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 239,
-            "name": "I check edited value was saved on schools",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-status",
-        "keyword": "Scenario",
-        "line": 243,
-        "name": "Edit filter Status",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 245,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 246,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 247,
-            "name": "Add filter for status as inactive",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 248,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 249,
-            "name": "I edit status value as active",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 250,
-            "name": "I check edited value was saved on status",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-phone",
-        "keyword": "Scenario",
-        "line": 254,
-        "name": "Edit filter Phone",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 256,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 257,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 258,
-            "name": "Add filter for phone \"+59834563\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 259,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 260,
-            "name": "I edit value from added filter on phone as \"+59898723\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 261,
-            "name": "I check edited value was saved on phone",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-email",
-        "keyword": "Scenario",
-        "line": 265,
-        "name": "Edit filter Email",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 267,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 268,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 269,
-            "name": "Add filter for email \"lorenatest@test.com\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 270,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 271,
-            "name": "I edit value from added filter on email as \"alicetest@gmail.com\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 272,
-            "name": "I check edited value was saved on email",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-email-cancel",
-        "keyword": "Scenario",
-        "line": 276,
-        "name": "Edit filter Email Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 278,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 279,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 280,
-            "name": "Add filter for email \"lorenatest@test.com\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 281,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 282,
-            "name": "I edit value from added filter on email \"alicetest@gmail.com\" but I press cancel",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-phone-cancel",
-        "keyword": "Scenario",
-        "line": 286,
-        "name": "Edit filter Phone Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 288,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 289,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 290,
-            "name": "Add filter for phone \"+59834563\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 291,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 292,
-            "name": "I edit value from added filter on phone \"+59898723\" but I press cancel",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-schools-cancel",
-        "keyword": "Scenario",
-        "line": 296,
-        "name": "Edit filter Schools Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 298,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 299,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 300,
-            "name": "Add filter for school",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 301,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 302,
-            "name": "I edit value from added filter on schools but I press cancel",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-organization-roles-cancel",
-        "keyword": "Scenario",
-        "line": 306,
-        "name": "Edit filter Organization Roles Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 308,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 309,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 310,
-            "name": "Add filter for organization roles",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 311,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 312,
-            "name": "I edit value from added filter on organization roles but I press cancel",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;edit-filter-status-cancel",
-        "keyword": "Scenario",
-        "line": 316,
-        "name": "Edit filter Status Cancel",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 318,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 319,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 320,
-            "name": "Add filter for status as inactive",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 321,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 322,
-            "name": "I edit status value as active but I press cancel",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;clear-filter-email",
-        "keyword": "Scenario",
-        "line": 326,
-        "name": "Clear filter Email",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 328,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 329,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 330,
-            "name": "Add filter for email \"lorenatest@test.com\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 331,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 332,
-            "name": "I clear the filter applied",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;clear-filter-organization-roles",
-        "keyword": "Scenario",
-        "line": 336,
-        "name": "Clear filter Organization Roles",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 338,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 339,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 340,
-            "name": "Add filter for organization roles",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 341,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 342,
-            "name": "I clear the filter applied",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;clear-filter-phone",
-        "keyword": "Scenario",
-        "line": 346,
-        "name": "Clear filter Phone",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 348,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 349,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 350,
-            "name": "Add filter for phone \"+59834563\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 351,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 352,
-            "name": "I clear the filter applied",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;clear-filter-schools",
-        "keyword": "Scenario",
-        "line": 356,
-        "name": "Clear filter Schools",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 358,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 359,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 360,
-            "name": "Add filter for school",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 361,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 362,
-            "name": "I clear the filter applied",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;clear-filter-status-active",
-        "keyword": "Scenario",
-        "line": 366,
-        "name": "Clear filter Status Active",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 368,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 369,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 370,
-            "name": "Add filter for status as active",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 371,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 372,
-            "name": "I clear the filter applied",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;clear-all-filters",
-        "keyword": "Scenario",
-        "line": 376,
-        "name": "Clear all filters",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 378,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 379,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 380,
-            "name": "Add all existent filters and email \"lorenatest@test.com\" and phone \"+59834563\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 381,
-            "name": "I clear all filters applied",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;disable-filter",
-        "keyword": "Scenario",
-        "line": 385,
-        "name": "Disable filter",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 387,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 388,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 389,
-            "name": "Add all existent filters and email \"lorenatest@test.com\" and phone \"+59834563\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 390,
-            "name": "I check filter is disable",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;filter-order-values",
-        "keyword": "Scenario",
-        "line": 394,
-        "name": "Filter order values",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 396,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 397,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 398,
-            "name": "I check the order of values is correct on users",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;search-users",
-        "keyword": "Scenario",
-        "line": 402,
-        "name": "Search users",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 404,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 405,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 406,
-            "name": "I search \"Andres\"",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-columns",
-        "keyword": "Scenario",
-        "line": 410,
-        "name": "Add columns",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 412,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 413,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 414,
-            "name": "I add columns to be shown",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 415,
-            "name": "I check locked columns \"Given Name\" and \"Family Name\" are present",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;remove-columns",
-        "keyword": "Scenario",
-        "line": 419,
-        "name": "Remove columns",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 421,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 422,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 423,
-            "name": "I remove columns to be shown",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 424,
-            "name": "I check locked columns \"Given Name\" and \"Family Name\" are present",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;sorting",
-        "keyword": "Scenario",
-        "line": 428,
-        "name": "Sorting",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 430,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 431,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 432,
-            "name": "I sort column by asc and desc",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;pagination",
-        "keyword": "Scenario",
-        "line": 436,
-        "name": "Pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 438,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 439,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 440,
-            "name": "I check all buttons from pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;rows-per-page",
-        "keyword": "Scenario",
-        "line": 445,
-        "name": "Rows Per Page",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 447,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 448,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 449,
-            "name": "I check different rows per page",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;sorting-and-pagination",
-        "keyword": "Scenario",
-        "line": 453,
-        "name": "Sorting and pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 455,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 456,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 457,
-            "name": "I sort column by asc and desc",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 458,
-            "name": "I check all buttons from pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;search-and-pagination",
-        "keyword": "Scenario",
-        "line": 462,
-        "name": "Search and pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 464,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 465,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 466,
-            "name": "I check all buttons from pagination",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 467,
-            "name": "I search \"Test\"",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;add-multiple-filters-search-and-pagination",
-        "keyword": "Scenario",
-        "line": 471,
-        "name": "Add multiple filters search and pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 473,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 474,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 475,
-            "name": "Add all existent filters and email \"lorenatest@test.com\" and phone \"+5982325463\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 476,
-            "name": "I search \"Andres\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 477,
-            "name": "I check all buttons from pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;first-page-pagination",
-        "keyword": "Scenario",
-        "line": 481,
-        "name": "First page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 483,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 484,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 485,
-            "name": "I check first page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;last-page-pagination",
-        "keyword": "Scenario",
-        "line": 489,
-        "name": "Last page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 491,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 492,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 493,
-            "name": "I check last page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;next-page-pagination",
-        "keyword": "Scenario",
-        "line": 497,
-        "name": "Next page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 499,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 500,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 501,
-            "name": "I check next page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;previous-page-pagination",
-        "keyword": "Scenario",
-        "line": 505,
-        "name": "Previous page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 507,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 508,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 509,
-            "name": "I check previous page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;create-multiple-users-with-csv-file",
-        "keyword": "Scenario",
-        "line": 513,
-        "name": "Create Multiple Users with CSV file",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 515,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 516,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 517,
-            "name": "Upload correct multiple CSV file",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 518,
-            "name": "I get \"Users have been added successfully\" message",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "users;create-user-with-csv-file",
-        "keyword": "Scenario",
-        "line": 522,
-        "name": "Create User with CSV file",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 525,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 526,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 527,
-            "name": "Upload correct CSV file",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 528,
-            "name": "I get \"Users have been added successfully\" message",
             "result": {
               "status": "skipped"
             }
