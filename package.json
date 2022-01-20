@@ -46,5 +46,11 @@
     "jsdom": "^19.0.0",
     "multiple-cucumber-html-reporter": "^1.18.3",
     "prettier": "2.4.1"
+  },
+  "dependencies": {
+    "chai-sorted": "^0.2.0",
+    "cucumber": "^7.0.0-rc.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-real-events": "^1.6.0"
   }
 }
