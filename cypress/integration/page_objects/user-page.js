@@ -684,7 +684,8 @@ class UserPage {
   }
 
   selectColumns() {
-    cy.get('[type="checkbox"]').check;
+    cy.get(":checkbox").uncheck();
+    cy.get("div:nth-child(4) ul li").click({ multiple: true });
   }
 
   getFirstColumnText() {

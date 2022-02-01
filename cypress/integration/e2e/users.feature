@@ -6,7 +6,7 @@ Feature: Users
     #DATA SHOULD BE CHANGED FOR EACH RUN
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I fill required fields as "Atene" "Laguana" "atelagua@gmail.com" and "ATEN324"
+    And I fill required fields as "Camila" "Laguana" "atelagua@gmail.com" and "ATEN324"
     Then I create a new user and obtain "User has been created successfully" message
 
   #User should be able to edit an existent user UD-T24
@@ -17,7 +17,7 @@ Feature: Users
     When I navigate to actual section
     And Add filter for status as active
     Then Filter is Added
-    Then I search "Atene" user to be edited "Luis" "Machado" "2849FURI" and get "User has been saved successfully" message
+    Then I search "Camila" user to be edited "Luis" "Machado" "OIUD8976" and get "User has been saved successfully" message
 
   #User should be able to inactivate an existent user from edition mode UD-T32
 
@@ -45,9 +45,9 @@ Feature: Users
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I fill required fields as "Brandon" "Nicolson" "bretest@gmail.com" and "HGUT7586I"
+    And I fill required fields as "Brandon" "Macabi" "bremactest@gmail.com" and "BR4ND00N"
     Then I create a new user and obtain "User has been created successfully" message
-    And I fill required fields as "Brandon" "Nicolson" "bretest@gmail.com" and "HGUT7586I"
+    And I fill required fields as "Brandon" "Macabi" "bremactest@gmail.com" and "BR4ND00N"
     And "Short Code already exists." error message
     Then I have got "User already exists" error message
 
@@ -57,9 +57,9 @@ Feature: Users
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I fill only required fields as "Mariana" "Patineo" and "maritests@gmail.com"
+    And I fill only required fields as "Javier" "Straneo" and "javistests@gmail.com"
     Then I create a new user and obtain "User has been created successfully" message
-    And I fill only required fields as "Mariana" "Patineo" and "maritests@gmail.com"
+    And I fill only required fields as "Javier" "Straneo" and "javistests@gmail.com"
     Then I have got "User already exists" error message
 
 
@@ -520,7 +520,6 @@ Feature: Users
   #User should be able to create a user using CSV file UD-T31
 
   Scenario: Create User with CSV file
-
     #FILE NEEDS TO BE CHANGED ON FIXTURE FOLDER OR TEST DEPENDING ON ENVIRONMENT
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section

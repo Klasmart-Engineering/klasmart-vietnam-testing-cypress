@@ -66,8 +66,6 @@ And(
     contactInfo,
     shortCode,
     otherGender,
-    alternativeEmail,
-    alternativePhone
   ) => {
     userPage.clickOnCreateUserButton();
     userPage.givenName(givenName);
@@ -116,7 +114,7 @@ Then(
     userPage.clickOnMoreActionsDeleteButton();
     userPage.sendDeleteText();
     userPage.clickOnDeleteFinalButton();
-    userPage.getNotificationText(message);
+    userPage.getNotificationText(message).contains(message);
   }
 );
 
@@ -390,7 +388,7 @@ Then(
     userPage.clickOnRoles();
     userPage.closeListItems();
     userPage.clickOnEditionSaveButton();
-    userPage.getNotificationText(message);
+    userPage.getNotificationText(message).contains(message);
   }
 );
 
@@ -403,7 +401,7 @@ Then(
     userPage.clickOnEditionDeleteButton();
     userPage.sendDeleteText();
     userPage.clickOnDeleteFinalButton();
-    userPage.getNotificationText(message);
+    userPage.getNotificationText(message).contains(message);
   }
 );
 
@@ -516,8 +514,8 @@ Then("Upload correct multiple CSV file", () => {
   userPage.clickOnUploadCsvFinalButton();
 });
 
-And("I get {string} message", () => {
-  userPage.getNotificationText();
+And("I get {string} message", (message) => {
+  userPage.getNotificationText(message).contains(message);
 });
 
 Then("Upload correct CSV file", () => {

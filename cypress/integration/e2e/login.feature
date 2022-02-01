@@ -6,7 +6,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter custom email as "lorenab+custom@bluetrailsoft.com"
     Then I enter custom password as "Custom01!"
-    And I should see custom welcome message "Welcome Custom, how are you doing today?"
+    And I should see custom welcome message "👋 Welcome Custom, how are you doing today?"
 
 
   # User should not being able to signin UD-T18
@@ -42,7 +42,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter teacher email as "lorenab+teacher@bluetrailsoft.com"
     Then I enter teacher password as "Teacher01!"
-    And I should see teacher welcome message "Welcome Teacher, how are you doing today?"
+    And I should see teacher welcome message "👋 Welcome Teacher, how are you doing today?"
 
 
   #User should be able to sing in without any problem and have access according permissions UD-T13
@@ -51,7 +51,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter school admin email as "lorenab+schooladmin@bluetrailsoft.com"
     Then I enter school admin password as "Schooladmin01!"
-    And I should see school admin welcome message "Welcome School Admin, how are you doing today?"
+    And I should see school admin welcome message "👋 Welcome School Admin, how are you doing today?"
 
 
   # User should be able to sing in without any problem and have access according permissions UD-T12
@@ -60,7 +60,8 @@ Feature: Login
     Given I click can't find your country or region
     When I enter organization admin email as "lorenab+organization@bluetrailsoft.com"
     Then I enter organization admin password as "Organization01!"
-    And I should see organization admin welcome message "Welcome Organization Admin, how are you doing today?"
+    #  And I should see organization admin welcome message "Good Evening, Organization Admin"
+    And I should see organization admin welcome message "👋 Welcome Organization Admin, how are you doing today?"
 
 
   #User should be able to sing in without any problem and have access according permissions UD-T5
@@ -69,7 +70,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter a valid email as "lorenab+organization@bluetrailsoft.com"
     Then I enter a valid password as "Organization01!"
-    And I should see the "Home" tab and "Welcome Organization Admin, how are you doing today?" message
+    And I should see the "Home" tab and "👋 Welcome Organization Admin, how are you doing today?" message
 
 
   #User should not be able to sing in with invalid credentials UD-T6

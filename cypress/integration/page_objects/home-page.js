@@ -18,6 +18,23 @@ class HomePage {
     return cy.get(this.dashboardWelcomeText);
   }
 
+  /* getNewWelcomeText() {
+    cy.wait(3000);
+    var today = new Date()
+    var curHr = today.getHours()
+    
+    if (curHr < 12) {
+      console.log('Good Morning')
+      return cy.get(this.dashboardWelcomeText);
+    } else if (curHr < 17) {
+      console.log('Good Afternoon')
+      return cy.get(this.dashboardWelcomeText);
+    } else {
+      console.log('Good Evening')
+      return cy.get(this.dashboardWelcomeText);
+    }
+  }*/
+
   clickOnSignoutLink() {
     cy.contains("Sign out").should("be.visible").click();
   }
