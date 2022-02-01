@@ -33,8 +33,9 @@ Then("I enter custom password as {string}", (text) => {
   signInPage.clickOnContinueButton();
 });
 
-And("I should see custom welcome message {string}", (text) => {
-  homePage.getWelcomeText().should("have.text", text);
+And("I should see custom welcome message", () => {
+  homePage.getNewWelcomeText();
+  homePage.getWelcomeText().contains("Custom");
 });
 
 When("I enter student email as {string}", (text) => {
@@ -81,8 +82,9 @@ Then("I enter teacher password as {string}", (text) => {
   signInPage.clickOnContinueButton();
 });
 
-And("I should see teacher welcome message {string}", (text) => {
-  homePage.getWelcomeText().should("have.text", text);
+And("I should see teacher welcome message", () => {
+  homePage.getNewWelcomeText();
+  homePage.getWelcomeText().should("include.text","Teacher");
 });
 
 When("I enter school admin email as {string}", (text) => {
@@ -114,7 +116,6 @@ Then("I enter organization admin password as {string}", (text) => {
 });
 
 And("I should see organization admin welcome message {string}", (text) => {
-  // homePage.getNewWelcomeText().should('have.text',text);
   homePage.getWelcomeText().should("have.text", text);
 });
 

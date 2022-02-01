@@ -14,26 +14,26 @@ class HomePage {
   /*----------------  End Web Element  ----------------*/
 
   getWelcomeText() {
-    cy.wait(3000);
+    cy.wait(4000);
     return cy.get(this.dashboardWelcomeText);
   }
 
-  /* getNewWelcomeText() {
-    cy.wait(3000);
-    var today = new Date()
-    var curHr = today.getHours()
-    
+  getNewWelcomeText() {
+    cy.wait(4000);
+    var today = new Date();
+    var curHr = today.getHours();
+
     if (curHr < 12) {
-      console.log('Good Morning')
-      return cy.get(this.dashboardWelcomeText);
+      cy.log("Good Morning");
+      return cy.get(this.dashboardWelcomeText).should("include.text","Good Morning");
     } else if (curHr < 17) {
-      console.log('Good Afternoon')
-      return cy.get(this.dashboardWelcomeText);
+      cy.log("Good Afternoon");
+      return cy.get(this.dashboardWelcomeText).should("include.text","Good Afternoon");
     } else {
-      console.log('Good Evening')
-      return cy.get(this.dashboardWelcomeText);
+      cy.log("Good Evening");
+      return cy.get(this.dashboardWelcomeText).should("include.text","Good Evening");
     }
-  }*/
+  }
 
   clickOnSignoutLink() {
     cy.contains("Sign out").should("be.visible").click();

@@ -36,7 +36,7 @@
     "stepDefinitions": "cypress/integration/"
   },
   "devDependencies": {
-    "cypress": "^9.3.1",
+    "cypress": "^9.4.1",
     "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-mailosaur": "^2.5.6",

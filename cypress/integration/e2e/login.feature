@@ -6,7 +6,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter custom email as "lorenab+custom@bluetrailsoft.com"
     Then I enter custom password as "Custom01!"
-    And I should see custom welcome message "👋 Welcome Custom, how are you doing today?"
+    And I should see custom welcome message
 
 
   # User should not being able to signin UD-T18
@@ -42,7 +42,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter teacher email as "lorenab+teacher@bluetrailsoft.com"
     Then I enter teacher password as "Teacher01!"
-    And I should see teacher welcome message "👋 Welcome Teacher, how are you doing today?"
+    And I should see teacher welcome message
 
 
   #User should be able to sing in without any problem and have access according permissions UD-T13
