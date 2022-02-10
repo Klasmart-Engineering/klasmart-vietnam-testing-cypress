@@ -14,8 +14,25 @@ class HomePage {
   /*----------------  End Web Element  ----------------*/
 
   getWelcomeText() {
-    cy.wait(3000);
+    cy.wait(4000);
     return cy.get(this.dashboardWelcomeText);
+  }
+
+  getNewWelcomeText() {
+    cy.wait(4000);
+    var today = new Date();
+    var curHr = today.getHours();
+
+    if (curHr < 12) {
+      cy.log("Good Morning");
+      return cy.get(this.dashboardWelcomeText).should("include.text","Good Morning");
+    } else if (curHr < 17) {
+      cy.log("Good Afternoon");
+      return cy.get(this.dashboardWelcomeText).should("include.text","Good Afternoon");
+    } else {
+      cy.log("Good Evening");
+      return cy.get(this.dashboardWelcomeText).should("include.text","Good Evening");
+    }
   }
 
   clickOnSignoutLink() {

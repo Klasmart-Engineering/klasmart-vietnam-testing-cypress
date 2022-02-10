@@ -419,7 +419,7 @@ class UserPage {
 
   clickOnMoreActionsEditButton() {
     cy.get(this.moreActionsEdit).should("be.visible").click();
-    cy.wait(6000);
+    cy.wait(7000);
   }
 
   sendDeleteText() {
@@ -684,7 +684,8 @@ class UserPage {
   }
 
   selectColumns() {
-    cy.get('[type="checkbox"]').check;
+    cy.get(":checkbox").uncheck();
+    cy.get("div:nth-child(4) ul li").click({ multiple: true });
   }
 
   getFirstColumnText() {
