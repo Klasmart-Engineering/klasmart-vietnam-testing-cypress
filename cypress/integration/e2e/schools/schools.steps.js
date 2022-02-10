@@ -238,6 +238,10 @@ And("I check locked columns {string} and {string} are present", () => {
   schoolPage.getSecondColumnText();
 });
 
+And("I check locked column {string} is present", () => {
+  schoolPage.getSecondColumnText();
+});
+
 And("I remove columns to be shown", () => {
   schoolPage.removeAllColumns();
 });

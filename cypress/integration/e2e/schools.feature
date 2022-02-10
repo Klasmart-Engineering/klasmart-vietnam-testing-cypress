@@ -121,13 +121,14 @@ Feature: Schools
     And I add columns to be shown
     And I check locked columns "ID" and "School Name" are present
 
-  #User should be able to remove columns UD-T611
+  #User should be able to remove columns UD-T611 ----*** DEFECT AD-1628 ***----
 
   Scenario: Remove columns
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     And I remove columns to be shown
+    And I check locked column "School Name" is present
 
   #User should be able to search a School UD-T53
 

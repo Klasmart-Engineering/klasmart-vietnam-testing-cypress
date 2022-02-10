@@ -46,7 +46,6 @@ class SchoolPage {
   selectButton = "//span[contains(text(),'Select')]";
   createSubjectFinalButton =
     "div:nth-child(4) > span:nth-child(3) > button:nth-child(1)";
-  //':nth-child(3) > .MuiButtonBase-root > .MuiButton-label > .MuiBox-root > .MuiTypography-root';
   addMoreCategories =
     "button[class='MuiButtonBase-root MuiButton-root MuiButton-outlined']";
   cancelCreateSubject =
@@ -557,13 +556,13 @@ class SchoolPage {
 
   removeAllColumns() {
     cy.get("table thead:nth-child(1) tr th:nth-child(3)").click();
-    cy.get(":checkbox").uncheck();
+    cy.get(":checkbox").uncheck({force: true });
   }
 
   sortFirstAsc() {
     cy.get("table thead:nth-child(1) tr th:nth-child(3)").click();
-    cy.get(":checkbox").uncheck();
-    cy.get(":checkbox").check();
+    cy.get(":checkbox").uncheck({ force: true });
+    cy.get(":checkbox").check({ force: true });
     cy.get("body").trigger("keydown", { keyCode: 27 });
     cy.wait(500);
     cy.get("body").trigger("keyup", { keyCode: 27 });

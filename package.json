@@ -1,22 +1,24 @@
 {
-  "name": "kidsloophub",
+  "name": "Admin-Service",
   "version": "1.0.0",
   "description": "Automate different journeys of Kidsloop",
   "main": "index.js",
   "scripts": {
     "test:all": "cypress run --spec \"**/*.features\"",
     "test:each": "cypress run --spec \"**/*.feature\"",
-    "test:accessibility": "./node_modules/.bin/cypress-tags run -e TAGS=\"@test\""
+    "test:accessibility": "./node_modules/.bin/cypress-tags run -e TAGS=\"@smoke\""
   },
   "keywords": [
     "cypress",
     "cucumber",
     "testing"
   ],
-  "author": "Swapnali Bhansali",
-  "contributors": [
-    "Lorena Bettoni"
-  ],
+  "author": "Lorena Bettoni",
+  "contributors": [],
+  "repository": {
+    "type": "bitbucket",
+    "url": "https://bitbucket.org/calmisland/testing-cypress"
+  },
   "cypress-cucumber-preprocessor": {
     "cucumberJson": {
       "generate": true,

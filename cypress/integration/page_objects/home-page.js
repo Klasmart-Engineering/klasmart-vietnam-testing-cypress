@@ -8,8 +8,8 @@ class HomePage {
     ".MuiListItem-container > .MuiButtonBase-root > .MuiListItemText-root > .MuiListItemText-secondary";
   changeProfile = "button[aria-label='account of current user'] div";
   selectSecondProfile = "ul:nth-child(2) > div:nth-child(1)";
-  //'ul.MuiList-root.MuiList-dense.MuiList-padding > div'
   selectThirdProfile = "ul:nth-child(2) > div:nth-child(2)";
+  switchView = '.MuiButton-text.MuiButton-textSizeLarge';
 
   /*----------------  End Web Element  ----------------*/
 
@@ -58,6 +58,10 @@ class HomePage {
 
   clickThirdProfile() {
     cy.get(this.selectThirdProfile).should("be.visible").click();
+  }
+
+  clickOnSwitchView() {
+    cy.get(this.switchView).should("be.visible").click();
   }
 }
 

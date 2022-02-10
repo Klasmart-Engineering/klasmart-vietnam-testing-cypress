@@ -1,7 +1,7 @@
 Feature: Login
 
   #User should be able to sing in without any problem and have access according permissions UD-T17
-
+@focus 
   Scenario: Login with custom credentials
     Given I click can't find your country or region
     When I enter custom email as "lorenab+custom@bluetrailsoft.com"

@@ -4,7 +4,7 @@ class SignInPage {
   selectYourCountryText = ".MuiTypography-root.MuiTypography-h5";
   countryList =
     ".MuiTypography-root.MuiListItemText-primary.MuiTypography-body1.MuiTypography-displayBlock";
-  signInButton = ":nth-child(3) > .MuiButton-root > .MuiButton-label";
+  signInButton = "#next";
   privacyCheckBox =
     "div:nth-child(4) > div > label > span > span.MuiIconButton-label";
   privacyLink =
@@ -26,8 +26,8 @@ class SignInPage {
   invalidErrorMessage = ":nth-child(2) > .MuiTypography-root";
   findYourCountry =
     ".MuiList-root > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-root";
-  emailPhoneInput = "#email-input";
-  passwordInput = "#password-input";
+  emailPhoneInput = "#signInName";
+  passwordInput = "#password";
   selectProfile = ".MuiList-root > :nth-child(1) > .MuiListItem-root";
   continueButton = "button[type='submit'] span[class='MuiButton-label']";
   createAccountText =

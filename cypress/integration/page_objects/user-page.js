@@ -684,7 +684,7 @@ class UserPage {
   }
 
   selectColumns() {
-    cy.get(":checkbox").uncheck();
+    cy.get(":checkbox").uncheck({ force: true });
     cy.get("div:nth-child(4) ul li").click({ multiple: true });
   }
 

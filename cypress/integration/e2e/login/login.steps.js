@@ -13,7 +13,7 @@ When("I enter invalid email as {string}", (text) => {
 
 Then("I enter invalid password as {string}", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
+  //signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
 });
 
@@ -27,13 +27,14 @@ When("I enter custom email as {string}", (text) => {
 
 Then("I enter custom password as {string}", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
+  //signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
   signInPage.clickSelectProfile();
   signInPage.clickOnContinueButton();
 });
 
 And("I should see custom welcome message", () => {
+  homePage.clickOnSwitchView();
   homePage.getNewWelcomeText();
   homePage.getWelcomeText().contains("Custom");
 });
@@ -83,6 +84,7 @@ Then("I enter teacher password as {string}", (text) => {
 });
 
 And("I should see teacher welcome message", () => {
+  homePage.clickOnSwitchView();
   homePage.getNewWelcomeText();
   homePage.getWelcomeText().should("include.text","Teacher");
 });
