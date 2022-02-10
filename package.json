@@ -50,6 +50,9 @@
     "prettier": "2.4.1"
   },
   "dependencies": {
-    "packagename": "^2.0.1"
+    "chai-sorted": "^0.2.0",
+    "cucumber": "^7.0.0-rc.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-real-events": "^1.6.0"
   }
 }
