@@ -556,7 +556,7 @@ class SchoolPage {
 
   removeAllColumns() {
     cy.get("table thead:nth-child(1) tr th:nth-child(3)").click();
-    cy.get(":checkbox").uncheck({force: true });
+    cy.get(":checkbox").uncheck({ force: true });
   }
 
   sortFirstAsc() {

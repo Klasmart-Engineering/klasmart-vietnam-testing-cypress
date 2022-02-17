@@ -11,7 +11,6 @@ Given(
     signInPage.getClickOnYourCountryOrRegionText();
     signInPage.enterEmailOrPhone(email);
     signInPage.enterPassword(pass);
-    signInPage.acceptPrivacyPolicy();
     signInPage.clickOnSignInButton();
     signInPage.clickSelectProfile();
     signInPage.clickOnContinueButton();

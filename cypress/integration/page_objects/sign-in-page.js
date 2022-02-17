@@ -72,7 +72,7 @@ class SignInPage {
   }
 
   goToHomePage() {
-    cy.visit("/");
+    cy.visit('/');
   }
 
   clickOnCreateAccountLink() {
@@ -138,10 +138,6 @@ class SignInPage {
 
   checkURL() {
     return cy.url().should("include", "auth.sso.kidsloop.live/");
-  }
-
-  acceptPrivacyPolicy() {
-    cy.get(this.privacyCheckBox).should("be.visible").click();
   }
 
   getInvalidCredentialErrorMessage() {

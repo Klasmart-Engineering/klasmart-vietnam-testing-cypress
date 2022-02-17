@@ -1,0 +1,228 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Age Ranges",
+    "line": 1,
+    "id": "age-ranges",
+    "tags": [],
+    "uri": "ageRanges.feature",
+    "elements": [
+      {
+        "id": "age-ranges;create-age-range",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Create age range",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "failed",
+              "duration": 47000000,
+              "error_message": "ReferenceError: baseUrl is not defined\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:571:26)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:124:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:8942:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:8263:35)\nFrom previous event:\n    at Context.thenFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:156244:63)\n    at Context.then (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:156696:21)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173141:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:171997:15\nFrom previous event:\n    at CommandQueue.runCommand (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:171976:8)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172119:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172148:16\nFrom previous event:\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172119:39)\nFrom previous event:\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:186506:77\nFrom previous event:\n    at CommandQueue.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:186501:21)\n    at CommandQueue.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172182:15)\n    at $Cy.cy.<computed> [as then] (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173180:18)\n    at Context.runnable.fn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173398:19)\n    at callFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125619:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125606:7)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180282:30\nFrom previous event:\n    at Object.onRunnableRun (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180267:19)\n    at $Cypress.action (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:169637:28)\n    at Test.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:177963:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126278:10)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126404:12\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126187:14)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126197:7\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126099:14)\n    at Hook.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126160:7)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180180:24)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180209:13\nFrom previous event:\n    at onNext (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180206:59)\n    at done (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125559:5)\n    at callFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125642:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125606:7)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180282:30\nFrom previous event:\n    at Object.onRunnableRun (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180267:19)\n    at $Cypress.action (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:169637:28)\n    at Hook.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:177963:13)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126121:10)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126165:5\n    at timeslice (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:120091:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I create an age range from \"44\" months to \"23\" years",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get \"Age range successfully created\" message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "age-ranges;edit-age-range",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Edit age range",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "failed",
+              "error_message": "ReferenceError: baseUrl is not defined\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:571:26)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:124:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:8942:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:8263:35)\nFrom previous event:\n    at Context.thenFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:156244:63)\n    at Context.then (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:156696:21)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173141:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:171997:15\nFrom previous event:\n    at CommandQueue.runCommand (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:171976:8)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172119:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172148:16\nFrom previous event:\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172119:39)\nFrom previous event:\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:186506:77\nFrom previous event:\n    at CommandQueue.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:186501:21)\n    at CommandQueue.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172182:15)\n    at $Cy.cy.<computed> [as then] (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173180:18)\n    at Context.runnable.fn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173398:19)\n    at callFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125619:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125606:7)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180282:30\nFrom previous event:\n    at Object.onRunnableRun (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180267:19)\n    at $Cypress.action (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:169637:28)\n    at Test.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:177963:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126278:10)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126404:12\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126187:14)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126197:7\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126099:14)\n    at Hook.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126160:7)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180180:24)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180209:13\nFrom previous event:\n    at onNext (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180206:59)\n    at done (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125559:5)\n    at callFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125642:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125606:7)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180282:30\nFrom previous event:\n    at Object.onRunnableRun (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180267:19)\n    at $Cypress.action (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:169637:28)\n    at Hook.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:177963:13)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126121:10)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126165:5\n    at timeslice (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:120091:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Add filter for age ranges",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I edit an age range from \"55\" months to \"53\" years",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I get \"Age range successfully created\" message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "age-ranges;add-filter-age-ranges-from",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Add filter Age Ranges From",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "failed",
+              "error_message": "ReferenceError: baseUrl is not defined\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:571:26)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:124:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:8942:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:8263:35)\nFrom previous event:\n    at Context.thenFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:156244:63)\n    at Context.then (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:156696:21)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173141:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:171997:15\nFrom previous event:\n    at CommandQueue.runCommand (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:171976:8)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172119:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172148:16\nFrom previous event:\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172119:39)\nFrom previous event:\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:186506:77\nFrom previous event:\n    at CommandQueue.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:186501:21)\n    at CommandQueue.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172182:15)\n    at $Cy.cy.<computed> [as then] (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173180:18)\n    at Context.runnable.fn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173398:19)\n    at callFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125619:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125606:7)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180282:30\nFrom previous event:\n    at Object.onRunnableRun (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180267:19)\n    at $Cypress.action (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:169637:28)\n    at Test.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:177963:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126278:10)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126404:12\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126187:14)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126197:7\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126099:14)\n    at Hook.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126160:7)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180180:24)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180209:13\nFrom previous event:\n    at onNext (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180206:59)\n    at done (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125559:5)\n    at callFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125642:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125606:7)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180282:30\nFrom previous event:\n    at Object.onRunnableRun (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180267:19)\n    at $Cypress.action (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:169637:28)\n    at Hook.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:177963:13)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126121:10)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126165:5\n    at timeslice (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:120091:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Add filter for age ranges from",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Filter is Added",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I check that age ranges from filter was added",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "age-ranges;add-filter-age-ranges-to",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Add filter Age Ranges To",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "failed",
+              "error_message": "ReferenceError: baseUrl is not defined\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:571:26)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:124:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:8942:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:8263:35)\nFrom previous event:\n    at Context.thenFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:156244:63)\n    at Context.then (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:156696:21)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173141:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:171997:15\nFrom previous event:\n    at CommandQueue.runCommand (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:171976:8)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172119:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172148:16\nFrom previous event:\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172119:39)\nFrom previous event:\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:186506:77\nFrom previous event:\n    at CommandQueue.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:186501:21)\n    at CommandQueue.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:172182:15)\n    at $Cy.cy.<computed> [as then] (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173180:18)\n    at Context.runnable.fn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173398:19)\n    at callFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125619:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125606:7)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180282:30\nFrom previous event:\n    at Object.onRunnableRun (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180267:19)\n    at $Cypress.action (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:169637:28)\n    at Test.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:177963:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126278:10)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126404:12\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126187:14)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126197:7\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126099:14)\n    at Hook.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126160:7)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180180:24)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180209:13\nFrom previous event:\n    at onNext (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180206:59)\n    at done (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125559:5)\n    at callFn (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125642:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:125606:7)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180282:30\nFrom previous event:\n    at Object.onRunnableRun (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:180267:19)\n    at $Cypress.action (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:169637:28)\n    at Hook.Runnable.run (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:177963:13)\n    at next (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126121:10)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:126165:5\n    at timeslice (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:120091:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "Add filter for age ranges to",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "Filter is Added",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I check that age ranges to filter was added",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

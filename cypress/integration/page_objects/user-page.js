@@ -57,8 +57,7 @@ class UserPage {
     ":nth-child(6) > .MuiDialog-container > .MuiPaper-root > .MuiDialogActions-root > :nth-child(1) > .MuiButtonBase-root";
   cancelEditFinalButton =
     ".MuiDialogActions-root > :nth-child(3) > .MuiButtonBase-root";
-  addColumns =
-    ".MuiTableHead-root > .MuiTableRow-root > .MuiTableCell-paddingCheckbox > .MuiButtonBase-root > .MuiIconButton-label > .MuiSvgIcon-root";
+  addColumns = "button[aria-label='Add columns']";
   nextPage = ".MuiTablePagination-root div > span:nth-child(3) > button";
   previousPage = ".MuiTablePagination-root div > span:nth-child(2) > button";
   lastPage = ".MuiTablePagination-root div > span:nth-child(4) > button";
@@ -393,8 +392,9 @@ class UserPage {
 
   searchInputText(search) {
     cy.viewport(1280, 750);
+    cy.get(this.searchInput).clear();
     cy.get(this.searchInput).should("be.visible").type(search).type("{enter}");
-    cy.wait(5000);
+    cy.wait(7000);
   }
 
   clickMoreActions() {

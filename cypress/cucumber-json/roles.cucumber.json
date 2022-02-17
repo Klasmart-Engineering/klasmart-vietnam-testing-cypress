@@ -1,0 +1,1079 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Roles",
+    "line": 1,
+    "id": "roles",
+    "tags": [],
+    "uri": "roles.feature",
+    "elements": [
+      {
+        "id": "roles;create-role",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Create role",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 34683000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 7273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I create a new role with name as \"Role AUT01\" and description as \"Test\"",
+            "result": {
+              "status": "passed",
+              "duration": 14365000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get \"A new role has been created successfully\" message",
+            "result": {
+              "status": "passed",
+              "duration": 19048000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I search role \"Role AUT01\"",
+            "result": {
+              "status": "passed",
+              "duration": 8403000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;edit-role",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Edit role",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 28790000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 4630000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I edit an existent role \"Role AUT01\" with name as \"Role AUT00\" and description as \"Test1\"",
+            "result": {
+              "status": "passed",
+              "duration": 22936000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I get \"The role has been edited successfully\" message",
+            "result": {
+              "status": "passed",
+              "duration": 7870000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I search edited role \"Role AUT00\"",
+            "result": {
+              "status": "passed",
+              "duration": 8386000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;delete-role",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Delete role",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 34179000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 5140000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I delete an existent role with name as \"Role AUT00\" and description as \"Test1\"",
+            "result": {
+              "status": "passed",
+              "duration": 19656000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I get \"The role has been deleted successfully\" message",
+            "result": {
+              "status": "passed",
+              "duration": 8076000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;add-columns",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Add columns",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 31502000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 5481000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I add columns to be shown",
+            "result": {
+              "status": "passed",
+              "duration": 2584000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I check locked columns \"Id\" and \"Role\" are present",
+            "result": {
+              "status": "passed",
+              "duration": 160000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;remove-columns",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Remove columns",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 31665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 4839000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "I remove columns to be shown",
+            "result": {
+              "status": "passed",
+              "duration": 982000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "I check locked column \"Role\" is present",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;search-role",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Search role",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 51,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 31588000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 6751000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "I search new role to validate \"Teacher\"",
+            "result": {
+              "status": "passed",
+              "duration": 8461000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;pagination",
+        "keyword": "Scenario",
+        "line": 57,
+        "name": "Pagination",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 59,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 37967000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 5630000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "I check all buttons from pagination",
+            "result": {
+              "status": "passed",
+              "duration": 29487000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;rows-per-page",
+        "keyword": "Scenario",
+        "line": 65,
+        "name": "Rows Per Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 67,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiList-root > :nth-child(1) > .MuiListItem-root`, but never found it.\n    at SignInPage.clickSelectProfile (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:2029:34)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:138:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:10298:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:9619:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 68,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "I check different rows per page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;sorting-and-pagination",
+        "keyword": "Scenario",
+        "line": 73,
+        "name": "Sorting and pagination",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 75,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 27272000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 76,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 6080000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "I sort column by asc and desc",
+            "result": {
+              "status": "passed",
+              "duration": 31545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 78,
+            "name": "I check all buttons from pagination",
+            "result": {
+              "status": "passed",
+              "duration": 30399000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;search-and-pagination",
+        "keyword": "Scenario",
+        "line": 82,
+        "name": "Search and pagination",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 84,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 29348000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 85,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 5403000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 86,
+            "name": "I check all buttons from pagination",
+            "result": {
+              "status": "passed",
+              "duration": 29878000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 87,
+            "name": "I search new role to validate \"Teacher\"",
+            "result": {
+              "status": "passed",
+              "duration": 8513000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;sorting",
+        "keyword": "Scenario",
+        "line": 91,
+        "name": "Sorting",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 93,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 29612000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 94,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 5695000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 95,
+            "name": "I sort column by asc and desc",
+            "result": {
+              "status": "passed",
+              "duration": 31387000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;first-page-pagination",
+        "keyword": "Scenario",
+        "line": 99,
+        "name": "First page pagination",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 101,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 30257000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 102,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 4991000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 103,
+            "name": "I check first page pagination",
+            "result": {
+              "status": "passed",
+              "duration": 19187000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;last-page-pagination",
+        "keyword": "Scenario",
+        "line": 107,
+        "name": "Last page pagination",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 109,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 26332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 110,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 5147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 111,
+            "name": "I check last page pagination",
+            "result": {
+              "status": "passed",
+              "duration": 13695000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;next-page-pagination",
+        "keyword": "Scenario",
+        "line": 115,
+        "name": "Next page pagination",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 117,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 26731000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 118,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 4943000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 119,
+            "name": "I check next page pagination",
+            "result": {
+              "status": "passed",
+              "duration": 14138000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;previous-page-pagination",
+        "keyword": "Scenario",
+        "line": 123,
+        "name": "Previous page pagination",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 125,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 30844000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 126,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 4128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 127,
+            "name": "I check previous page pagination",
+            "result": {
+              "status": "passed",
+              "duration": 46433000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;cancel-create-role",
+        "keyword": "Scenario",
+        "line": 131,
+        "name": "Cancel create role",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 132,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 30466000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 133,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 4637000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 134,
+            "name": "I create a new role with name as \"Automation Role\" and description as \"Test\" and I cancel it",
+            "result": {
+              "status": "passed",
+              "duration": 47533000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;create-role-as-empty",
+        "keyword": "Scenario",
+        "line": 138,
+        "name": "Create role as empty",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 139,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 30074000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 140,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 4862000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 141,
+            "name": "I create a new role with empty name \"   \" and empty description as \"   \"",
+            "result": {
+              "status": "passed",
+              "duration": 7756000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;create-role-with-more-than-maximum-characters",
+        "keyword": "Scenario",
+        "line": 145,
+        "name": "Create role with more than maximum characters",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 146,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 24219000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 147,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 5190000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 148,
+            "name": "I create a new role with more than maximum characters allowed for name \"maximum text for name\" and description \"maximum text for description on\"",
+            "result": {
+              "status": "passed",
+              "duration": 10574000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;create-role-with-less-than-minimum-characters",
+        "keyword": "Scenario",
+        "line": 152,
+        "name": "Create role with less than minimum characters",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 153,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 28494000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 154,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 5273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 155,
+            "name": "I create a new role with less than minimum characters allowed for name \"a\"",
+            "result": {
+              "status": "passed",
+              "duration": 8496000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;create-role-with-special-characters",
+        "keyword": "Scenario",
+        "line": 159,
+        "name": "Create role with special characters",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 160,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 25361000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 161,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 6093000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 162,
+            "name": "I create a new role with special characters not allowed for name \"$#$%&/()\" and description \"$#$%&/()\"",
+            "result": {
+              "status": "passed",
+              "duration": 10363000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;create-duplicate-role",
+        "keyword": "Scenario",
+        "line": 166,
+        "name": "Create duplicate role",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 167,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 29273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 168,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 6678000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 169,
+            "name": "I create a repeated name for role as \"Teacher\"",
+            "result": {
+              "status": "passed",
+              "duration": 10561000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;clear-permissions-role",
+        "keyword": "Scenario",
+        "line": 173,
+        "name": "Clear permissions role",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 175,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 26750000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 176,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 6159000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 177,
+            "name": "I edit an existent role \"Automation Role\" and clear all permissions assigned",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152480:76)\n    at Context.click (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152659:14)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173141:19)\nFrom Your Spec Code:\n    at RolesPage.clickOnClearButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:1102:53)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:413:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:10298:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:9619:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;copy-from-role-edition",
+        "keyword": "Scenario",
+        "line": 181,
+        "name": "Copy from role edition",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 183,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 34962000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 184,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 6618000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 185,
+            "name": "I edit an existent role \"Automation Role\" and copy permission from existing role",
+            "result": {
+              "status": "passed",
+              "duration": 32920000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 186,
+            "name": "I get \"The role has been edited successfully\" message",
+            "result": {
+              "status": "passed",
+              "duration": 8398000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;reset-permissions-role",
+        "keyword": "Scenario",
+        "line": 190,
+        "name": "Reset permissions role",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 192,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 35264000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 193,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 7329000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 194,
+            "name": "I edit an existent role \"Automation Role\" and reset permission assigned",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button class=\"MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root Mui-disabled jss212 css-em7tc5\" tabindex=\"-1\" type=\"button\" disabled=\"\">Reset</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureNotDisabled (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163787:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150485:14)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at RolesPage.clickOnResetButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:1125:53)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:449:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:10298:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:9619:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 195,
+            "name": "I get \"The role has been edited successfully\" message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -13,7 +13,6 @@ When("I enter invalid email as {string}", (text) => {
 
 Then("I enter invalid password as {string}", (text) => {
   signInPage.enterPassword(text);
-  //signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
 });
 
@@ -27,7 +26,6 @@ When("I enter custom email as {string}", (text) => {
 
 Then("I enter custom password as {string}", (text) => {
   signInPage.enterPassword(text);
-  //signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
   signInPage.clickSelectProfile();
   signInPage.clickOnContinueButton();
@@ -45,7 +43,6 @@ When("I enter student email as {string}", (text) => {
 
 Then("I enter student password as {string}", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
   signInPage.clickSelectProfile();
   signInPage.clickOnContinueButton();
@@ -61,7 +58,6 @@ When("I enter parent email as {string}", (text) => {
 
 Then("I enter parent password as {string}", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
   signInPage.clickSelectProfile();
   signInPage.clickOnContinueButton();
@@ -77,7 +73,6 @@ When("I enter teacher email as {string}", (text) => {
 
 Then("I enter teacher password as {string}", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
   signInPage.clickSelectProfile();
   signInPage.clickOnContinueButton();
@@ -95,7 +90,6 @@ When("I enter school admin email as {string}", (text) => {
 
 Then("I enter school admin password as {string}", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
   signInPage.clickSelectProfile();
   signInPage.clickOnContinueButton();
@@ -111,7 +105,6 @@ When("I enter organization admin email as {string}", (text) => {
 
 Then("I enter organization admin password as {string}", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
   signInPage.clickSelectProfile();
   signInPage.clickOnContinueButton();
@@ -127,7 +120,6 @@ When("I enter a valid email as {string}", (text) => {
 
 Then("I enter a valid password as {string}", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
   signInPage.clickSelectProfile();
   signInPage.clickOnContinueButton();
@@ -144,7 +136,6 @@ When("I enter an invalid email as {string}", (text) => {
 
 Then("I enter an invalid password as {string}", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
 });
 
@@ -166,7 +157,6 @@ And("I should see an error message {string} for email", (errorEmail) => {
 
 When("I enter a valid email as {string} with password as empty", (text) => {
   signInPage.enterEmailOrPhone(text);
-  signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
 });
 
@@ -176,7 +166,6 @@ Then("I should see a password error message {string}", (errorPass) => {
 
 Then("I enter a valid password as {string} with email as empty", (text) => {
   signInPage.enterPassword(text);
-  signInPage.acceptPrivacyPolicy();
   signInPage.clickOnSignInButton();
 });
 

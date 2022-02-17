@@ -1,12 +1,15 @@
 {
   "name": "Admin-Service",
   "version": "1.0.0",
-  "description": "Automate different journeys of Kidsloop",
+  "description": "Kidsloop Automation Admin-Service",
   "main": "index.js",
   "scripts": {
     "test:all": "cypress run --spec \"**/*.features\"",
     "test:each": "cypress run --spec \"**/*.feature\"",
-    "test:accessibility": "./node_modules/.bin/cypress-tags run -e TAGS=\"@smoke\""
+    "test:accessibility": "./node_modules/.bin/cypress-tags run -e TAGS=\"@smoke\"",
+    "cy:run:prod":"cypress open --env ENV=production",
+     "cy:run:stg":"cypress open --env ENV=staging",
+     "cy:run:qa":"cypress open --env ENV=alpha"
   },
   "keywords": [
     "cypress",
@@ -16,8 +19,8 @@
   "author": "Lorena Bettoni",
   "contributors": [],
   "repository": {
-    "type": "bitbucket",
-    "url": "https://bitbucket.org/calmisland/testing-cypress"
+    "type": "github",
+    "url": "https://github.com/KL-Global/testing-cypress"
   },
   "cypress-cucumber-preprocessor": {
     "cucumberJson": {
@@ -38,7 +41,7 @@
     "stepDefinitions": "cypress/integration/"
   },
   "devDependencies": {
-    "cypress": "^9.4.1",
+    "cypress": "^9.5.0",
     "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-mailosaur": "^2.5.6",
@@ -51,6 +54,7 @@
   },
   "dependencies": {
     "chai-sorted": "^0.2.0",
+    "core-js": "^3.21.1",
     "cucumber": "^7.0.0-rc.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-real-events": "^1.6.0"
