@@ -8,7 +8,7 @@
     "test:each": "cypress run --spec \"**/*.feature\"",
     "test:accessibility": "./node_modules/.bin/cypress-tags run -e TAGS=\"@smoke\"",
     "cy:run:prod":"cypress open --env ENV=production",
-     "cy:run:stg":"cypress open --env ENV=staging",
+     "cy:run:stg":"cypress open --env ENV=https://hub.stage.kidsloop.live",
      "cy:run:qa":"cypress open --env ENV=alpha"
   },
   "keywords": [

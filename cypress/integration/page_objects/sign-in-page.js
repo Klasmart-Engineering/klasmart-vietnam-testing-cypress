@@ -1,3 +1,5 @@
+import { _ } from "core-js";
+
 class SignInPage {
   /*---------------  Start Web Element  ---------------*/
 
@@ -72,7 +74,7 @@ class SignInPage {
   }
 
   goToHomePage() {
-    cy.visit('/');
+    cy.visit(`${Cypress.env('ENV')}`);
   }
 
   clickOnCreateAccountLink() {
