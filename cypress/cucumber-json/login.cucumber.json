@@ -26,8 +26,9 @@
             "line": 6,
             "name": "I click can't find your country or region",
             "result": {
-              "status": "passed",
-              "duration": 13005000000
+              "status": "failed",
+              "duration": 1302000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:559:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:131:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:26656:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:25977:35)"
             }
           },
           {
@@ -36,8 +37,7 @@
             "line": 7,
             "name": "I enter custom email as \"lorenab+custom@bluetrailsoft.com\"",
             "result": {
-              "status": "passed",
-              "duration": 10082000000
+              "status": "skipped"
             }
           },
           {
@@ -46,8 +46,7 @@
             "line": 8,
             "name": "I enter custom password as \"Custom01!\"",
             "result": {
-              "status": "passed",
-              "duration": 20885000000
+              "status": "skipped"
             }
           },
           {
@@ -56,9 +55,7 @@
             "line": 9,
             "name": "I should see custom welcome message",
             "result": {
-              "status": "failed",
-              "duration": 30293000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiButton-text.MuiButton-textSizeLarge`, but never found it.\n    at HomePage.clickOnSwitchView (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:492:31)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:161:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:11382:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:10703:35)"
+              "status": "skipped"
             }
           }
         ]

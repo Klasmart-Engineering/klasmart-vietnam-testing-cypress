@@ -74,7 +74,7 @@ class SignInPage {
   }
 
   goToHomePage() {
-    cy.visit(`${Cypress.env('ENV')}`);
+    cy.visit('/');
   }
 
   clickOnCreateAccountLink() {
