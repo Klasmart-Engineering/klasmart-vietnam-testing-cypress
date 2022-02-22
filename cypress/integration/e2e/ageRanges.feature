@@ -8,7 +8,7 @@ Feature: Age Ranges
     Then I create an age range from "44" months to "23" years
     And I get "Age range successfully created" message
 
-     #User should be able to edit any age range UD-T
+  #User should be able to edit any age range UD-T FAILING DUE TO VALUES NEED FIX
 
   Scenario: Edit age range
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -18,7 +18,7 @@ Feature: Age Ranges
     And I get "Age range successfully created" message
 
 
-    #User should be able to add a filter on age ranges from UD-T
+  #User should be able to add a filter on age ranges from UD-T
 
   Scenario: Add filter Age Ranges From
 
@@ -29,7 +29,7 @@ Feature: Age Ranges
     And I check that age ranges from filter was added
 
 
-    #User should be able to add a filter on age ranges to UD-T
+  #User should be able to add a filter on age ranges to UD-T
 
   Scenario: Add filter Age Ranges To
 
@@ -38,4 +38,3 @@ Feature: Age Ranges
     And Add filter for age ranges to
     Then Filter is Added
     And I check that age ranges to filter was added
- 

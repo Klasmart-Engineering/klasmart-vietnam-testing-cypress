@@ -20,6 +20,10 @@ And("I should see the error message {string}", (errorText) => {
   signInPage.getInvalidCredentialErrorMessage().should("have.text", errorText);
 });
 
+And("I get the error message {string}", (errorText) => {
+  signInPage.getMissingCredentialErrorMessage().should("have.text", errorText);
+});
+
 When("I enter custom email as {string}", (text) => {
   signInPage.enterEmailOrPhone(text);
 });
@@ -81,7 +85,7 @@ Then("I enter teacher password as {string}", (text) => {
 And("I should see teacher welcome message", () => {
   homePage.clickOnSwitchView();
   homePage.getNewWelcomeText();
-  homePage.getWelcomeText().should("include.text","Teacher");
+  homePage.getWelcomeText().should("include.text", "Teacher");
 });
 
 When("I enter school admin email as {string}", (text) => {
@@ -173,8 +177,8 @@ And("I should see a email error message {string}", (errorEmail) => {
   signInPage.getSignInEmailPhoneText().should("have.text", errorEmail);
 });
 
-Then("I click create an account link", () => {
-  signInPage.clickOnCreateAccountLink();
+Then("I click on email or phone link", () => {
+  signInPage.clickOnsignupWithEmail();
 });
 
 And(

@@ -18,7 +18,8 @@ class RolesPage {
   nameInputErrorMessage =
     "div:nth-child(1) > div:nth-child(1) > p:nth-child(3)";
   descriptionInputErrorMessage = "div:nth-child(2) > p:nth-child(3)";
-  clearButton = "div[role='dialog'] div div div div div button[type='button']";
+  clearButton =
+    "div[role='dialog'] div div div div div button[type='button'] span";
   copyFromRole = "#filled";
   resetButton = "div[role='presentation'] button:nth-child(2)";
 

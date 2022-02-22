@@ -5,13 +5,15 @@ class AgeRangesPage {
 
   ageRangesTab = '[href="#/admin/age-ranges"]';
   createAgeRangeButton = ".MuiButtonBase-root.MuiFab-root";
-  ageRangeFrom = '#age-range-from';
-  ageRangeFromUnit = "div[data-testid='From UnitSelectTextField'] div div[role='button'] div span";
-  ageRangeTo = '#age-range-to';
-  ageRangeToUnit = "div[data-testid='To UnitSelectTextField'] div div[role='button']";
-  createFinalButton = 'span:nth-child(3) button:nth-child(1) span:nth-child(1) div:nth-child(1)';
-  labelFilterAdded = "body div[id='app'] div div div div div div span span span:nth-child(1)";
-
+  ageRangeFrom = "#age-range-from";
+  ageRangeFromUnit =
+    "div[data-testid='From UnitSelectTextField'] div div[role='button'] div span";
+  ageRangeTo = "#age-range-to";
+  ageRangeToUnit =
+    "div[data-testid='To UnitSelectTextField'] div div[role='button']";
+  createFinalButton =
+    "span:nth-child(3) button:nth-child(1) div:nth-child(1) p:nth-child(1)";
+  labelFilterAdded = "div:nth-child(2) > div:nth-child(1) > span:nth-child(1)";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -42,7 +44,7 @@ class AgeRangesPage {
         cy.wrap($el).click();
         cy.log("Month(s) was selected");
         return;
-      } 
+      }
     });
   }
 
@@ -52,7 +54,7 @@ class AgeRangesPage {
         cy.wrap($el).click();
         cy.log("Year(s) was selected");
         return;
-      } 
+      }
     });
   }
 
@@ -99,11 +101,11 @@ class AgeRangesPage {
 
   selectionOfEditedAgeRangesFromValues() {
     cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.eq() == "44 Month(s)") {
+      if ($el.eq() == "3 Year(s)") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } 
+      }
     });
   }
 
@@ -113,7 +115,7 @@ class AgeRangesPage {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } 
+      }
     });
   }
 
@@ -124,8 +126,6 @@ class AgeRangesPage {
   getAgeRangesToLabelFilterText() {
     cy.get(this.labelFilterAdded).should("include.text", "Age Ranges (To)");
   }
-
-  
 }
 
 export const ageRangesPage = new AgeRangesPage();

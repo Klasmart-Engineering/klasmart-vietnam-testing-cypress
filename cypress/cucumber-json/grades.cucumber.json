@@ -21,9 +21,7 @@
             "line": 6,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "duration": 1263000000,
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -78,8 +76,7 @@
             "line": 15,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -125,8 +122,7 @@
             "line": 23,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -163,9 +159,7 @@
             "line": 30,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -202,8 +196,7 @@
             "line": 38,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -240,8 +233,7 @@
             "line": 46,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -278,8 +270,7 @@
             "line": 54,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -325,8 +316,7 @@
             "line": 63,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -372,8 +362,7 @@
             "line": 72,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -410,8 +399,7 @@
             "line": 80,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -448,8 +436,7 @@
             "line": 88,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -486,8 +473,7 @@
             "line": 96,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -524,8 +510,7 @@
             "line": 104,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -562,8 +547,7 @@
             "line": 112,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -600,8 +584,7 @@
             "line": 120,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -656,8 +639,7 @@
             "line": 130,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -712,8 +694,7 @@
             "line": 140,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -759,8 +740,7 @@
             "line": 149,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -806,8 +786,7 @@
             "line": 158,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -871,9 +850,7 @@
             "line": 169,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -937,9 +914,7 @@
             "line": 180,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -994,8 +969,7 @@
             "line": 190,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -1050,8 +1024,7 @@
             "line": 200,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -1106,8 +1079,7 @@
             "line": 210,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -1162,8 +1134,7 @@
             "line": 220,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -1200,7 +1171,12 @@
         "keyword": "Scenario",
         "line": 227,
         "name": "Disable filter",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 226
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -1209,8 +1185,8 @@
             "line": 229,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "passed",
+              "duration": 24388000000
             }
           },
           {
@@ -1219,7 +1195,8 @@
             "line": 230,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4147000000
             }
           },
           {
@@ -1228,7 +1205,8 @@
             "line": 231,
             "name": "Add all existent filters",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9209000000
             }
           },
           {
@@ -1237,7 +1215,8 @@
             "line": 232,
             "name": "I check filter is disable",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 153000000
             }
           }
         ]
@@ -1247,7 +1226,12 @@
         "keyword": "Scenario",
         "line": 236,
         "name": "Filter order values",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 235
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -1256,8 +1240,8 @@
             "line": 238,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "passed",
+              "duration": 21482000000
             }
           },
           {
@@ -1266,7 +1250,8 @@
             "line": 239,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3812000000
             }
           },
           {
@@ -1275,7 +1260,8 @@
             "line": 240,
             "name": "I check the order of values is correct on grades",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 697000000
             }
           }
         ]
@@ -1294,8 +1280,7 @@
             "line": 246,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -1341,9 +1326,7 @@
             "line": 255,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {
@@ -1389,8 +1372,7 @@
             "line": 264,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hub.alpha.kidsloop.net/undefined\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159236:84\n    at visitFailedByErr (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:158602:12)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:159216:13\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at SignInPage.goToHomePage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:1696:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:128:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38458:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37779:35)"
+              "status": "skipped"
             }
           },
           {

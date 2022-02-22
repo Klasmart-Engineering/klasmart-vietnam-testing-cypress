@@ -3,6 +3,4 @@ beforeEach(() => {
   //cy.log("\n\nemail created = ", inbox.emailAddress);
 });
 
-afterEach(()=> {
-  
-});
+afterEach(() => {});

@@ -21,10 +21,11 @@ class UserPage {
   preferNotToSayGender = "#gender > :nth-child(3)";
   otherGenderSelection = "#gender > :nth-child(4)";
   otherGenderInput = "#genderOther";
-  finalCreateUserButton = `//*[@id='body']//div[3]//span[1][contains(.//span, 'Create')]`;
+  finalCreateUserButton =
+    ":nth-child(3) > .MuiButton-root > .MuiBox-root > .MuiTypography-root";
   notificationText = "#notistack-snackbar";
   finalCancelUserButton =
-    "span:nth-child(2) > button:nth-child(1) > span:nth-child(1) > div:nth-child(1) > span:nth-child(1)";
+    ".MuiDialogActions-root > :nth-child(2) > .MuiButton-root";
   addFilterButton = ".MuiChip-label";
   columnFilter =
     "div[data-testid='ColumnSelectTextField'] div div[role='button']";
@@ -32,14 +33,12 @@ class UserPage {
   valuesFilterInputs =
     ":nth-child(3) > .MuiInputBase-root > .MuiInputBase-input";
   addFilterFinalButton =
-    "div:nth-child(2) > span > button > span.MuiButton-label > div > span";
+    "body div[role='presentation'] div div div div:nth-child(2) span:nth-child(1) button:nth-child(1) div:nth-child(1) p:nth-child(1)";
   cancelFilterButton =
-    "body div[role='presentation'] div div div:nth-child(1) span:nth-child(1) button:nth-child(1) span:nth-child(1) div:nth-child(1) span:nth-child(1)";
-  labelFilterAdded =
-    "span:nth-child(1) > span:nth-child(1) > span:nth-child(2)";
+    "body div[role='presentation'] div div div:nth-child(1) span:nth-child(1) button:nth-child(1) div:nth-child(1) p:nth-child(1)";
+  labelFilterAdded = "span:nth-child(1) > p:nth-child(1)";
   clearFilter = ".MuiSvgIcon-root.MuiChip-deleteIcon";
-  clearAllFilters =
-    '[data-testid="clearFilters"] > .MuiIconButton-label > .MuiSvgIcon-root';
+  clearAllFilters = '[data-testid="ClearIcon"]';
   addMoreFilters = ".MuiSvgIcon-root.MuiChip-icon.MuiSvgIcon-colorAction";
   searchInput = "input[placeholder='Search']";
   moreActionsEdit = '[tabindex="0"] > .MuiTypography-root';
@@ -48,11 +47,10 @@ class UserPage {
   deleteFinalButton =
     ".MuiDialogActions-root > :nth-child(2) > .MuiButtonBase-root";
   cancelFinalDeleteButton =
-    ":nth-child(1) > .MuiButtonBase-root > .MuiButton-label > .MuiBox-root > .MuiTypography-root";
-  saveEditionButton =
-    "span:nth-child(4) > button > span.MuiButton-label > div > span";
+    ".MuiDialogActions-root > :nth-child(1) > .MuiButton-root";
+  saveEditionButton = ":nth-child(4) > .MuiButton-root";
   deleteEditionButton =
-    "span:nth-child(1) button:nth-child(1) span:nth-child(1) div:nth-child(1) span:nth-child(1)";
+    ":nth-child(1) > .MuiButton-root > .MuiBox-root > .MuiTypography-root";
   cancelEditionButton =
     ":nth-child(6) > .MuiDialog-container > .MuiPaper-root > .MuiDialogActions-root > :nth-child(1) > .MuiButtonBase-root";
   cancelEditFinalButton =
@@ -66,12 +64,12 @@ class UserPage {
   tenPages = "div[id='menu-'] li:nth-child(1)";
   twentyFivePages = "div[id='menu-'] li:nth-child(2)";
   fiftyPages = "div[id='menu-'] li:nth-child(3)";
-  uploadCsvButton = "span[title='Upload CSV'] button[type='button']";
-  dragAndDrop =
-    ".MuiTypography-root.MuiTypography-body1.MuiTypography-colorTextSecondary";
+  uploadCsvButton = '[aria-label="Upload CSV"] > .MuiButtonBase-root';
+  dragAndDrop = '[data-testid="dropzone"]';
   validationCsvText =
     ".MuiAccordionSummary-content > .MuiBox-root > .MuiTypography-root";
-  uploadCsvFinalButton = "span[title='Upload file'] button[type='button']";
+  uploadCsvFinalButton =
+    '[aria-label="Upload file"] > .MuiButtonBase-root > [data-testid="CloudUploadIcon"]';
 
   /*----------------  End Web Element  ----------------*/
 
@@ -158,7 +156,7 @@ class UserPage {
   }
 
   clickOnCreateUserFinalButton() {
-    cy.xpath(this.finalCreateUserButton).click({ force: true });
+    cy.get(this.finalCreateUserButton).click({ force: true });
   }
 
   getNotificationText() {
@@ -563,7 +561,9 @@ class UserPage {
   }
 
   getFilterMouseOverText() {
-    cy.get(this.addFilterFinalButton).focused().realHover();
+    cy.get(
+      "[aria-label='All columns already have a filter specified']"
+    ).realHover();
     cy.contains("All columns already have a filter specified");
   }
 
@@ -667,7 +667,7 @@ class UserPage {
 
   getUserSearch() {
     cy.get("table td:nth-child(1)").each(($el) => {
-      if ($el.text() == "Andres") {
+      if ($el.text() == "Bruno") {
         cy.log("User was found");
         return;
       } else {
@@ -792,7 +792,7 @@ class UserPage {
 
   sortSecondAsc() {
     cy.get("table thead:nth-child(1) tr th:nth-child(2)").click();
-    cy.wait(8000);
+    cy.wait(9000);
     cy.get("tbody tr td:nth-child(2)").then((items) => {
       const unsortedItems = items
         .map((index, html) => Cypress.$(html).text())
@@ -808,7 +808,7 @@ class UserPage {
 
   sortSecondDesc() {
     cy.get("table thead:nth-child(1) tr th:nth-child(2)").click();
-    cy.wait(8000);
+    cy.wait(9000);
     cy.get("tbody tr td:nth-child(2)").then((items) => {
       const unsortedItems = items
         .map((index, html) => Cypress.$(html).text())

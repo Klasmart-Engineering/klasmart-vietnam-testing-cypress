@@ -59,13 +59,7 @@ Then("I cancel creation", () => {
 
 And(
   "fill all existent fields as {string} {string} {string} {string} {string}",
-  (
-    givenName,
-    familyName,
-    contactInfo,
-    shortCode,
-    otherGender,
-  ) => {
+  (givenName, familyName, contactInfo, shortCode, otherGender) => {
     userPage.clickOnCreateUserButton();
     userPage.givenName(givenName);
     userPage.familyName(familyName);

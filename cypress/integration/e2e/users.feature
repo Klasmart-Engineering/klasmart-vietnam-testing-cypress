@@ -6,7 +6,7 @@ Feature: Users
     #DATA SHOULD BE CHANGED FOR EACH RUN
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I fill required fields as "Camila" "Laguana" "atelagua@gmail.com" and "ATEN324"
+    And I fill required fields as "Bruno" "Laguana" "brulagua@gmail.com" and "BRU435"
     Then I create a new user and obtain "User has been created successfully" message
 
   #User should be able to edit an existent user UD-T24
@@ -17,7 +17,7 @@ Feature: Users
     When I navigate to actual section
     And Add filter for status as active
     Then Filter is Added
-    Then I search "Camila" user to be edited "Luis" "Machado" "OIUD8976" and get "User has been saved successfully" message
+    Then I search "Bruno" user to be edited "Luis" "Marchins" "OIUY7976" and get "User has been saved successfully" message
 
   #User should be able to inactivate an existent user from edition mode UD-T32
 
@@ -42,26 +42,25 @@ Feature: Users
   #User should not be able to add the same exactly user UD-T529
 
   Scenario: Create duplicated user with same shortcode
-
+    #DATA SHOULD BE CHANGED FOR EACH RUN
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I fill required fields as "Brandon" "Macabi" "bremactest@gmail.com" and "BR4ND00N"
+    And I fill required fields as "Micael" "Macabi" "micamactest@gmail.com" and "M1C4M4C"
     Then I create a new user and obtain "User has been created successfully" message
-    And I fill required fields as "Brandon" "Macabi" "bremactest@gmail.com" and "BR4ND00N"
+    And I fill required fields as "Micael" "Macabi" "micamactest@gmail.com" and "M1C4M4C"
     And "Short Code already exists." error message
     Then I have got "User already exists" error message
 
   #User should not be able to add the same exactly user UD-T23
 
   Scenario: Create duplicated users without shortcode
-
+    #DATA SHOULD BE CHANGED FOR EACH RUN
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I fill only required fields as "Javier" "Straneo" and "javistests@gmail.com"
+    And I fill only required fields as "Miguel" "Straneo" and "miguestratests@gmail.com"
     Then I create a new user and obtain "User has been created successfully" message
-    And I fill only required fields as "Javier" "Straneo" and "javistests@gmail.com"
+    And I fill only required fields as "Miguel" "Straneo" and "miguestratests@gmail.com"
     Then I have got "User already exists" error message
-
 
   #User should not be able to create a new user UD-T22
 
@@ -71,25 +70,24 @@ Feature: Users
     When I navigate to actual section
     And I fill optional fields "4B3J4"
 
-
   #User should not see new user added UD-T20
 
   Scenario: Cancel user creation
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And fill all existent fields as "Mauro" "Nogeira" "maunog@gmail.com" "457FDH" "non-binary"
+    And fill all existent fields   as "Mauro" "Nogeira" "maunog@gmail.com" "457FDH" "non-binary"
     Then I cancel creation
 
   #User should be able to inactive an user UD-T25
 
   Scenario: Delete user
-
+    #DATA SHOULD BE CHANGED FOR EACH RUN
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     And Add filter for status as active
     Then Filter is Added
-    Then I search "Test" user to be deleted and get "User has been deleted successfully" message
+    Then I search "Luis" user to be deleted and get "User has been deleted successfully" message
 
   #User should be able to add a filter on users for Active Status UD-T425
 
@@ -120,7 +118,6 @@ Feature: Users
     And Add filter for status as active
     Then Filter is Added
     Then I search "Test" user to be deleted but I cancel it
-
 
   #User should be able to add a filter on users for Schools UD-T432 and UD-T434
 
@@ -403,7 +400,7 @@ Feature: Users
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
-    And I search "Andres"
+    And I search "Bruno"
 
   #User should be able to add columns UD-T26
 

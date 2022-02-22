@@ -9,7 +9,7 @@ class HomePage {
   changeProfile = "button[aria-label='account of current user'] div";
   selectSecondProfile = "ul:nth-child(2) > div:nth-child(1)";
   selectThirdProfile = "ul:nth-child(2) > div:nth-child(2)";
-  switchView = '.MuiButton-text.MuiButton-textSizeLarge';
+  switchView = ".MuiButton-root.MuiButton-textSizeLarge";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -25,13 +25,19 @@ class HomePage {
 
     if (curHr < 12) {
       cy.log("Good Morning");
-      return cy.get(this.dashboardWelcomeText).should("include.text","Good Morning");
+      return cy
+        .get(this.dashboardWelcomeText)
+        .should("include.text", "Good Morning");
     } else if (curHr < 17) {
       cy.log("Good Afternoon");
-      return cy.get(this.dashboardWelcomeText).should("include.text","Good Afternoon");
+      return cy
+        .get(this.dashboardWelcomeText)
+        .should("include.text", "Good Afternoon");
     } else {
       cy.log("Good Evening");
-      return cy.get(this.dashboardWelcomeText).should("include.text","Good Evening");
+      return cy
+        .get(this.dashboardWelcomeText)
+        .should("include.text", "Good Evening");
     }
   }
 
@@ -61,7 +67,9 @@ class HomePage {
   }
 
   clickOnSwitchView() {
-    cy.get(this.switchView).should("be.visible").click();
+    cy.viewport(1280, 750);
+    cy.get(".MuiToolbar-root > .MuiGrid-container").scrollIntoView();
+    cy.get(this.switchView).contains("Switch View").click();
   }
 }
 

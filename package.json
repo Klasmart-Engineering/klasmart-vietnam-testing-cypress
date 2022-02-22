@@ -7,9 +7,9 @@
     "test:all": "cypress run --spec \"**/*.features\"",
     "test:each": "cypress run --spec \"**/*.feature\"",
     "test:accessibility": "./node_modules/.bin/cypress-tags run -e TAGS=\"@smoke\"",
-    "cy:run:prod":"cypress open --env ENV=production",
-     "cy:run:stg":"cypress open --env ENV=staging",
-     "cy:run:qa":"cypress open --env ENV=alpha"
+    "cy:run:prod": "cypress open --env ENV=production",
+    "cy:run:stg": "cypress open --env ENV=staging",
+    "cy:run:qa": "cypress open --env ENV=alpha"
   },
   "keywords": [
     "cypress",

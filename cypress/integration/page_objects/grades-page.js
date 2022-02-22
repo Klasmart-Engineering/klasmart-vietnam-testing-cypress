@@ -6,9 +6,9 @@ class GradesPage {
   gradesTab = '[href="#/admin/grades"]';
   createGradeButton = ".MuiButtonBase-root.MuiFab-root";
   cancelCreationButton =
-    "span:nth-child(2) > button:nth-child(1) > span:nth-child(1) > div:nth-child(1) > span:nth-child(1)";
+    "span:nth-child(2) > button:nth-child(1) > div:nth-child(1) > p:nth-child(1)";
   createGradeFinalButton =
-    "span:nth-child(3) > button:nth-child(1) > span:nth-child(1) > div:nth-child(1) > span:nth-child(1)";
+    ":nth-child(3) > .MuiButton-root > .MuiBox-root > .MuiTypography-root";
   gradeNameInput = "#gradeNameInput";
   progressFromInput = "#progressFromSelect";
   progressToInput = "#progressToSelect";
@@ -17,12 +17,12 @@ class GradesPage {
   progressToHelperText = "#progressToSelect-helper-text";
   searchInput = "input[placeholder='Search for grades by their ID or name']";
   deleteEditionButton =
-    "span:nth-child(1) > button:nth-child(1) > span:nth-child(1) > div:nth-child(1) > span:nth-child(1)";
+    "span:nth-child(1) button:nth-child(1) div:nth-child(1) p:nth-child(1)";
   saveEditionButton =
-    "span:nth-child(4) > button:nth-child(1) > span:nth-child(1) > div:nth-child(1) > span:nth-child(1)";
-  deleteFinalButton = "button[type='submit'] div";
+    ":nth-child(4) > .MuiButton-root > .MuiBox-root > .MuiTypography-root";
+  deleteFinalButton = "button[type='submit'] div p";
   labelFilterAdded =
-    "span:nth-child(1) > span:nth-child(1) > span:nth-child(2)";
+    "div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -99,7 +99,7 @@ class GradesPage {
     cy.viewport(1280, 750);
     cy.get(this.searchInput).clear();
     cy.get(this.searchInput).should("be.visible").type(search).type("{enter}");
-    cy.wait(8000);
+    cy.wait(9000);
   }
 
   getGradeName() {

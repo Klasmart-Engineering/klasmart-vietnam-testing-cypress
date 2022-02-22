@@ -185,6 +185,10 @@ And("I select a category", () => {
   schoolPage.clickOnSelectButtonCategory();
 });
 
+And("I check locked column {string} is present", () => {
+  schoolPage.getColumnText();
+});
+
 And(
   "I create subcategory {string} checking required message {string} then getting {string} message",
   (subCatName, textMess, message) => {

@@ -1,7 +1,7 @@
 Feature: Login
 
   #User should be able to sing in without any problem and have access according permissions UD-T17
-@focus 
+
   Scenario: Login with custom credentials
     Given I click can't find your country or region
     When I enter custom email as "lorenab+custom@bluetrailsoft.com"
@@ -15,7 +15,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter invalid email as "lorenab+invalid@bluetrailsoft.com"
     Then I enter invalid password as "Invalid01!"
-    And I should see the error message "You are not part of an organization."
+    And I should see the error message "Hi cadet!"
 
 
   #User should be able to sing in without any problem and have access according permissions UD-T16
@@ -79,7 +79,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter an invalid email as "lo$#$%$!"
     Then I enter an invalid password as "ER34!$%/&()'¿.,0"
-    And I should see the error message "Email or phone" for email and "You didn't enter a valid email/phone number" for password
+    And I should see the error message "Please enter a valid email address"
 
 
   #User should not be able to sing in with empty credentials UD-T9
@@ -88,7 +88,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter an invalid email as "   "
     Then I enter an invalid password as "   "
-    And I should see the error message "Email or phone" for email and "Enter an email or phone number" for password
+    And I should see the error message "Please enter a valid email address"
 
 
   #User should not be able to sing in with spaces on email credentials UD-T10
@@ -97,7 +97,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter an invalid email as "   "
     Then I enter an invalid password as "Trabajo21!"
-    And I should see the error message "Email or phone" for email and "Enter an email or phone number" for password
+    And I should see the error message "Please enter a valid email address"
 
 
   # User should not be able to sing in with password spaces on credentials UD-T11
@@ -106,7 +106,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter an invalid email as "lorenab+organization@bluetrailsoft.com"
     Then I enter an invalid password as "    "
-    And I should see the error message "Email or phone" for email and "Invalid login" for password
+    And I get the error message "Missing required element [Password]"
 
 
   # User should not be able to sing in with empty password credentials UD-T613
@@ -114,7 +114,7 @@ Feature: Login
   Scenario: Login with password as empty
     Given I click can't find your country or region
     When I enter a valid email as "lorenab+organization@bluetrailsoft.com" with password as empty
-    Then I should see a password error message "Enter your password"
+    Then I should see a password error message "Cannot be empty"
 
 
   #User should not be able to sing in with empty email credentials UD-T612
@@ -122,15 +122,15 @@ Feature: Login
   Scenario: Login with email as empty
     Given I click can't find your country or region
     Then I enter a valid password as "Trabajo21!" with email as empty
-    And I should see a email error message "Enter an email or phone number"
+    And I should see a email error message "Cannot be empty"
 
 
   #User should be able to click on link and see the page for account creation UD-T8
 
   Scenario: Create an Account Page
     Given I click can't find your country or region
-    Then I click create an account link
-    And I should see the page for create a new account with title as "Create your KidsLoop Account."
+    Then I click on email or phone link
+    And I should see the page for create a new account with title as "Create account"
 
 
   # User should be able to click on link forgot password and see the page UD-T7
@@ -138,7 +138,7 @@ Feature: Login
   Scenario: Forgot Password Page
     Given I click can't find your country or region
     Then I click forgot password link
-    And I should see the page with "Forgot password" as title to recovery it
+    And I should see the page with "Let's reset your password." as title to recovery it
 
 
   # User should be able to click on Privacy Notice link and see the information related UD-T3
@@ -153,7 +153,7 @@ Feature: Login
 
   Scenario: Selection of country or region not listed
     Given I click can't find your country or region
-    Then I should be redirected to "Sign In"
+    Then I should be redirected to "Login"
 
 
   #User should be able to switch between accounts according level of permissions UD-T604

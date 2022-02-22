@@ -20,31 +20,37 @@ When("I navigate to actual section", () => {
   ageRangesPage.clickOnAgeRangesTab();
 });
 
-Then("I create an age range from {string} months to {string} years", (from, to) => {
-  ageRangesPage.clickOnCreateAgeRangeButton();
-  ageRangesPage.editAgeRangeFrom(from);
-  ageRangesPage.clickOnAgeRangeFromUnit();
-  ageRangesPage.unitMonthSelection();
-  ageRangesPage.editAgeRangeTo(to);
-  ageRangesPage.clickOnAgeRangeToUnit();
-  ageRangesPage.unitYearSelection();
-  ageRangesPage.clickOnCreateFinalButton();
-});
+Then(
+  "I create an age range from {string} months to {string} years",
+  (from, to) => {
+    ageRangesPage.clickOnCreateAgeRangeButton();
+    ageRangesPage.editAgeRangeFrom(from);
+    ageRangesPage.clickOnAgeRangeFromUnit();
+    ageRangesPage.unitMonthSelection();
+    ageRangesPage.editAgeRangeTo(to);
+    ageRangesPage.clickOnAgeRangeToUnit();
+    ageRangesPage.unitYearSelection();
+    ageRangesPage.clickOnCreateFinalButton();
+  }
+);
 
 And("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-Then("I edit an age range from {string} months to {string} years", (from, to) => {
-  ageRangesPage.clickOnCreateAgeRangeButton();
-  ageRangesPage.editAgeRangeFrom(from);
-  ageRangesPage.clickOnAgeRangeFromUnit();
-  ageRangesPage.unitMonthSelection();
-  ageRangesPage.editAgeRangeTo(to);
-  ageRangesPage.clickOnAgeRangeToUnit();
-  ageRangesPage.unitYearSelection();
-  ageRangesPage.clickOnCreateFinalButton();
-});
+Then(
+  "I edit an age range from {string} months to {string} years",
+  (from, to) => {
+    ageRangesPage.clickOnCreateAgeRangeButton();
+    ageRangesPage.editAgeRangeFrom(from);
+    ageRangesPage.clickOnAgeRangeFromUnit();
+    ageRangesPage.unitMonthSelection();
+    ageRangesPage.editAgeRangeTo(to);
+    ageRangesPage.clickOnAgeRangeToUnit();
+    ageRangesPage.unitYearSelection();
+    ageRangesPage.clickOnCreateFinalButton();
+  }
+);
 
 And("Add filter for age ranges", () => {
   //Add age ranges from filter
@@ -92,4 +98,3 @@ And("I check that age ranges from filter was added", () => {
 Then("Filter is Added", () => {
   userPage.clickOnAddFilterFinalButton();
 });
-

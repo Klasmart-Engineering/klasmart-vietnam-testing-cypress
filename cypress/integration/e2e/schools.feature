@@ -30,7 +30,7 @@ Feature: Schools
     And I add correct data on fields "Automation School 01" and "ERDF566"
     And I select an existing program
     And I create a new school and get "School has been created successfully" message
-    And I search new school to validate "Automation School"
+    And I search new school to validate "Automation School 01"
 
   #User should not be able to create a School with same shortcode UD-T54  ----*** DEFECT AD-693 ***----
 
@@ -41,12 +41,12 @@ Feature: Schools
     And I add correct data on fields "Automation School 01" and "ERDF566"
     And I select an existing program
     And I create a new school and get "School has been created successfully" message
-    And I search new school to validate "Automation School"
+    And I search new school to validate "Automation School 01"
     Then I press on create school button
     And I add correct data on fields "Automation School 01" and "ERDF566"
     And I select other existing programs
     And I create a new school and get "ERROR!!! Duplicate shortcode" message
-    And I search new school to validate "Automation School"
+    And I search new school to validate "Automation School 01"
 
 
   #User should be able to create a Program to assign to a School UD-T44

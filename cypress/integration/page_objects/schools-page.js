@@ -4,26 +4,27 @@ class SchoolPage {
   /*---------------  Start Web Element  ---------------*/
 
   schoolsTab = '[href="#/admin/schools"]';
-  createSchoolButton = ".MuiFab-label > .MuiBox-root > .MuiTypography-root";
+  createSchoolButton = ".MuiFab-sizeLarge";
   schoolNameInput =
     ":nth-child(1) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input";
   shortCodeInput =
     "div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > input:nth-child(1)";
-  nextButton = "//span[contains(text(),'Next')]";
+  nextButton =
+    "span:nth-child(2) button:nth-child(1) div:nth-child(1) p:nth-child(1)";
   previousButton =
-    "div[role='presentation'] span:nth-child(1) button:nth-child(1)";
+    "span:nth-child(1) > button:nth-child(1) > div:nth-child(1) > p:nth-child(1)";
   schoolNameErrorMessages =
     "div:nth-child(1) > div:nth-child(1) > p:nth-child(3)";
   shortCodeErrorMessages =
     "div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > p:nth-child(3)";
   closeSchoolButton = "button[aria-label='close']";
   createFinalButton =
-    ":nth-child(2) > .MuiButtonBase-root > .MuiButton-label > .MuiBox-root > .MuiTypography-root";
+    "span:nth-child(2) button:nth-child(1) div:nth-child(1) p:nth-child(1)";
   createProgramSchool =
     "div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > span:nth-child(2) > button:nth-child(1)";
   inputProgramName = "div:nth-child(1) > div > div > input";
   inputAgeRangesProgram =
-    "div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)";
+    "div[data-testid='Age RangesSelectTextField'] div div[role='button']";
   inputGradesProgram =
     "div[data-testid='GradesSelectTextField'] div div[role='button']";
   nextProgramButton =
@@ -40,41 +41,38 @@ class SchoolPage {
   createSubjectButton = "//span[contains(text(),'Create Subject')]";
   subjectNameInput = "#subjectName";
   subjectCategoryField =
-    "div:nth-child(2) > div:nth-child(1) > span:nth-child(2) > button:nth-child(1) > span:nth-child(1)";
-  subjectSubCategoryField =
-    "span:nth-child(5) > button:nth-child(1) > span:nth-child(1)";
-  selectButton = "//span[contains(text(),'Select')]";
+    "div:nth-child(2) > div:nth-child(1) > span:nth-child(2) > button:nth-child(1)";
+  subjectSubCategoryField = "span:nth-child(5) > button:nth-child(1)";
+  selectButton =
+    "div:nth-child(12) > div:nth-child(3) > div:nth-child(1) > div:nth-child(4) > span:nth-child(3) > button:nth-child(1)";
   createSubjectFinalButton =
     "div:nth-child(4) > span:nth-child(3) > button:nth-child(1)";
   addMoreCategories =
-    "button[class='MuiButtonBase-root MuiButton-root MuiButton-outlined']";
+    "div:nth-child(11) > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) > span:nth-child(1) > button:nth-child(1) > div:nth-child(1) > p:nth-child(2)";
   cancelCreateSubject =
     "div:nth-child(4) > span:nth-child(2) > button:nth-child(1)";
   removeAddMoreCategories =
-    "//div[@role='none presentation']//div[3]//div[3]//span[1]//button[1]";
+    "div:nth-child(3) > div:nth-child(3) > span:nth-child(1) > button:nth-child(1)";
   searchSubjectInput = "(//input[@placeholder='Search'])[3]";
   createCategoryButton =
     "div.MuiDialogContent-root.MuiDialogContent-dividers > div > div.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters > span > button";
   subAndCategoryNameInput = "form input[type='text']";
   subAndCategoryNameErrorMessage =
     "form > .MuiFormControl-root > .MuiFormHelperText-root";
-  createCategoryFinalButton =
-    "#body > div:nth-child(14) > div.MuiDialog-container.MuiDialog-scrollPaper > div > div.MuiDialogActions-root.MuiDialogActions-spacing > span:nth-child(2) > button > span.MuiButton-label > div > span";
+  createCategoryFinalButton = "button[type='submit'] div p";
   cancelCreateCategory =
-    "#body > div:nth-child(14) > div.MuiDialog-container.MuiDialog-scrollPaper > div > div.MuiDialogActions-root.MuiDialogActions-spacing > span:nth-child(1) > button > span.MuiButton-label > div > span";
+    "div:nth-child(3) > span:nth-child(1) > button:nth-child(1) > div:nth-child(1) > p:nth-child(1)";
   createSubCategory =
     "div.MuiDialogContent-root.MuiDialogContent-dividers > div > div.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters > span > button";
-  createSubCategoryFinalButton =
-    "#body > div:nth-child(15) > div.MuiDialog-container.MuiDialog-scrollPaper > div > div.MuiDialogActions-root.MuiDialogActions-spacing > span:nth-child(2) > button > span.MuiButton-label > div > span";
+  createSubCategoryFinalButton = "button[type='submit'] div p";
   previousButtonEdition =
-    "span:nth-child(1) > button > span.MuiButton-label > div > span";
+    ":nth-child(1) > .MuiButton-root > .MuiBox-root > .MuiTypography-root";
   saveButtonEdition =
-    "span:nth-child(2) > button > span.MuiButton-label > div > span";
+    ":nth-child(2) > .MuiButton-root > .MuiBox-root > .MuiTypography-root";
   nextButtonEdition =
-    "span:nth-child(3) > button > span.MuiButton-label > div > span";
+    ":nth-child(3) > .MuiButton-root > .MuiBox-root > .MuiTypography-root";
   searchInput = "input[placeholder='Search']";
-  dragAndDrop =
-    ".MuiTypography-root.MuiTypography-body1.MuiTypography-colorTextSecondary";
+  dragAndDrop = '[data-testid="dropzone"]';
   subcategoryErrorMessage = "p:nth-child(6)";
   programsRequiredText = ".MuiFormHelperText-root";
   programPagesSelector = "div:nth-child(1) > button:nth-child(2)";
@@ -123,7 +121,7 @@ class SchoolPage {
   }
 
   getNextButtonState() {
-    cy.xpath(this.nextButton).then(($btn) => {
+    cy.get(this.nextButton).then(($btn) => {
       if ($btn.is(":disabled")) {
         cy.log("Button is disable");
       } else {
@@ -163,7 +161,7 @@ class SchoolPage {
   }
 
   clickOnNextButton() {
-    cy.xpath(this.nextButton).should("be.visible").click({ force: true });
+    cy.get(this.nextButton).should("be.visible").click({ force: true });
   }
 
   clickOnPreviousButton() {
@@ -231,12 +229,14 @@ class SchoolPage {
 
   clickOnGrades() {
     cy.wait(6000);
-    cy.get(this.inputGradesProgram).should("be.visible").click();
+    cy.get(this.inputGradesProgram).should("be.visible").click({ force: true });
   }
 
   clickOnAgeRanges() {
     cy.wait(3000);
-    cy.get(this.inputAgeRangesProgram).should("be.visible").click();
+    cy.get(this.inputAgeRangesProgram)
+      .should("be.visible")
+      .click({ force: true });
   }
 
   selectionGrades() {
@@ -435,7 +435,7 @@ class SchoolPage {
   }
 
   clickOnSelectButtonCategory() {
-    cy.xpath(this.selectButton).should("be.visible").click();
+    cy.get(this.selectButton).should("be.visible").click();
   }
 
   clickOnAddMoreCategories() {
@@ -447,7 +447,7 @@ class SchoolPage {
   }
 
   clickOnRemoveAddMoreCategories() {
-    cy.xpath(this.removeAddMoreCategories).should("be.visible").click();
+    cy.get(this.removeAddMoreCategories).should("be.visible").click();
   }
 
   getSubjectName() {
@@ -583,7 +583,7 @@ class SchoolPage {
 
   sortFirstDesc() {
     cy.xpath("//div[contains(text(),'I')]").click();
-    cy.wait(5000);
+    cy.wait(9000);
     cy.get("tbody tr td:nth-child(1)").then((items) => {
       const unsortedItems = items
         .map((index, html) => Cypress.$(html).text())
@@ -650,7 +650,7 @@ class SchoolPage {
 
   getQuantityOfProgramsSelected() {
     cy.get(".MuiTableBody-root")
-      .find("tr td:nth-child(1) span:nth-child(2)")
+      .find("tr td:nth-child(1) span:nth-child(1)")
       .then(($elements) => {
         const countOfElements = $elements.length;
         cy.wrap(countOfElements).as("programCount");
@@ -689,6 +689,12 @@ class SchoolPage {
 
   clickOnNonePageSelector() {
     cy.get(this.nonePageSelector).should("be.visible").click();
+  }
+
+  getColumnText() {
+    return cy
+      .get("table thead:nth-child(1) tr th:nth-child(1)")
+      .contains("School Name");
   }
 }
 

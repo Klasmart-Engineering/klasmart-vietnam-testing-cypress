@@ -17,27 +17,23 @@ class SignInPage {
   selectProfile = ".MuiList-root > :nth-child(1) > .MuiListItem-root";
   emailErrorMessage = "#email-input-label";
   passwordErrorMessage = "#email-input-helper-text";
-  signInPasswordText = "#password-input-helper-text > span";
-  signInEmailPhoneText = "#email-input-helper-text > span";
-  createAccountLink =
-    '[style="padding-top: 8px;"] > :nth-child(2) > .MuiTypography-root';
-  forgotPasswordLink =
-    '[style="padding-top: 8px;"] > :nth-child(1) > .MuiTypography-root';
+  signInPasswordText = ":nth-child(2) > .error > p";
+  signInEmailPhoneText = ":nth-child(1) > .error > p";
+  forgotPasswordLink = "#forgotPassword";
   signupWithPhone = "#SignupWithPhone";
   signupWithEmail = "#SignupWithEmail";
-  invalidErrorMessage = ":nth-child(2) > .MuiTypography-root";
+  invalidErrorMessage = ":nth-child(1) > .error > p";
+  missingErrorMessage = ".pageLevel > p";
   findYourCountry =
     ".MuiList-root > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-root";
   emailPhoneInput = "#signInName";
   passwordInput = "#password";
   selectProfile = ".MuiList-root > :nth-child(1) > .MuiListItem-root";
   continueButton = "button[type='submit'] span[class='MuiButton-label']";
-  createAccountText =
-    ".MuiCardContent-root > .MuiGrid-spacing-xs-4 > :nth-child(2) > .MuiTypography-root";
-  forgotPasswordText =
-    ".MuiGrid-spacing-xs-4 > :nth-child(2) > .MuiTypography-root";
+  createAccountText = ".main-heading";
+  forgotPasswordText = ".main__title";
   privacyPopUpText = "#nav-menu-title";
-  signInText = ".MuiGrid-spacing-xs-4 > :nth-child(2) > .MuiTypography-root";
+  signInText = ".main-heading";
   ukFlag = ":nth-child(1) > .MuiButtonBase-root > img";
   sriLankaFlag = ":nth-child(3) > .MuiButtonBase-root > img";
   usFlag = ":nth-child(5) > .MuiButtonBase-root > img";
@@ -74,11 +70,7 @@ class SignInPage {
   }
 
   goToHomePage() {
-    cy.visit('/');
-  }
-
-  clickOnCreateAccountLink() {
-    cy.get(this.createAccountLink).should("be.visible").click();
+    cy.visit("/");
   }
 
   clickOnsignupWithEmail() {
@@ -144,6 +136,10 @@ class SignInPage {
 
   getInvalidCredentialErrorMessage() {
     return cy.get(this.invalidErrorMessage).should("be.visible");
+  }
+
+  getMissingCredentialErrorMessage() {
+    return cy.get(this.missingErrorMessage).should("be.visible");
   }
 
   getClickOnYourCountryOrRegionText() {
