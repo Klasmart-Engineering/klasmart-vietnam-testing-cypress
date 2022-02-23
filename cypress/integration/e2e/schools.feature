@@ -1,7 +1,7 @@
 Feature: Schools
 
   #User should not be able to create a School with more than maximum characters allowed UD-T623
-
+@smoke 
   Scenario: Create School with maximum characters
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -12,7 +12,7 @@ Feature: Schools
 
 
   #User should not be able to create a School with spaces UD-T624
-
+@smoke 
   Scenario: Create School with spaces
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -113,7 +113,7 @@ Feature: Schools
     Then I search "Automation Edited 01" to be deleted and get "School has been deleted successfully" message
 
   #User should be able to add columns UD-T51
-
+@smoke 
   Scenario: Add columns
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -122,7 +122,7 @@ Feature: Schools
     And I check locked columns "ID" and "School Name" are present
 
   #User should be able to remove columns UD-T611 ----*** DEFECT AD-1628 ***----
-
+@smoke 
   Scenario: Remove columns
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -131,7 +131,7 @@ Feature: Schools
     And I check locked column "School Name" is present
 
   #User should be able to search a School UD-T53
-
+@smoke 
   Scenario: Search school
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -139,7 +139,7 @@ Feature: Schools
     And I search new school to validate "Automation School"
 
   #User should be able to see data paginated UD-T170
-
+@smoke 
   Scenario: Pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -148,7 +148,7 @@ Feature: Schools
 
 
   #User should be able to paginate by rows per page UD-T171
-
+@smoke 
   Scenario: Rows Per Page
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -156,7 +156,7 @@ Feature: Schools
     Then I check different rows per page
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T625
-
+@smoke 
   Scenario: Sorting and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -165,7 +165,7 @@ Feature: Schools
     And I check all buttons from pagination
 
   #User should be able to search and see the pagination according to inserted searching UD-T176
-
+@smoke 
   Scenario: Search and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -174,7 +174,7 @@ Feature: Schools
     And I search "Automation"
 
   #User should be able to sort by ascending and descending order UD-T178
-
+@smoke 
   Scenario: Sorting
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -182,7 +182,7 @@ Feature: Schools
     And I sort column by asc and desc
 
   #User should be able to see first page from pagination UD-T175
-
+@smoke 
   Scenario: First page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -190,7 +190,7 @@ Feature: Schools
     Then I check first page pagination
 
   #User should be able to see last page from pagination UD-T174
-
+@smoke 
   Scenario: Last page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -198,7 +198,7 @@ Feature: Schools
     Then I check last page pagination
 
   #User should be able to see next page from pagination UD-T172
-
+@smoke 
   Scenario: Next page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -206,7 +206,7 @@ Feature: Schools
     Then I check next page pagination
 
   #User should be able to see previous page from pagination UD-T173
-
+@smoke 
   Scenario: Previous page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -232,7 +232,7 @@ Feature: Schools
     And I get "Schools have been added successfully" message
 
   #User should be able to select different subcategories for a program on schools UD-T48 ----*** DEFECT AD-1798 ***----
-
+@smoke 
   Scenario: Subcategories Page Selection
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -244,7 +244,7 @@ Feature: Schools
     And I select all categories and unselect them
 
   #User should be able to select different programs for a school UD-T43
-
+@smoke 
   Scenario: Programs Page Selection
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -253,7 +253,7 @@ Feature: Schools
     And I select all programs and unselect them
 
   #User should be able to check all pages on programs inside schools UD-T341 ----*** DEFECT AD-75 ***----
-
+@smoke 
   Scenario: Check All Pages on Programs
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -262,7 +262,7 @@ Feature: Schools
     And I select all pages on programs
 
   #User should be able to check the actual page on programs inside schools UD-T342
-
+@smoke 
   Scenario: Check This Page on Programs
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -271,7 +271,7 @@ Feature: Schools
     And I select this page on programs
 
   #User should be able to not select any program inside schools UD-T343
-
+@smoke 
   Scenario: Check None Page on Programs
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section

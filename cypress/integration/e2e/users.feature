@@ -30,7 +30,7 @@ Feature: Users
     Then I search "Luis" user to be deleted on edition mode and get "User has been deleted successfully" message
 
   #User should not be able to inactivate an existent user from edition mode UD-T33
-
+@smoke 
   Scenario: Inactive User from edition mode cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -63,7 +63,7 @@ Feature: Users
     Then I have got "User already exists" error message
 
   #User should not be able to create a new user UD-T22
-
+@smoke 
   Scenario: Create user without required fields
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -71,7 +71,7 @@ Feature: Users
     And I fill optional fields "4B3J4"
 
   #User should not see new user added UD-T20
-
+@smoke 
   Scenario: Cancel user creation
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -90,7 +90,7 @@ Feature: Users
     Then I search "Luis" user to be deleted and get "User has been deleted successfully" message
 
   #User should be able to add a filter on users for Active Status UD-T425
-
+@smoke 
   Scenario: Add filter Status Active
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -100,7 +100,7 @@ Feature: Users
     And I check that active status filter was added
 
   #User should be able to add a filter on users for Inactive Status UD-T579
-
+@smoke 
   Scenario: Add filter Status Inactive
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -110,7 +110,7 @@ Feature: Users
     And I check that inactive status filter was added
 
   #User should be able to cancel deletion of a user UD-T622
-
+@smoke 
   Scenario: Cancel Delete user
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -120,7 +120,7 @@ Feature: Users
     Then I search "Test" user to be deleted but I cancel it
 
   #User should be able to add a filter on users for Schools UD-T432 and UD-T434
-
+@smoke 
   Scenario: Add filter Schools
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -130,7 +130,7 @@ Feature: Users
     And I check that shools filter was added
 
   #User should be able to add a filter on users for Organization roles UD-T412 and UD-T414
-
+@smoke 
   Scenario: Add filter Organization Roles
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -140,7 +140,7 @@ Feature: Users
     And I check that organization roles filter was added
 
   #User should be able to add a filter on users for Phone UD-T443
-
+@smoke 
   Scenario: Add filter Phone
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -150,7 +150,7 @@ Feature: Users
     And I check that phone filter was added
 
   #User should be able to add a filter on users for Email UD-T438
-
+@smoke 
   Scenario: Add filter Email
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -160,7 +160,7 @@ Feature: Users
     And I check that email filter was added
 
   #User should be able to cancel add a filter on users for Email UD-T439
-
+@smoke 
   Scenario: Add filter Email Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -169,7 +169,7 @@ Feature: Users
     Then I press cancel button
 
   #User should be able to cancel add a filter on users for Phone UD-T444
-
+@smoke 
   Scenario: Add filter Phone Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -178,7 +178,7 @@ Feature: Users
     Then I press cancel button
 
   #User should be able to cancel add a filter on users for Schools UD-T433
-
+@smoke 
   Scenario: Add filter Schools Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -187,7 +187,7 @@ Feature: Users
     Then I press cancel button
 
   #User should be able to cancel add a filter on users for Organization roles UD-T413
-
+@smoke 
   Scenario: Add filter Organization Roles Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -196,7 +196,7 @@ Feature: Users
     Then I press cancel button
 
   #User should be able to cancel add a filter on users for Active Status UD-T426
-
+@smoke 
   Scenario: Add filter Status Active Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -205,7 +205,7 @@ Feature: Users
     Then I press cancel button
 
   #User should be able to cancel add a filter on users for Inactive Status UD-T580
-
+@smoke 
   Scenario: Add filter Status Inactive Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -214,7 +214,7 @@ Feature: Users
     Then I press cancel button
 
   #User should be able to edit filter on users for Organization roles UD-T409 and UD-T411
-
+@smoke 
   Scenario: Edit filter Organization Roles
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -225,7 +225,7 @@ Feature: Users
     And I check edited value was saved on organization roles
 
   #User should be able to edit filter on users for Schools UD-T429 and UD-T431
-
+@smoke 
   Scenario: Edit filter Schools
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -236,7 +236,7 @@ Feature: Users
     And I check edited value was saved on schools
 
   #User should be able to edit filter on users for Status UD-T422
-
+@smoke 
   Scenario: Edit filter Status
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -247,7 +247,7 @@ Feature: Users
     And I check edited value was saved on status
 
   #User should be able to edit filter on users for Phone UD-T441
-
+@smoke 
   Scenario: Edit filter Phone
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -258,7 +258,7 @@ Feature: Users
     And I check edited value was saved on phone
 
   #User should be able to edit filter on users for Email UD-T436
-
+@smoke 
   Scenario: Edit filter Email
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -269,7 +269,7 @@ Feature: Users
     And I check edited value was saved on email
 
   #User should be able to cancel edit filter on users for Email UD-T437
-
+@smoke 
   Scenario: Edit filter Email Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -279,7 +279,7 @@ Feature: Users
     And I edit value from added filter on email "alicetest@gmail.com" but I press cancel
 
   #User should be able to cancel edit filter on users for Phone UD-T442
-
+@smoke 
   Scenario: Edit filter Phone Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -289,7 +289,7 @@ Feature: Users
     And I edit value from added filter on phone "+59898723" but I press cancel
 
   #User should be able to cancel edit filter on users for Schools UD-T430
-
+@smoke 
   Scenario: Edit filter Schools Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -299,7 +299,7 @@ Feature: Users
     And I edit value from added filter on schools but I press cancel
 
   #User should be able to cancel edit filter on users for Organization Roles UD-T410
-
+@smoke 
   Scenario: Edit filter Organization Roles Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -309,7 +309,7 @@ Feature: Users
     And I edit value from added filter on organization roles but I press cancel
 
   #User should be able to cancel edit filter on users for Status UD-T423
-
+@smoke 
   Scenario: Edit filter Status Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -319,7 +319,7 @@ Feature: Users
     And I edit status value as active but I press cancel
 
   #User should be able to clear email filter for users UD-T435
-
+@smoke 
   Scenario: Clear filter Email
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -329,7 +329,7 @@ Feature: Users
     And I clear the filter applied
 
   #User should be able to clear organization roles filter for users UD-T408
-
+@smoke 
   Scenario: Clear filter Organization Roles
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -339,7 +339,7 @@ Feature: Users
     And I clear the filter applied
 
   #User should be able to clear phone filter for users UD-T440
-
+@smoke 
   Scenario: Clear filter Phone
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -349,7 +349,7 @@ Feature: Users
     And I clear the filter applied
 
   #User should be able to clear schools filter for users UD-T428
-
+@smoke 
   Scenario: Clear filter Schools
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -359,7 +359,7 @@ Feature: Users
     And I clear the filter applied
 
   #User should be able to clear status filter for users UD-T421
-
+@smoke 
   Scenario: Clear filter Status Active
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -369,7 +369,7 @@ Feature: Users
     And I clear the filter applied
 
   #User should be able to clear all filter for users UD-T407
-
+@smoke 
   Scenario: Clear all filters
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -378,7 +378,7 @@ Feature: Users
     And I clear all filters applied
 
   #User should be able to disable filter for users UD-T415
-
+@smoke 
   Scenario: Disable filter
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -387,7 +387,7 @@ Feature: Users
     And I check filter is disable
 
   #User should be able to see correct order for values on filters UD-T581 ----*** DEFECT AD-964 ***----
-
+@smoke 
   Scenario: Filter order values
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -395,7 +395,7 @@ Feature: Users
     Then I check the order of values is correct on users
 
   #User should be able to search any word by exact match of it UD-T30
-
+@smoke 
   Scenario: Search users
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -403,7 +403,7 @@ Feature: Users
     And I search "Bruno"
 
   #User should be able to add columns UD-T26
-
+@smoke 
   Scenario: Add columns
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -412,7 +412,7 @@ Feature: Users
     And I check locked columns "Given Name" and "Family Name" are present
 
   #User should be able to remove columns UD-T28
-
+@smoke 
   Scenario: Remove columns
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -421,7 +421,7 @@ Feature: Users
     And I check locked columns "Given Name" and "Family Name" are present
 
   #User should be able to sort data from users UD-T169
-
+@smoke 
   Scenario: Sorting
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -429,7 +429,7 @@ Feature: Users
     And I sort column by asc and desc
 
   #User should be able to see data paginated UD-T29
-
+@smoke 
   Scenario: Pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -438,7 +438,7 @@ Feature: Users
 
 
   #User should be able to paginate by rows per page UD-T162
-
+@smoke 
   Scenario: Rows Per Page
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -446,7 +446,7 @@ Feature: Users
     Then I check different rows per page
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T168
-
+@smoke 
   Scenario: Sorting and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -455,7 +455,7 @@ Feature: Users
     And I check all buttons from pagination
 
   #User should be able to search and see the pagination according to inserted searching UD-T167
-
+@smoke 
   Scenario: Search and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -464,7 +464,7 @@ Feature: Users
     And I search "Test"
 
   #User should be able to add multiple filter, search any user and change paginations that will no affect the result UD-T416
-
+@smoke 
   Scenario: Add multiple filters search and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -474,7 +474,7 @@ Feature: Users
     And I check all buttons from pagination
 
   #User should be able to see first page from pagination UD-T166
-
+@smoke 
   Scenario: First page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -482,7 +482,7 @@ Feature: Users
     Then I check first page pagination
 
   #User should be able to see last page from pagination UD-T165
-
+@smoke 
   Scenario: Last page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -490,7 +490,7 @@ Feature: Users
     Then I check last page pagination
 
   #User should be able to see next page from pagination UD-T163
-
+@smoke 
   Scenario: Next page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -498,7 +498,7 @@ Feature: Users
     Then I check next page pagination
 
   #User should be able to see previous page from pagination UD-T164
-
+@smoke 
   Scenario: Previous page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
