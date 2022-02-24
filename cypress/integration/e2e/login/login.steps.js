@@ -52,10 +52,6 @@ Then("I enter student password as {string}", (text) => {
   signInPage.clickOnContinueButton();
 });
 
-And("I should see student welcome message {string}", (text) => {
-  homePage.getWelcomeText().should("have.text", text);
-});
-
 When("I enter parent email as {string}", (text) => {
   signInPage.enterEmailOrPhone(text);
 });
@@ -71,6 +67,10 @@ And("I should see parent welcome message {string}", (text) => {
   homePage.getWelcomeText().should("have.text", text);
 });
 
+And("I should see teacher welcome message", () => {
+  homePage.getNewWelcomeText();
+});
+
 When("I enter teacher email as {string}", (text) => {
   signInPage.enterEmailOrPhone(text);
 });
@@ -82,10 +82,8 @@ Then("I enter teacher password as {string}", (text) => {
   signInPage.clickOnContinueButton();
 });
 
-And("I should see teacher welcome message", () => {
-  homePage.clickOnSwitchView();
+And("I should see student welcome message", () => {
   homePage.getNewWelcomeText();
-  homePage.getWelcomeText().should("include.text", "Teacher");
 });
 
 When("I enter school admin email as {string}", (text) => {

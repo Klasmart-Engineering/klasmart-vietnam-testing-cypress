@@ -22,7 +22,7 @@ class SignInPage {
   forgotPasswordLink = "#forgotPassword";
   signupWithPhone = "#SignupWithPhone";
   signupWithEmail = "#SignupWithEmail";
-  invalidErrorMessage = ":nth-child(1) > .error > p";
+  invalidErrorMessage = "h2[data-testid='no_profiles-title']";
   missingErrorMessage = ".pageLevel > p";
   findYourCountry =
     ".MuiList-root > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-root";
