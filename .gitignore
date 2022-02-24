@@ -62,5 +62,3 @@ typings/
 
 cypress/videos
 cypress/screenshots
-
-cypress.json

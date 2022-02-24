@@ -27,7 +27,7 @@ Feature: Roles
     And I get "The role has been deleted successfully" message
 
   #User should be able to add columns UD-T36
-@smoke 
+  @smoke
   Scenario: Add columns
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -36,7 +36,7 @@ Feature: Roles
     And I check locked columns "Id" and "Role" are present
 
   #User should be able to remove columns UD-T562
-@smoke 
+  @smoke
   Scenario: Remove columns
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -45,7 +45,7 @@ Feature: Roles
     And I check locked column "Role" is present
 
   #User should be able to search a role UD-T37
-@smoke 
+  @smoke
   Scenario: Search role
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -53,7 +53,7 @@ Feature: Roles
     And I search new role to validate "Teacher"
 
   #User should be able to see data paginated UD-T40
-@smoke 
+  @smoke
   Scenario: Pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -61,7 +61,7 @@ Feature: Roles
     And I check all buttons from pagination
 
   #User should be able to paginate by rows per page UD-T572
-@smoke 
+  @smoke
   Scenario: Rows Per Page
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -69,7 +69,7 @@ Feature: Roles
     Then I check different rows per page
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T578
-@smoke 
+  @smoke
   Scenario: Sorting and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -78,7 +78,7 @@ Feature: Roles
     And I check all buttons from pagination
 
   #User should be able to search and see the pagination according to inserted searching UD-T577
-@smoke 
+  @smoke
   Scenario: Search and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -87,7 +87,7 @@ Feature: Roles
     And I search new role to validate "Teacher"
 
   #User should be able to sort by ascending and descending order UD-T38
-@smoke 
+  @smoke
   Scenario: Sorting
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -95,7 +95,7 @@ Feature: Roles
     And I sort column by asc and desc
 
   #User should be able to see first page from pagination UD-T576
-@smoke 
+  @smoke
   Scenario: First page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -103,7 +103,7 @@ Feature: Roles
     Then I check first page pagination
 
   #User should be able to see last page from pagination UD-T575
-@smoke 
+  @smoke
   Scenario: Last page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -111,7 +111,7 @@ Feature: Roles
     Then I check last page pagination
 
   #User should be able to see next page from pagination UD-T573
-@smoke 
+  @smoke
   Scenario: Next page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -119,7 +119,7 @@ Feature: Roles
     Then I check next page pagination
 
   #User should be able to see previous page from pagination UD-T574
-@smoke 
+  @smoke
   Scenario: Previous page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -127,42 +127,42 @@ Feature: Roles
     Then I check previous page pagination
 
   #User should be able to cancel creation of a new role UD-T571
-@smoke 
+  @smoke
   Scenario: Cancel create role
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     Then I create a new role with name as "Automation Role" and description as "Test" and I cancel it
 
   #User should not be able to create a role as empty UD-T567
-@smoke 
+  @smoke
   Scenario: Create role as empty
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     Then I create a new role with empty name "   " and empty description as "   "
 
   #User should not be able to create a role with more than maximum characters UD-T566
-@smoke 
+  @smoke
   Scenario: Create role with more than maximum characters
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     Then I create a new role with more than maximum characters allowed for name "maximum text for name" and description "maximum text for description on"
 
   #User should not be able to create a role with more than minimum characters UD-T565
-@smoke 
+  @smoke
   Scenario: Create role with less than minimum characters
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     Then I create a new role with less than minimum characters allowed for name "a"
 
   #User should not be able to create a role with special characters UD-T564
-@smoke 
+  @smoke
   Scenario: Create role with special characters
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
     Then I create a new role with special characters not allowed for name "$#$%&/()" and description "$#$%&/()"
 
   #User should not be able to create a role with same name UD-T563
-@smoke 
+  @smoke
   Scenario: Create duplicate role
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section

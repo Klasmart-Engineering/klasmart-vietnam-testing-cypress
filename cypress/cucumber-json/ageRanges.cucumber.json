@@ -58,12 +58,7 @@
         "keyword": "Scenario",
         "line": 13,
         "name": "Edit age range",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 12
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -72,8 +67,7 @@
             "line": 14,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 27192000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +76,7 @@
             "line": 15,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-              "duration": 4127000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +85,7 @@
             "line": 16,
             "name": "Add filter for age ranges",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element:\n\n          `<p class=\"MuiTypography-root MuiTypography-inherit MuiTypography-noWrap css-mlawsc\">Add Filter</p>`\n\n          has CSS `pointer-events: none`, inherited from this element:\n\n`<button class=\"MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root Mui-disabled  css-1bmd5rk\" tabindex=\"-1\" type=\"button\" style=\"\" disabled=\"\">...</button>`\n\n          `pointer-events: none` prevents user mouse interaction.\n\n          Fix this problem, or use {force: true} to disable error checking.\n    at $Cy.ensureElDoesNotHaveCSS (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163968:76)\n    at ensureDescendents (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150207:8)\n    at ensureDescendentsAndScroll (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150216:14)\n    at ensureElIsNotCovered (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150348:5)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150538:52)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\nFrom previous event:\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\nFrom previous event:\n    at $Cy.retry (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168196:76)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150565:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150569:12\nFrom previous event:\n    at Object.verify (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150474:61)\n    at perform (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152602:77)\nFrom previous event:\n    at mouseAction (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152640:60)\n    at Context.click (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152659:14)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173141:19)\nFrom Your Spec Code:\n    at UserPage.clickOnAddFilterFinalButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:1268:62)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:192:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:27671:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:26992:35)"
+              "status": "skipped"
             }
           },
           {
@@ -123,7 +115,7 @@
         "name": "Add filter Age Ranges From",
         "tags": [
           {
-            "name": "@focus",
+            "name": "@smoke",
             "line": 22
           }
         ],
@@ -136,7 +128,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 27673000000
+              "duration": 49897000000
             }
           },
           {
@@ -146,7 +138,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 2837000000
+              "duration": 12861000000
             }
           },
           {
@@ -156,7 +148,7 @@
             "name": "Add filter for age ranges from",
             "result": {
               "status": "passed",
-              "duration": 4268000000
+              "duration": 4522000000
             }
           },
           {
@@ -166,7 +158,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 609000000
+              "duration": 789000000
             }
           },
           {
@@ -176,7 +168,7 @@
             "name": "I check that age ranges from filter was added",
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 62000000
             }
           }
         ]
@@ -188,7 +180,7 @@
         "name": "Add filter Age Ranges To",
         "tags": [
           {
-            "name": "@focus",
+            "name": "@smoke",
             "line": 33
           }
         ],
@@ -201,7 +193,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 23207000000
+              "duration": 33728000000
             }
           },
           {
@@ -211,7 +203,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 3755000000
+              "duration": 5685000000
             }
           },
           {
@@ -221,7 +213,7 @@
             "name": "Add filter for age ranges to",
             "result": {
               "status": "passed",
-              "duration": 4794000000
+              "duration": 5754000000
             }
           },
           {
@@ -231,7 +223,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 654000000
+              "duration": 871000000
             }
           },
           {
@@ -241,7 +233,7 @@
             "name": "I check that age ranges to filter was added",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 61000000
             }
           }
         ]
