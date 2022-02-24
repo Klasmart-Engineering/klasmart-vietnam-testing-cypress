@@ -1,5 +1,6 @@
 name: Hub E2E Tests on Chrome
 on: 
+ workflow_dispatch:
  schedule:
     - cron: '43 16 * * *'
 jobs:
