@@ -1,0 +1,21 @@
+image: node:16
+pipelines:
+   custom: 
+    cypress-tests-SSO-chrome:
+    - step: 
+        name: 'Admin UI Cypress Regression'
+        image: cypress/browsers:node16.5.0-chrome97-ff96
+        script: 
+        - npm i --no-audit --no-progress
+        - npm run cy:run:smoke:alpha
+        - npm run e2e:reports
+        caches:
+          - node
+          - cypress
+        artifacts:
+        # store any generates images and videos as artifacts
+          - cypress/screenshots/**
+          - cypress/cucumber-json
+          - cypress/videos/**  
+          - test-reports/**
+          - test-reports/cucumber-report/cucumber-htmlreport/index.html

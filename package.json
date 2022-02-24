@@ -9,7 +9,9 @@
     "test:accessibility": "./node_modules/.bin/cypress-tags run -e TAGS=\"@smoke\"",
     "cy:run:prod": "cypress open --env ENV=production",
     "cy:run:stg": "cypress open --env ENV=staging",
-    "cy:run:qa": "cypress open --env ENV=alpha"
+    "cy:run:qa": "cypress open --env ENV=alpha",
+    "cy:run:smoke:alpha": "cypress run -e TAGS=\"@smoke\" --env ENV=alpha --browser chrome",
+    "e2e:reports": "node cypress/cucumber-html-report.js"
   },
   "keywords": [
     "cypress",
