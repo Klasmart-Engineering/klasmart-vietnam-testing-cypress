@@ -1,7 +1,7 @@
 name: Hub E2E Tests on Chrome
 on: 
  schedule:
-    - cron: '30 15 * * *'
+    - cron: '45 15 * * *'
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
@@ -23,3 +23,5 @@ jobs:
        with:
           name: cypress-screenshots
           path: cypress/screenshots 
+          uses: archive/github-actions-slack@v2.3.2
+   
