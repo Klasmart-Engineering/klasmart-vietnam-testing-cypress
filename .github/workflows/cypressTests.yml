@@ -1,0 +1,30 @@
+name: Hub E2E Tests on Chrome
+on: 
+ workflow_dispatch:
+ schedule:
+    - cron: '43 16 * * *'
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    container:
+     image: cypress/browsers:node16.5.0-chrome97-ff96
+     options: --user 1001
+
+    # let's make sure our tests pass on Chrome browser
+    name: E2E on Chrome
+    steps:
+     - name: Checkout 
+       uses: actions/checkout@v2
+
+     - name: Custom tests 
+       uses: cypress-io/github-action@v2
+       with:
+         command: npm run cy:run:smoke:alpha
+     - name: Store results   
+       uses: actions/upload-artifact@v2
+       if: failure()
+       with:
+          name: cypress-screenshots
+          path: cypress/screenshots 
+          uses: archive/github-actions-slack@v2.3.2
+   
