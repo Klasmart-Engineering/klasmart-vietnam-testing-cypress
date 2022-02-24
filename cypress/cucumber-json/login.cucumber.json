@@ -218,10 +218,6 @@
         "name": "Login with teacher credentials",
         "tags": [
           {
-            "name": "@focus",
-            "line": 40
-          },
-          {
             "name": "@smoke",
             "line": 40
           }
@@ -234,8 +230,7 @@
             "line": 42,
             "name": "I click can't find your country or region",
             "result": {
-              "status": "passed",
-              "duration": 16062000000
+              "status": "skipped"
             }
           },
           {
@@ -244,8 +239,7 @@
             "line": 43,
             "name": "I enter teacher email as \"lorenab+teacher@bluetrailsoft.com\"",
             "result": {
-              "status": "passed",
-              "duration": 5045000000
+              "status": "skipped"
             }
           },
           {
@@ -254,8 +248,7 @@
             "line": 44,
             "name": "I enter teacher password as \"Teacher01!\"",
             "result": {
-              "status": "passed",
-              "duration": 13243000000
+              "status": "skipped"
             }
           },
           {
@@ -264,8 +257,7 @@
             "line": 45,
             "name": "I should see teacher welcome message",
             "result": {
-              "status": "passed",
-              "duration": 7093000000
+              "status": "skipped"
             }
           }
         ]
@@ -802,6 +794,10 @@
         "name": "Privacy Notice Page",
         "tags": [
           {
+            "name": "@focus",
+            "line": 145
+          },
+          {
             "name": "@smoke",
             "line": 145
           }
@@ -814,7 +810,8 @@
             "line": 147,
             "name": "I click can't find your country or region",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14944000000
             }
           },
           {
@@ -823,7 +820,8 @@
             "line": 148,
             "name": "I click privacy link",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 160000000
             }
           },
           {
@@ -832,7 +830,8 @@
             "line": 149,
             "name": "I should see a popup window called \"Privacy Notice\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 37000000
             }
           }
         ]

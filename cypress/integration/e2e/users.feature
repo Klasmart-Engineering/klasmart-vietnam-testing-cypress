@@ -421,7 +421,7 @@ Feature: Users
     And I check locked columns "Given Name" and "Family Name" are present
 
   #User should be able to sort data from users UD-T169
-@focus @smoke 
+@smoke 
   Scenario: Sorting
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"

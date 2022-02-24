@@ -231,6 +231,10 @@
         "name": "Rows Per Page",
         "tags": [
           {
+            "name": "@focus",
+            "line": 43
+          },
+          {
             "name": "@smoke",
             "line": 43
           }
@@ -243,7 +247,8 @@
             "line": 46,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28647000000
             }
           },
           {
@@ -252,7 +257,8 @@
             "line": 47,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3668000000
             }
           },
           {
@@ -261,7 +267,8 @@
             "line": 48,
             "name": "I check different rows per page",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Not enough elements found. Found '16', expected '25'.\n    + expected - actual\n\n    -16\n    +25\n\n    at UserPage.clickOnTwentyFivePages (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:2939:26)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:252:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:38469:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\grades.feature:37790:35)"
             }
           }
         ]
@@ -1227,10 +1234,6 @@
         "name": "Clear all filters",
         "tags": [
           {
-            "name": "@focus",
-            "line": 217
-          },
-          {
             "name": "@smoke",
             "line": 217
           }
@@ -1243,8 +1246,7 @@
             "line": 220,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 54160000000
+              "status": "skipped"
             }
           },
           {
@@ -1253,8 +1255,7 @@
             "line": 221,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-              "duration": 7515000000
+              "status": "skipped"
             }
           },
           {
@@ -1263,8 +1264,7 @@
             "line": 222,
             "name": "Add all existent filters",
             "result": {
-              "status": "passed",
-              "duration": 8216000000
+              "status": "skipped"
             }
           },
           {
@@ -1273,8 +1273,7 @@
             "line": 223,
             "name": "I clear all filters applied",
             "result": {
-              "status": "passed",
-              "duration": 358000000
+              "status": "skipped"
             }
           }
         ]
