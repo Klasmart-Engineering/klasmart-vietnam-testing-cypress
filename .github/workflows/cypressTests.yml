@@ -7,7 +7,6 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     container: cypress/browsers:node16.5.0-chrome97-ff96
-    options: --user 1001 
     # let's make sure our tests pass on Chrome browser
     name: E2E on Chrome
     steps:
