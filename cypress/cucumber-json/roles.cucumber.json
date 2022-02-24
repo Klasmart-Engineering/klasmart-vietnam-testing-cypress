@@ -168,7 +168,12 @@
         "keyword": "Scenario",
         "line": 31,
         "name": "Add columns",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 30
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -177,7 +182,8 @@
             "line": 33,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 23390000000
             }
           },
           {
@@ -186,7 +192,8 @@
             "line": 34,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4503000000
             }
           },
           {
@@ -195,7 +202,8 @@
             "line": 35,
             "name": "I add columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1259000000
             }
           },
           {
@@ -204,7 +212,8 @@
             "line": 36,
             "name": "I check locked columns \"Id\" and \"Role\" are present",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 45000000
             }
           }
         ]
@@ -214,7 +223,12 @@
         "keyword": "Scenario",
         "line": 40,
         "name": "Remove columns",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 39
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -223,7 +237,8 @@
             "line": 42,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 17919000000
             }
           },
           {
@@ -232,7 +247,8 @@
             "line": 43,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3930000000
             }
           },
           {
@@ -241,7 +257,8 @@
             "line": 44,
             "name": "I remove columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 726000000
             }
           },
           {
@@ -250,7 +267,8 @@
             "line": 45,
             "name": "I check locked column \"Role\" is present",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28000000
             }
           }
         ]
@@ -260,7 +278,12 @@
         "keyword": "Scenario",
         "line": 49,
         "name": "Search role",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 48
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -269,7 +292,8 @@
             "line": 51,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 17283000000
             }
           },
           {
@@ -278,7 +302,8 @@
             "line": 52,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3680000000
             }
           },
           {
@@ -287,7 +312,8 @@
             "line": 53,
             "name": "I search new role to validate \"Teacher\"",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` failed because this element is detached from the DOM.\n\n`<input aria-invalid=\"false\" placeholder=\"Search\" type=\"text\" class=\"MuiInput-input MuiInputBase-input css-mnn31\" value=\"Tea\" id=\"mui-13\">`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.type()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at validateType (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163688:11)\n    at $Cy.ensureSubjectByType (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163728:9)\n    at $Cy.pushSubjectAndValidate (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173708:12)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173140:19)\nFrom Your Spec Code:\n    at UserPage.searchInputText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:2690:66)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:228:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
             }
           }
         ]
@@ -297,7 +323,12 @@
         "keyword": "Scenario",
         "line": 57,
         "name": "Pagination",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 56
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -306,7 +337,8 @@
             "line": 59,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 20157000000
             }
           },
           {
@@ -315,7 +347,8 @@
             "line": 60,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3571000000
             }
           },
           {
@@ -324,7 +357,8 @@
             "line": 61,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28942000000
             }
           }
         ]
@@ -334,7 +368,12 @@
         "keyword": "Scenario",
         "line": 65,
         "name": "Rows Per Page",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 64
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -343,7 +382,8 @@
             "line": 67,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 18267000000
             }
           },
           {
@@ -352,7 +392,8 @@
             "line": 68,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3737000000
             }
           },
           {
@@ -361,7 +402,8 @@
             "line": 69,
             "name": "I check different rows per page",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiInputBase-root div[role='button']`, but never found it.\n    at UserPage.clickOnRowsPerPage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:3149:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:246:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
             }
           }
         ]
@@ -371,7 +413,12 @@
         "keyword": "Scenario",
         "line": 73,
         "name": "Sorting and pagination",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 72
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -380,7 +427,8 @@
             "line": 75,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 19696000000
             }
           },
           {
@@ -389,7 +437,8 @@
             "line": 76,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4517000000
             }
           },
           {
@@ -398,7 +447,8 @@
             "line": 77,
             "name": "I sort column by asc and desc",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 36476000000
             }
           },
           {
@@ -407,7 +457,8 @@
             "line": 78,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29027000000
             }
           }
         ]
@@ -417,7 +468,12 @@
         "keyword": "Scenario",
         "line": 82,
         "name": "Search and pagination",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 81
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -426,7 +482,8 @@
             "line": 84,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 26881000000
             }
           },
           {
@@ -435,7 +492,8 @@
             "line": 85,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4351000000
             }
           },
           {
@@ -444,7 +502,8 @@
             "line": 86,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28837000000
             }
           },
           {
@@ -453,7 +512,8 @@
             "line": 87,
             "name": "I search new role to validate \"Teacher\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7845000000
             }
           }
         ]
@@ -463,7 +523,12 @@
         "keyword": "Scenario",
         "line": 91,
         "name": "Sorting",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 90
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -472,7 +537,8 @@
             "line": 93,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 23117000000
             }
           },
           {
@@ -481,7 +547,8 @@
             "line": 94,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3004000000
             }
           },
           {
@@ -490,7 +557,8 @@
             "line": 95,
             "name": "I sort column by asc and desc",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `:checkbox`, but never found it.\n    at GradesPage.sortFirstAsc (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:669:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:263:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
             }
           }
         ]
@@ -500,7 +568,12 @@
         "keyword": "Scenario",
         "line": 99,
         "name": "First page pagination",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 98
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -509,7 +582,8 @@
             "line": 101,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 17975000000
             }
           },
           {
@@ -518,7 +592,8 @@
             "line": 102,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3312000000
             }
           },
           {
@@ -527,7 +602,8 @@
             "line": 103,
             "name": "I check first page pagination",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiTablePagination-root div > span:nth-child(4) > button`, but never found it.\n    at UserPage.clickOnLastPage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:3131:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:274:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
             }
           }
         ]
@@ -537,7 +613,12 @@
         "keyword": "Scenario",
         "line": 107,
         "name": "Last page pagination",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 106
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -546,7 +627,8 @@
             "line": 109,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 20974000000
             }
           },
           {
@@ -555,7 +637,8 @@
             "line": 110,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4029000000
             }
           },
           {
@@ -564,7 +647,8 @@
             "line": 111,
             "name": "I check last page pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13440000000
             }
           }
         ]
@@ -574,7 +658,12 @@
         "keyword": "Scenario",
         "line": 115,
         "name": "Next page pagination",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 114
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -583,7 +672,8 @@
             "line": 117,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 17906000000
             }
           },
           {
@@ -592,7 +682,8 @@
             "line": 118,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3402000000
             }
           },
           {
@@ -601,7 +692,8 @@
             "line": 119,
             "name": "I check next page pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13489000000
             }
           }
         ]
@@ -611,7 +703,12 @@
         "keyword": "Scenario",
         "line": 123,
         "name": "Previous page pagination",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 122
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -620,7 +717,8 @@
             "line": 125,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 20999000000
             }
           },
           {
@@ -629,7 +727,8 @@
             "line": 126,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3526000000
             }
           },
           {
@@ -638,7 +737,8 @@
             "line": 127,
             "name": "I check previous page pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 44856000000
             }
           }
         ]
@@ -648,7 +748,12 @@
         "keyword": "Scenario",
         "line": 131,
         "name": "Cancel create role",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 130
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -657,7 +762,8 @@
             "line": 132,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 25527000000
             }
           },
           {
@@ -666,7 +772,8 @@
             "line": 133,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4463000000
             }
           },
           {
@@ -675,7 +782,8 @@
             "line": 134,
             "name": "I create a new role with name as \"Automation Role\" and description as \"Test\" and I cancel it",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `form div:nth-child(1) div:nth-child(1) input`, but never found it.\n    at RolesPage.fillName (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:962:30)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:332:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
             }
           }
         ]
@@ -685,7 +793,12 @@
         "keyword": "Scenario",
         "line": 138,
         "name": "Create role as empty",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 137
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -694,7 +807,8 @@
             "line": 139,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 20552000000
             }
           },
           {
@@ -703,7 +817,8 @@
             "line": 140,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2959000000
             }
           },
           {
@@ -712,7 +827,8 @@
             "line": 141,
             "name": "I create a new role with empty name \"   \" and empty description as \"   \"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7101000000
             }
           }
         ]
@@ -722,7 +838,12 @@
         "keyword": "Scenario",
         "line": 145,
         "name": "Create role with more than maximum characters",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 144
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -731,7 +852,8 @@
             "line": 146,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 18005000000
             }
           },
           {
@@ -740,7 +862,8 @@
             "line": 147,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3384000000
             }
           },
           {
@@ -749,7 +872,8 @@
             "line": 148,
             "name": "I create a new role with more than maximum characters allowed for name \"maximum text for name\" and description \"maximum text for description on\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8648000000
             }
           }
         ]
@@ -759,7 +883,12 @@
         "keyword": "Scenario",
         "line": 152,
         "name": "Create role with less than minimum characters",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 151
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -768,7 +897,8 @@
             "line": 153,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 18790000000
             }
           },
           {
@@ -777,7 +907,8 @@
             "line": 154,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3266000000
             }
           },
           {
@@ -786,7 +917,8 @@
             "line": 155,
             "name": "I create a new role with less than minimum characters allowed for name \"a\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14953000000
             }
           }
         ]
@@ -796,7 +928,12 @@
         "keyword": "Scenario",
         "line": 159,
         "name": "Create role with special characters",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 158
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -805,7 +942,8 @@
             "line": 160,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 24276000000
             }
           },
           {
@@ -814,7 +952,8 @@
             "line": 161,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3728000000
             }
           },
           {
@@ -823,7 +962,8 @@
             "line": 162,
             "name": "I create a new role with special characters not allowed for name \"$#$%&/()\" and description \"$#$%&/()\"",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at RolesPage.clickOnCreateRoleButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:957:58)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:387:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
             }
           }
         ]
@@ -833,7 +973,12 @@
         "keyword": "Scenario",
         "line": 166,
         "name": "Create duplicate role",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 165
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -842,7 +987,8 @@
             "line": 167,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 18323000000
             }
           },
           {
@@ -851,7 +997,8 @@
             "line": 168,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3484000000
             }
           },
           {
@@ -860,7 +1007,8 @@
             "line": 169,
             "name": "I create a repeated name for role as \"Teacher\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9950000000
             }
           }
         ]
@@ -870,12 +1018,7 @@
         "keyword": "Scenario",
         "line": 173,
         "name": "Clear permissions role",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 172
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -884,8 +1027,7 @@
             "line": 175,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 30706000000
+              "status": "skipped"
             }
           },
           {
@@ -894,8 +1036,7 @@
             "line": 176,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-              "duration": 4175000000
+              "status": "skipped"
             }
           },
           {
@@ -904,8 +1045,7 @@
             "line": 177,
             "name": "I edit an existent role \"Automation Role\" and clear all permissions assigned",
             "result": {
-              "status": "passed",
-              "duration": 16610000000
+              "status": "skipped"
             }
           }
         ]

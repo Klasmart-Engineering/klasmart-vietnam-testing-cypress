@@ -1,7 +1,7 @@
 name: Hub E2E Tests on Chrome
 on: 
  schedule:
-    - cron: '45 14 * * 1'
+    - cron: '00 15 * * 1'
 jobs:
   cypress-run:
     runs-on: windows-latest
