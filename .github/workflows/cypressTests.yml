@@ -43,7 +43,7 @@ jobs:
           slack-channel: C034FNUA7SA
           slack-text:  |
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
-           Output can be found here ${{ github.workspace }}
+           Output can be found here ${{ github.workspace }}/cypress/screenshots
           slack-optional-attachments: cypress/screenshots
      - name: Send Slack message on success
        uses: archive/github-actions-slack@v2.0.0
@@ -52,8 +52,8 @@ jobs:
           slack-channel: C034FNUA7SA
           slack-text: |
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
-           Output can be found here ${{ github.workspace }}
-          slack-optional-attachments: test-reports
+           Output can be found here 
+           ${{ github.workspace }}/test-reports/
 
 
 
