@@ -24,7 +24,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter student email as "lorenab+student@bluetrailsoft.com"
     Then I enter student password as "Student01!"
-    And I should see student welcome message "👋 Welcome Student, how are you doing today?"
+    And I should see student welcome message
 
 
   #User should be able to sing in without any problem and have access according permissions UD-T15
