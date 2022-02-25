@@ -407,12 +407,7 @@
         "keyword": "Scenario",
         "line": 75,
         "name": "Cancel user creation",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 74
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -437,7 +432,7 @@
             "arguments": [],
             "keyword": "And ",
             "line": 79,
-            "name": "fill all existent fields   as \"Mauro\" \"Nogeira\" \"maunog@gmail.com\" \"457FDH\" \"non-binary\"",
+            "name": "fill all existent fields as \"Mauro\" \"Nogeira\" \"maunog@gmail.com\" \"457FDH\" \"non-binary\"",
             "result": {
               "status": "skipped"
             }
@@ -633,12 +628,7 @@
         "keyword": "Scenario",
         "line": 114,
         "name": "Cancel Delete user",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 113
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -933,12 +923,7 @@
         "keyword": "Scenario",
         "line": 164,
         "name": "Add filter Email Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 163
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -984,12 +969,7 @@
         "keyword": "Scenario",
         "line": 173,
         "name": "Add filter Phone Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 172
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1035,12 +1015,7 @@
         "keyword": "Scenario",
         "line": 182,
         "name": "Add filter Schools Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 181
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1086,12 +1061,7 @@
         "keyword": "Scenario",
         "line": 191,
         "name": "Add filter Organization Roles Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 190
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1137,12 +1107,7 @@
         "keyword": "Scenario",
         "line": 200,
         "name": "Add filter Status Active Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 199
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1188,12 +1153,7 @@
         "keyword": "Scenario",
         "line": 209,
         "name": "Add filter Status Inactive Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 208
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1584,12 +1544,7 @@
         "keyword": "Scenario",
         "line": 273,
         "name": "Edit filter Email Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 272
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1644,12 +1599,7 @@
         "keyword": "Scenario",
         "line": 283,
         "name": "Edit filter Phone Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 282
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1704,12 +1654,7 @@
         "keyword": "Scenario",
         "line": 293,
         "name": "Edit filter Schools Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 292
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1764,12 +1709,7 @@
         "keyword": "Scenario",
         "line": 303,
         "name": "Edit filter Organization Roles Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 302
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1824,12 +1764,7 @@
         "keyword": "Scenario",
         "line": 313,
         "name": "Edit filter Status Cancel",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 312
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -2491,7 +2426,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 39129000000
+              "duration": 53971000000
             }
           },
           {
@@ -2501,7 +2436,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 4910000000
+              "duration": 1055000000
             }
           },
           {
@@ -2510,8 +2445,8 @@
             "line": 429,
             "name": "I sort column by asc and desc",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Items are sorted in asc order: expected [ Array(6) ] to deeply equal [ Array(6) ]\n    + expected - actual\n\n     [ 'Custom',\n    -  'df',\n       'Lorena',\n       'Organization Admin',\n       'PCI BATO teacher',\n    -  'Primitivo Chacon' ]\n    +  'Primitivo Chacon',\n    +  'df' ]\n\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\users.feature:2045:72)"
+              "status": "passed",
+              "duration": 28235000000
             }
           }
         ]
@@ -2605,12 +2540,7 @@
         "keyword": "Scenario",
         "line": 450,
         "name": "Sorting and pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 449
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -2656,12 +2586,7 @@
         "keyword": "Scenario",
         "line": 459,
         "name": "Search and pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 458
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -2707,12 +2632,7 @@
         "keyword": "Scenario",
         "line": 468,
         "name": "Add multiple filters search and pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 467
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -2767,12 +2687,7 @@
         "keyword": "Scenario",
         "line": 478,
         "name": "First page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 477
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -2809,12 +2724,7 @@
         "keyword": "Scenario",
         "line": 486,
         "name": "Last page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 485
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -2851,12 +2761,7 @@
         "keyword": "Scenario",
         "line": 494,
         "name": "Next page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 493
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -2893,12 +2798,7 @@
         "keyword": "Scenario",
         "line": 502,
         "name": "Previous page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 501
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {

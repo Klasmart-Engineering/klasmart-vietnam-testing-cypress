@@ -62,6 +62,7 @@ class SignInPage {
   tailandFlagText =
     "div:nth-child(8) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1)";
   signInTextFlags = ".MuiTypography-root.MuiTypography-h4";
+  currentProfileCredentials = "span[aria-label='Lorena Bettoni'] div";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -116,6 +117,10 @@ class SignInPage {
 
   clickOnContinueButton() {
     cy.get(this.continueButton).should("be.visible").click();
+  }
+
+  clickOnCurrentProfile() {
+    cy.get(this.currentProfileCredentials).should("be.visible").click();
   }
 
   getInvalidEmailError() {

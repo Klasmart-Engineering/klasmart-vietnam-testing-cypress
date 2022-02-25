@@ -15,6 +15,7 @@ Given(
     signInPage.clickOnSignInButton();
     signInPage.clickSelectProfile();
     signInPage.clickOnContinueButton();
+    signInPage.clickOnCurrentProfile();
   }
 );
 

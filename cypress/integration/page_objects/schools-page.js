@@ -241,19 +241,19 @@ class SchoolPage {
 
   selectionGrades() {
     cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.text() == "None Specified") {
+      if ($el.text() == "Grade 2") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "K") {
+      } else if ($el.text() == "Grade 1") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "Preschool") {
+      } else if ($el.text() == "Automation 01") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "PreK-7") {
+      } else if ($el.text() == "Grade 3") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
@@ -263,19 +263,19 @@ class SchoolPage {
 
   selectionAgeRanges() {
     cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.text() == "3 - 4 Year(s)") {
+      if ($el.text() == "0 - 4 Year(s)") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "5 - 6 Year(s)") {
+      } else if ($el.text() == "0 - 10 Year(s)") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "7 - 8 Year(s)") {
+      } else if ($el.text() == "99 - 1 Month(s)") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "6 - 7 Year(s)") {
+      } else if ($el.text() == "11 - 22 Month(s)") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
@@ -570,7 +570,7 @@ class SchoolPage {
     cy.wait(5000);
     cy.get("tbody tr td:nth-child(1)").then((items) => {
       const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text())
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
         .get();
       unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
       const sortedItems = unsortedItems.slice().sort();
@@ -586,7 +586,7 @@ class SchoolPage {
     cy.wait(9000);
     cy.get("tbody tr td:nth-child(1)").then((items) => {
       const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text())
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
         .get();
       unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
       const sortedItems = unsortedItems.reverse();

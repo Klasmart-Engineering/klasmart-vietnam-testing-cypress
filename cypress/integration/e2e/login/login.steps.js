@@ -14,6 +14,7 @@ When("I enter invalid email as {string}", (text) => {
 Then("I enter invalid password as {string}", (text) => {
   signInPage.enterPassword(text);
   signInPage.clickOnSignInButton();
+  homePage.clickOnInvalidProfile();
 });
 
 And("I should see the error message {string}", (errorText) => {
@@ -68,6 +69,7 @@ And("I should see parent welcome message {string}", (text) => {
 });
 
 And("I should see teacher welcome message", () => {
+  homePage.clickOnSwitchView();
   homePage.getNewWelcomeText();
 });
 

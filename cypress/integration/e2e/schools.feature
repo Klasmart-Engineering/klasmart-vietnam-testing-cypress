@@ -50,7 +50,7 @@ Feature: Schools
 
 
   #User should be able to create a Program to assign to a School UD-T44
-
+@focus 
   Scenario: Create Program on School
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -156,7 +156,7 @@ Feature: Schools
     Then I check different rows per page
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T625
-  @smoke
+ 
   Scenario: Sorting and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -165,7 +165,7 @@ Feature: Schools
     And I check all buttons from pagination
 
   #User should be able to search and see the pagination according to inserted searching UD-T176
-  @smoke
+  
   Scenario: Search and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -182,7 +182,7 @@ Feature: Schools
     And I sort column by asc and desc
 
   #User should be able to see first page from pagination UD-T175
-  @smoke
+  
   Scenario: First page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -190,7 +190,7 @@ Feature: Schools
     Then I check first page pagination
 
   #User should be able to see last page from pagination UD-T174
-  @smoke
+
   Scenario: Last page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -198,7 +198,7 @@ Feature: Schools
     Then I check last page pagination
 
   #User should be able to see next page from pagination UD-T172
-  @smoke
+  
   Scenario: Next page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -206,7 +206,7 @@ Feature: Schools
     Then I check next page pagination
 
   #User should be able to see previous page from pagination UD-T173
-  @smoke
+  
   Scenario: Previous page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"

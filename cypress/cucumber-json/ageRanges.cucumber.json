@@ -128,7 +128,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 37711000000
+              "duration": 39615000000
             }
           },
           {
@@ -138,7 +138,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 8354000000
+              "duration": 2049000000
             }
           },
           {
@@ -148,7 +148,7 @@
             "name": "Add filter for age ranges from",
             "result": {
               "status": "passed",
-              "duration": 5511000000
+              "duration": 4956000000
             }
           },
           {
@@ -158,7 +158,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 1016000000
+              "duration": 891000000
             }
           },
           {
@@ -168,7 +168,7 @@
             "name": "I check that age ranges from filter was added",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 67000000
             }
           }
         ]
@@ -193,7 +193,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 26124000000
+              "duration": 27522000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 5683000000
+              "duration": 1474000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Add filter for age ranges to",
             "result": {
               "status": "passed",
-              "duration": 5070000000
+              "duration": 4766000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 857000000
+              "duration": 855000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "I check that age ranges to filter was added",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 88000000
             }
           }
         ]
