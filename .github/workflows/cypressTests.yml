@@ -31,14 +31,29 @@ jobs:
        uses: actions/upload-artifact@v2
        if: always()
        with:
-          name: test-reports
+          name: test reports
           path: test-reports
-     - name: Send Slack message 
+     - name: Send Slack message on failure
+       uses: archive/github-actions-slack@v2.0.0
+       if: failure()
+       with:
+          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
+          slack-channel: C034FNUA7SA
+          status: FAILED
+          slack-text: Admin cypress tests finished with ${{ steps.cypresstest.outcome }}
+          files: cypress/screenshots
+          color: danger
+     - name: Send Slack message on success
        uses: archive/github-actions-slack@v2.0.0
        with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C034FNUA7SA
-          slack-text: Tests finished with ${{ steps.cypresstest.outcome }}
+          status: SUCCESS
+          slack-text: Admin cypress tests finished with ${{ steps.cypresstest.outcome }}
+          files: test-reports
+          color: good
+
+
 
 
        
