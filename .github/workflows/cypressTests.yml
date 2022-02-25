@@ -23,7 +23,7 @@ jobs:
           slack-channel: C034FNUA7SA
           slack-text: |
            Admin cypress tests finished with PASS
-           Output can be found here ${{ GITHUB_WORKFLOW_URL }}
+           Output can be found here $GITHUB_WORKFLOW_URL
            https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
      - name: Checkout 
        uses: actions/checkout@v2
