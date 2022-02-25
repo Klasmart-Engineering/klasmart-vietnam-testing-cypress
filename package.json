@@ -24,7 +24,6 @@
     "type": "github",
     "url": "https://github.com/KL-Global/testing-cypress"
   },
-  
   "cypress-cucumber-preprocessor": {
     "cucumberJson": {
       "generate": true,
@@ -52,7 +51,7 @@
     "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
     "jsdom": "^19.0.0",
-    "multiple-cucumber-html-reporter": "^1.18.3",
+    "multiple-cucumber-html-reporter": "^1.19.0",
     "prettier": "2.4.1"
   },
   "dependencies": {

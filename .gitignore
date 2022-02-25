@@ -65,4 +65,3 @@ cypress/screenshots
 test-reports/
 cypress/cucumber-json/
 xunit.xml
-cucumber-html-report.js
