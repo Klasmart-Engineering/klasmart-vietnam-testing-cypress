@@ -9,22 +9,45 @@ jobs:
     container:
      image: cypress/browsers:node16.5.0-chrome97-ff96
      options: --user 1001
-
     # let's make sure our tests pass on Chrome browser
     name: E2E on Chrome
     steps:
-     - name: Checkout 
-       uses: actions/checkout@v2
-
-     - name: Custom tests 
-       uses: cypress-io/github-action@v2
-       with:
-         command: npm run cy:run:smoke:alpha
-     - name: Store results   
-       uses: actions/upload-artifact@v2
-       if: failure()
-       with:
+      - name: Checkout 
+        uses: actions/checkout@v2
+      - run: npm install 
+      - name: Cypress run
+        id: cypresstest
+        run: npm run cy:run:smoke:alpha
+        continue-on-error: true
+      - run: npm run e2e:reports
+      - name: Store results   
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
           name: cypress-screenshots
-          path: cypress/screenshots 
-          uses: archive/github-actions-slack@v2.3.2
-   
+          path: cypress/screenshots   
+      - name: Store reports   
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: test reports
+          path: test-reports
+      - name: Send Slack message on failure
+        uses: archive/github-actions-slack@v2.0.0
+        if: failure()
+        with:
+          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
+          slack-channel: C034HBAFK8E
+          slack-text:  |
+           Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
+           Output can be found here
+           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      - name: Send Slack message 
+        uses: archive/github-actions-slack@v2.0.0
+        with:
+          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
+          slack-channel: C034HBAFK8E
+          slack-text: |
+           Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
+           Output can be found here 
+           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
