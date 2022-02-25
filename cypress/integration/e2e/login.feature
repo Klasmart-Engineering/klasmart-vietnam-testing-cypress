@@ -1,7 +1,7 @@
 Feature: Login
 
   #User should be able to sing in without any problem and have access according permissions UD-T17
-  @smoke
+  @test
   Scenario: Login with custom credentials
     Given I click can't find your country or region
     When I enter custom email as "lorenab+custom@bluetrailsoft.com"
@@ -65,7 +65,6 @@ Feature: Login
 
 
   #User should be able to sing in without any problem and have access according permissions UD-T5
-  @smoke
   Scenario: Login with valid credentials
     Given I click can't find your country or region
     When I enter a valid email as "lorenab+organization@bluetrailsoft.com"
@@ -92,7 +91,6 @@ Feature: Login
 
 
   #User should not be able to sing in with spaces on email credentials UD-T10
-  @smoke
   Scenario: Login with email spaces
     Given I click can't find your country or region
     When I enter an invalid email as "   "
@@ -101,7 +99,6 @@ Feature: Login
 
 
   # User should not be able to sing in with password spaces on credentials UD-T11
-  @smoke
   Scenario: Login with password spaces
     Given I click can't find your country or region
     When I enter an invalid email as "lorenab+organization@bluetrailsoft.com"
@@ -110,7 +107,6 @@ Feature: Login
 
 
   # User should not be able to sing in with empty password credentials UD-T613
-  @smoke
   Scenario: Login with password as empty
     Given I click can't find your country or region
     When I enter a valid email as "lorenab+organization@bluetrailsoft.com" with password as empty
@@ -126,7 +122,6 @@ Feature: Login
 
 
   #User should be able to click on link and see the page for account creation UD-T8
-  @smoke
   Scenario: Create an Account Page
     Given I click can't find your country or region
     Then I click on email or phone link
@@ -134,7 +129,6 @@ Feature: Login
 
 
   # User should be able to click on link forgot password and see the page UD-T7
-  @smoke
   Scenario: Forgot Password Page
     Given I click can't find your country or region
     Then I click forgot password link
@@ -150,7 +144,6 @@ Feature: Login
 
 
   #User should be able to sign in even if the current location is not listed UD-T2
-  @smoke
   Scenario: Selection of country or region not listed
     Given I click can't find your country or region
     Then I should be redirected to "Login"
@@ -175,7 +168,6 @@ Feature: Login
 
 
   #User should be able to switch between accounts according level of permissions UD-T468
-  @smoke
   Scenario: Switch between Roles - Organization Admin to Student
     Given I click can't find your country or region
     When I enter a valid email as "lorenab+student@bluetrailsoft.com"
@@ -184,7 +176,6 @@ Feature: Login
 
 
   #User should be able to switch between accounts according level of permissions UD-T467
-  @smoke
   Scenario: Switch between Roles - Organization Admin to Parent
     Given I click can't find your country or region
     When I enter a valid email as "lorenab+parent@bluetrailsoft.com	"
@@ -213,7 +204,6 @@ Feature: Login
   Scenario: United Kingdom Flag
     Given auth United Kingdom page
     When verify the correct flag "Sign In" name
-
 
   #User should see the url and correct language selected for current flag  UD-T4
   @smoke

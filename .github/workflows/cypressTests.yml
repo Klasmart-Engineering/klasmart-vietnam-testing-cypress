@@ -22,9 +22,7 @@ jobs:
          command: npm run cy:run:smoke:alpha
      - name: Store results   
        uses: actions/upload-artifact@v2
-       if: failure()
        with:
           name: cypress-screenshots
-          path: cypress/screenshots 
-          uses: archive/github-actions-slack@v2.3.2
+          path: cypress/screenshots
    
