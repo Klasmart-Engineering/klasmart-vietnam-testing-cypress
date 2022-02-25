@@ -15,51 +15,63 @@ jobs:
     # let's make sure our tests pass on Chrome browser
     name: E2E on Chrome
     steps:
-     - name: Send Slack message on success
-       id: jobs
-       uses: archive/github-actions-slack@v2.0.0
-       with:
+      - name: Dump GitHub context
+        id: github_context_step
+        run: echo '${{ toJSON(github) }}'
+      - name: Dump job context
+        run: echo '${{ toJSON(job) }}'
+      - name: Dump steps context
+        run: echo '${{ toJSON(steps) }}'
+      - name: Dump runner context
+        run: echo '${{ toJSON(runner) }}'
+      - name: Dump strategy context
+        run: echo '${{ toJSON(strategy) }}'
+      - name: Dump matrix context
+        run: echo '${{ toJSON(matrix) }}'
+      - name: Send Slack message on success
+        id: jobs
+        uses: archive/github-actions-slack@v2.0.0
+        with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C034FNUA7SA
           slack-text: |
            Admin cypress tests finished with PASS
-           Output can be found here $GITHUB_WORKFLOW_URL
+           Output can be found here '${{ toJSON(github) }}'
            https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
-     - name: Checkout 
-       uses: actions/checkout@v2
-     - run: npm install 
-     - name: Cypress run
-       id: cypresstest
-       run: npm run cy:run:smoke:alpha
-       continue-on-error: true
-     - run: npm run e2e:reports
-     - name: Store results   
-       uses: actions/upload-artifact@v2
-       if: failure()
-       with:
+      - name: Checkout 
+        uses: actions/checkout@v2
+      - run: npm install 
+      - name: Cypress run
+        id: cypresstest
+        run: npm run cy:run:smoke:alpha
+        continue-on-error: true
+      - run: npm run e2e:reports
+      - name: Store results   
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
           name: cypress-screenshots
           path: cypress/screenshots   
-     - name: Store reports   
-       uses: actions/upload-artifact@v2
-       if: always()
-       with:
+      - name: Store reports   
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
           name: test reports
           path: test-reports
           target: test-reports 
-
-     - name: Send Slack message on failure
-       uses: archive/github-actions-slack@v2.0.0
-       if: failure()
-       with:
+      - name: Send Slack message on failure
+        uses: archive/github-actions-slack@v2.0.0
+        if: failure()
+        with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C034FNUA7SA
           slack-text:  |
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
            Output can be found here ${{ github.workspace }}/cypress/screenshots
           slack-optional-attachments: cypress/screenshots
-     - name: Send Slack message on success
-       uses: archive/github-actions-slack@v2.0.0
-       with:
+      - name: Send Slack message 
+        uses: archive/github-actions-slack@v2.0.0
+        with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C034FNUA7SA
           slack-text: |
