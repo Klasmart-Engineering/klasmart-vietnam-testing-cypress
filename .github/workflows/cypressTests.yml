@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Dump GitHub context
         id: github_context_step
-        run: echo ${{ github.repository }}
+        run: echo ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
       - name: Send Slack message on success
         id: jobs
         uses: archive/github-actions-slack@v2.0.0
@@ -26,7 +26,8 @@ jobs:
           slack-channel: C034FNUA7SA
           slack-text: |
            Admin cypress tests finished with PASS
-           Output can be found here ${{ github.repository }}
+           Output can be found here 
+           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
       - name: Checkout 
         uses: actions/checkout@v2
       - run: npm install 
