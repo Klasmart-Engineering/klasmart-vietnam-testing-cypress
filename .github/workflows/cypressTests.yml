@@ -19,13 +19,13 @@ jobs:
      - name: testrun 
        id: cypresstest
        run: npm run cy:run:smoke:alpha
-     - run: npm run e2e:reports    
      - name: Send Slack Message
        uses: archive/github-actions-slack@v2.0.0
        with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C034FNUA7SA
           slack-text: Tests finished with ${{ steps.cypresstest.outcome }}
+     - run: npm run e2e:reports
      - name: Store results   
        uses: actions/upload-artifact@v2
        if: failure()
