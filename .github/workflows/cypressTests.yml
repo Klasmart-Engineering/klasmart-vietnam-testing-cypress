@@ -17,17 +17,7 @@ jobs:
     steps:
       - name: Dump GitHub context
         id: github_context_step
-        run: echo '${{ toJSON(github) }}'
-      - name: Dump job context
-        run: echo '${{ toJSON(job) }}'
-      - name: Dump steps context
-        run: echo '${{ toJSON(steps) }}'
-      - name: Dump runner context
-        run: echo '${{ toJSON(runner) }}'
-      - name: Dump strategy context
-        run: echo '${{ toJSON(strategy) }}'
-      - name: Dump matrix context
-        run: echo '${{ toJSON(matrix) }}'
+        run: echo ${{ github.repository }}
       - name: Send Slack message on success
         id: jobs
         uses: archive/github-actions-slack@v2.0.0
@@ -36,8 +26,7 @@ jobs:
           slack-channel: C034FNUA7SA
           slack-text: |
            Admin cypress tests finished with PASS
-           Output can be found here '${{ toJSON(github) }}'
-           https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+           Output can be found here ${{ github.repository }}
       - name: Checkout 
         uses: actions/checkout@v2
       - run: npm install 
