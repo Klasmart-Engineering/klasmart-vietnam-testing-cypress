@@ -33,7 +33,7 @@ jobs:
        with:
           name: cypress-screenshots
           path: cypress/screenshots   
-     - name: Store results   
+     - name: Store reports   
        uses: actions/upload-artifact@v2
        if: always()
        with:
