@@ -18,11 +18,7 @@ jobs:
      - run: npm install 
      - name: Cypress run
        id: cypresstest
-       uses: cypress-io/github-action@v2
-       with:
-          # Specify Browser since container image is compile with Firefox
-          browser: chrome
-          e: TAGS=\"@test\"
+       run: npm run cy:run:smoke:alpha
        continue-on-error: true
      - run: npm run e2e:reports
      - name: Store results   
