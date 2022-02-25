@@ -16,16 +16,14 @@ jobs:
      - name: Checkout 
        uses: actions/checkout@v2
      - run: npm install 
-     - name: testrun 
+     - name: Cypress run
        id: cypresstest
-       run: npm run cy:run:smoke:alpha
-       continue-on-error: true
-     - name: Send Slack message 
-       uses: archive/github-actions-slack@v2.0.0
+       uses: cypress-io/github-action@v2
        with:
-          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
-          slack-channel: C034FNUA7SA
-          slack-text: Tests finished with ${{ steps.cypresstest.outcome }}
+          # Specify Browser since container image is compile with Firefox
+          browser: chrome
+          e: TAGS=\"@test\"
+       continue-on-error: true
      - run: npm run e2e:reports
      - name: Store results   
        uses: actions/upload-artifact@v2
@@ -39,4 +37,12 @@ jobs:
        with:
           name: test-reports
           path: test-reports
+     - name: Send Slack message 
+       uses: archive/github-actions-slack@v2.0.0
+       with:
+          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
+          slack-channel: C034FNUA7SA
+          slack-text: Tests finished with ${{ steps.cypresstest.outcome }}
+
+
        
