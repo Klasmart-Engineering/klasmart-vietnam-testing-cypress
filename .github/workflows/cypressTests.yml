@@ -9,7 +9,9 @@ jobs:
     container:
      image: cypress/browsers:node16.5.0-chrome97-ff96
      options: --user 1001
+     
     
+
     # let's make sure our tests pass on Chrome browser
     name: E2E on Chrome
     steps:
@@ -21,8 +23,8 @@ jobs:
           slack-channel: C034FNUA7SA
           slack-text: |
            Admin cypress tests finished with PASS
-           Output can be found here 
-           ${{ steps.jobs.outputs.html_url }}
+           Output can be found here ${{ GITHUB_WORKFLOW_URL }}
+           https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
      - name: Checkout 
        uses: actions/checkout@v2
      - run: npm install 
