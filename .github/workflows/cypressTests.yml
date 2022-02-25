@@ -32,7 +32,6 @@ jobs:
         with:
           name: test reports
           path: test-reports
-          target: test-reports 
       - name: Send Slack message on failure
         uses: archive/github-actions-slack@v2.0.0
         if: failure()
@@ -52,8 +51,3 @@ jobs:
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
            Output can be found here 
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}?check_suite_focus=true
-
-
-
-
-       
