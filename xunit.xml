@@ -1,0 +1,101 @@
+<testsuite name="Mocha Tests" tests="55" failures="0" errors="5" skipped="28" timestamp="Fri, 25 Feb 2022 20:17:55 GMT" time="1862.321">
+<testcase classname="Users" name="Create user" time="0.133"/>
+<testcase classname="Users" name="Edit user" time="0.025"/>
+<testcase classname="Users" name="Inactive User from edition mode" time="0.026"/>
+<testcase classname="Users" name="Inactive User from edition mode cancel" time="74.072"/>
+<testcase classname="Users" name="Create duplicated user with same shortcode" time="0.505"/>
+<testcase classname="Users" name="Create duplicated users without shortcode" time="0.019"/>
+<testcase classname="Users" name="Create user without required fields" time="0"><failure>Timed out retrying after 30000ms: Expected to find element: &#x60;[class =&#x27;MuiButtonBase-root MuiButton-root MuiButton-text Mui-disabled Mui-disabled&#x27;]&#x60;, but never found it.
+AssertionError: Timed out retrying after 30000ms: Expected to find element: &#x60;[class =&#x27;MuiButtonBase-root MuiButton-root MuiButton-text Mui-disabled Mui-disabled&#x27;]&#x60;, but never found it.
+    at UserPage.checkCreateButtonState (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:1466:103)
+    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:176:22)
+    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:28043:29)
+    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:27364:35)</failure></testcase>
+<testcase classname="Users" name="Cancel user creation" time="0.372"/>
+<testcase classname="Users" name="Delete user" time="0.045"/>
+<testcase classname="Users" name="Add filter Status Active" time="42.669"/>
+<testcase classname="Users" name="Add filter Status Inactive" time="37.542"/>
+<testcase classname="Users" name="Cancel Delete user" time="0.458"/>
+<testcase classname="Users" name="Add filter Schools" time="0"><failure>Timed out retrying after 30000ms: Expected to find element: &#x60;div &#x3E; div &#x3E; div:nth-child(1) &#x3E; div:nth-child(3) &#x3E; div &#x3E; div&#x60;, but never found it.
+AssertionError: Timed out retrying after 30000ms: Expected to find element: &#x60;div &#x3E; div &#x3E; div:nth-child(1) &#x3E; div:nth-child(3) &#x3E; div &#x3E; div&#x60;, but never found it.
+    at UserPage.clickOnValuesFilter (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:1629:33)
+    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:280:22)
+    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:28043:29)
+    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:27364:35)</failure></testcase>
+<testcase classname="Users" name="Add filter Organization Roles" time="59.83"/>
+<testcase classname="Users" name="Add filter Phone" time="47.693"/>
+<testcase classname="Users" name="Add filter Email" time="50.238"/>
+<testcase classname="Users" name="Add filter Email Cancel" time="0.577"/>
+<testcase classname="Users" name="Add filter Phone Cancel" time="0.013"/>
+<testcase classname="Users" name="Add filter Schools Cancel" time="0.076"/>
+<testcase classname="Users" name="Add filter Organization Roles Cancel" time="0.128"/>
+<testcase classname="Users" name="Add filter Status Active Cancel" time="0.068"/>
+<testcase classname="Users" name="Add filter Status Inactive Cancel" time="0.007"/>
+<testcase classname="Users" name="Edit filter Organization Roles" time="74.971"/>
+<testcase classname="Users" name="Edit filter Schools" time="103.741"/>
+<testcase classname="Users" name="Edit filter Status" time="58.234"/>
+<testcase classname="Users" name="Edit filter Phone" time="52.013"/>
+<testcase classname="Users" name="Edit filter Email" time="59.31"/>
+<testcase classname="Users" name="Edit filter Email Cancel" time="0.317"/>
+<testcase classname="Users" name="Edit filter Phone Cancel" time="0.078"/>
+<testcase classname="Users" name="Edit filter Schools Cancel" time="0.069"/>
+<testcase classname="Users" name="Edit filter Organization Roles Cancel" time="0.16"/>
+<testcase classname="Users" name="Edit filter Status Cancel" time="0.06"/>
+<testcase classname="Users" name="Clear filter Email" time="48.349"/>
+<testcase classname="Users" name="Clear filter Organization Roles" time="0"><failure>Timed out retrying after 30000ms: Expected to find element: &#x60;div &#x3E; div &#x3E; div:nth-child(1) &#x3E; div:nth-child(3) &#x3E; div &#x3E; div&#x60;, but never found it.
+AssertionError: Timed out retrying after 30000ms: Expected to find element: &#x60;div &#x3E; div &#x3E; div:nth-child(1) &#x3E; div:nth-child(3) &#x3E; div &#x3E; div&#x60;, but never found it.
+    at UserPage.clickOnValuesFilter (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:1629:33)
+    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:293:22)
+    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:28043:29)
+    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:27364:35)</failure></testcase>
+<testcase classname="Users" name="Clear filter Phone" time="57.868"/>
+<testcase classname="Users" name="Clear filter Schools" time="69.423"/>
+<testcase classname="Users" name="Clear filter Status Active" time="55.721"/>
+<testcase classname="Users" name="Clear all filters" time="144.328"/>
+<testcase classname="Users" name="Disable filter" time="168.814"/>
+<testcase classname="Users" name="Filter order values" time="0"><failure>expected [ Array(5) ] to deeply equal [ Array(5) ]
+
+      + expected - actual
+
+      -[ &#x27;Organization Roles&#x27;, &#x27;Status&#x27;, &#x27;Schools&#x27;, &#x27;Email&#x27;, &#x27;Phone&#x27; ]
+      +[ &#x27;Organization Roles&#x27;, &#x27;Schools&#x27;, &#x27;Email&#x27;, &#x27;Phone&#x27;, &#x27;Status&#x27; ]
+      
+AssertionError: expected [ Array(5) ] to deeply equal [ Array(5) ]
+    at UserPage.getFilterOrderValues (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:1895:8)
+    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:564:22)
+    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:28043:29)
+    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:27364:35)</failure></testcase>
+<testcase classname="Users" name="Search users" time="50.902"/>
+<testcase classname="Users" name="Add columns" time="54.271"/>
+<testcase classname="Users" name="Remove columns" time="47.378"/>
+<testcase classname="Users" name="Sorting" time="0"><failure>Items are sorted in asc order: expected [ Array(10) ] to deeply equal [ Array(10) ]
+
+      + expected - actual
+
+       [ &#x27;0teacher ad-1097&#x27;,
+         &#x27;1097TEACHER&#x27;,
+         &#x27;AB&#x27;,
+      +  &#x27;AD-1097 PARENT&#x27;,
+      +  &#x27;AD-1097 SCHOOL ADMIN&#x27;,
+         &#x27;Abel&#x27;,
+         &#x27;Abigail&#x27;,
+         &#x27;Abran&#x27;,
+      -  &#x27;AD-1097 PARENT&#x27;,
+      -  &#x27;AD-1097 SCHOOL ADMIN&#x27;,
+         &#x27;Adas&#x27;,
+         &#x27;Agus&#x27; ]
+      
+AssertionError: Items are sorted in asc order: expected [ Array(10) ] to deeply equal [ Array(10) ]
+    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\integration\e2e\users.feature:2053:72)</failure></testcase>
+<testcase classname="Users" name="Pagination" time="74.74"/>
+<testcase classname="Users" name="Rows Per Page" time="99.765"/>
+<testcase classname="Users" name="Sorting and pagination" time="0.378"/>
+<testcase classname="Users" name="Search and pagination" time="0.006"/>
+<testcase classname="Users" name="Add multiple filters search and pagination" time="0.005"/>
+<testcase classname="Users" name="First page pagination" time="0.138"/>
+<testcase classname="Users" name="Last page pagination" time="0.156"/>
+<testcase classname="Users" name="Next page pagination" time="0.007"/>
+<testcase classname="Users" name="Previous page pagination" time="0.006"/>
+<testcase classname="Users" name="Create Multiple Users with CSV file" time="0.125"/>
+<testcase classname="Users" name="Create User with CSV file" time="0.142"/>
+</testsuite>

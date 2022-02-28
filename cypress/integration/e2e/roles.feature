@@ -69,7 +69,7 @@ Feature: Roles
     Then I check different rows per page
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T578
-  @smoke
+  
   Scenario: Sorting and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -78,7 +78,7 @@ Feature: Roles
     And I check all buttons from pagination
 
   #User should be able to search and see the pagination according to inserted searching UD-T577
-  @smoke
+ 
   Scenario: Search and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -95,7 +95,7 @@ Feature: Roles
     And I sort column by asc and desc
 
   #User should be able to see first page from pagination UD-T576
-  @smoke
+ 
   Scenario: First page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -103,7 +103,7 @@ Feature: Roles
     Then I check first page pagination
 
   #User should be able to see last page from pagination UD-T575
-  @smoke
+ 
   Scenario: Last page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -111,7 +111,7 @@ Feature: Roles
     Then I check last page pagination
 
   #User should be able to see next page from pagination UD-T573
-  @smoke
+ 
   Scenario: Next page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -119,7 +119,7 @@ Feature: Roles
     Then I check next page pagination
 
   #User should be able to see previous page from pagination UD-T574
-  @smoke
+  
   Scenario: Previous page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -127,7 +127,7 @@ Feature: Roles
     Then I check previous page pagination
 
   #User should be able to cancel creation of a new role UD-T571
-  @smoke
+ 
   Scenario: Cancel create role
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -162,7 +162,7 @@ Feature: Roles
     Then I create a new role with special characters not allowed for name "$#$%&/()" and description "$#$%&/()"
 
   #User should not be able to create a role with same name UD-T563
-  @smoke
+
   Scenario: Create duplicate role
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section

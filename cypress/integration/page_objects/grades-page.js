@@ -185,7 +185,7 @@ class GradesPage {
     cy.wait(5000);
     cy.get("tbody tr td:nth-child(1)").then((items) => {
       const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text())
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
         .get();
       unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
       const sortedItems = unsortedItems.slice().sort();

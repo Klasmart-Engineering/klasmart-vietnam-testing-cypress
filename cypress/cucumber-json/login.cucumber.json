@@ -12,12 +12,7 @@
         "keyword": "Scenario",
         "line": 5,
         "name": "Login with custom credentials",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 4
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -65,6 +60,10 @@
         "name": "Login with invalid profile",
         "tags": [
           {
+            "name": "@focus",
+            "line": 13
+          },
+          {
             "name": "@smoke",
             "line": 13
           }
@@ -77,7 +76,8 @@
             "line": 15,
             "name": "I click can't find your country or region",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5582000000
             }
           },
           {
@@ -86,7 +86,8 @@
             "line": 16,
             "name": "I enter invalid email as \"lorenab+invalid@bluetrailsoft.com\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9627000000
             }
           },
           {
@@ -95,7 +96,8 @@
             "line": 17,
             "name": "I enter invalid password as \"Invalid01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14606000000
             }
           },
           {
@@ -104,7 +106,8 @@
             "line": 18,
             "name": "I should see the error message \"Hi cadet!\"",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `h2[data-testid='no_profiles-title']`, but never found it.\n    at SignInPage.getInvalidCredentialErrorMessage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:655:47)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:146:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:26673:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:25994:35)"
             }
           }
         ]
@@ -218,6 +221,10 @@
         "name": "Login with teacher credentials",
         "tags": [
           {
+            "name": "@focus",
+            "line": 40
+          },
+          {
             "name": "@smoke",
             "line": 40
           }
@@ -230,7 +237,8 @@
             "line": 42,
             "name": "I click can't find your country or region",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11676000000
             }
           },
           {
@@ -239,7 +247,8 @@
             "line": 43,
             "name": "I enter teacher email as \"lorenab+teacher@bluetrailsoft.com\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4590000000
             }
           },
           {
@@ -248,7 +257,8 @@
             "line": 44,
             "name": "I enter teacher password as \"Teacher01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 17926000000
             }
           },
           {
@@ -257,7 +267,8 @@
             "line": 45,
             "name": "I should see teacher welcome message",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: expected '<h4.MuiTypography-root.MuiTypography-h4.jss280.css-flq0tz>' to contain text 'Good Evening', but the text was '👋 Welcome Teacher, how are you doing today?'\n    + expected - actual\n\n    -'👋 Welcome Teacher, how are you doing today?'\n    +'Good Evening'\n\n    at HomePage.getNewWelcomeText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:439:50)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:200:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:26673:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:25994:35)"
             }
           }
         ]
@@ -422,6 +433,10 @@
         "name": "Login with invalid email/phone",
         "tags": [
           {
+            "name": "@focus",
+            "line": 77
+          },
+          {
             "name": "@smoke",
             "line": 77
           }
@@ -434,7 +449,8 @@
             "line": 79,
             "name": "I click can't find your country or region",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12354000000
             }
           },
           {
@@ -443,7 +459,8 @@
             "line": 80,
             "name": "I enter an invalid email as \"lo$#$%$!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3905000000
             }
           },
           {
@@ -452,7 +469,8 @@
             "line": 81,
             "name": "I enter an invalid password as \"ER34!$%/&()'¿.,0\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1713000000
             }
           },
           {
@@ -461,7 +479,8 @@
             "line": 82,
             "name": "I should see the error message \"Please enter a valid email address\"",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `h2[data-testid='no_profiles-title']`, but never found it.\n    at SignInPage.getInvalidCredentialErrorMessage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:655:47)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:146:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:26673:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:25994:35)"
             }
           }
         ]
@@ -472,6 +491,10 @@
         "line": 87,
         "name": "Login with empty credentials",
         "tags": [
+          {
+            "name": "@focus",
+            "line": 86
+          },
           {
             "name": "@smoke",
             "line": 86
@@ -485,7 +508,8 @@
             "line": 88,
             "name": "I click can't find your country or region",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7124000000
             }
           },
           {
@@ -494,7 +518,8 @@
             "line": 89,
             "name": "I enter an invalid email as \"   \"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4277000000
             }
           },
           {
@@ -503,7 +528,8 @@
             "line": 90,
             "name": "I enter an invalid password as \"   \"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1859000000
             }
           },
           {
@@ -512,7 +538,8 @@
             "line": 91,
             "name": "I should see the error message \"Please enter a valid email address\"",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `h2[data-testid='no_profiles-title']`, but never found it.\n    at SignInPage.getInvalidCredentialErrorMessage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:655:47)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:146:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:26673:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:25994:35)"
             }
           }
         ]
@@ -523,6 +550,10 @@
         "line": 96,
         "name": "Login with email spaces",
         "tags": [
+          {
+            "name": "@focus",
+            "line": 95
+          },
           {
             "name": "@smoke",
             "line": 95
@@ -536,7 +567,8 @@
             "line": 97,
             "name": "I click can't find your country or region",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7003000000
             }
           },
           {
@@ -545,7 +577,8 @@
             "line": 98,
             "name": "I enter an invalid email as \"   \"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7513000000
             }
           },
           {
@@ -554,7 +587,8 @@
             "line": 99,
             "name": "I enter an invalid password as \"Trabajo21!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1761000000
             }
           },
           {
@@ -563,7 +597,8 @@
             "line": 100,
             "name": "I should see the error message \"Please enter a valid email address\"",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `h2[data-testid='no_profiles-title']`, but never found it.\n    at SignInPage.getInvalidCredentialErrorMessage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:655:47)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:146:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:26673:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:25994:35)"
             }
           }
         ]
@@ -811,7 +846,7 @@
             "name": "I click can't find your country or region",
             "result": {
               "status": "passed",
-              "duration": 14944000000
+              "duration": 6858000000
             }
           },
           {
@@ -821,7 +856,7 @@
             "name": "I click privacy link",
             "result": {
               "status": "passed",
-              "duration": 160000000
+              "duration": 4452000000
             }
           },
           {
@@ -830,8 +865,8 @@
             "line": 149,
             "name": "I should see a popup window called \"Privacy Notice\"",
             "result": {
-              "status": "passed",
-              "duration": 37000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#nav-menu-title`, but never found it.\n    at SignInPage.getPrivacyLinkPageText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:713:44)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:315:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:26673:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\login.feature:25994:35)"
             }
           }
         ]

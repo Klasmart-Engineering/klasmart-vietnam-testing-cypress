@@ -10,6 +10,7 @@ class HomePage {
   selectSecondProfile = "ul:nth-child(2) > div:nth-child(1)";
   selectThirdProfile = "ul:nth-child(2) > div:nth-child(2)";
   switchView = ".MuiButton-root.MuiButton-textSizeLarge";
+  invalidProfileSelection = 'ul:nth-child(1) > li:nth-child(2) > div:nth-child(1)';
 
   /*----------------  End Web Element  ----------------*/
 
@@ -43,6 +44,10 @@ class HomePage {
 
   clickOnSignoutLink() {
     cy.contains("Sign out").should("be.visible").click();
+  }
+
+  clickOnInvalidProfile() {
+    cy.get(this.invalidProfileSelection).should("be.visible").click();
   }
 
   getHomeTab() {

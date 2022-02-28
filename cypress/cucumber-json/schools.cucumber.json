@@ -27,7 +27,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 41775000000
+              "duration": 38212000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 5049000000
+              "duration": 682000000
             }
           },
           {
@@ -46,9 +46,8 @@
             "line": 8,
             "name": "I press on create school button",
             "result": {
-              "status": "failed",
-              "duration": 30423000000,
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:811:60)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:144:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38291:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37612:35)"
+              "status": "passed",
+              "duration": 618000000
             }
           },
           {
@@ -57,7 +56,8 @@
             "line": 9,
             "name": "I add maximum characters on fields \"Try maximum allowed on automation test insert text as long as possible to break the functionality and get some errors ins\" and \"4357643JURT\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7172000000
             }
           },
           {
@@ -66,7 +66,8 @@
             "line": 10,
             "name": "I get following error messages \"Max length of 120 characters.\" and \"Input needs to be maximum 10 characters\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 106000000
             }
           },
           {
@@ -75,7 +76,8 @@
             "line": 11,
             "name": "I close creation of Schools",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 450000000
             }
           }
         ]
@@ -100,7 +102,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 30398000000
+              "duration": 27694000000
             }
           },
           {
@@ -110,7 +112,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 5007000000
+              "duration": 620000000
             }
           },
           {
@@ -120,7 +122,7 @@
             "name": "I press on create school button",
             "result": {
               "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:811:60)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:144:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38291:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37612:35)"
+              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:813:60)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:146:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38299:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37620:35)"
             }
           },
           {
@@ -348,7 +350,12 @@
         "keyword": "Scenario",
         "line": 54,
         "name": "Create Program on School",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 53
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -765,7 +772,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 34986000000
+              "duration": 32250000000
             }
           },
           {
@@ -775,7 +782,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 5806000000
+              "duration": 756000000
             }
           },
           {
@@ -784,8 +791,8 @@
             "line": 121,
             "name": "I add columns to be shown",
             "result": {
-              "status": "passed",
-              "duration": 3106000000
+              "status": "failed",
+              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1w8s6so\" tabindex=\"0\" type=\"button\" aria-label=\"Add columns\" aria-haspopup=\"true\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at UserPage.clickOnAddColumns (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:2555:52)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:399:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38299:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37620:35)"
             }
           },
           {
@@ -794,8 +801,7 @@
             "line": 122,
             "name": "I check locked columns \"ID\" and \"School Name\" are present",
             "result": {
-              "status": "passed",
-              "duration": 346000000
+              "status": "skipped"
             }
           }
         ]
@@ -820,7 +826,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 26288000000
+              "duration": 33454000000
             }
           },
           {
@@ -830,7 +836,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 6173000000
+              "duration": 923000000
             }
           },
           {
@@ -840,7 +846,7 @@
             "name": "I remove columns to be shown",
             "result": {
               "status": "passed",
-              "duration": 1304000000
+              "duration": 1410000000
             }
           },
           {
@@ -850,7 +856,7 @@
             "name": "I check locked column \"School Name\" is present",
             "result": {
               "status": "passed",
-              "duration": 180000000
+              "duration": 195000000
             }
           }
         ]
@@ -875,7 +881,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 31046000000
+              "duration": 29062000000
             }
           },
           {
@@ -885,7 +891,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 6182000000
+              "duration": 1953000000
             }
           },
           {
@@ -895,7 +901,7 @@
             "name": "I search new school to validate \"Automation School\"",
             "result": {
               "status": "passed",
-              "duration": 10051000000
+              "duration": 10415000000
             }
           }
         ]
@@ -920,7 +926,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 27199000000
+              "duration": 36565000000
             }
           },
           {
@@ -930,7 +936,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 4795000000
+              "duration": 887000000
             }
           },
           {
@@ -940,7 +946,7 @@
             "name": "I check all buttons from pagination",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiTablePagination-root div > span:nth-child(3) > button`, but never found it.\n    at UserPage.clickOnNextPage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:2702:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:415:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38291:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37612:35)"
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiTablePagination-root div > span:nth-child(3) > button`, but never found it.\n    at UserPage.clickOnNextPage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:2710:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:417:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38299:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37620:35)"
             }
           }
         ]
@@ -965,7 +971,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 28049000000
+              "duration": 36275000000
             }
           },
           {
@@ -975,7 +981,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 6596000000
+              "duration": 2146000000
             }
           },
           {
@@ -985,7 +991,7 @@
             "name": "I check different rows per page",
             "result": {
               "status": "passed",
-              "duration": 58007000000
+              "duration": 55483000000
             }
           }
         ]
@@ -995,12 +1001,7 @@
         "keyword": "Scenario",
         "line": 160,
         "name": "Sorting and pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 159
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1009,8 +1010,7 @@
             "line": 162,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 38594000000
+              "status": "skipped"
             }
           },
           {
@@ -1019,8 +1019,7 @@
             "line": 163,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-              "duration": 5969000000
+              "status": "skipped"
             }
           },
           {
@@ -1029,9 +1028,7 @@
             "line": 164,
             "name": "I sort column by asc and desc",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError: Items are sorted in asc order: expected [ Array(10) ] to deeply equal [ Array(10) ]\n    + expected - actual\n\n    -[ '4A44 School',\n    -  '4A edited3 School3',\n    +[ '4A edited3 School3',\n    +  '4A44 School',\n       '51A School',\n       'A4 School',\n    +  'Automation 100',\n    +  'Automation 101',\n       'ad817 bisdd',\n       'ad817 cuarter',\n       'ad817 school',\n    -  'ad817 ter',\n    -  'Automation 100',\n    -  'Automation 101' ]\n    +  'ad817 ter' ]\n\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:2673:72)"
+              "status": "skipped"
             }
           },
           {
@@ -1050,12 +1047,7 @@
         "keyword": "Scenario",
         "line": 169,
         "name": "Search and pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 168
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1064,8 +1056,7 @@
             "line": 171,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 31830000000
+              "status": "skipped"
             }
           },
           {
@@ -1074,8 +1065,7 @@
             "line": 172,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-              "duration": 7168000000
+              "status": "skipped"
             }
           },
           {
@@ -1084,8 +1074,7 @@
             "line": 173,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "passed",
-              "duration": 31617000000
+              "status": "skipped"
             }
           },
           {
@@ -1094,8 +1083,7 @@
             "line": 174,
             "name": "I search \"Automation\"",
             "result": {
-              "status": "passed",
-              "duration": 9464000000
+              "status": "skipped"
             }
           }
         ]
@@ -1120,7 +1108,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 32184000000
+              "duration": 43225000000
             }
           },
           {
@@ -1130,7 +1118,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 6516000000
+              "duration": 1071000000
             }
           },
           {
@@ -1140,7 +1128,7 @@
             "name": "I sort column by asc and desc",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Items are sorted in asc order: expected [ Array(10) ] to deeply equal [ Array(10) ]\n    + expected - actual\n\n    -[ '4A44 School',\n    -  '4A edited3 School3',\n    +[ '4A edited3 School3',\n    +  '4A44 School',\n       '51A School',\n       'A4 School',\n    +  'Automation 100',\n    +  'Automation 101',\n       'ad817 bisdd',\n       'ad817 cuarter',\n       'ad817 school',\n    -  'ad817 ter',\n    -  'Automation 100',\n    -  'Automation 101' ]\n    +  'ad817 ter' ]\n\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:2673:72)"
+              "error_message": "AssertionError: Items are sorted in asc order: expected [ Array(10) ] to deeply equal [ Array(10) ]\n    + expected - actual\n\n    -[ '4A44 School',\n    -  '4A edited3 School3',\n    +[ '4A edited3 School3',\n    +  '4A44 School',\n       '51A Schooledited',\n       'A4 School',\n    +  'Automation 100',\n    +  'Automation 101',\n       'ad817 bisdd',\n       'ad817 cuarter',\n       'ad817 school',\n    -  'ad817 ter',\n    -  'Automation 100',\n    -  'Automation 101' ]\n    +  'ad817 ter' ]\n\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:2681:72)"
             }
           }
         ]
@@ -1150,12 +1138,7 @@
         "keyword": "Scenario",
         "line": 186,
         "name": "First page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 185
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1164,8 +1147,7 @@
             "line": 188,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 34331000000
+              "status": "skipped"
             }
           },
           {
@@ -1174,8 +1156,7 @@
             "line": 189,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-              "duration": 8243000000
+              "status": "skipped"
             }
           },
           {
@@ -1184,8 +1165,7 @@
             "line": 190,
             "name": "I check first page pagination",
             "result": {
-              "status": "passed",
-              "duration": 21098000000
+              "status": "skipped"
             }
           }
         ]
@@ -1195,12 +1175,7 @@
         "keyword": "Scenario",
         "line": 194,
         "name": "Last page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 193
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1209,8 +1184,7 @@
             "line": 196,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 34782000000
+              "status": "skipped"
             }
           },
           {
@@ -1219,8 +1193,7 @@
             "line": 197,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-              "duration": 6977000000
+              "status": "skipped"
             }
           },
           {
@@ -1229,8 +1202,7 @@
             "line": 198,
             "name": "I check last page pagination",
             "result": {
-              "status": "passed",
-              "duration": 14898000000
+              "status": "skipped"
             }
           }
         ]
@@ -1240,12 +1212,7 @@
         "keyword": "Scenario",
         "line": 202,
         "name": "Next page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 201
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1254,8 +1221,7 @@
             "line": 204,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 38469000000
+              "status": "skipped"
             }
           },
           {
@@ -1264,8 +1230,7 @@
             "line": 205,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-              "duration": 6147000000
+              "status": "skipped"
             }
           },
           {
@@ -1274,8 +1239,7 @@
             "line": 206,
             "name": "I check next page pagination",
             "result": {
-              "status": "passed",
-              "duration": 15713000000
+              "status": "skipped"
             }
           }
         ]
@@ -1285,12 +1249,7 @@
         "keyword": "Scenario",
         "line": 210,
         "name": "Previous page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 209
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1299,8 +1258,7 @@
             "line": 212,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 34373000000
+              "status": "skipped"
             }
           },
           {
@@ -1309,8 +1267,7 @@
             "line": 213,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-              "duration": 6943000000
+              "status": "skipped"
             }
           },
           {
@@ -1319,8 +1276,7 @@
             "line": 214,
             "name": "I check previous page pagination",
             "result": {
-              "status": "passed",
-              "duration": 51922000000
+              "status": "skipped"
             }
           }
         ]
@@ -1437,7 +1393,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 44533000000
+              "duration": 42069000000
             }
           },
           {
@@ -1447,7 +1403,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 7304000000
+              "duration": 1407000000
             }
           },
           {
@@ -1457,7 +1413,7 @@
             "name": "I press on create school button",
             "result": {
               "status": "passed",
-              "duration": 2234000000
+              "duration": 1207000000
             }
           },
           {
@@ -1467,7 +1423,7 @@
             "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
             "result": {
               "status": "passed",
-              "duration": 6747000000
+              "duration": 6526000000
             }
           },
           {
@@ -1477,7 +1433,7 @@
             "name": "I fill all fields for a new program \"Automation Program 02\"",
             "result": {
               "status": "passed",
-              "duration": 39839000000
+              "duration": 36320000000
             }
           },
           {
@@ -1487,7 +1443,7 @@
             "name": "I press on create subject \"Automation Subject\"",
             "result": {
               "status": "passed",
-              "duration": 3958000000
+              "duration": 4543000000
             }
           },
           {
@@ -1497,7 +1453,7 @@
             "name": "I select a category",
             "result": {
               "status": "passed",
-              "duration": 7957000000
+              "duration": 6981000000
             }
           },
           {
@@ -1507,7 +1463,7 @@
             "name": "I select all categories and unselect them",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 50000ms: expected '<p.MuiFormHelperText-root.Mui-error.jss288.css-622e5>' to contain text 'Minimum 1 subcategory is required.', but the text was '​'\n    + expected - actual\n\n    -'​'\n    +'Minimum 1 subcategory is required.'\n\n    at SchoolPage.getSubCategoryErrorMessageText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:1381:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:557:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38291:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37612:35)"
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `(//table)[4]//th[1]//div[1]/span[1]`, but never found it.\n    at SchoolPage.clickOnAllSubcategoriesItems (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:1370:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:551:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38299:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37620:35)"
             }
           }
         ]
@@ -1532,7 +1488,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 46232000000
+              "duration": 46346000000
             }
           },
           {
@@ -1542,7 +1498,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 9046000000
+              "duration": 2260000000
             }
           },
           {
@@ -1552,7 +1508,7 @@
             "name": "I press on create school button",
             "result": {
               "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:811:60)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:144:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38291:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37612:35)"
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiFab-sizeLarge`, but never found it.\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:813:39)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:146:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38299:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37620:35)"
             }
           },
           {
@@ -1595,7 +1551,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 48067000000
+              "duration": 48190000000
             }
           },
           {
@@ -1605,7 +1561,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 8452000000
+              "duration": 2066000000
             }
           },
           {
@@ -1615,7 +1571,7 @@
             "name": "I press on create school button",
             "result": {
               "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:811:60)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:144:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38291:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37612:35)"
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiFab-sizeLarge`, but never found it.\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:813:39)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:146:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38299:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37620:35)"
             }
           },
           {
@@ -1658,7 +1614,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 44455000000
+              "duration": 44218000000
             }
           },
           {
@@ -1668,7 +1624,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 9127000000
+              "duration": 1687000000
             }
           },
           {
@@ -1677,8 +1633,8 @@
             "line": 269,
             "name": "I press on create school button",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:811:60)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:144:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38291:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37612:35)"
+              "status": "passed",
+              "duration": 1569000000
             }
           },
           {
@@ -1687,7 +1643,8 @@
             "line": 270,
             "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7051000000
             }
           },
           {
@@ -1696,7 +1653,8 @@
             "line": 271,
             "name": "I select this page on programs",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14669000000
             }
           }
         ]
@@ -1721,7 +1679,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 42077000000
+              "duration": 48063000000
             }
           },
           {
@@ -1731,7 +1689,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 9023000000
+              "duration": 2358000000
             }
           },
           {
@@ -1740,8 +1698,8 @@
             "line": 278,
             "name": "I press on create school button",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:811:60)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:144:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38291:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37612:35)"
+              "status": "passed",
+              "duration": 1712000000
             }
           },
           {
@@ -1750,7 +1708,8 @@
             "line": 279,
             "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9378000000
             }
           },
           {
@@ -1759,7 +1718,8 @@
             "line": 280,
             "name": "I select none page on programs",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 14409000000
             }
           }
         ]

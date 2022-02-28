@@ -1,7 +1,11 @@
 Feature: Login
 
   #User should be able to sing in without any problem and have access according permissions UD-T17
+<<<<<<< HEAD
+  
+=======
   @test
+>>>>>>> 202765b75301b298688d2b0761ee1275cd5ae062
   Scenario: Login with custom credentials
     Given I click can't find your country or region
     When I enter custom email as "lorenab+custom@bluetrailsoft.com"
@@ -37,7 +41,7 @@ Feature: Login
 
 
   #User should be able to sing in without any problem and have access according permissions UD-T14
-  @smoke
+@focus   @smoke
   Scenario: Login with teacher credentials
     Given I click can't find your country or region
     When I enter teacher email as "lorenab+teacher@bluetrailsoft.com"
@@ -73,7 +77,7 @@ Feature: Login
 
 
   #User should not be able to sing in with invalid credentials UD-T6
-  @smoke
+@focus   @smoke
   Scenario: Login with invalid email/phone
     Given I click can't find your country or region
     When I enter an invalid email as "lo$#$%$!"
@@ -82,7 +86,7 @@ Feature: Login
 
 
   #User should not be able to sing in with empty credentials UD-T9
-  @smoke
+@focus   @smoke
   Scenario: Login with empty credentials
     Given I click can't find your country or region
     When I enter an invalid email as "   "
@@ -91,6 +95,10 @@ Feature: Login
 
 
   #User should not be able to sing in with spaces on email credentials UD-T10
+<<<<<<< HEAD
+@focus   @smoke
+=======
+>>>>>>> 202765b75301b298688d2b0761ee1275cd5ae062
   Scenario: Login with email spaces
     Given I click can't find your country or region
     When I enter an invalid email as "   "
@@ -136,7 +144,7 @@ Feature: Login
 
 
   # User should be able to click on Privacy Notice link and see the information related UD-T3
-  @smoke
+@focus   @smoke
   Scenario: Privacy Notice Page
     Given I click can't find your country or region
     Then I click privacy link

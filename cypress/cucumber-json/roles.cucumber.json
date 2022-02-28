@@ -183,11 +183,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 45552000000
-=======
-              "duration": 23390000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 39300000000
             }
           },
           {
@@ -197,11 +193,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 6757000000
-=======
-              "duration": 4503000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 1888000000
             }
           },
           {
@@ -211,11 +203,7 @@
             "name": "I add columns to be shown",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 2118000000
-=======
-              "duration": 1259000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 2560000000
             }
           },
           {
@@ -225,11 +213,7 @@
             "name": "I check locked columns \"Id\" and \"Role\" are present",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 146000000
-=======
-              "duration": 45000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 171000000
             }
           }
         ]
@@ -254,11 +238,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 30888000000
-=======
-              "duration": 17919000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 33490000000
             }
           },
           {
@@ -268,11 +248,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 4543000000
-=======
-              "duration": 3930000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 733000000
             }
           },
           {
@@ -282,11 +258,7 @@
             "name": "I remove columns to be shown",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 1274000000
-=======
-              "duration": 726000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 1366000000
             }
           },
           {
@@ -295,13 +267,8 @@
             "line": 45,
             "name": "I check locked column \"Role\" is present",
             "result": {
-<<<<<<< HEAD
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `table thead:nth-child(1) tr th:nth-child(1)`, but never found it.\n    at RolesPage.getLockedColumnText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:1049:17)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:225:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28357:35)"
-=======
-              "status": "passed",
-              "duration": 28000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `table thead:nth-child(1) tr th:nth-child(1)`, but never found it.\n    at RolesPage.getLockedColumnText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:1051:17)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:227:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29044:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28365:35)"
             }
           }
         ]
@@ -326,11 +293,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 29692000000
-=======
-              "duration": 17283000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 33386000000
             }
           },
           {
@@ -340,11 +303,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 5151000000
-=======
-              "duration": 3680000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 2266000000
             }
           },
           {
@@ -353,13 +312,8 @@
             "line": 53,
             "name": "I search new role to validate \"Teacher\"",
             "result": {
-<<<<<<< HEAD
               "status": "passed",
-              "duration": 9057000000
-=======
-              "status": "failed",
-              "error_message": "CypressError: `cy.type()` failed because this element is detached from the DOM.\n\n`<input aria-invalid=\"false\" placeholder=\"Search\" type=\"text\" class=\"MuiInput-input MuiInputBase-input css-mnn31\" value=\"Tea\" id=\"mui-13\">`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.type()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at validateType (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163688:11)\n    at $Cy.ensureSubjectByType (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163728:9)\n    at $Cy.pushSubjectAndValidate (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173708:12)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173140:19)\nFrom Your Spec Code:\n    at UserPage.searchInputText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:2690:66)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:228:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 9370000000
             }
           }
         ]
@@ -384,11 +338,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 28270000000
-=======
-              "duration": 20157000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 31381000000
             }
           },
           {
@@ -398,11 +348,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 5041000000
-=======
-              "duration": 3571000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 825000000
             }
           },
           {
@@ -412,11 +358,7 @@
             "name": "I check all buttons from pagination",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 29715000000
-=======
-              "duration": 28942000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 30894000000
             }
           }
         ]
@@ -441,11 +383,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 28665000000
-=======
-              "duration": 18267000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 32790000000
             }
           },
           {
@@ -455,11 +393,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 6007000000
-=======
-              "duration": 3737000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 817000000
             }
           },
           {
@@ -468,12 +402,8 @@
             "line": 69,
             "name": "I check different rows per page",
             "result": {
-              "status": "failed",
-<<<<<<< HEAD
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiInputBase-root div[role='button']`, but never found it.\n    at UserPage.clickOnRowsPerPage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:3149:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:246:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28357:35)"
-=======
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiInputBase-root div[role='button']`, but never found it.\n    at UserPage.clickOnRowsPerPage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:3149:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:246:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "passed",
+              "duration": 54468000000
             }
           }
         ]
@@ -483,12 +413,7 @@
         "keyword": "Scenario",
         "line": 73,
         "name": "Sorting and pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 72
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -497,12 +422,7 @@
             "line": 75,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 28603000000
-=======
-              "duration": 19696000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -511,12 +431,7 @@
             "line": 76,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 6042000000
-=======
-              "duration": 4517000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -525,12 +440,7 @@
             "line": 77,
             "name": "I sort column by asc and desc",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 39487000000
-=======
-              "duration": 36476000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -539,12 +449,7 @@
             "line": 78,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 31346000000
-=======
-              "duration": 29027000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           }
         ]
@@ -554,12 +459,7 @@
         "keyword": "Scenario",
         "line": 82,
         "name": "Search and pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 81
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -568,12 +468,7 @@
             "line": 84,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 39403000000
-=======
-              "duration": 26881000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -582,12 +477,7 @@
             "line": 85,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 6053000000
-=======
-              "duration": 4351000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -596,12 +486,7 @@
             "line": 86,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 30745000000
-=======
-              "duration": 28837000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -610,12 +495,7 @@
             "line": 87,
             "name": "I search new role to validate \"Teacher\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 9261000000
-=======
-              "duration": 7845000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           }
         ]
@@ -640,11 +520,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 36019000000
-=======
-              "duration": 23117000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 39354000000
             }
           },
           {
@@ -654,11 +530,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 6099000000
-=======
-              "duration": 3004000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 2030000000
             }
           },
           {
@@ -667,13 +539,8 @@
             "line": 95,
             "name": "I sort column by asc and desc",
             "result": {
-<<<<<<< HEAD
               "status": "passed",
-              "duration": 41209000000
-=======
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `:checkbox`, but never found it.\n    at GradesPage.sortFirstAsc (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:669:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:263:26)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 39656000000
             }
           }
         ]
@@ -683,12 +550,7 @@
         "keyword": "Scenario",
         "line": 99,
         "name": "First page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 98
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -697,12 +559,7 @@
             "line": 101,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 32445000000
-=======
-              "duration": 17975000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -711,12 +568,7 @@
             "line": 102,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 5252000000
-=======
-              "duration": 3312000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -725,13 +577,7 @@
             "line": 103,
             "name": "I check first page pagination",
             "result": {
-<<<<<<< HEAD
-              "status": "passed",
-              "duration": 19619000000
-=======
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiTablePagination-root div > span:nth-child(4) > button`, but never found it.\n    at UserPage.clickOnLastPage (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:3131:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:274:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           }
         ]
@@ -741,12 +587,7 @@
         "keyword": "Scenario",
         "line": 107,
         "name": "Last page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 106
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -755,12 +596,7 @@
             "line": 109,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 29179000000
-=======
-              "duration": 20974000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -769,12 +605,7 @@
             "line": 110,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 5943000000
-=======
-              "duration": 4029000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -783,12 +614,7 @@
             "line": 111,
             "name": "I check last page pagination",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 14040000000
-=======
-              "duration": 13440000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           }
         ]
@@ -798,12 +624,7 @@
         "keyword": "Scenario",
         "line": 115,
         "name": "Next page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 114
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -812,12 +633,7 @@
             "line": 117,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 27593000000
-=======
-              "duration": 17906000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -826,12 +642,7 @@
             "line": 118,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 5625000000
-=======
-              "duration": 3402000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -840,12 +651,7 @@
             "line": 119,
             "name": "I check next page pagination",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 14531000000
-=======
-              "duration": 13489000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           }
         ]
@@ -855,12 +661,7 @@
         "keyword": "Scenario",
         "line": 123,
         "name": "Previous page pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 122
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -869,12 +670,7 @@
             "line": 125,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 29969000000
-=======
-              "duration": 20999000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -883,12 +679,7 @@
             "line": 126,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 5349000000
-=======
-              "duration": 3526000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -897,12 +688,7 @@
             "line": 127,
             "name": "I check previous page pagination",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 48633000000
-=======
-              "duration": 44856000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           }
         ]
@@ -912,12 +698,7 @@
         "keyword": "Scenario",
         "line": 131,
         "name": "Cancel create role",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 130
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -926,12 +707,7 @@
             "line": 132,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 31416000000
-=======
-              "duration": 25527000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -940,12 +716,7 @@
             "line": 133,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 6232000000
-=======
-              "duration": 4463000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -954,12 +725,7 @@
             "line": 134,
             "name": "I create a new role with name as \"Automation Role\" and description as \"Test\" and I cancel it",
             "result": {
-              "status": "failed",
-<<<<<<< HEAD
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `form div:nth-child(1) div:nth-child(1) input`, but never found it.\n    at RolesPage.fillName (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:962:30)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:332:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28357:35)"
-=======
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `form div:nth-child(1) div:nth-child(1) input`, but never found it.\n    at RolesPage.fillName (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:962:30)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:332:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           }
         ]
@@ -984,11 +750,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 29634000000
-=======
-              "duration": 20552000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 36245000000
             }
           },
           {
@@ -998,11 +760,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 6457000000
-=======
-              "duration": 2959000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 1223000000
             }
           },
           {
@@ -1011,12 +769,8 @@
             "line": 141,
             "name": "I create a new role with empty name \"   \" and empty description as \"   \"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 9173000000
-=======
-              "duration": 7101000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `span > button.MuiFab-extended`, but never found it.\n    at RolesPage.clickOnCreateRoleButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:959:37)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:353:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29044:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28365:35)"
             }
           }
         ]
@@ -1041,11 +795,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 27466000000
-=======
-              "duration": 18005000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 39561000000
             }
           },
           {
@@ -1055,11 +805,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 6076000000
-=======
-              "duration": 3384000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 1347000000
             }
           },
           {
@@ -1069,11 +815,7 @@
             "name": "I create a new role with more than maximum characters allowed for name \"maximum text for name\" and description \"maximum text for description on\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 9834000000
-=======
-              "duration": 8648000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 10689000000
             }
           }
         ]
@@ -1098,11 +840,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 28626000000
-=======
-              "duration": 18790000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 35435000000
             }
           },
           {
@@ -1112,11 +850,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 5958000000
-=======
-              "duration": 3266000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 1684000000
             }
           },
           {
@@ -1125,13 +859,8 @@
             "line": 155,
             "name": "I create a new role with less than minimum characters allowed for name \"a\"",
             "result": {
-<<<<<<< HEAD
               "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at RolesPage.clickOnCreateRoleButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:957:58)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:380:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28357:35)"
-=======
-              "status": "passed",
-              "duration": 14953000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `span > button.MuiFab-extended`, but never found it.\n    at RolesPage.clickOnCreateRoleButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:959:37)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:382:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29044:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28365:35)"
             }
           }
         ]
@@ -1156,11 +885,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 32503000000
-=======
-              "duration": 24276000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 37194000000
             }
           },
           {
@@ -1170,11 +895,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 6467000000
-=======
-              "duration": 3728000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 1128000000
             }
           },
           {
@@ -1183,13 +904,8 @@
             "line": 162,
             "name": "I create a new role with special characters not allowed for name \"$#$%&/()\" and description \"$#$%&/()\"",
             "result": {
-<<<<<<< HEAD
               "status": "passed",
-              "duration": 20956000000
-=======
-              "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163855:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150482:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150562:16)\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168719:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168216:14\n    at tryCatcher (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:11083:18)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at RolesPage.clickOnCreateRoleButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:957:58)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:387:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:29036:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/roles.feature:28357:35)"
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "duration": 9711000000
             }
           }
         ]
@@ -1199,12 +915,7 @@
         "keyword": "Scenario",
         "line": 166,
         "name": "Create duplicate role",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 165
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1213,12 +924,7 @@
             "line": 167,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 30813000000
-=======
-              "duration": 18323000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -1227,12 +933,7 @@
             "line": 168,
             "name": "I navigate to actual section",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 5975000000
-=======
-              "duration": 3484000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           },
           {
@@ -1241,12 +942,7 @@
             "line": 169,
             "name": "I create a repeated name for role as \"Teacher\"",
             "result": {
-              "status": "passed",
-<<<<<<< HEAD
-              "duration": 8953000000
-=======
-              "duration": 9950000000
->>>>>>> 11ee1b1bdbb7eb84a5138915e6dec49cb3256b16
+              "status": "skipped"
             }
           }
         ]

@@ -368,19 +368,19 @@ class UserPage {
 
   selectionOfSchoolValues() {
     cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.eq() == "Automation 10") {
+      if ($el.eq() == "School Suri 4") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "Automation 100") {
+      } else if ($el.text() == "School Suri 36") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "Automation 103") {
+      } else if ($el.text() == "School Suri 40") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "Automation 106") {
+      } else if ($el.text() == "School Suri 39") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
@@ -763,7 +763,7 @@ class UserPage {
   sortFirstAsc() {
     cy.get("tbody tr td:nth-child(1) span:nth-child(2)").then((items) => {
       const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text())
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
         .get();
       unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
       const sortedItems = unsortedItems.slice().sort();
@@ -779,7 +779,7 @@ class UserPage {
     cy.wait(5000);
     cy.get("tbody tr td:nth-child(1) span:nth-child(2)").then((items) => {
       const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text())
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
         .get();
       unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
       const sortedItems = unsortedItems.reverse();
@@ -795,7 +795,7 @@ class UserPage {
     cy.wait(9000);
     cy.get("tbody tr td:nth-child(2)").then((items) => {
       const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text())
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
         .get();
       unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
       const sortedItems = unsortedItems.slice().sort();
@@ -811,7 +811,7 @@ class UserPage {
     cy.wait(9000);
     cy.get("tbody tr td:nth-child(2)").then((items) => {
       const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text())
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
         .get();
       unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
       const sortedItems = unsortedItems.reverse();
