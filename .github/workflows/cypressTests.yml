@@ -19,10 +19,9 @@ jobs:
         id: cypresstest
         run: | 
           npm run cy:run:smoke:alpha >> changed-fields.out
-          output="$(cat changed-fields.out)"  
-          echo ::set-output name=changed-fields-output::$output 
-          echo ${{ steps.cypresstest.changed-fields-output }}
-
+          output=$(cat changed-fields.out)  
+          echo ::set-output name=output::$output 
+          echo ${{ steps.cypresstest.output }}
         continue-on-error: true
       - run: |
           npm run e2e:reports 
