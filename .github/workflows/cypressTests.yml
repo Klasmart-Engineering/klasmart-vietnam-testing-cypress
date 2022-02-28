@@ -44,7 +44,6 @@ jobs:
           slack-channel: C034FNUA7SA
           slack-text:  |
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
-           Output can be found here
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
            ${{ steps.cypresstest.outputs.output }}
       - name: Send Slack message 
@@ -54,7 +53,6 @@ jobs:
           slack-channel: C034FNUA7SA
           slack-text: |
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
-           Output can be found here 
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
            ${{ steps.cypresstest.outputs.output }}
 
