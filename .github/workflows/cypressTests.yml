@@ -19,6 +19,7 @@ jobs:
         id: cypresstest
         run: | 
           npm run cy:run:smoke:alpha > changed-fields.out 
+          echo "$(cat changed-fields.out)"
           echo "::set-output name=output::$(cat changed-fields.out)"
           echo " ${{ steps.cypresstest.output }} "
         continue-on-error: true
