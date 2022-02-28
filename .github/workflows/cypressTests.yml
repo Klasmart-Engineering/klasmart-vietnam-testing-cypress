@@ -19,7 +19,12 @@ jobs:
         id: cypresstest
         run: npm run cy:run:smoke:alpha
         continue-on-error: true
-      - run: npm run e2e:reports
+      - run: |
+          npm run e2e:reports >> results.out
+          output="$(cat changed-fields.out)"
+          output="${output//$'\n'/\\n}"
+          output="${output// / }"    
+          echo "::set-output name=changed-fields-output::$output"  
       - name: Store results   
         uses: actions/upload-artifact@v2
         if: failure()
@@ -31,23 +36,26 @@ jobs:
         if: always()
         with:
           name: test reports
-          path: test-reports
+          path: test-reports  
       - name: Send Slack message on failure
         uses: archive/github-actions-slack@v2.0.0
         if: failure()
         with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
-          slack-channel: C034HBAFK8E
+          slack-channel: C034FNUA7SA
           slack-text:  |
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
            Output can be found here
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+           ::set-output name=changed-fields-output::$output
+
       - name: Send Slack message 
         uses: archive/github-actions-slack@v2.0.0
         with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
-          slack-channel: C034HBAFK8E
+          slack-channel: C034FNUA7SA
           slack-text: |
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
            Output can be found here 
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+           ::set-output name=changed-fields-output::$output
