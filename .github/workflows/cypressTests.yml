@@ -21,6 +21,8 @@ jobs:
           npm run cy:run:smoke:alpha >> changed-fields.out
           output="$(cat changed-fields.out)"  
           echo "::set-output name=changed-fields-output::$output"  
+          echo ${{ steps.cypresstest.changed-fields-output }}
+
         continue-on-error: true
       - run: |
           npm run e2e:reports 
@@ -46,7 +48,6 @@ jobs:
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
            Output can be found here
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-           ::set-output name=changed-fields-output::$output
            ${{ steps.cypresstest.changed-fields-output }}
       - name: Send Slack message 
         uses: archive/github-actions-slack@v2.0.0
@@ -57,6 +58,5 @@ jobs:
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
            Output can be found here 
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-           ::set-output name=changed-fields-output::$output
            ${{ steps.cypresstest.changed-fields-output }}
 
