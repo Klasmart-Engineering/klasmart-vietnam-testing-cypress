@@ -21,10 +21,8 @@ jobs:
         continue-on-error: true
       - run: |
           npm run e2e:reports >> changed-fields.out
-          output="$(cat changed-fields.out)"
-          output="${output//$'\n'/\\n}"
-          output="${output// / }"    
-          echo "::set-output name=changed-fields-output::$output"  
+          output=cat $changed-fields.out
+          echo $output
       - name: Store results   
         uses: actions/upload-artifact@v2
         if: failure()
