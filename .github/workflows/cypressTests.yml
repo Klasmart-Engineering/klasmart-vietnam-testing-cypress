@@ -20,7 +20,7 @@ jobs:
         run: npm run cy:run:smoke:alpha
         continue-on-error: true
       - run: |
-          npm run e2e:reports >> results.out
+          npm run e2e:reports >> changed-fields-output.out
           output="$(cat changed-fields.out)"
           output="${output//$'\n'/\\n}"
           output="${output// / }"    
