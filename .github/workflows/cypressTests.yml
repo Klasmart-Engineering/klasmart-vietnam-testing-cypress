@@ -19,9 +19,7 @@ jobs:
         id: cypresstest
         run: | 
           npm run cy:run:smoke:alpha >> changed-fields.out
-          output="$(cat changed-fields.out)"
-          output="${output//$'\n'/\\n}"
-          output="${output// / }"    
+          output="$(cat changed-fields.out)"  
           echo "::set-output name=changed-fields-output::$output"  
         continue-on-error: true
       - run: |
