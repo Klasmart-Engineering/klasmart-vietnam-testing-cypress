@@ -21,8 +21,10 @@ jobs:
         continue-on-error: true
       - run: |
           npm run e2e:reports >> changed-fields.out
-          output=cat $changed-fields.out
-          echo $output
+          output="$(cat changed-fields.out)"
+          output="${output//$'\n'/\\n}"
+          output="${output// / }"    
+          echo "::set-output name=changed-fields-output::$output"  
       - name: Store results   
         uses: actions/upload-artifact@v2
         if: failure()
@@ -46,7 +48,7 @@ jobs:
            Output can be found here
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
            ::set-output name=changed-fields-output::$output
-
+           ${{ steps.cypresstest.changed-fields-output }}
       - name: Send Slack message 
         uses: archive/github-actions-slack@v2.0.0
         with:
@@ -57,3 +59,5 @@ jobs:
            Output can be found here 
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
            ::set-output name=changed-fields-output::$output
+           ${{ steps.cypresstest.changed-fields-output }}
+
