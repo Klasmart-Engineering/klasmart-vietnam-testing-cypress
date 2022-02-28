@@ -20,6 +20,7 @@ jobs:
         run: | 
           npm run cy:run:smoke:alpha >> changed-fields.out 
           echo `tail -n 50 changed-fields.out` >> output
+          echo `cat output`
           echo "::set-output name=output::$(cat output)"
         continue-on-error: true
       - run: |
