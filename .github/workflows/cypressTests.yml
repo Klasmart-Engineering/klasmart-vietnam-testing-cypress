@@ -24,6 +24,9 @@ jobs:
         continue-on-error: true
       - run: |
           npm run e2e:reports 
+      - name: print output 
+        run: 
+          echo "${{ steps.cypresstest.outputs.output }}"
       - name: Store results   
         uses: actions/upload-artifact@v2
         if: failure()
