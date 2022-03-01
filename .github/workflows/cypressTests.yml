@@ -21,7 +21,6 @@ jobs:
           npm run cy:run:smoke:alpha >> changed-fields.out 
           OUTPUT1=`tail -50 changed-fields.out`
           echo "$OUTPUT1"
-          OUTPUT1="${OUTPUT1//'%'/'%25'}"
           OUTPUT1="${OUTPUT1//$'\n'/'%0A'}"
           OUTPUT1="${OUTPUT1//$'\r'/'%0D'}"
           echo "before 1"
