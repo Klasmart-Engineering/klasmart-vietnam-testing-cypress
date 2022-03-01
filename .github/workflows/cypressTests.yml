@@ -20,9 +20,9 @@ jobs:
         run: | 
           npm run cy:run:smoke:alpha >> changed-fields.out 
           output = $(tail -50 changed-fields.out)
-          output="${REPORT//'%'/'%25'}"
-          output="${REPORT//$'\n'/'%0A'}"
-          output="${REPORT//$'\r'/'%0D'}"
+          output="${output//'%'/'%25'}"
+          output="${output//$'\n'/'%0A'}"
+          output="${output//$'\r'/'%0D'}"
           echo $output
           echo "::set-output name=output::$output"
         continue-on-error: true
