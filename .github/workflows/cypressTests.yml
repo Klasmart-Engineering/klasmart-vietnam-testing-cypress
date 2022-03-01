@@ -30,7 +30,6 @@ jobs:
           npm run e2e:reports 
       - name: print output 
         run: 
-          echo "after environment output"
           echo "${{ env.OUTPUT }}"
       - name: Store results   
         uses: actions/upload-artifact@v2
@@ -53,7 +52,7 @@ jobs:
           slack-text:  |
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-           ${{ env.output }}
+           ${{ env.OUTPUT }}
       - name: Send Slack message 
         uses: archive/github-actions-slack@v2.0.0
         with:
@@ -62,5 +61,5 @@ jobs:
           slack-text: |
            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-           ${{ env.output }}
+           ${{ env.OUTPUT }}
 
