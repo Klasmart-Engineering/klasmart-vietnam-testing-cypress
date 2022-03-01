@@ -18,7 +18,7 @@ jobs:
       - name: Cypress run
         id: cypresstest
         run: | 
-          npm run cy:run:smoke:alpha > changed-fields.out 
+          npm run cy:run:smoke:alpha >> changed-fields.out 
           cat changed-fields.out
           OUTPUT1="$(tail -n 50 changed-fields.out)"
           OUTPUT1="${OUTPUT1//'%'/'%25'}"
