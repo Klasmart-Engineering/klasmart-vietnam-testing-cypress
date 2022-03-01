@@ -19,14 +19,15 @@ jobs:
         id: cypresstest
         run: | 
           npm run cy:run:smoke:alpha >> changed-fields.out 
-          cat changed-fields.out
-          OUTPUT1="$(tail -n 50 changed-fields.out)"
+          OUTPUT1=`tail -n 50 changed-fields.out`
           OUTPUT1="${OUTPUT1//'%'/'%25'}"
           OUTPUT1="${OUTPUT1//$'\n'/'%0A'}"
           OUTPUT1="${OUTPUT1//$'\r'/'%0D'}"
+          echo "before 1"
           echo "$OUTPUT1"
           echo "::set-output name=result::$OUTPUT1"
           echo "OUTPUT=$OUTPUT1" >> $GITHUB_ENV
+          echo "after 1"
           echo "${{ env.OUTPUT }}"
         continue-on-error: true
       - run: |
