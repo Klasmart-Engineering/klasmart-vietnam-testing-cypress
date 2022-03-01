@@ -19,12 +19,13 @@ jobs:
         id: cypresstest
         run: | 
           npm run cy:run:smoke:alpha >> changed-fields.out 
-          output = $(tail -50 changed-fields.out)
-          output="${output//'%'/'%25'}"
-          output="${output//$'\n'/'%0A'}"
-          output="${output//$'\r'/'%0D'}"
-          echo $output
-          echo "::set-output name=output::$output"
+          export OUTPUT = $(tail -50 changed-fields.out)
+          echo $OUTPUT
+          OUTPUT="${output//'%'/'%25'}"
+          OUTPUT="${output//$'\n'/'%0A'}"
+          OUTPUT="${output//$'\r'/'%0D'}"
+          echo "$OUTPUT"
+          echo "::set-output name=output::$OUTPUT"
         continue-on-error: true
       - run: |
           npm run e2e:reports 
