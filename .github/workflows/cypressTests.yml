@@ -24,13 +24,14 @@ jobs:
           OUTPUT1="${OUTPUT1//$'\n'/'%0A'}"
           OUTPUT1="${OUTPUT1//$'\r'/'%0D'}"
           echo "$OUTPUT1"
-          echo "output=$OUTPUT1" >> $GITHUB_ENV
+          echo "OUTPUT=$OUTPUT1" >> $GITHUB_ENV
+          echo ${{ env.OUTPUT }}
         continue-on-error: true
       - run: |
           npm run e2e:reports 
       - name: print output 
         run: 
-          echo "${{ env.output }}"
+          echo ${{ env.OUTPUT }}
       - name: Store results   
         uses: actions/upload-artifact@v2
         if: failure()
