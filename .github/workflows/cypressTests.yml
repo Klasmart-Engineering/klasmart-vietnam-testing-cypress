@@ -18,7 +18,8 @@ jobs:
       - name: Cypress run
         id: cypresstest
         run: | 
-          npm run cy:run:smoke:alpha >> changed-fields.out 
+          npm run cy:run:smoke:alpha > changed-fields.out 
+          cat changed-fields.out
           OUTPUT1=$(tail -n 50 changed-fields.out)
           OUTPUT1="${OUTPUT1//$'\n'/'%0A'}"
           OUTPUT1="${OUTPUT1//$'\r'/'%0D'}"
@@ -31,7 +32,6 @@ jobs:
           npm run e2e:reports 
       - name: print output 
         run: 
-          echo ${{ env.OUTPUT }}
           ${{ steps.cypresstest.outputs.result }}
       - name: Store results   
         uses: actions/upload-artifact@v2
