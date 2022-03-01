@@ -25,14 +25,16 @@ jobs:
           OUTPUT1="${OUTPUT1//$'\n'/'%0A'}"
           OUTPUT1="${OUTPUT1//$'\r'/'%0D'}"
           echo "$OUTPUT1"
-          echo ::set-output name=result::$OUTPUT1
+          echo "::set-output name=result::$OUTPUT1"
           echo "OUTPUT=$OUTPUT1" >> $GITHUB_ENV
-          echo ${{ env.OUTPUT }}
+          echo "${{ env.OUTPUT }}"
         continue-on-error: true
       - run: |
           npm run e2e:reports 
       - name: print output 
         run: 
+          echo "${{ env.OUTPUT }}"
+          echo "after environment output"
           echo ${{ steps.cypresstest.outputs.result }}
       - name: Store results   
         uses: actions/upload-artifact@v2
