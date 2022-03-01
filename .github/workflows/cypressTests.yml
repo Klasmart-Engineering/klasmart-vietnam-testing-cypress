@@ -18,8 +18,9 @@ jobs:
       - name: Cypress run
         id: cypresstest
         run: | 
+          npm config set color false
           npm run cy:run:smoke:alpha >> changed-fields.out 
-          OUTPUT1=sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" `tail -50 changed-fields.out`
+          OUTPUT1=`tail -50 changed-fields.out`
           echo "$OUTPUT1"
           echo "OUTPUT<<EOF" >> $GITHUB_ENV
           echo "$OUTPUT1" >> $GITHUB_ENV
