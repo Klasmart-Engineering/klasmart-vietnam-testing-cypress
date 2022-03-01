@@ -21,7 +21,9 @@ jobs:
           npm run cy:run:smoke:alpha >> changed-fields.out 
           OUTPUT1=`tail -50 changed-fields.out`
           echo "$OUTPUT1"
-          echo "OUTPUT=$OUTPUT1" >> $GITHUB_ENV
+          echo "OUTPUT<<EOF" >> $GITHUB_ENV
+          echo "$OUTPUT1" >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
           echo "${{ env.OUTPUT }}"
         continue-on-error: true
       - run: |
