@@ -18,7 +18,7 @@ jobs:
       - name: Cypress run
         id: cypresstest
         run: | 
-          npm run cy:run:smoke:alpha >> changed-fields.out 
+          npm run cy:run:smoke:alpha > changed-fields.out 
           echo $(tail -30 changed-fields.out)
           OUTPUT1 = $(tail -30 changed-fields.out)
           echo $OUTPUT1
