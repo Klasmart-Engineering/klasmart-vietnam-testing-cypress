@@ -19,7 +19,8 @@ jobs:
         id: cypresstest
         run: | 
           npm run cy:run:smoke:alpha >> changed-fields.out 
-          export OUTPUT1 = "$(tail -50 changed-fields.out)"
+          OUTPUT1 = "$(tail -30 changed-fields.out)"
+          export OUTPUT1
           echo $OUTPUT1
           OUTPUT1="${OUTPUT1//'%'/'%25'}"
           OUTPUT1="${OUTPUT1//$'\n'/'%0A'}"
