@@ -4,7 +4,7 @@
   "description": "Kidsloop Automation Admin-Service",
   "main": "index.js",
   "scripts": {
-    "test:all": "cypress run --spec \"**/*.features\"",
+    "test:all": "cypress run",
     "test:each": "cypress run --spec \"**/*.feature\"",
     "test:accessibility": "./node_modules/.bin/cypress-tags run -e TAGS=\"@smoke\"",
     "cy:run:prod": "cypress open --env ENV=production",
