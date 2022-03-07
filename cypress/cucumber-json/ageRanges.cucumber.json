@@ -128,7 +128,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 39615000000
+              "duration": 62513000000
             }
           },
           {
@@ -138,7 +138,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 2049000000
+              "duration": 1362000000
             }
           },
           {
@@ -147,8 +147,8 @@
             "line": 27,
             "name": "Add filter for age ranges from",
             "result": {
-              "status": "passed",
-              "duration": 4956000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiChip-label`, but never found it.\n    at UserPage.clickOnAddFilterButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:1182:36)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:208:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:27685:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:27006:35)"
             }
           },
           {
@@ -157,8 +157,7 @@
             "line": 28,
             "name": "Filter is Added",
             "result": {
-              "status": "passed",
-              "duration": 891000000
+              "status": "skipped"
             }
           },
           {
@@ -167,8 +166,7 @@
             "line": 29,
             "name": "I check that age ranges from filter was added",
             "result": {
-              "status": "passed",
-              "duration": 67000000
+              "status": "skipped"
             }
           }
         ]
@@ -193,7 +191,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 27522000000
+              "duration": 36098000000
             }
           },
           {
@@ -203,7 +201,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1474000000
+              "duration": 465000000
             }
           },
           {
@@ -212,8 +210,8 @@
             "line": 38,
             "name": "Add filter for age ranges to",
             "result": {
-              "status": "passed",
-              "duration": 4766000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiChip-label`, but never found it.\n    at UserPage.clickOnAddFilterButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:1182:36)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:221:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:27685:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:27006:35)"
             }
           },
           {
@@ -222,8 +220,7 @@
             "line": 39,
             "name": "Filter is Added",
             "result": {
-              "status": "passed",
-              "duration": 855000000
+              "status": "skipped"
             }
           },
           {
@@ -232,8 +229,7 @@
             "line": 40,
             "name": "I check that age ranges to filter was added",
             "result": {
-              "status": "passed",
-              "duration": 88000000
+              "status": "skipped"
             }
           }
         ]

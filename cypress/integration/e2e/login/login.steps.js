@@ -14,11 +14,11 @@ When("I enter invalid email as {string}", (text) => {
 Then("I enter invalid password as {string}", (text) => {
   signInPage.enterPassword(text);
   signInPage.clickOnSignInButton();
-  homePage.clickOnInvalidProfile();
+  // homePage.clickOnInvalidProfile();
 });
 
 And("I should see the error message {string}", (errorText) => {
-  signInPage.getInvalidCredentialErrorMessage().should("have.text", errorText);
+  signInPage.getSignInEmailPhoneText().should("have.text", errorText);
 });
 
 And("I get the error message {string}", (errorText) => {
@@ -37,7 +37,7 @@ Then("I enter custom password as {string}", (text) => {
 });
 
 And("I should see custom welcome message", () => {
-  homePage.clickOnSwitchView();
+  //homePage.clickOnSwitchView();
   homePage.getNewWelcomeText();
   homePage.getWelcomeText().contains("Custom");
 });
@@ -69,7 +69,7 @@ And("I should see parent welcome message {string}", (text) => {
 });
 
 And("I should see teacher welcome message", () => {
-  homePage.clickOnSwitchView();
+  //homePage.clickOnSwitchView();
   homePage.getNewWelcomeText();
 });
 
@@ -85,7 +85,9 @@ Then("I enter teacher password as {string}", (text) => {
 });
 
 And("I should see student welcome message", () => {
+  homePage.clickOnSwitchView();
   homePage.getNewWelcomeText();
+  homePage.getWelcomeText().contains("Student");
 });
 
 When("I enter school admin email as {string}", (text) => {

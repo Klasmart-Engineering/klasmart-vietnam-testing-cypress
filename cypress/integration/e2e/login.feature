@@ -2,7 +2,7 @@ Feature: Login
 
   #User should be able to sing in without any problem and have access according permissions UD-T17
 
-  @test
+  @smoke
   Scenario: Login with custom credentials
     Given I click can't find your country or region
     When I enter custom email as "lorenab+custom@bluetrailsoft.com"
@@ -38,7 +38,7 @@ Feature: Login
 
 
   #User should be able to sing in without any problem and have access according permissions UD-T14
-@focus   @smoke
+  @smoke
   Scenario: Login with teacher credentials
     Given I click can't find your country or region
     When I enter teacher email as "lorenab+teacher@bluetrailsoft.com"
@@ -74,7 +74,7 @@ Feature: Login
 
 
   #User should not be able to sing in with invalid credentials UD-T6
-@focus   @smoke
+  @smoke
   Scenario: Login with invalid email/phone
     Given I click can't find your country or region
     When I enter an invalid email as "lo$#$%$!"
@@ -83,7 +83,7 @@ Feature: Login
 
 
   #User should not be able to sing in with empty credentials UD-T9
-@focus   @smoke
+  @smoke
   Scenario: Login with empty credentials
     Given I click can't find your country or region
     When I enter an invalid email as "   "
@@ -92,7 +92,7 @@ Feature: Login
 
 
   #User should not be able to sing in with spaces on email credentials UD-T10
-   @smoke
+  @smoke
   Scenario: Login with email spaces
     Given I click can't find your country or region
     When I enter an invalid email as "   "
@@ -138,7 +138,7 @@ Feature: Login
 
 
   # User should be able to click on Privacy Notice link and see the information related UD-T3
-@focus   @smoke
+  @smoke
   Scenario: Privacy Notice Page
     Given I click can't find your country or region
     Then I click privacy link
@@ -221,7 +221,7 @@ Feature: Login
     When verify the correct flag "Sign In" name
 
   #User should see the url and correct language selected for current flag  UD-T616
-  @smoke
+
   Scenario: Korea Flag
     Given auth Korea page
     When verify the correct flag "로그인" name
