@@ -19,7 +19,7 @@ Feature: Age Ranges
 
 
   #User should be able to add a filter on age ranges from UD-T
-  @smoke
+@focus   @smoke
   Scenario: Add filter Age Ranges From
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
