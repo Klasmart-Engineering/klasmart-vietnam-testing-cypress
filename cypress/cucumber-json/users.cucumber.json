@@ -365,12 +365,7 @@
         "keyword": "Scenario",
         "line": 67,
         "name": "Create user without required fields",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 66
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -685,6 +680,10 @@
         "name": "Add filter Schools",
         "tags": [
           {
+            "name": "@focus",
+            "line": 123
+          },
+          {
             "name": "@smoke",
             "line": 123
           }
@@ -697,7 +696,8 @@
             "line": 126,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29943000000
             }
           },
           {
@@ -706,7 +706,8 @@
             "line": 127,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 433000000
             }
           },
           {
@@ -715,7 +716,8 @@
             "line": 128,
             "name": "Add filter for school",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11439000000
             }
           },
           {
@@ -724,7 +726,8 @@
             "line": 129,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 576000000
             }
           },
           {
@@ -733,7 +736,8 @@
             "line": 130,
             "name": "I check that shools filter was added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 47000000
             }
           }
         ]
@@ -1544,7 +1548,12 @@
         "keyword": "Scenario",
         "line": 273,
         "name": "Edit filter Email Cancel",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 272
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -1553,7 +1562,8 @@
             "line": 275,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 27876000000
             }
           },
           {
@@ -1562,7 +1572,8 @@
             "line": 276,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 786000000
             }
           },
           {
@@ -1571,7 +1582,8 @@
             "line": 277,
             "name": "Add filter for email \"lorenatest@test.com\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4542000000
             }
           },
           {
@@ -1580,7 +1592,8 @@
             "line": 278,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 414000000
             }
           },
           {
@@ -1589,7 +1602,8 @@
             "line": 279,
             "name": "I edit value from added filter on email \"alicetest@gmail.com\" but I press cancel",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4156000000
             }
           }
         ]
@@ -2221,12 +2235,7 @@
         "keyword": "Scenario",
         "line": 391,
         "name": "Filter order values",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 390
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -2265,6 +2274,10 @@
         "name": "Search users",
         "tags": [
           {
+            "name": "@focus",
+            "line": 398
+          },
+          {
             "name": "@smoke",
             "line": 398
           }
@@ -2277,7 +2290,8 @@
             "line": 401,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 30805000000
             }
           },
           {
@@ -2286,7 +2300,8 @@
             "line": 402,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 355000000
             }
           },
           {
@@ -2295,7 +2310,8 @@
             "line": 403,
             "name": "I search \"Bruno\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8688000000
             }
           }
         ]
@@ -2306,6 +2322,10 @@
         "line": 407,
         "name": "Add columns",
         "tags": [
+          {
+            "name": "@focus",
+            "line": 406
+          },
           {
             "name": "@smoke",
             "line": 406
@@ -2319,7 +2339,8 @@
             "line": 409,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 25516000000
             }
           },
           {
@@ -2328,7 +2349,8 @@
             "line": 410,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 530000000
             }
           },
           {
@@ -2337,7 +2359,8 @@
             "line": 411,
             "name": "I add columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3541000000
             }
           },
           {
@@ -2346,7 +2369,8 @@
             "line": 412,
             "name": "I check locked columns \"Given Name\" and \"Family Name\" are present",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 115000000
             }
           }
         ]
@@ -2357,6 +2381,10 @@
         "line": 416,
         "name": "Remove columns",
         "tags": [
+          {
+            "name": "@focus",
+            "line": 415
+          },
           {
             "name": "@smoke",
             "line": 415
@@ -2370,7 +2398,8 @@
             "line": 418,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29231000000
             }
           },
           {
@@ -2379,7 +2408,8 @@
             "line": 419,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 870000000
             }
           },
           {
@@ -2388,7 +2418,8 @@
             "line": 420,
             "name": "I remove columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1569000000
             }
           },
           {
@@ -2397,7 +2428,8 @@
             "line": 421,
             "name": "I check locked columns \"Given Name\" and \"Family Name\" are present",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 113000000
             }
           }
         ]
@@ -2426,7 +2458,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 53971000000
+              "duration": 24873000000
             }
           },
           {
@@ -2436,7 +2468,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1055000000
+              "duration": 353000000
             }
           },
           {
@@ -2446,7 +2478,7 @@
             "name": "I sort column by asc and desc",
             "result": {
               "status": "passed",
-              "duration": 28235000000
+              "duration": 26283000000
             }
           }
         ]
@@ -2457,6 +2489,10 @@
         "line": 433,
         "name": "Pagination",
         "tags": [
+          {
+            "name": "@focus",
+            "line": 432
+          },
           {
             "name": "@smoke",
             "line": 432
@@ -2470,7 +2506,8 @@
             "line": 435,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 30521000000
             }
           },
           {
@@ -2479,7 +2516,8 @@
             "line": 436,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 421000000
             }
           },
           {
@@ -2488,7 +2526,8 @@
             "line": 437,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29426000000
             }
           }
         ]
@@ -2499,6 +2538,10 @@
         "line": 442,
         "name": "Rows Per Page",
         "tags": [
+          {
+            "name": "@focus",
+            "line": 441
+          },
           {
             "name": "@smoke",
             "line": 441
@@ -2512,7 +2555,8 @@
             "line": 444,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29932000000
             }
           },
           {
@@ -2521,7 +2565,8 @@
             "line": 445,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 399000000
             }
           },
           {
@@ -2530,7 +2575,8 @@
             "line": 446,
             "name": "I check different rows per page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 51497000000
             }
           }
         ]

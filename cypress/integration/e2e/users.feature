@@ -387,7 +387,7 @@ Feature: Users
     And I check filter is disable
 
   #User should be able to see correct order for values on filters UD-T581 ----*** DEFECT AD-964 ***----
-@smoke 
+ 
   Scenario: Filter order values
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
