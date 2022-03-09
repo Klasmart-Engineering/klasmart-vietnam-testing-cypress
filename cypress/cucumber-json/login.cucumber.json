@@ -14,10 +14,6 @@
         "name": "Tailand Flag",
         "tags": [
           {
-            "name": "@focus",
-            "line": 255
-          },
-          {
             "name": "@smoke",
             "line": 255
           }
@@ -31,7 +27,7 @@
             "name": "auth Tailand page",
             "result": {
               "status": "passed",
-              "duration": 7480000000
+              "duration": 3366000000
             }
           },
           {
@@ -41,7 +37,7 @@
             "name": "verify the correct flag \"เข้าสู่ระบบ\" name",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 37000000
             }
           }
         ]

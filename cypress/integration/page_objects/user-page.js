@@ -339,7 +339,7 @@ class UserPage {
   }
 
   clickOnAddFilterFinalButton() {
-    cy.get(this.addFilterFinalButton).should("be.visible").click();
+    cy.get(this.addFilterFinalButton).should("be.visible").click({ force: true });
   }
 
   clickOnCancelFilterButton() {
@@ -500,11 +500,11 @@ class UserPage {
 
   editSchoolsFilterValues() {
     cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.eq() == "Automation 104") {
+      if ($el.eq() == "Automation 108") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "Automation 101") {
+      } else if ($el.text() == "Automation 109") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
@@ -513,7 +513,7 @@ class UserPage {
   }
 
   getEditedLabelFilterTextSchools() {
-    cy.get(this.labelFilterAdded).should("include.text", "Automation 101");
+    cy.get(this.labelFilterAdded).should("include.text", "Automation 109");
   }
 
   getEditedLabelFilterTextStatus() {

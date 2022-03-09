@@ -16,7 +16,7 @@ Feature: Login
     Given I click can't find your country or region
     When I enter invalid email as "lorenab+invalid@bluetrailsoft.com"
     Then I enter invalid password as "Invalid01!"
-    And I should see the error message "Hi cadet!"
+    And I should see the invalid message "Hi cadet!"
 
 
   #User should be able to sing in without any problem and have access according permissions UD-T16
@@ -215,7 +215,7 @@ Feature: Login
 
 
   #User should see the url and correct language selected for current flag  UD-T615
-  @smoke
+ 
   Scenario: United States Flag
     Given auth United States page
     When verify the correct flag "Sign In" name
@@ -233,7 +233,7 @@ Feature: Login
     When verify the correct flag "Đăng nhập" name
 
   #User should see the url and correct language selected for current flag  UD-T618
-  @smoke
+ 
   Scenario: India Flag
     Given auth India page
     When verify the correct flag "Sign In" name

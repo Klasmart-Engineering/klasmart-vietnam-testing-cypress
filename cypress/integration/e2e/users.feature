@@ -225,7 +225,7 @@ Feature: Users
     And I check edited value was saved on organization roles
 
   #User should be able to edit filter on users for Schools UD-T429 and UD-T431
-@smoke 
+@focus @smoke 
   Scenario: Edit filter Schools
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"

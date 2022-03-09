@@ -182,7 +182,8 @@
             "line": 33,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 37254000000
             }
           },
           {
@@ -191,7 +192,8 @@
             "line": 34,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 393000000
             }
           },
           {
@@ -200,7 +202,8 @@
             "line": 35,
             "name": "I add columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1642000000
             }
           },
           {
@@ -209,7 +212,8 @@
             "line": 36,
             "name": "I check locked columns \"Id\" and \"Role\" are present",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 100000000
             }
           }
         ]
@@ -233,7 +237,8 @@
             "line": 42,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 24298000000
             }
           },
           {
@@ -242,7 +247,8 @@
             "line": 43,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1137000000
             }
           },
           {
@@ -251,7 +257,8 @@
             "line": 44,
             "name": "I remove columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 506000000
             }
           },
           {
@@ -260,7 +267,8 @@
             "line": 45,
             "name": "I check locked column \"Role\" is present",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 41000000
             }
           }
         ]
@@ -284,7 +292,8 @@
             "line": 51,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 24116000000
             }
           },
           {
@@ -293,7 +302,8 @@
             "line": 52,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1261000000
             }
           },
           {
@@ -302,7 +312,8 @@
             "line": 53,
             "name": "I search new role to validate \"Teacher\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8137000000
             }
           }
         ]
@@ -326,7 +337,8 @@
             "line": 59,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 25055000000
             }
           },
           {
@@ -335,7 +347,8 @@
             "line": 60,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1067000000
             }
           },
           {
@@ -344,7 +357,8 @@
             "line": 61,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29005000000
             }
           }
         ]
@@ -368,7 +382,8 @@
             "line": 67,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28763000000
             }
           },
           {
@@ -377,7 +392,8 @@
             "line": 68,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1261000000
             }
           },
           {
@@ -386,7 +402,8 @@
             "line": 69,
             "name": "I check different rows per page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 50836000000
             }
           }
         ]
@@ -502,7 +519,8 @@
             "line": 93,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 30028000000
             }
           },
           {
@@ -511,7 +529,8 @@
             "line": 94,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 969000000
             }
           },
           {
@@ -520,7 +539,8 @@
             "line": 95,
             "name": "I sort column by asc and desc",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 35580000000
             }
           }
         ]
@@ -729,7 +749,8 @@
             "line": 139,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28572000000
             }
           },
           {
@@ -738,7 +759,8 @@
             "line": 140,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 965000000
             }
           },
           {
@@ -747,7 +769,53 @@
             "line": 141,
             "name": "I create a new role with empty name \"   \" and empty description as \"   \"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7203000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "roles;create-role-with-more-than-maximum-characters",
+        "keyword": "Scenario",
+        "line": 145,
+        "name": "Create role with more than maximum characters",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 144
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 146,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 23777000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 147,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "passed",
+              "duration": 818000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 148,
+            "name": "I create a new role with more than maximum characters allowed for name \"maximum text for name\" and description \"maximum text for description on\"",
+            "result": {
+              "status": "passed",
+              "duration": 7175000000
             }
           }
         ]
@@ -771,7 +839,8 @@
             "line": 153,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28006000000
             }
           },
           {
@@ -780,7 +849,8 @@
             "line": 154,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 731000000
             }
           },
           {
@@ -789,7 +859,8 @@
             "line": 155,
             "name": "I create a new role with less than minimum characters allowed for name \"a\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6111000000
             }
           }
         ]
@@ -800,10 +871,6 @@
         "line": 159,
         "name": "Create role with special characters",
         "tags": [
-          {
-            "name": "@focus",
-            "line": 158
-          },
           {
             "name": "@smoke",
             "line": 158
@@ -818,7 +885,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 55939000000
+              "duration": 23585000000
             }
           },
           {
@@ -828,7 +895,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1243000000
+              "duration": 1326000000
             }
           },
           {
@@ -838,7 +905,7 @@
             "name": "I create a new role with special characters not allowed for name \"$#$%&/()\" and description \"$#$%&/()\"",
             "result": {
               "status": "passed",
-              "duration": 17437000000
+              "duration": 5797000000
             }
           }
         ]

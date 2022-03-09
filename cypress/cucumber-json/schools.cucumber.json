@@ -26,7 +26,8 @@
             "line": 6,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 45815000000
             }
           },
           {
@@ -35,7 +36,8 @@
             "line": 7,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1527000000
             }
           },
           {
@@ -44,7 +46,8 @@
             "line": 8,
             "name": "I press on create school button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 493000000
             }
           },
           {
@@ -53,7 +56,8 @@
             "line": 9,
             "name": "I add maximum characters on fields \"Try maximum allowed on automation test insert text as long as possible to break the functionality and get some errors ins\" and \"4357643JURT\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5825000000
             }
           },
           {
@@ -62,7 +66,8 @@
             "line": 10,
             "name": "I get following error messages \"Max length of 120 characters.\" and \"Input needs to be maximum 10 characters\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 74000000
             }
           },
           {
@@ -71,7 +76,8 @@
             "line": 11,
             "name": "I close creation of Schools",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 304000000
             }
           }
         ]
@@ -95,7 +101,8 @@
             "line": 17,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 32801000000
             }
           },
           {
@@ -104,7 +111,8 @@
             "line": 18,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 504000000
             }
           },
           {
@@ -113,7 +121,8 @@
             "line": 19,
             "name": "I press on create school button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 374000000
             }
           },
           {
@@ -122,7 +131,8 @@
             "line": 20,
             "name": "I add spaces on fields \" \" and \" \"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1215000000
             }
           },
           {
@@ -131,7 +141,8 @@
             "line": 21,
             "name": "I get following error messages \"The school name is required.\" and \"The value is not alphanumeric\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 72000000
             }
           },
           {
@@ -140,7 +151,8 @@
             "line": 22,
             "name": "I close creation of Schools",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 378000000
             }
           }
         ]
@@ -330,6 +342,106 @@
             "keyword": "And ",
             "line": 49,
             "name": "I search new school to validate \"Automation School 01\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "schools;create-program-on-school",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "Create Program on School",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 56,
+            "name": "I navigate to actual section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "I press on create school button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "I add correct data on fields \"Automation School 01\" and \"ERDF566\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "I fill all fields for a new program \"Automation Program\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "I add maximum value \"This is a test for max characters to\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "I get error messages \"The program name has a max length of 35 characters.\" \"The Grade is required.\" \"The Age Range is required.\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "I add valid data for a new program \"Automation Program\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "I create a new program and get \"Program has been successfully created\" message",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "I search new program to validate \"Automation Program\"",
             "result": {
               "status": "skipped"
             }
@@ -657,7 +769,8 @@
             "line": 119,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29991000000
             }
           },
           {
@@ -666,7 +779,8 @@
             "line": 120,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1119000000
             }
           },
           {
@@ -675,7 +789,8 @@
             "line": 121,
             "name": "I add columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1793000000
             }
           },
           {
@@ -684,7 +799,8 @@
             "line": 122,
             "name": "I check locked columns \"ID\" and \"School Name\" are present",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 127000000
             }
           }
         ]
@@ -708,7 +824,8 @@
             "line": 128,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29351000000
             }
           },
           {
@@ -717,7 +834,8 @@
             "line": 129,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1399000000
             }
           },
           {
@@ -726,7 +844,8 @@
             "line": 130,
             "name": "I remove columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 744000000
             }
           },
           {
@@ -735,7 +854,8 @@
             "line": 131,
             "name": "I check locked column \"School Name\" is present",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 58000000
             }
           }
         ]
@@ -759,7 +879,8 @@
             "line": 137,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29038000000
             }
           },
           {
@@ -768,7 +889,8 @@
             "line": 138,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1340000000
             }
           },
           {
@@ -777,7 +899,8 @@
             "line": 139,
             "name": "I search new school to validate \"Automation School\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8914000000
             }
           }
         ]
@@ -801,7 +924,8 @@
             "line": 145,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29259000000
             }
           },
           {
@@ -810,7 +934,8 @@
             "line": 146,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1539000000
             }
           },
           {
@@ -819,7 +944,8 @@
             "line": 147,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29246000000
             }
           }
         ]
@@ -843,7 +969,8 @@
             "line": 154,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 32855000000
             }
           },
           {
@@ -852,7 +979,8 @@
             "line": 155,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 397000000
             }
           },
           {
@@ -861,7 +989,8 @@
             "line": 156,
             "name": "I check different rows per page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 51444000000
             }
           }
         ]
@@ -977,7 +1106,8 @@
             "line": 180,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 34203000000
             }
           },
           {
@@ -986,7 +1116,8 @@
             "line": 181,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 495000000
             }
           },
           {
@@ -995,7 +1126,8 @@
             "line": 182,
             "name": "I sort column by asc and desc",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 37114000000
             }
           }
         ]
@@ -1245,12 +1377,7 @@
         "keyword": "Scenario",
         "line": 236,
         "name": "Subcategories Page Selection",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 235
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1346,7 +1473,8 @@
             "line": 249,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 34637000000
             }
           },
           {
@@ -1355,7 +1483,8 @@
             "line": 250,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 414000000
             }
           },
           {
@@ -1364,7 +1493,8 @@
             "line": 251,
             "name": "I press on create school button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 967000000
             }
           },
           {
@@ -1373,7 +1503,8 @@
             "line": 252,
             "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2155000000
             }
           },
           {
@@ -1382,7 +1513,8 @@
             "line": 253,
             "name": "I select all programs and unselect them",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4266000000
             }
           }
         ]
@@ -1392,12 +1524,7 @@
         "keyword": "Scenario",
         "line": 257,
         "name": "Check All Pages on Programs",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 256
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -1454,10 +1581,6 @@
         "name": "Check This Page on Programs",
         "tags": [
           {
-            "name": "@focus",
-            "line": 265
-          },
-          {
             "name": "@smoke",
             "line": 265
           }
@@ -1471,7 +1594,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 31733000000
+              "duration": 28211000000
             }
           },
           {
@@ -1481,7 +1604,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 336000000
+              "duration": 721000000
             }
           },
           {
@@ -1490,8 +1613,8 @@
             "line": 269,
             "name": "I press on create school button",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163896:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150523:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150603:16)\nFrom previous event:\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168760:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168257:14\nFrom previous event:\n    at $Cy.retry (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168237:76)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150606:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150610:12\nFrom previous event:\n    at Object.verify (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150515:61)\n    at perform (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152643:77)\nFrom previous event:\n    at mouseAction (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152681:60)\n    at Context.click (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152700:14)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173217:19)\nFrom Your Spec Code:\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:819:60)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:146:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38305:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37626:35)"
+              "status": "passed",
+              "duration": 453000000
             }
           },
           {
@@ -1500,7 +1623,8 @@
             "line": 270,
             "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2192000000
             }
           },
           {
@@ -1509,7 +1633,8 @@
             "line": 271,
             "name": "I select this page on programs",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10458000000
             }
           }
         ]
@@ -1520,10 +1645,6 @@
         "line": 275,
         "name": "Check None Page on Programs",
         "tags": [
-          {
-            "name": "@focus",
-            "line": 274
-          },
           {
             "name": "@smoke",
             "line": 274
@@ -1538,7 +1659,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 33051000000
+              "duration": 32047000000
             }
           },
           {
@@ -1548,7 +1669,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 449000000
+              "duration": 768000000
             }
           },
           {
@@ -1557,8 +1678,8 @@
             "line": 278,
             "name": "I press on create school button",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-default css-lvaqvs\" tabindex=\"0\" type=\"button\" style=\"background-color: rgb(102, 204, 184); color: white;\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.should()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:163896:76)\n    at runAllChecks (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150523:12)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150603:16)\nFrom previous event:\n    at whenStable (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168760:63)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168257:14\nFrom previous event:\n    at $Cy.retry (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:168237:76)\n    at retryActionability (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150606:19)\n    at https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150610:12\nFrom previous event:\n    at Object.verify (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:150515:61)\n    at perform (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152643:77)\nFrom previous event:\n    at mouseAction (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152681:60)\n    at Context.click (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:152700:14)\n    at Context.<anonymous> (https://hub.alpha.kidsloop.net/__cypress/runner/cypress_runner.js:173217:19)\nFrom Your Spec Code:\n    at SchoolPage.clickOnCreateSchoolButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:819:60)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:146:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:38305:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\schools.feature:37626:35)"
+              "status": "passed",
+              "duration": 729000000
             }
           },
           {
@@ -1567,7 +1688,8 @@
             "line": 279,
             "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2090000000
             }
           },
           {
@@ -1576,7 +1698,8 @@
             "line": 280,
             "name": "I select none page on programs",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10279000000
             }
           }
         ]
