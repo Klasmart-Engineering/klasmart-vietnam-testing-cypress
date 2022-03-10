@@ -14,16 +14,16 @@ Feature: Age Ranges
 
   Scenario: Edit age range
     Given I navigate to the age ranges page
-    And I Add a filter for age ranges
+    And I add a filter for age ranges
     When I edit an age range from "55" months to "53" years
     Then I get "Age range successfully created" message
 
 
   #User should be able to add a filter on age ranges from UD-T
-  @focus @smoke
+  @smoke
   Scenario: Add Age Ranges (From) filter
     Given I navigate to the age ranges page
-    When I Add a filter for age ranges from
+    When I add a filter for age ranges from
     Then The age ranges from filter should be added
 
 
@@ -31,5 +31,5 @@ Feature: Age Ranges
   @smoke
   Scenario: Add Age Ranges (To) filter
     Given I navigate to the age ranges page
-    When I Add a filter for age ranges to
+    When I add a filter for age ranges to
     Then The age ranges to filter should be added

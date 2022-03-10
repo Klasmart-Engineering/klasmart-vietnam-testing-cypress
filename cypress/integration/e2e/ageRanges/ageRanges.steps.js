@@ -53,7 +53,7 @@ When(
   }
 );
 
-When("I Add a filter for age ranges", () => {
+And("I add a filter for age ranges", () => {
   //Add age ranges from filter
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
@@ -70,7 +70,7 @@ When("I Add a filter for age ranges", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-And("I Add a filter for age ranges from", () => {
+When("I add a filter for age ranges from", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   ageRangesPage.clickOnAgeRangesFromColumn();
@@ -80,7 +80,7 @@ And("I Add a filter for age ranges from", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-When("I Add a filter for age ranges to", () => {
+When("I add a filter for age ranges to", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   ageRangesPage.clickOnAgeRangesToColumn();
