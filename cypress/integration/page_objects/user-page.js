@@ -339,7 +339,7 @@ class UserPage {
   }
 
   clickOnAddFilterFinalButton() {
-    cy.get(this.addFilterFinalButton).should("be.visible").click();
+    cy.get(this.addFilterFinalButton).should("be.visible").click({ force: true });
   }
 
   clickOnCancelFilterButton() {
@@ -368,19 +368,19 @@ class UserPage {
 
   selectionOfSchoolValues() {
     cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.eq() == "School Suri 4") {
+      if ($el.eq() == "2020") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "School Suri 36") {
+      } else if ($el.text() == "Automation 102") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "School Suri 40") {
+      } else if ($el.text() == "Automation 105") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "School Suri 39") {
+      } else if ($el.text() == "Automation 103") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
@@ -447,7 +447,7 @@ class UserPage {
   }
 
   getSchoolLabelFilterText() {
-    cy.get(this.labelFilterAdded).should("include.text", "Automation 100");
+    cy.get(this.labelFilterAdded).should("include.text", "Automation 102");
   }
 
   getOrganizationRolesLabelFilterText() {
@@ -500,11 +500,11 @@ class UserPage {
 
   editSchoolsFilterValues() {
     cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.eq() == "Automation 104") {
+      if ($el.eq() == "Automation 108") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "Automation 101") {
+      } else if ($el.text() == "Automation 109") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
@@ -513,7 +513,7 @@ class UserPage {
   }
 
   getEditedLabelFilterTextSchools() {
-    cy.get(this.labelFilterAdded).should("include.text", "Automation 101");
+    cy.get(this.labelFilterAdded).should("include.text", "Automation 109");
   }
 
   getEditedLabelFilterTextStatus() {
@@ -561,9 +561,7 @@ class UserPage {
   }
 
   getFilterMouseOverText() {
-    cy.get(
-      "[aria-label='All columns already have a filter specified']"
-    ).realHover();
+    cy.get("div[role='button'][tabindex='-1']").realHover();
     cy.contains("All columns already have a filter specified");
   }
 

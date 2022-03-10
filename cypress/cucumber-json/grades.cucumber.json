@@ -202,7 +202,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 36596000000
+              "duration": 61189000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1707000000
+              "duration": 1237000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "I check all buttons from pagination",
             "result": {
               "status": "passed",
-              "duration": 29590000000
+              "duration": 28998000000
             }
           }
         ]
@@ -247,7 +247,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 32192000000
+              "duration": 38619000000
             }
           },
           {
@@ -257,7 +257,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1432000000
+              "duration": 312000000
             }
           },
           {
@@ -267,7 +267,7 @@
             "name": "I check different rows per page",
             "result": {
               "status": "passed",
-              "duration": 52582000000
+              "duration": 50568000000
             }
           }
         ]
@@ -384,7 +384,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 33334000000
+              "duration": 44468000000
             }
           },
           {
@@ -394,7 +394,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1048000000
+              "duration": 302000000
             }
           },
           {
@@ -404,7 +404,7 @@
             "name": "I sort column by asc and desc",
             "result": {
               "status": "passed",
-              "duration": 38066000000
+              "duration": 35663000000
             }
           }
         ]
@@ -577,7 +577,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 37457000000
+              "duration": 40448000000
             }
           },
           {
@@ -587,7 +587,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 675000000
+              "duration": 354000000
             }
           },
           {
@@ -597,7 +597,7 @@
             "name": "I search grade \"Grade\"",
             "result": {
               "status": "passed",
-              "duration": 10701000000
+              "duration": 10476000000
             }
           }
         ]
@@ -622,7 +622,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 30995000000
+              "duration": 26260000000
             }
           },
           {
@@ -632,7 +632,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1395000000
+              "duration": 786000000
             }
           },
           {
@@ -642,7 +642,7 @@
             "name": "Add filter for progress from",
             "result": {
               "status": "passed",
-              "duration": 7245000000
+              "duration": 3907000000
             }
           },
           {
@@ -652,7 +652,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 953000000
+              "duration": 601000000
             }
           },
           {
@@ -662,7 +662,7 @@
             "name": "I check that progress filter was added",
             "result": {
               "status": "passed",
-              "duration": 92000000
+              "duration": 28000000
             }
           }
         ]
@@ -687,7 +687,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 32446000000
+              "duration": 31387000000
             }
           },
           {
@@ -697,7 +697,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 788000000
+              "duration": 324000000
             }
           },
           {
@@ -707,7 +707,7 @@
             "name": "Add filter for progress to",
             "result": {
               "status": "passed",
-              "duration": 6604000000
+              "duration": 4397000000
             }
           },
           {
@@ -717,7 +717,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 884000000
+              "duration": 734000000
             }
           },
           {
@@ -727,7 +727,7 @@
             "name": "I check that progress filter was added",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 29000000
             }
           }
         ]
@@ -844,7 +844,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 31650000000
+              "duration": 25111000000
             }
           },
           {
@@ -854,7 +854,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1304000000
+              "duration": 314000000
             }
           },
           {
@@ -864,7 +864,7 @@
             "name": "Add filter for progress from",
             "result": {
               "status": "passed",
-              "duration": 7994000000
+              "duration": 4015000000
             }
           },
           {
@@ -874,7 +874,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 982000000
+              "duration": 738000000
             }
           },
           {
@@ -884,7 +884,7 @@
             "name": "I edit values from added filter on progress",
             "result": {
               "status": "passed",
-              "duration": 7395000000
+              "duration": 4751000000
             }
           },
           {
@@ -894,7 +894,7 @@
             "name": "I check edited value was saved on progress",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 32000000
             }
           }
         ]
@@ -919,7 +919,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 29422000000
+              "duration": 31205000000
             }
           },
           {
@@ -929,7 +929,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 695000000
+              "duration": 345000000
             }
           },
           {
@@ -939,7 +939,7 @@
             "name": "Add filter for progress to",
             "result": {
               "status": "passed",
-              "duration": 7417000000
+              "duration": 4152000000
             }
           },
           {
@@ -949,7 +949,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 1643000000
+              "duration": 723000000
             }
           },
           {
@@ -959,7 +959,7 @@
             "name": "I edit values from added filter on progress",
             "result": {
               "status": "passed",
-              "duration": 6920000000
+              "duration": 4764000000
             }
           },
           {
@@ -969,7 +969,7 @@
             "name": "I check edited value was saved on progress",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 29000000
             }
           }
         ]
@@ -1104,7 +1104,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 27899000000
+              "duration": 26755000000
             }
           },
           {
@@ -1114,7 +1114,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1623000000
+              "duration": 337000000
             }
           },
           {
@@ -1124,7 +1124,7 @@
             "name": "Add filter for progress from",
             "result": {
               "status": "passed",
-              "duration": 8510000000
+              "duration": 5973000000
             }
           },
           {
@@ -1134,7 +1134,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 1246000000
+              "duration": 769000000
             }
           },
           {
@@ -1144,7 +1144,7 @@
             "name": "I clear the filter applied",
             "result": {
               "status": "passed",
-              "duration": 879000000
+              "duration": 414000000
             }
           }
         ]
@@ -1169,7 +1169,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 34101000000
+              "duration": 31294000000
             }
           },
           {
@@ -1179,7 +1179,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 661000000
+              "duration": 323000000
             }
           },
           {
@@ -1189,7 +1189,7 @@
             "name": "Add filter for progress to",
             "result": {
               "status": "passed",
-              "duration": 7988000000
+              "duration": 4212000000
             }
           },
           {
@@ -1199,7 +1199,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 1315000000
+              "duration": 591000000
             }
           },
           {
@@ -1209,7 +1209,7 @@
             "name": "I clear the filter applied",
             "result": {
               "status": "passed",
-              "duration": 879000000
+              "duration": 306000000
             }
           }
         ]
@@ -1234,7 +1234,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 28964000000
+              "duration": 24434000000
             }
           },
           {
@@ -1244,7 +1244,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 683000000
+              "duration": 437000000
             }
           },
           {
@@ -1254,7 +1254,7 @@
             "name": "Add all existent filters",
             "result": {
               "status": "passed",
-              "duration": 15036000000
+              "duration": 10847000000
             }
           },
           {
@@ -1264,7 +1264,7 @@
             "name": "I clear all filters applied",
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 354000000
             }
           }
         ]
@@ -1289,7 +1289,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 30272000000
+              "duration": 28819000000
             }
           },
           {
@@ -1299,7 +1299,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 968000000
+              "duration": 866000000
             }
           },
           {
@@ -1309,7 +1309,7 @@
             "name": "Add all existent filters",
             "result": {
               "status": "passed",
-              "duration": 12431000000
+              "duration": 8408000000
             }
           },
           {
@@ -1319,7 +1319,7 @@
             "name": "I check filter is disable",
             "result": {
               "status": "passed",
-              "duration": 299000000
+              "duration": 96000000
             }
           }
         ]
@@ -1344,7 +1344,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 29133000000
+              "duration": 24495000000
             }
           },
           {
@@ -1354,7 +1354,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1230000000
+              "duration": 334000000
             }
           },
           {
@@ -1364,7 +1364,7 @@
             "name": "I check the order of values is correct on grades",
             "result": {
               "status": "passed",
-              "duration": 1404000000
+              "duration": 952000000
             }
           }
         ]
@@ -1389,7 +1389,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 30021000000
+              "duration": 30696000000
             }
           },
           {
@@ -1399,7 +1399,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 590000000
+              "duration": 980000000
             }
           },
           {
@@ -1409,7 +1409,7 @@
             "name": "I remove columns to be shown",
             "result": {
               "status": "passed",
-              "duration": 1144000000
+              "duration": 618000000
             }
           },
           {
@@ -1419,7 +1419,7 @@
             "name": "I check locked column \"Name\" is present",
             "result": {
               "status": "passed",
-              "duration": 89000000
+              "duration": 81000000
             }
           }
         ]
@@ -1444,7 +1444,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 27137000000
+              "duration": 24749000000
             }
           },
           {
@@ -1454,7 +1454,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1395000000
+              "duration": 1301000000
             }
           },
           {
@@ -1464,7 +1464,7 @@
             "name": "I add columns to be shown",
             "result": {
               "status": "passed",
-              "duration": 3072000000
+              "duration": 1494000000
             }
           },
           {
@@ -1474,7 +1474,7 @@
             "name": "I check locked columns \"ID\" and \"School Name\" are present",
             "result": {
               "status": "passed",
-              "duration": 181000000
+              "duration": 80000000
             }
           }
         ]

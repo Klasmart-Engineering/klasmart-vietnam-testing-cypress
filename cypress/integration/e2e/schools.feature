@@ -50,7 +50,7 @@ Feature: Schools
 
 
   #User should be able to create a Program to assign to a School UD-T44
-@focus 
+
   Scenario: Create Program on School
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -232,7 +232,7 @@ Feature: Schools
     And I get "Schools have been added successfully" message
 
   #User should be able to select different subcategories for a program on schools UD-T48 ----*** DEFECT AD-1798 ***----
-  @smoke
+ 
   Scenario: Subcategories Page Selection
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section
@@ -253,7 +253,7 @@ Feature: Schools
     And I select all programs and unselect them
 
   #User should be able to check all pages on programs inside schools UD-T341 ----*** DEFECT AD-75 ***----
-  @smoke
+ 
   Scenario: Check All Pages on Programs
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
     When I navigate to actual section

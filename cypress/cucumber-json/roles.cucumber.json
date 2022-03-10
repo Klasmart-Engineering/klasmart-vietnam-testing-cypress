@@ -183,7 +183,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 39300000000
+              "duration": 37254000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1888000000
+              "duration": 393000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "I add columns to be shown",
             "result": {
               "status": "passed",
-              "duration": 2560000000
+              "duration": 1642000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "I check locked columns \"Id\" and \"Role\" are present",
             "result": {
               "status": "passed",
-              "duration": 171000000
+              "duration": 100000000
             }
           }
         ]
@@ -238,7 +238,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 33490000000
+              "duration": 24298000000
             }
           },
           {
@@ -248,7 +248,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 733000000
+              "duration": 1137000000
             }
           },
           {
@@ -258,7 +258,7 @@
             "name": "I remove columns to be shown",
             "result": {
               "status": "passed",
-              "duration": 1366000000
+              "duration": 506000000
             }
           },
           {
@@ -267,8 +267,8 @@
             "line": 45,
             "name": "I check locked column \"Role\" is present",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `table thead:nth-child(1) tr th:nth-child(1)`, but never found it.\n    at RolesPage.getLockedColumnText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:1051:17)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:227:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29044:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28365:35)"
+              "status": "passed",
+              "duration": 41000000
             }
           }
         ]
@@ -293,7 +293,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 33386000000
+              "duration": 24116000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 2266000000
+              "duration": 1261000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "I search new role to validate \"Teacher\"",
             "result": {
               "status": "passed",
-              "duration": 9370000000
+              "duration": 8137000000
             }
           }
         ]
@@ -338,7 +338,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 31381000000
+              "duration": 25055000000
             }
           },
           {
@@ -348,7 +348,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 825000000
+              "duration": 1067000000
             }
           },
           {
@@ -358,7 +358,7 @@
             "name": "I check all buttons from pagination",
             "result": {
               "status": "passed",
-              "duration": 30894000000
+              "duration": 29005000000
             }
           }
         ]
@@ -383,7 +383,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 32790000000
+              "duration": 28763000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 817000000
+              "duration": 1261000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "I check different rows per page",
             "result": {
               "status": "passed",
-              "duration": 54468000000
+              "duration": 50836000000
             }
           }
         ]
@@ -520,7 +520,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 39354000000
+              "duration": 30028000000
             }
           },
           {
@@ -530,7 +530,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 2030000000
+              "duration": 969000000
             }
           },
           {
@@ -540,7 +540,7 @@
             "name": "I sort column by asc and desc",
             "result": {
               "status": "passed",
-              "duration": 39656000000
+              "duration": 35580000000
             }
           }
         ]
@@ -750,7 +750,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 36245000000
+              "duration": 28572000000
             }
           },
           {
@@ -760,7 +760,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1223000000
+              "duration": 965000000
             }
           },
           {
@@ -769,8 +769,8 @@
             "line": 141,
             "name": "I create a new role with empty name \"   \" and empty description as \"   \"",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `span > button.MuiFab-extended`, but never found it.\n    at RolesPage.clickOnCreateRoleButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:959:37)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:353:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29044:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28365:35)"
+              "status": "passed",
+              "duration": 7203000000
             }
           }
         ]
@@ -795,7 +795,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 39561000000
+              "duration": 23777000000
             }
           },
           {
@@ -805,7 +805,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1347000000
+              "duration": 818000000
             }
           },
           {
@@ -815,7 +815,7 @@
             "name": "I create a new role with more than maximum characters allowed for name \"maximum text for name\" and description \"maximum text for description on\"",
             "result": {
               "status": "passed",
-              "duration": 10689000000
+              "duration": 7175000000
             }
           }
         ]
@@ -840,7 +840,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 35435000000
+              "duration": 28006000000
             }
           },
           {
@@ -850,7 +850,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1684000000
+              "duration": 731000000
             }
           },
           {
@@ -859,8 +859,8 @@
             "line": 155,
             "name": "I create a new role with less than minimum characters allowed for name \"a\"",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `span > button.MuiFab-extended`, but never found it.\n    at RolesPage.clickOnCreateRoleButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:959:37)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:382:24)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:29044:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\roles.feature:28365:35)"
+              "status": "passed",
+              "duration": 6111000000
             }
           }
         ]
@@ -885,7 +885,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 37194000000
+              "duration": 23585000000
             }
           },
           {
@@ -895,7 +895,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1128000000
+              "duration": 1326000000
             }
           },
           {
@@ -905,7 +905,7 @@
             "name": "I create a new role with special characters not allowed for name \"$#$%&/()\" and description \"$#$%&/()\"",
             "result": {
               "status": "passed",
-              "duration": 9711000000
+              "duration": 5797000000
             }
           }
         ]

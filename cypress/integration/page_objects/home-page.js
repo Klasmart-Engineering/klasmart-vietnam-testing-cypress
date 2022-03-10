@@ -72,7 +72,7 @@ class HomePage {
   }
 
   clickOnSwitchView() {
-    cy.viewport(1280, 750);
+    //cy.viewport(1920, 1280);
     cy.get(".MuiToolbar-root > .MuiGrid-container").scrollIntoView();
     cy.get(this.switchView).contains("Switch View").click();
   }

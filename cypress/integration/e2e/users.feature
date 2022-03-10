@@ -225,7 +225,7 @@ Feature: Users
     And I check edited value was saved on organization roles
 
   #User should be able to edit filter on users for Schools UD-T429 and UD-T431
-@smoke 
+@focus @smoke 
   Scenario: Edit filter Schools
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -387,7 +387,7 @@ Feature: Users
     And I check filter is disable
 
   #User should be able to see correct order for values on filters UD-T581 ----*** DEFECT AD-964 ***----
-@smoke 
+ 
   Scenario: Filter order values
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
