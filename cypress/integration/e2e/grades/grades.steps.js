@@ -20,7 +20,7 @@ Given(
 );
 
 When("I navigate to actual section", () => {
-  gradesPage.clickOnGradesTab();
+  gradesPage.clickOnGradesTab(); 
 });
 
 Then("I create a grade {string}", (gradeName) => {

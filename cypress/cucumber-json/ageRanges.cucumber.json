@@ -12,62 +12,6 @@
         "keyword": "Scenario",
         "line": 8,
         "name": "Create age range",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 7
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "passed",
-              "duration": 39213000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "I navigate to the age ranges page",
-            "result": {
-              "status": "passed",
-              "duration": 1975000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "I create an age range from \"44\" months to \"23\" years",
-            "result": {
-              "status": "passed",
-              "duration": 2899000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "I get \"Age range successfully created\" message",
-            "result": {
-              "status": "failed",
-              "duration": 30647000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Age range successfully created' within the element: <div#notistack-snackbar.SnackbarItem-message> but never did.\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:161:51)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:27686:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:27007:35)"
-            }
-          }
-        ]
-      },
-      {
-        "id": "age-ranges;edit-age-range",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Edit age range",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -83,10 +27,63 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
+            "line": 9,
             "name": "I navigate to the age ranges page",
             "result": {
               "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I create an age range from \"45\" months to \"23\" years",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I get \"Age range successfully created\" message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "age-ranges;edit-age-range",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Edit age range",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 18545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I navigate to the age ranges page",
+            "result": {
+              "status": "passed",
+              "duration": 1084000000
             }
           },
           {
@@ -95,7 +92,8 @@
             "line": 17,
             "name": "I add a filter for age ranges",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiChip-label`, but never found it.\n    at UserPage.clickOnAddFilterButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:1202:36)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:201:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:27707:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:27028:35)"
             }
           },
           {
@@ -121,16 +119,12 @@
       {
         "id": "age-ranges;add-age-ranges-(from)-filter",
         "keyword": "Scenario",
-        "line": 24,
+        "line": 25,
         "name": "Add Age Ranges (From) filter",
         "tags": [
           {
-            "name": "@focus",
-            "line": 23
-          },
-          {
             "name": "@smoke",
-            "line": 23
+            "line": 24
           }
         ],
         "type": "scenario",
@@ -141,34 +135,31 @@
             "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 26674000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 25,
+            "line": 26,
             "name": "I navigate to the age ranges page",
             "result": {
-              "status": "passed",
-              "duration": 1150000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 26,
+            "line": 27,
             "name": "I add a filter for age ranges from",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiChip-label`, but never found it.\n    at UserPage.clickOnAddFilterButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:1183:36)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:208:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:27686:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:27007:35)"
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
+            "line": 28,
             "name": "The age ranges from filter should be added",
             "result": {
               "status": "skipped"
@@ -179,12 +170,12 @@
       {
         "id": "age-ranges;add-age-ranges-(to)-filter",
         "keyword": "Scenario",
-        "line": 32,
+        "line": 33,
         "name": "Add Age Ranges (To) filter",
         "tags": [
           {
             "name": "@smoke",
-            "line": 31
+            "line": 32
           }
         ],
         "type": "scenario",
@@ -201,7 +192,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
+            "line": 34,
             "name": "I navigate to the age ranges page",
             "result": {
               "status": "skipped"
@@ -210,7 +201,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 34,
+            "line": 35,
             "name": "I add a filter for age ranges to",
             "result": {
               "status": "skipped"
@@ -219,7 +210,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 35,
+            "line": 36,
             "name": "The age ranges to filter should be added",
             "result": {
               "status": "skipped"
