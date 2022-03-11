@@ -24,13 +24,6 @@ Feature: Grades
     When I navigate to actual section
     Then I search "Grade Edited" to be deleted and get "Grade successfully deleted" message
 
-  #User should be able to delete an existent grade from edition mode UD-T133
-
-  Scenario: Delete grade edition
-    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
-    When I navigate to actual section
-    Then I search "Grade Edited" to be deleted on edition and get "Grade successfully deleted" message
-
   #User should be able to see data paginated UD-T643
   @smoke
   Scenario: Pagination
@@ -48,7 +41,7 @@ Feature: Grades
     Then I check different rows per page
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T129
- 
+
   Scenario: Sorting and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -57,7 +50,7 @@ Feature: Grades
     And I check all buttons from pagination
 
   #User should be able to search and see the pagination according to inserted searching UD-T176
- 
+
   Scenario: Search and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -74,7 +67,7 @@ Feature: Grades
     And I sort column by asc and desc
 
   #User should be able to see first page from pagination UD-T127
-  
+
   Scenario: First page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -90,7 +83,7 @@ Feature: Grades
     Then I check last page pagination
 
   #User should be able to see next page from pagination UD-T124
- 
+
   Scenario: Next page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -98,7 +91,7 @@ Feature: Grades
     Then I check next page pagination
 
   #User should be able to see previous page from pagination UD-T125
-  
+
   Scenario: Previous page pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -134,7 +127,7 @@ Feature: Grades
     And I check that progress filter was added
 
   #User should be able to cancel add a filter on grades for Progress From UD-T138
-  
+
   Scenario: Add filter Progress From Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -143,7 +136,7 @@ Feature: Grades
     Then I press cancel button
 
   #User should be able to cancel add a filter on grades for Progress To UD-T147
-  
+
   Scenario: Add filter Progress To Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -174,7 +167,7 @@ Feature: Grades
     And I check edited value was saved on progress
 
   #User should be able to cancel edit filter on grades for Progress From UD-T144
-  
+
   Scenario: Edit filter Progress From Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -184,7 +177,7 @@ Feature: Grades
     And I edit value from added filter on progress but I press cancel
 
   #User should be able to cancel edit filter on grades for Progress To UD-T152
-  
+
   Scenario: Edit filter Progress To Cancel
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -258,7 +251,7 @@ Feature: Grades
     And I check locked columns "ID" and "School Name" are present
 
   #User should be able to add multiple filter, search any grade and change paginations that will no affect the result UD-T335
- 
+
   Scenario: Add multiple filters search and pagination
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"

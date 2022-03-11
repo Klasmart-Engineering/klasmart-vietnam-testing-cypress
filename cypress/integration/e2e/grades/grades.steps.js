@@ -3,7 +3,6 @@ import { signInPage } from "../../page_objects/sign-in-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
 import { gradesPage } from "../../page_objects/grades-page";
-import { assert } from "chai";
 
 Given(
   "I sign in with valid credentials {string} and {string}",
