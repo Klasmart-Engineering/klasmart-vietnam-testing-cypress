@@ -24,6 +24,7 @@ class ClassesPage {
     ":nth-child(3) > .MuiButton-root > .MuiBox-root > .MuiTypography-root";
   deleteFinalButton = "button[type='submit']";
   nameInputMessages = "#class-dialog-name-helper-text";
+  createWindowsMessage = "#scroll-dialog-title";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -263,6 +264,68 @@ class ClassesPage {
     return cy
       .get(this.nameInputMessages, { timeout: 50000 })
       .should("be.visible");
+  }
+
+  getCreateButtonState() {
+    var stateEnable = false;
+    cy.get(this.createFinalButton).then(($btn) => {
+      if ($btn.is(":disabled")) {
+        cy.log("Button is disabled");
+        assert.isBoolean(stateEnable, "ERROR!! NO CHARACTERS WERE INTRODUCED");
+      } else {
+        cy.log("Button is enabled");
+      }
+    });
+  }
+
+  getCreateWindowsMessage() {
+    return cy
+      .get(this.createWindowsMessage, { timeout: 50000 })
+      .should("be.visible");
+  }
+
+  clickOnAgeRangesFromColumn() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Age Ranges (From)") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  clickOnAgeRangesToColumn() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Age Ranges (To)") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfAgeRangesFromValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "0 Year(s)") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfAgeRangesToValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "4 Year(s)") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  getAgeRangesFromLabelFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "0 Year(s)");
   }
 }
 

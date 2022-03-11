@@ -71,7 +71,7 @@ Feature: Classes
     Given I search class "Class"
 
   #User should be able to sort by ascending and descending order UD-T188
-  @smoke
+
   Scenario: Sorting
     Given I sort column by asc and desc
 
@@ -84,22 +84,47 @@ Feature: Classes
   @smoke
   Scenario: Remove columns
     Given I remove columns to be shown
-    Then I check locked column "Class" is present
+    When I check locked column "Class" is present
 
   #User should be able to add columns UD-T105
   @smoke
   Scenario: Add columns
     Given I add columns to be shown
-    Then I check locked columns "ID" and "Class" are present
+    When I check locked columns "ID" and "Class" are present
 
   #User should be able to see error for maximum characters on classes name UD-T591
   @smoke
   Scenario: Maximum characters
     Given I add more than maximum characters "more than maximum characters allowed for name c" on class name field
-    Then I should see an error message "The class name has a max length of 45 characters"
+    When I should see an error message "The class name has a max length of 45 characters"
 
   #User should be able to see required message on classes name UD-T588
-  @focus   @smoke
+  @smoke
   Scenario: Required field message
     Given I left in blank class name " "
-    Then I should see an error message "The class name is required"
+    When I should see an error message "The class name is required"
+
+  #User should be able to see button create enable if minimum character were introduced on class name UD-T590
+  @smoke
+  Scenario: Minimum character
+    Given I add minimum character on class name "A"
+    When I check the create button should be enable
+
+  #User should be able to see create class window UD-T587
+  @smoke
+  Scenario: Create class window
+    Given I press on create class button
+    When new window is open I should see "Create class" message
+
+  #User should not be able to create a class with white spaces UD-T589
+  @smoke
+  Scenario: White spaces
+    Given I add white spaces instead characters "     "
+    When I check the create button should be disable
+
+  #User should be able to add a filter on classes for Age Ranges From UD-T189
+  @smoke
+  Scenario: Add filter Age Ranges From
+    Given Add filter for age ranges from
+    When Filter is Added
+    Then I check that age ranges filter was added

@@ -3,6 +3,7 @@ import { signInPage } from "../../page_objects/sign-in-page";
 import { classesPage } from "../../page_objects/classes-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
+import { gradesPage } from "../../page_objects/grades-page";
 
 Given(
   "I sign in with valid credentials {string} and {string}",
@@ -187,7 +188,7 @@ Given("I remove columns to be shown", () => {
   classesPage.removeAllColumns();
 });
 
-Then("I check locked column {string} is present", () => {
+When("I check locked column {string} is present", () => {
   classesPage.getColumnText();
 });
 
@@ -196,7 +197,7 @@ Given("I add columns to be shown", () => {
   userPage.selectColumns();
 });
 
-Then("I check locked columns {string} and {string} are present", () => {
+When("I check locked columns {string} and {string} are present", () => {
   schoolPage.getFirstColumnText();
   classesPage.getSecondColumnText();
 });
@@ -209,11 +210,50 @@ Given(
   }
 );
 
-Then("I should see an error message {string}", () => {
+When("I should see an error message {string}", () => {
   classesPage.getClassNameText();
 });
 
 Given("I left in blank class name {string}", (className) => {
   classesPage.clickOnCreateButton();
   classesPage.className(className);
+});
+
+Given("I add minimum character on class name {string}", (className) => {
+  classesPage.clickOnCreateButton();
+  classesPage.className(className);
+});
+
+When("I check the create button should be enable", () => {
+  classesPage.getCreateButtonState();
+});
+
+Given("I press on create class button", () => {
+  classesPage.clickOnCreateButton();
+});
+
+When("new window is open I should see {string} message", (title) => {
+  classesPage.getCreateWindowsMessage(title);
+});
+
+Given("I add white spaces instead characters {string}", (className) => {
+  classesPage.clickOnCreateButton();
+  classesPage.className(className);
+});
+
+When("I check the create button should be disable", () => {
+  classesPage.getCreateButtonState();
+});
+
+Given("Add filter for age ranges from", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnAgeRangesFromColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfAgeRangesFromValues();
+  userPage.closeListItems();
+});
+
+Then("I check that age ranges filter was added", () => {
+  classesPage.getAgeRangesFromLabelFilterText();
 });

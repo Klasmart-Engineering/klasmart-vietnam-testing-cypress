@@ -29,7 +29,7 @@ class SignInPage {
   emailPhoneInput = "#signInName";
   passwordInput = "#password";
   selectProfile = ".MuiList-root > :nth-child(1) > .MuiListItem-root";
-  continueButton = "button[type='submit'] span[class='MuiButton-label']";
+  continueButton = "button[type='submit']";
   createAccountText = ".main-heading";
   forgotPasswordText = ".main__title";
   privacyPopUpText = "#nav-menu-title";
