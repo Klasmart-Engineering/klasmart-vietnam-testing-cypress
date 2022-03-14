@@ -80,71 +80,73 @@ Feature: Grades
   #User should be able to add a filter on grades for Progress From UD-T139
   @smoke
   Scenario: Add filter Progress From
-    And Add filter for progress from
-    Then Filter is Added
-    And I check that progress filter was added
+    Given I open the filter from options
+    When I add the filter
+    Then the progress filter should be applied
 
   #User should be able to add a filter on grades for Progress To UD-T146
   @smoke
   Scenario: Add filter Progress To
-    And Add filter for progress to
-    Then Filter is Added
-    And I check that progress filter was added
+    Given I open the filter to options
+    When I add the filter
+    Then the progress filter should be applied
 
   #User should be able to cancel add a filter on grades for Progress From UD-T138
 
   Scenario: Add filter Progress From Cancel
-    And Add filter for progress from
+    Given I open the filter from options
     Then I press cancel button
 
   #User should be able to cancel add a filter on grades for Progress To UD-T147
 
   Scenario: Add filter Progress To Cancel
-    And Add filter for progress to
+    Given I open the filter to options
     Then I press cancel button
 
   #User should be able to edit filter on grades for Progress From UD-T143 and UD-T145
   @smoke
   Scenario: Edit filter Progress From
-    And Add filter for progress from
-    Then Filter is Added
-    And I edit values from added filter on progress
-    And I check edited value was saved on progress
+    Given I open the filter from options
+    When I add the filter
+    And I edit the values on a filter
+    Then the edited value should be saved on progress
 
   #User should be able to edit filter on grades for Progress To UD-T151 and UD-T153
   @smoke
   Scenario: Edit filter Progress To
-    And Add filter for progress to
-    Then Filter is Added
-    And I edit values from added filter on progress
-    And I check edited value was saved on progress
+    Given I open the filter to options
+    When I add the filter
+    And I edit the values on a filter
+    Then the edited value should be saved on progress
 
   #User should be able to cancel edit filter on grades for Progress From UD-T144
 
   Scenario: Edit filter Progress From Cancel
-    And Add filter for progress from
-    Then Filter is Added
-    And I edit value from added filter on progress but I press cancel
+    Given I open the filter from options
+    When I add the filter
+    And I try to edit the values on a filter 
+    Then I should be able to cancel editing
 
   #User should be able to cancel edit filter on grades for Progress To UD-T152
 
   Scenario: Edit filter Progress To Cancel
-    And Add filter for progress to
-    Then Filter is Added
-    And I edit value from added filter on progress but I press cancel
+    Given I open the filter to options
+    When I add the filter
+    And I try to edit the values on a filter
+    Then I should be able to cancel editing
 
   #User should be able to clear Progress From filter for grades UD-T141
   @smoke
   Scenario: Clear filter Progress From
-    And Add filter for progress from
-    Then Filter is Added
+    Given I open the filter from options
+    When I add the filter
     And I clear the filter applied
 
   #User should be able to clear Progress To filter for grades UD-T150
   @smoke
   Scenario: Clear filter Progress To
-    And Add filter for progress to
-    Then Filter is Added
+    Given I open the filter to options
+    When I add the filter
     And I clear the filter applied
 
   #User should be able to clear all filter for grades UD-T140

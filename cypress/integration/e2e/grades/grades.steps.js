@@ -174,7 +174,7 @@ Then("I check previous page pagination", () => {
   userPage.getFirstPageButtonState();
 });
 
-And("Add filter for progress from", () => {
+Given("I open the filter from options", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   gradesPage.clickOnProgressFromColumn();
@@ -183,7 +183,7 @@ And("Add filter for progress from", () => {
   userPage.closeListItems();
 });
 
-And("Add filter for progress to", () => {
+Given("I open the filter to options", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   gradesPage.clickOnProgressToColumn();
@@ -192,11 +192,11 @@ And("Add filter for progress to", () => {
   userPage.closeListItems();
 });
 
-Then("Filter is Added", () => {
+When("I add the filter", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-And("I check that progress filter was added", () => {
+Then("the progress filter should be applied", () => {
   gradesPage.getProgressLabelFilterText();
 });
 
@@ -204,7 +204,7 @@ Then("I press cancel button", () => {
   userPage.clickOnCancelFilterButton();
 });
 
-And("I edit values from added filter on progress", () => {
+And("I edit the values on a filter", () => {
   userPage.clickOnFilterLabel();
   userPage.clickOnValuesFilter();
   gradesPage.selectionOfProgressValues();
@@ -213,19 +213,22 @@ And("I edit values from added filter on progress", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-And("I check edited value was saved on progress", () => {
+Then("the edited value should be saved on progress", () => {
   gradesPage.getEditedLabelFilterTextProgress();
 });
 
-And("I edit value from added filter on progress but I press cancel", () => {
+When("I try to edit the values on a filter", () => {
   userPage.clickOnFilterLabel();
   userPage.clickOnValuesFilter();
   gradesPage.selectionOfProgressValues();
   gradesPage.editProgressFilterValues();
   userPage.closeListItems();
+});
+
+Then("I should be able to cancel editing", () => {
   userPage.clickOnCancelFilterButton();
   gradesPage.getProgressLabelFilterText();
-});
+})
 
 Then("I get a {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
