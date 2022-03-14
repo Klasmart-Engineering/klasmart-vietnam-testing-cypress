@@ -19,7 +19,7 @@ Given(
   }
 );
 
-When("I navigate to actual section", () => {
+When("I navigate to the roles page", () => {
   rolesPage.clickOnRolesTab();
 });
 

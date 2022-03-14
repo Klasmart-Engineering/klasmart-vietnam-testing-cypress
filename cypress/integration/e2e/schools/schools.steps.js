@@ -18,7 +18,7 @@ Given(
   }
 );
 
-When("I navigate to actual section", () => {
+When("I navigate to the schools page", () => {
   schoolPage.clickOnSchoolsTab();
 });
 
