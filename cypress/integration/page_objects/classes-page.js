@@ -360,6 +360,46 @@ class ClassesPage {
   getAgeRangesToEditFilterText() {
     cy.get(this.labelFilterAdded).should("include.text", "2 Year(s)");
   }
+
+  clickOnGradesColumn() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Grades") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfGradesValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Grade 1") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  getGradesFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "Grade 1");
+  }
+
+  selectionOfEditGradesValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Grade 2") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  getGradesEditFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "Grade 2");
+  }
+
+
 }
 
 export const classesPage = new ClassesPage();

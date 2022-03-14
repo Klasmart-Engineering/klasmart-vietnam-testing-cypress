@@ -307,6 +307,7 @@ And("I edit status value as active but I press cancel", () => {
 });
 
 And("I clear the filter applied", () => {
+  cy.viewport(1920, 1280);
   userPage.clickClearFilter();
   userPage.getAddFilterLabelState();
 });

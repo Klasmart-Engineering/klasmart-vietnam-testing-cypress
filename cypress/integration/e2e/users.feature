@@ -225,7 +225,7 @@ Feature: Users
     And I check edited value was saved on organization roles
 
   #User should be able to edit filter on users for Schools UD-T429 and UD-T431
-@focus @smoke 
+@smoke 
   Scenario: Edit filter Schools
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -349,7 +349,7 @@ Feature: Users
     And I clear the filter applied
 
   #User should be able to clear schools filter for users UD-T428
-@smoke 
+@focus @smoke 
   Scenario: Clear filter Schools
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"

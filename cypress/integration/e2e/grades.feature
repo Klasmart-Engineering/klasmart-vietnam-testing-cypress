@@ -32,8 +32,8 @@ Feature: Grades
     When I navigate to actual section
     And I check all buttons from pagination
 
-  #User should be able to paginate by rows per page UD-T123
-  @smoke
+  #User should be able to paginate by rows per page UD-T123 ----*** DEFECT AD-2234 ***----
+  
   Scenario: Rows Per Page
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
@@ -58,8 +58,8 @@ Feature: Grades
     And I check all buttons from pagination
     And I search grade "Grade"
 
-  #User should be able to sort by ascending and descending order UD-T136
-  @smoke
+  #User should be able to sort by ascending and descending order UD-T136 ----*** DEFECT AD-2246 ***----
+  
   Scenario: Sorting
 
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"

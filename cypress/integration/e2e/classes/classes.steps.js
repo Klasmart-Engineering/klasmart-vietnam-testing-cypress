@@ -331,3 +331,16 @@ Then("I clear the filter applied", () => {
   userPage.clickClearFilter();
   userPage.getAddFilterLabelState();
 });
+
+Given("Add filter for grades", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnGradesColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfGradesValues();
+  userPage.closeListItems();
+});
+
+Then("I check that grades filter was added", () => {
+  classesPage.getGradesFilterText();
+});
