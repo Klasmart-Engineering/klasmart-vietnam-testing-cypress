@@ -255,5 +255,79 @@ Given("Add filter for age ranges from", () => {
 });
 
 Then("I check that age ranges filter was added", () => {
-  classesPage.getAgeRangesFromLabelFilterText();
+  classesPage.getAgeRangesFromFilterText();
+});
+
+Given("Add filter for age ranges to", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnAgeRangesToColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfAgeRangesToValues();
+  userPage.closeListItems();
+});
+
+Then("I check that age ranges to filter was added", () => {
+  classesPage.getAgeRangesToFilterText();
+});
+
+When("I press cancel button", () => {
+  userPage.clickOnCancelFilterButton();
+});
+
+Then("I edit values from added filter on age ranges from", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfAgeRangesFromValues();
+  classesPage.selectionOfEditAgeRangesFromValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+And("I check edited value was saved on age ranges from", () => {
+  classesPage.getAgeRangesFromEditFilterText();
+});
+
+Then("I edit values from added filter on age ranges to", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfAgeRangesToValues();
+  classesPage.selectionOfEditAgeRangesToValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+And("I check edited value was saved on age ranges to", () => {
+  classesPage.getAgeRangesToEditFilterText();
+});
+
+Then(
+  "I edit value from added filter on age ranges from but I press cancel",
+  () => {
+    userPage.clickOnFilterLabel();
+    userPage.clickOnValuesFilter();
+    classesPage.selectionOfAgeRangesFromValues();
+    classesPage.selectionOfEditAgeRangesFromValues();
+    userPage.closeListItems();
+    userPage.clickOnCancelFilterButton();
+    classesPage.getAgeRangesFromFilterText();
+  }
+);
+
+Then(
+  "I edit value from added filter on age ranges to but I press cancel",
+  () => {
+    userPage.clickOnFilterLabel();
+    userPage.clickOnValuesFilter();
+    classesPage.selectionOfAgeRangesToValues();
+    classesPage.selectionOfEditAgeRangesToValues();
+    userPage.closeListItems();
+    userPage.clickOnCancelFilterButton();
+    classesPage.getAgeRangesToFilterText();
+  }
+);
+
+Then("I clear the filter applied", () => {
+  userPage.clickClearFilter();
+  userPage.getAddFilterLabelState();
 });

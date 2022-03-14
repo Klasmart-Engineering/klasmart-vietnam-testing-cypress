@@ -1,65 +1,63 @@
 name: Hub E2E Tests on Chrome
-on: 
- workflow_dispatch:
- schedule:
-    - cron: '43 16 * * *'
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "43 16 * * *"
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
     container:
-     image: cypress/browsers:node16.5.0-chrome97-ff96
-     options: --user 1001
+      image: cypress/browsers:node16.5.0-chrome97-ff96
+      options: --user 1001
     # let's make sure our tests pass on Chrome browser
     name: E2E on Chrome
     steps:
-      - name: Checkout 
+      - name: Checkout
         uses: actions/checkout@v2
-      - run: npm install 
+      - run: npm install
       - name: Cypress run
         id: cypresstest
-        run: | 
+        run: |
           npm config set color false
-         
-          OUTPUT1=`npm run test:accessibility| tail -50 | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g"`
+
+          OUTPUT1=`npm run test:smoke| tail -50 | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g"`
           echo "$OUTPUT1"
           echo "OUTPUT<<EOF" >> $GITHUB_ENV
           echo "$OUTPUT1" >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
         continue-on-error: true
       - run: |
-          npm run e2e:reports 
-      - name: print output 
-        run: 
-          echo "${{ env.OUTPUT }}"
-      - name: Store results   
+          npm run e2e:reports
+      - name: print output
+        run: echo "${{ env.OUTPUT }}"
+      - name: Store results
         uses: actions/upload-artifact@v2
         if: failure()
         with:
           name: cypress-screenshots
-          path: cypress/screenshots   
-      - name: Store reports   
+          path: cypress/screenshots
+      - name: Store reports
         uses: actions/upload-artifact@v2
         if: always()
         with:
           name: test reports
-          path: test-reports  
+          path: test-reports
       - name: Send Slack message on failure
         uses: archive/github-actions-slack@v2.0.0
         if: failure()
         with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C034HBAFK8E
-          slack-text:  |
-           Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
-           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-           ${{ env.OUTPUT }}
-      - name: Send Slack message 
+          slack-text: |
+            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            ${{ env.OUTPUT }}
+      - name: Send Slack message
         uses: archive/github-actions-slack@v2.0.0
         with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C034HBAFK8E
           slack-text: |
-           Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
-           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-           ${{ env.OUTPUT }}
-
+            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            ${{ env.OUTPUT }}

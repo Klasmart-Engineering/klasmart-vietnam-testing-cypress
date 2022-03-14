@@ -25,6 +25,7 @@ class ClassesPage {
   deleteFinalButton = "button[type='submit']";
   nameInputMessages = "#class-dialog-name-helper-text";
   createWindowsMessage = "#scroll-dialog-title";
+  labelFilterAdded = "div:nth-child(2) > div:nth-child(1) > span:nth-child(1)";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -324,8 +325,40 @@ class ClassesPage {
     });
   }
 
-  getAgeRangesFromLabelFilterText() {
+  getAgeRangesFromFilterText() {
     cy.get(this.labelFilterAdded).should("include.text", "0 Year(s)");
+  }
+
+  getAgeRangesToFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "4 Year(s)");
+  }
+
+  selectionOfEditAgeRangesFromValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "1 Year(s)") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfEditAgeRangesToValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "2 Year(s)") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  getAgeRangesFromEditFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "1 Year(s)");
+  }
+
+  getAgeRangesToEditFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "2 Year(s)");
   }
 }
 

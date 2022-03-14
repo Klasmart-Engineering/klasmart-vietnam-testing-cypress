@@ -138,11 +138,10 @@ Feature: Login
 
 
   # User should be able to click on Privacy Notice link and see the information related UD-T3
-  @smoke
+@focus   @smoke
   Scenario: Privacy Notice Page
-    Given I click can't find your country or region
-    Then I click privacy link
-    And I should see a popup window called "Privacy Notice"
+    Given I click privacy link
+    When I should see a popup window called "Privacy Notice"
 
 
   #User should be able to sign in even if the current location is not listed UD-T2
@@ -227,7 +226,7 @@ Feature: Login
     When verify the correct flag "로그인" name
 
   #User should see the url and correct language selected for current flag  UD-T617
-  @smoke
+
   Scenario: Viet Nam Flag
     Given auth Viet Nam page
     When verify the correct flag "Đăng nhập" name

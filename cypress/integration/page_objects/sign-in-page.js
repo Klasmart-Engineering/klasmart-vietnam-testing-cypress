@@ -10,7 +10,7 @@ class SignInPage {
   privacyCheckBox =
     "div:nth-child(4) > div > label > span > span.MuiIconButton-label";
   privacyLink =
-    ".MuiTypography-root.MuiLink-root.MuiLink-underlineHover.MuiTypography-caption.MuiTypography-colorInherit";
+    ".MuiGrid-grid-xs-6 > .MuiGrid-container > .MuiGrid-root > .MuiTypography-root";
   clickHereLink =
     "div[class='MuiListItemText-root'] span[class='MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock']";
   nonExistingAccountError = ".error.pageLevel";
