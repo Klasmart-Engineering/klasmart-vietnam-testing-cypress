@@ -8,7 +8,7 @@ Feature: Classes
   #DATA NEEDS TO BE CHANGES FOR EACH RUN
   Scenario: Create class
     Given I create a class "Aut class 01"
-    When I get "Class created" message
+    When I get a "Class created" message
     Then I search class "Aut class 01"
 
   #User should be able to edit any class UD-T106
@@ -16,24 +16,24 @@ Feature: Classes
 
   Scenario: Edit class
     Given I Add a filter for status as active
-    When A filter is Added
-    Then I search "Aut class 01" to be edited as "Edit class 01" and get "Class has been saved successfully" message
-    And I search edited grade "Edit class 01"
+    When I search "Aut class 01" to edit the class name to be "Edit class 01" 
+    Then I get a "Class has been saved successfully" message
+    And I can search for edited class "Edit class 01"
 
   #User should be able to delete any grade UD-T132
 
   Scenario: Delete grade
     Given I Add a filter for status as active
-    When A filter is Added
-    Then I search "Edit class 01" to be deleted and get "Class has been deleted successfully" message
+    When I search "Edit class 01" to be deleted
+    Then I get a "Class has been deleted successfully" message
 
   #User should be able to delete an existent class from edition mode UD-T582
   #DATA NEEDS TO BE CHANGES FOR EACH RUN
 
   Scenario: Delete class edition
     Given I Add a filter for status as active
-    When A filter is Added
-    Then I search "Aut class 02" to be deleted on edition and get "Class has been deleted successfully" message
+    When I search "Aut class 02" to be deleted on edition
+    Then I get a "Class has been deleted successfully" message
 
   #User should be able to see data paginated UD-T102
   @smoke
@@ -126,5 +126,4 @@ Feature: Classes
   @smoke
   Scenario: Add filter Age Ranges From
     Given Add filter for age ranges from
-    When A filter is Added
     Then I check that age ranges filter was added

@@ -53,19 +53,22 @@ When("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-Given(
-  "I search {string} to be edited as {string} and get {string} message",
+When(
+  "I search {string} to edit the class name to be {string}",
   (search, className, message) => {
     userPage.searchInputText(search);
     classesPage.clickMoreActions();
     classesPage.clickOnMoreActionsEditButton();
     classesPage.editClassName(className);
     classesPage.clickOnSaveEditionButton();
-    userPage.getNotificationText(message).contains(message);
   }
 );
 
-When("I search edited grade {string}", (search) => {
+Then("I get a {string} message", (message) => {
+  userPage.getNotificationText(message).contains(message);
+});
+
+Then("I can search for edited class {string}", (search) => {
   userPage.searchInputText(search);
   classesPage.getEditedClassName();
 });
@@ -76,14 +79,11 @@ Given("I Add a filter for status as active", () => {
   userPage.clickOnStatusColumn();
   userPage.clickOnValuesFilter();
   userPage.selectActiveStatusValue();
-});
-
-When("A filter is Added", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-Then(
-  "I search {string} to be deleted and get {string} message",
+When(
+  "I search {string} to be deleted",
   (search, message) => {
     userPage.searchInputText(search);
     classesPage.clickMoreActions();
@@ -94,8 +94,8 @@ Then(
   }
 );
 
-Then(
-  "I search {string} to be deleted on edition and get {string} message",
+When(
+  "I search {string} to be deleted on edition",
   (search, message) => {
     userPage.searchInputText(search);
     classesPage.clickMoreActions();

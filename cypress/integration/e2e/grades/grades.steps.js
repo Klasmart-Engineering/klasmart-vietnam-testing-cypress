@@ -18,11 +18,11 @@ Given(
   }
 );
 
-When("I navigate to actual section", () => {
+When("I navigate to the grades page", () => {
   gradesPage.clickOnGradesTab(); 
 });
 
-Then("I create a grade {string}", (gradeName) => {
+Given("I create a grade {string}", (gradeName) => {
   gradesPage.clickOnCreateGradeButton();
   gradesPage.clickOnCancelCreateButton();
   gradesPage.clickOnCreateGradeButton();
@@ -41,13 +41,23 @@ And("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-And("I search grade {string}", (search) => {
+Given("I search for grade {string}", (search) => {
   gradesPage.searchInputText(search);
   gradesPage.getGradeName();
 });
 
-Then(
-  "I search {string} to be edited as {string} and get {string} message",
+Then("I can search for grade {string}", (search) => {
+  gradesPage.searchInputText(search);
+  gradesPage.getGradeName();
+});
+
+Then("I can search for edited grade {string}", (search) => {
+  userPage.searchInputText(search);
+  gradesPage.getEditedGradeName();
+});
+
+Given(
+  "I search {string} to be edited as {string}",
   (search, name, message) => {
     gradesPage.searchInputText(search);
     gradesPage.clickMoreActions();
@@ -58,13 +68,19 @@ Then(
     gradesPage.clickOnProgressTo();
     gradesPage.editSelectionProgressTo();
     gradesPage.clickOnSaveEditionButton();
-    userPage.getNotificationText(message).contains(message);
   }
 );
 
 And("I search edited grade {string}", (search) => {
   gradesPage.searchInputText(search);
   gradesPage.getEditedGradeName();
+});
+
+When("I delete the grade", () => {
+  gradesPage.clickMoreActions();
+    userPage.clickOnMoreActionsDeleteButton();
+    userPage.sendDeleteText();
+    gradesPage.clickOnDeleteFinalButton();
 });
 
 Then(
@@ -209,6 +225,10 @@ And("I edit value from added filter on progress but I press cancel", () => {
   userPage.closeListItems();
   userPage.clickOnCancelFilterButton();
   gradesPage.getProgressLabelFilterText();
+});
+
+Then("I get a {string} message", (message) => {
+  userPage.getNotificationText(message).contains(message);
 });
 
 And("I clear the filter applied", () => {
