@@ -128,3 +128,94 @@ Feature: Classes
     Given Add filter for age ranges from
     When Filter is Added
     Then I check that age ranges filter was added
+
+    
+  #User should be able to add a filter on classes for Age Ranges To UD-T
+  @smoke
+  Scenario: Add filter Age Ranges To
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for progress to
+    Then Filter is Added
+    And I check that progress filter was added
+
+  #User should be able to cancel add a filter on classes for Age Ranges From UD-T
+
+  Scenario: Add filter Age Ranges From Cancel
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for progress from
+    Then I press cancel button
+
+  #User should be able to cancel add a filter on classes for Age Ranges To UD-T147
+
+  Scenario: Add filter Age Ranges To Cancel
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for progress to
+    Then I press cancel button
+
+  #User should be able to edit filter on classes for Age Ranges From UD-T143 and UD-T145
+  @smoke
+  Scenario: Edit filter Age Ranges From
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for progress from
+    Then Filter is Added
+    And I edit values from added filter on progress
+    And I check edited value was saved on progress
+
+  #User should be able to edit filter on classes for Age Ranges To UD-T151 and UD-T153
+  @smoke
+  Scenario: Edit filter Age Ranges To
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for progress to
+    Then Filter is Added
+    And I edit values from added filter on progress
+    And I check edited value was saved on progress
+
+  #User should be able to cancel edit filter on classes for Age Ranges From UD-T144
+
+  Scenario: Edit filter Age Ranges From Cancel
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for progress from
+    Then Filter is Added
+    And I edit value from added filter on progress but I press cancel
+
+  #User should be able to cancel edit filter on classes for Age Ranges To UD-T152
+
+  Scenario: Edit filter Age Ranges To Cancel
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for progress to
+    Then Filter is Added
+    And I edit value from added filter on progress but I press cancel
+
+  #User should be able to clear Age Ranges From filter for classes UD-T141
+  @smoke
+  Scenario: Clear filter Age Ranges From
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for progress from
+    Then Filter is Added
+    And I clear the filter applied
+
+  #User should be able to clear Age Ranges To filter for classes UD-T150
+  @smoke
+  Scenario: Clear filter Age Ranges To
+
+    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    When I navigate to actual section
+    And Add filter for progress to
+    Then Filter is Added
+    And I clear the filter applied
