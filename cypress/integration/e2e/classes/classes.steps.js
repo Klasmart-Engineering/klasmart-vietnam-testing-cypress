@@ -19,7 +19,7 @@ Given(
   }
 );
 
-When("I navigate to actual section", () => {
+When("I navigate to the Classes Page", () => {
   classesPage.clickOnClassesTab();
 });
 
@@ -70,7 +70,7 @@ When("I search edited grade {string}", (search) => {
   classesPage.getEditedClassName();
 });
 
-Given("Add filter for status as active", () => {
+Given("I Add a filter for status as active", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   userPage.clickOnStatusColumn();
@@ -78,7 +78,7 @@ Given("Add filter for status as active", () => {
   userPage.selectActiveStatusValue();
 });
 
-When("Filter is Added", () => {
+When("A filter is Added", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 

@@ -2,7 +2,7 @@ Feature: Classes
 
   Background:
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
-    When I navigate to actual section
+    When I navigate to the Classes Page
 
   #User should be able to create any class UD-T592
   #DATA NEEDS TO BE CHANGES FOR EACH RUN
@@ -15,24 +15,24 @@ Feature: Classes
   #DATA NEEDS TO BE CHANGES FOR EACH RUN
 
   Scenario: Edit class
-    Given Add filter for status as active
-    When Filter is Added
+    Given I Add a filter for status as active
+    When A filter is Added
     Then I search "Aut class 01" to be edited as "Edit class 01" and get "Class has been saved successfully" message
     And I search edited grade "Edit class 01"
 
   #User should be able to delete any grade UD-T132
 
   Scenario: Delete grade
-    Given Add filter for status as active
-    When Filter is Added
+    Given I Add a filter for status as active
+    When A filter is Added
     Then I search "Edit class 01" to be deleted and get "Class has been deleted successfully" message
 
   #User should be able to delete an existent class from edition mode UD-T582
   #DATA NEEDS TO BE CHANGES FOR EACH RUN
 
   Scenario: Delete class edition
-    Given Add filter for status as active
-    When Filter is Added
+    Given I Add a filter for status as active
+    When A filter is Added
     Then I search "Aut class 02" to be deleted on edition and get "Class has been deleted successfully" message
 
   #User should be able to see data paginated UD-T102
@@ -126,5 +126,5 @@ Feature: Classes
   @smoke
   Scenario: Add filter Age Ranges From
     Given Add filter for age ranges from
-    When Filter is Added
+    When A filter is Added
     Then I check that age ranges filter was added
