@@ -164,7 +164,8 @@
             "line": 31,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 36162000000
             }
           },
           {
@@ -173,7 +174,8 @@
             "line": 32,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1198000000
             }
           },
           {
@@ -182,7 +184,8 @@
             "line": 33,
             "name": "I check all buttons from pagination",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28930000000
             }
           }
         ]
@@ -192,12 +195,7 @@
         "keyword": "Scenario",
         "line": 37,
         "name": "Rows Per Page",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 36
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -326,12 +324,7 @@
         "keyword": "Scenario",
         "line": 63,
         "name": "Sorting",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 62
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -530,7 +523,8 @@
             "line": 105,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 30284000000
             }
           },
           {
@@ -539,7 +533,8 @@
             "line": 106,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1161000000
             }
           },
           {
@@ -548,7 +543,8 @@
             "line": 107,
             "name": "I search grade \"Grade\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10091000000
             }
           }
         ]
@@ -572,7 +568,8 @@
             "line": 113,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 26990000000
             }
           },
           {
@@ -581,7 +578,8 @@
             "line": 114,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 430000000
             }
           },
           {
@@ -590,7 +588,8 @@
             "line": 115,
             "name": "Add filter for progress from",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5861000000
             }
           },
           {
@@ -599,7 +598,8 @@
             "line": 116,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 633000000
             }
           },
           {
@@ -608,7 +608,8 @@
             "line": 117,
             "name": "I check that progress filter was added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 34000000
             }
           }
         ]
@@ -632,7 +633,8 @@
             "line": 123,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 30348000000
             }
           },
           {
@@ -641,7 +643,8 @@
             "line": 124,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 319000000
             }
           },
           {
@@ -650,7 +653,8 @@
             "line": 125,
             "name": "Add filter for progress to",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4206000000
             }
           },
           {
@@ -659,7 +663,8 @@
             "line": 126,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 515000000
             }
           },
           {
@@ -668,7 +673,8 @@
             "line": 127,
             "name": "I check that progress filter was added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 27000000
             }
           }
         ]
@@ -784,7 +790,8 @@
             "line": 151,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 25614000000
             }
           },
           {
@@ -793,7 +800,8 @@
             "line": 152,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1269000000
             }
           },
           {
@@ -802,7 +810,8 @@
             "line": 153,
             "name": "Add filter for progress from",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4034000000
             }
           },
           {
@@ -811,7 +820,8 @@
             "line": 154,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 740000000
             }
           },
           {
@@ -820,7 +830,8 @@
             "line": 155,
             "name": "I edit values from added filter on progress",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4895000000
             }
           },
           {
@@ -829,7 +840,8 @@
             "line": 156,
             "name": "I check edited value was saved on progress",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 32000000
             }
           }
         ]
@@ -853,7 +865,8 @@
             "line": 162,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 28696000000
             }
           },
           {
@@ -862,7 +875,8 @@
             "line": 163,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 452000000
             }
           },
           {
@@ -871,7 +885,8 @@
             "line": 164,
             "name": "Add filter for progress to",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4513000000
             }
           },
           {
@@ -880,7 +895,8 @@
             "line": 165,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 534000000
             }
           },
           {
@@ -889,7 +905,8 @@
             "line": 166,
             "name": "I edit values from added filter on progress",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4963000000
             }
           },
           {
@@ -898,7 +915,8 @@
             "line": 167,
             "name": "I check edited value was saved on progress",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 32000000
             }
           }
         ]
@@ -1032,7 +1050,8 @@
             "line": 193,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 23766000000
             }
           },
           {
@@ -1041,7 +1060,8 @@
             "line": 194,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1327000000
             }
           },
           {
@@ -1050,7 +1070,8 @@
             "line": 195,
             "name": "Add filter for progress from",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4030000000
             }
           },
           {
@@ -1059,7 +1080,8 @@
             "line": 196,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 702000000
             }
           },
           {
@@ -1068,7 +1090,8 @@
             "line": 197,
             "name": "I clear the filter applied",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 546000000
             }
           }
         ]
@@ -1092,7 +1115,8 @@
             "line": 203,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 23735000000
             }
           },
           {
@@ -1101,7 +1125,8 @@
             "line": 204,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 285000000
             }
           },
           {
@@ -1110,7 +1135,8 @@
             "line": 205,
             "name": "Add filter for progress to",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4509000000
             }
           },
           {
@@ -1119,7 +1145,8 @@
             "line": 206,
             "name": "Filter is Added",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 669000000
             }
           },
           {
@@ -1128,7 +1155,8 @@
             "line": 207,
             "name": "I clear the filter applied",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 575000000
             }
           }
         ]
@@ -1152,7 +1180,8 @@
             "line": 213,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 22534000000
             }
           },
           {
@@ -1161,7 +1190,8 @@
             "line": 214,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 355000000
             }
           },
           {
@@ -1170,7 +1200,8 @@
             "line": 215,
             "name": "Add all existent filters",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9027000000
             }
           },
           {
@@ -1179,7 +1210,8 @@
             "line": 216,
             "name": "I clear all filters applied",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 376000000
             }
           }
         ]
@@ -1203,7 +1235,8 @@
             "line": 222,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 25439000000
             }
           },
           {
@@ -1212,7 +1245,8 @@
             "line": 223,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 568000000
             }
           },
           {
@@ -1221,7 +1255,8 @@
             "line": 224,
             "name": "Add all existent filters",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11524000000
             }
           },
           {
@@ -1230,7 +1265,8 @@
             "line": 225,
             "name": "I check filter is disable",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 116000000
             }
           }
         ]
@@ -1254,7 +1290,8 @@
             "line": 231,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 25787000000
             }
           },
           {
@@ -1263,7 +1300,8 @@
             "line": 232,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1408000000
             }
           },
           {
@@ -1272,7 +1310,8 @@
             "line": 233,
             "name": "I check the order of values is correct on grades",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 685000000
             }
           }
         ]
@@ -1283,10 +1322,6 @@
         "line": 237,
         "name": "Remove columns",
         "tags": [
-          {
-            "name": "@focus",
-            "line": 236
-          },
           {
             "name": "@smoke",
             "line": 236
@@ -1301,7 +1336,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 50532000000
+              "duration": 29803000000
             }
           },
           {
@@ -1311,7 +1346,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 323000000
+              "duration": 1117000000
             }
           },
           {
@@ -1321,7 +1356,7 @@
             "name": "I remove columns to be shown",
             "result": {
               "status": "passed",
-              "duration": 613000000
+              "duration": 703000000
             }
           },
           {
@@ -1331,7 +1366,7 @@
             "name": "I check locked column \"Name\" is present",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 53000000
             }
           }
         ]
@@ -1355,7 +1390,8 @@
             "line": 248,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 26315000000
             }
           },
           {
@@ -1364,7 +1400,8 @@
             "line": 249,
             "name": "I navigate to actual section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1065000000
             }
           },
           {
@@ -1373,7 +1410,8 @@
             "line": 250,
             "name": "I add columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1539000000
             }
           },
           {
@@ -1382,7 +1420,8 @@
             "line": 251,
             "name": "I check locked columns \"ID\" and \"School Name\" are present",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 96000000
             }
           }
         ]
