@@ -30,8 +30,8 @@ Feature: Grades
   # Scenario: Pagination
   #   And I check all buttons from pagination
 
-  #User should be able to paginate by rows per page UD-T123
-  @smoke
+  #User should be able to paginate by rows per page UD-T123 ----*** DEFECT AD-2234 ***----
+  
   Scenario: Rows Per Page
     Then I check different rows per page
 

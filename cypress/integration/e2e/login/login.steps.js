@@ -206,11 +206,12 @@ And(
   }
 );
 
-Then("I click privacy link", () => {
+Given("I click privacy link", () => {
+  signInPage.goToHomePage();
   signInPage.clickPrivacyLink();
 });
 
-And("I should see a popup window called {string}", (titleText) => {
+When("I should see a popup window called {string}", (titleText) => {
   signInPage.getPrivacyLinkPageText().should("have.text", titleText);
 });
 

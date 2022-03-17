@@ -260,5 +260,352 @@ Given("Add filter for age ranges from", () => {
 });
 
 Then("I check that age ranges filter was added", () => {
-  classesPage.getAgeRangesFromLabelFilterText();
+  classesPage.getAgeRangesFromFilterText();
+});
+
+Given("Add filter for age ranges to", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnAgeRangesToColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfAgeRangesToValues();
+  userPage.closeListItems();
+});
+
+Then("I check that age ranges to filter was added", () => {
+  classesPage.getAgeRangesToFilterText();
+});
+
+When("I press cancel button", () => {
+  userPage.clickOnCancelFilterButton();
+});
+
+Then("I edit values from added filter on age ranges from", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfAgeRangesFromValues();
+  classesPage.selectionOfEditAgeRangesFromValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+And("I check edited value was saved on age ranges from", () => {
+  classesPage.getAgeRangesFromEditFilterText();
+});
+
+Then("I edit values from added filter on age ranges to", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfAgeRangesToValues();
+  classesPage.selectionOfEditAgeRangesToValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+And("I check edited value was saved on age ranges to", () => {
+  classesPage.getAgeRangesToEditFilterText();
+});
+
+Then(
+  "I edit value from added filter on age ranges from but I press cancel",
+  () => {
+    userPage.clickOnFilterLabel();
+    userPage.clickOnValuesFilter();
+    classesPage.selectionOfAgeRangesFromValues();
+    classesPage.selectionOfEditAgeRangesFromValues();
+    userPage.closeListItems();
+    userPage.clickOnCancelFilterButton();
+    classesPage.getAgeRangesFromFilterText();
+  }
+);
+
+Then(
+  "I edit value from added filter on age ranges to but I press cancel",
+  () => {
+    userPage.clickOnFilterLabel();
+    userPage.clickOnValuesFilter();
+    classesPage.selectionOfAgeRangesToValues();
+    classesPage.selectionOfEditAgeRangesToValues();
+    userPage.closeListItems();
+    userPage.clickOnCancelFilterButton();
+    classesPage.getAgeRangesToFilterText();
+  }
+);
+
+Then("I clear the filter applied", () => {
+  userPage.clickClearFilter();
+  userPage.getAddFilterLabelState();
+});
+
+Given("Add filter for grades", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnGradesColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfGradesValues();
+  userPage.closeListItems();
+});
+
+Then("I check that grades filter was added", () => {
+  classesPage.getGradesFilterText();
+});
+
+Then("I edit values from added filter on grades", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfGradesValues();
+  classesPage.selectionOfEditGradesValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+And("I check edited value was saved on grades", () => {
+  classesPage.getGradesEditFilterText();
+});
+
+Then("I edit value from added filter on grades to but I press cancel", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfGradesValues();
+  classesPage.selectionOfEditGradesValues();
+  userPage.closeListItems();
+  userPage.clickOnCancelFilterButton();
+  classesPage.getGradesFilterText();
+});
+
+Given("Add filter for programs", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnProgramsColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfProgramsValues();
+  userPage.closeListItems();
+});
+
+Then("I check that programs filter was added", () => {
+  classesPage.getProgramsFilterText();
+});
+
+Then("I edit values from added filter on programs", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfProgramsValues();
+  classesPage.selectionOfEditProgramsValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+And("I check edited value was saved on programs", () => {
+  classesPage.getProgramsEditFilterText();
+});
+
+Then("I edit value from added filter on programs to but I press cancel", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfProgramsValues();
+  classesPage.selectionOfEditProgramsValues();
+  userPage.closeListItems();
+  userPage.clickOnCancelFilterButton();
+  classesPage.getProgramsFilterText();
+});
+
+Given("Add filter for school", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  userPage.clickOnSchoolsColumn();
+  userPage.clickOnValuesFilter();
+  userPage.selectionOfSchoolValues();
+  userPage.closeListItems();
+});
+
+Then("I check that shools filter was added", () => {
+  userPage.getSchoolLabelFilterText();
+});
+
+Then("I edit values from added filter on schools", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  userPage.selectionOfSchoolValues();
+  userPage.editSchoolsFilterValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+And("I check edited value was saved on schools", () => {
+  userPage.getEditedLabelFilterTextSchools();
+});
+
+Then("I edit value from added filter on schools but I press cancel", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  userPage.selectionOfSchoolValues();
+  userPage.editSchoolsFilterValues();
+  userPage.closeListItems();
+  userPage.clickOnCancelFilterButton();
+  userPage.getSchoolLabelFilterText();
+});
+
+Then("I check that active status filter was added", () => {
+  userPage.getActiveStatusLabelFilterText();
+});
+
+Given("Add filter for status as inactive", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  userPage.clickOnStatusColumn();
+  userPage.clickOnValuesFilter();
+  userPage.selectInactiveStatusValue();
+});
+
+Then("I check that inactive status filter was added", () => {
+  userPage.getInactiveStatusLabelFilterText();
+});
+
+Then("I edit status value as active", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  userPage.selectActiveStatusValue();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+And("I check edited value was saved on status", () => {
+  userPage.getEditedLabelFilterTextStatus();
+});
+
+Then("I edit status value as active but I press cancel", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  userPage.selectActiveStatusValue();
+  userPage.clickOnCancelFilterButton();
+  userPage.getInactiveStatusLabelFilterText();
+});
+
+Given("Add filter for subjects", () => {
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnSubjectsColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfSubjectsValues();
+  userPage.closeListItems();
+});
+
+Then("I check that subjects filter was added", () => {
+  classesPage.getSubjectsFilterText();
+});
+
+Then("I edit values from added filter on subjects", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfSubjectsValues();
+  classesPage.selectionOfEditSubjectsValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+And("I check edited value was saved on subjects", () => {
+  classesPage.getSubjectsEditFilterText();
+});
+
+Then("I edit value from added filter on subjects to but I press cancel", () => {
+  userPage.clickOnFilterLabel();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfSubjectsValues();
+  classesPage.selectionOfEditSubjectsValues();
+  userPage.closeListItems();
+  userPage.clickOnCancelFilterButton();
+  classesPage.getSubjectsFilterText();
+});
+
+Then("I clear all filters applied", () => {
+  userPage.clickClearAllFilters();
+  userPage.getAddFilterLabelState();
+});
+
+Given("Add all existent filters", () => {
+  cy.viewport(1920, 1280);
+  //Add schools filter
+  userPage.clickOnAddFilterButton();
+  userPage.clickOnColumnFilter();
+  userPage.clickOnSchoolsColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfSchoolValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+  //Add age ranges from filter
+  userPage.clickAddMoreFilters();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnAgeRangesFromColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfAgeRangesFromValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+  //Add age ranges to filter
+  userPage.clickAddMoreFilters();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnAgeRangesToColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfAgeRangesToValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+  //Add grades filter
+  userPage.clickAddMoreFilters();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnGradesColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfGradesValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+  //Add programs filter
+  userPage.clickAddMoreFilters();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnProgramsColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfProgramsValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+  //Add subjects filter
+  userPage.clickAddMoreFilters();
+  userPage.clickOnColumnFilter();
+  classesPage.clickOnSubjectsColumn();
+  userPage.clickOnValuesFilter();
+  classesPage.selectionOfSubjectsValues();
+  userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
+  //Add status filter
+  userPage.clickAddMoreFilters();
+  userPage.clickOnColumnFilter();
+  userPage.clickOnStatusColumn();
+  userPage.clickOnValuesFilter();
+  userPage.selectActiveStatusValue();
+  userPage.clickOnAddFilterFinalButton();
+});
+
+Then("I check filter is disable", () => {
+  userPage.getFilterMouseOverText();
+});
+
+And("I check all buttons from pagination", () => {
+  cy.wait(8000);
+  userPage.clickOnNextPage();
+  userPage.clickOnPreviousPage();
+  userPage.clickOnLastPage();
+  userPage.clickOnFirstPage();
+});
+
+Then("Upload correct CSV file", () => {
+  userPage.clickOnUploadCsvButton();
+  classesPage.selectFixtureFile();
+  userPage.getValidationCsvText();
+  userPage.clickOnUploadCsvFinalButton();
+});
+
+Then("Upload correct multiple CSV file", () => {
+  userPage.clickOnUploadCsvButton();
+  classesPage.selectMultipleFixtureFile();
+  userPage.getValidationCsvText();
+  userPage.clickOnUploadCsvFinalButton();
+});
+
+And("I get {string} message", (message) => {
+  userPage.getNotificationText(message).contains(message);
 });

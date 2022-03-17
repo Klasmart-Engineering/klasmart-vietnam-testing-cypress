@@ -183,7 +183,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 41608000000
+              "duration": 48573000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 956000000
+              "duration": 427000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Add filter for status as active",
             "result": {
               "status": "passed",
-              "duration": 3892000000
+              "duration": 3638000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 402000000
+              "duration": 460000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "I search \"Tamara\" user to be deleted on edition mode but I cancel",
             "result": {
               "status": "passed",
-              "duration": 18020000000
+              "duration": 17303000000
             }
           }
         ]
@@ -523,7 +523,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 30381000000
+              "duration": 35321000000
             }
           },
           {
@@ -533,7 +533,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 950000000
+              "duration": 1231000000
             }
           },
           {
@@ -543,7 +543,7 @@
             "name": "Add filter for status as active",
             "result": {
               "status": "passed",
-              "duration": 3609000000
+              "duration": 4460000000
             }
           },
           {
@@ -553,7 +553,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 392000000
+              "duration": 628000000
             }
           },
           {
@@ -563,7 +563,7 @@
             "name": "I check that active status filter was added",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 46000000
             }
           }
         ]
@@ -588,7 +588,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 28497000000
+              "duration": 27748000000
             }
           },
           {
@@ -598,7 +598,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 327000000
+              "duration": 386000000
             }
           },
           {
@@ -608,7 +608,7 @@
             "name": "Add filter for status as inactive",
             "result": {
               "status": "passed",
-              "duration": 4301000000
+              "duration": 4565000000
             }
           },
           {
@@ -618,7 +618,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 592000000
+              "duration": 569000000
             }
           },
           {
@@ -628,7 +628,7 @@
             "name": "I check that inactive status filter was added",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 33000000
             }
           }
         ]
@@ -708,7 +708,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 31606000000
+              "duration": 30183000000
             }
           },
           {
@@ -718,7 +718,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 425000000
+              "duration": 617000000
             }
           },
           {
@@ -728,7 +728,7 @@
             "name": "Add filter for school",
             "result": {
               "status": "passed",
-              "duration": 14266000000
+              "duration": 13153000000
             }
           },
           {
@@ -738,7 +738,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 2038000000
+              "duration": 441000000
             }
           },
           {
@@ -748,7 +748,7 @@
             "name": "I check that shools filter was added",
             "result": {
               "status": "passed",
-              "duration": 48000000
+              "duration": 31000000
             }
           }
         ]
@@ -773,7 +773,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 25470000000
+              "duration": 26024000000
             }
           },
           {
@@ -783,7 +783,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1448000000
+              "duration": 442000000
             }
           },
           {
@@ -793,7 +793,7 @@
             "name": "Add filter for organization roles",
             "result": {
               "status": "passed",
-              "duration": 8751000000
+              "duration": 7456000000
             }
           },
           {
@@ -803,7 +803,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 1270000000
+              "duration": 911000000
             }
           },
           {
@@ -813,7 +813,7 @@
             "name": "I check that organization roles filter was added",
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 30000000
             }
           }
         ]
@@ -838,7 +838,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 30874000000
+              "duration": 33042000000
             }
           },
           {
@@ -848,7 +848,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 499000000
+              "duration": 371000000
             }
           },
           {
@@ -858,7 +858,7 @@
             "name": "Add filter for phone \"+59834563\"",
             "result": {
               "status": "passed",
-              "duration": 5356000000
+              "duration": 5141000000
             }
           },
           {
@@ -868,7 +868,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 545000000
+              "duration": 416000000
             }
           },
           {
@@ -878,7 +878,7 @@
             "name": "I check that phone filter was added",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 36000000
             }
           }
         ]
@@ -903,7 +903,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 27262000000
+              "duration": 24752000000
             }
           },
           {
@@ -913,7 +913,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1143000000
+              "duration": 335000000
             }
           },
           {
@@ -923,7 +923,7 @@
             "name": "Add filter for email \"lorenatest@test.com\"",
             "result": {
               "status": "passed",
-              "duration": 5667000000
+              "duration": 4700000000
             }
           },
           {
@@ -933,7 +933,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 500000000
+              "duration": 357000000
             }
           },
           {
@@ -943,7 +943,7 @@
             "name": "I check that email filter was added",
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 28000000
             }
           }
         ]
@@ -1244,7 +1244,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 33504000000
+              "duration": 32145000000
             }
           },
           {
@@ -1254,7 +1254,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 557000000
+              "duration": 432000000
             }
           },
           {
@@ -1264,7 +1264,7 @@
             "name": "Add filter for organization roles",
             "result": {
               "status": "passed",
-              "duration": 10230000000
+              "duration": 7479000000
             }
           },
           {
@@ -1274,7 +1274,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 408000000
+              "duration": 945000000
             }
           },
           {
@@ -1284,7 +1284,7 @@
             "name": "I edit values from added filter on organization roles",
             "result": {
               "status": "passed",
-              "duration": 9857000000
+              "duration": 7665000000
             }
           },
           {
@@ -1294,7 +1294,7 @@
             "name": "I check edited value was saved on organization roles",
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 41000000
             }
           }
         ]
@@ -1305,10 +1305,6 @@
         "line": 229,
         "name": "Edit filter Schools",
         "tags": [
-          {
-            "name": "@focus",
-            "line": 228
-          },
           {
             "name": "@smoke",
             "line": 228
@@ -1323,7 +1319,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 28604000000
+              "duration": 30192000000
             }
           },
           {
@@ -1333,7 +1329,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 471000000
+              "duration": 389000000
             }
           },
           {
@@ -1343,7 +1339,7 @@
             "name": "Add filter for school",
             "result": {
               "status": "passed",
-              "duration": 12225000000
+              "duration": 11203000000
             }
           },
           {
@@ -1353,7 +1349,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 1807000000
+              "duration": 442000000
             }
           },
           {
@@ -1363,7 +1359,7 @@
             "name": "I edit values from added filter on schools",
             "result": {
               "status": "passed",
-              "duration": 29166000000
+              "duration": 20740000000
             }
           },
           {
@@ -1373,7 +1369,7 @@
             "name": "I check edited value was saved on schools",
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 40000000
             }
           }
         ]
@@ -1398,7 +1394,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 31745000000
+              "duration": 30664000000
             }
           },
           {
@@ -1408,7 +1404,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 476000000
+              "duration": 323000000
             }
           },
           {
@@ -1418,7 +1414,7 @@
             "name": "Add filter for status as inactive",
             "result": {
               "status": "passed",
-              "duration": 5214000000
+              "duration": 4615000000
             }
           },
           {
@@ -1428,7 +1424,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 606000000
+              "duration": 449000000
             }
           },
           {
@@ -1438,7 +1434,7 @@
             "name": "I edit status value as active",
             "result": {
               "status": "passed",
-              "duration": 4441000000
+              "duration": 3540000000
             }
           },
           {
@@ -1448,7 +1444,7 @@
             "name": "I check edited value was saved on status",
             "result": {
               "status": "passed",
-              "duration": 49000000
+              "duration": 33000000
             }
           }
         ]
@@ -1473,7 +1469,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 27274000000
+              "duration": 24076000000
             }
           },
           {
@@ -1483,7 +1479,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 898000000
+              "duration": 1364000000
             }
           },
           {
@@ -1493,7 +1489,7 @@
             "name": "Add filter for phone \"+59834563\"",
             "result": {
               "status": "passed",
-              "duration": 4298000000
+              "duration": 4200000000
             }
           },
           {
@@ -1503,7 +1499,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 543000000
+              "duration": 343000000
             }
           },
           {
@@ -1513,7 +1509,7 @@
             "name": "I edit value from added filter on phone as \"+59898723\"",
             "result": {
               "status": "passed",
-              "duration": 3987000000
+              "duration": 3632000000
             }
           },
           {
@@ -1523,7 +1519,7 @@
             "name": "I check edited value was saved on phone",
             "result": {
               "status": "passed",
-              "duration": 44000000
+              "duration": 34000000
             }
           }
         ]
@@ -1548,7 +1544,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 28982000000
+              "duration": 27053000000
             }
           },
           {
@@ -1558,7 +1554,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 532000000
+              "duration": 346000000
             }
           },
           {
@@ -1568,7 +1564,7 @@
             "name": "Add filter for email \"lorenatest@test.com\"",
             "result": {
               "status": "passed",
-              "duration": 6358000000
+              "duration": 4704000000
             }
           },
           {
@@ -1578,7 +1574,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 420000000
+              "duration": 351000000
             }
           },
           {
@@ -1588,7 +1584,7 @@
             "name": "I edit value from added filter on email as \"alicetest@gmail.com\"",
             "result": {
               "status": "passed",
-              "duration": 5374000000
+              "duration": 4193000000
             }
           },
           {
@@ -1598,7 +1594,7 @@
             "name": "I check edited value was saved on email",
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 40000000
             }
           }
         ]
@@ -1898,7 +1894,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 24622000000
+              "duration": 21159000000
             }
           },
           {
@@ -1908,7 +1904,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 540000000
+              "duration": 1005000000
             }
           },
           {
@@ -1918,7 +1914,7 @@
             "name": "Add filter for email \"lorenatest@test.com\"",
             "result": {
               "status": "passed",
-              "duration": 5221000000
+              "duration": 4019000000
             }
           },
           {
@@ -1928,7 +1924,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 460000000
+              "duration": 365000000
             }
           },
           {
@@ -1938,7 +1934,7 @@
             "name": "I clear the filter applied",
             "result": {
               "status": "passed",
-              "duration": 737000000
+              "duration": 856000000
             }
           }
         ]
@@ -1963,7 +1959,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 31506000000
+              "duration": 25284000000
             }
           },
           {
@@ -1973,7 +1969,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 505000000
+              "duration": 373000000
             }
           },
           {
@@ -1983,7 +1979,7 @@
             "name": "Add filter for organization roles",
             "result": {
               "status": "passed",
-              "duration": 9282000000
+              "duration": 6371000000
             }
           },
           {
@@ -1993,7 +1989,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 1333000000
+              "duration": 935000000
             }
           },
           {
@@ -2003,7 +1999,7 @@
             "name": "I clear the filter applied",
             "result": {
               "status": "passed",
-              "duration": 700000000
+              "duration": 632000000
             }
           }
         ]
@@ -2028,7 +2024,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 28594000000
+              "duration": 22027000000
             }
           },
           {
@@ -2038,7 +2034,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 520000000
+              "duration": 741000000
             }
           },
           {
@@ -2048,7 +2044,7 @@
             "name": "Add filter for phone \"+59834563\"",
             "result": {
               "status": "passed",
-              "duration": 6369000000
+              "duration": 4103000000
             }
           },
           {
@@ -2058,7 +2054,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 456000000
+              "duration": 394000000
             }
           },
           {
@@ -2068,7 +2064,7 @@
             "name": "I clear the filter applied",
             "result": {
               "status": "passed",
-              "duration": 677000000
+              "duration": 789000000
             }
           }
         ]
@@ -2079,6 +2075,10 @@
         "line": 353,
         "name": "Clear filter Schools",
         "tags": [
+          {
+            "name": "@focus",
+            "line": 352
+          },
           {
             "name": "@smoke",
             "line": 352
@@ -2093,7 +2093,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 31420000000
+              "duration": 26432000000
             }
           },
           {
@@ -2103,7 +2103,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 496000000
+              "duration": 575000000
             }
           },
           {
@@ -2113,7 +2113,7 @@
             "name": "Add filter for school",
             "result": {
               "status": "passed",
-              "duration": 13349000000
+              "duration": 10634000000
             }
           },
           {
@@ -2123,7 +2123,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 445000000
+              "duration": 1719000000
             }
           },
           {
@@ -2133,7 +2133,7 @@
             "name": "I clear the filter applied",
             "result": {
               "status": "passed",
-              "duration": 517000000
+              "duration": 765000000
             }
           }
         ]
@@ -2158,7 +2158,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 26035000000
+              "duration": 21648000000
             }
           },
           {
@@ -2168,7 +2168,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 656000000
+              "duration": 339000000
             }
           },
           {
@@ -2178,7 +2178,7 @@
             "name": "Add filter for status as active",
             "result": {
               "status": "passed",
-              "duration": 6143000000
+              "duration": 3817000000
             }
           },
           {
@@ -2188,7 +2188,7 @@
             "name": "Filter is Added",
             "result": {
               "status": "passed",
-              "duration": 849000000
+              "duration": 502000000
             }
           },
           {
@@ -2198,7 +2198,7 @@
             "name": "I clear the filter applied",
             "result": {
               "status": "passed",
-              "duration": 787000000
+              "duration": 585000000
             }
           }
         ]
@@ -2223,7 +2223,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 33059000000
+              "duration": 29148000000
             }
           },
           {
@@ -2233,7 +2233,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 706000000
+              "duration": 393000000
             }
           },
           {
@@ -2243,7 +2243,7 @@
             "name": "Add all existent filters and email \"lorenatest@test.com\" and phone \"+59834563\"",
             "result": {
               "status": "passed",
-              "duration": 62243000000
+              "duration": 46057000000
             }
           },
           {
@@ -2253,7 +2253,7 @@
             "name": "I clear all filters applied",
             "result": {
               "status": "passed",
-              "duration": 644000000
+              "duration": 509000000
             }
           }
         ]
@@ -2278,7 +2278,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 41170000000
+              "duration": 33078000000
             }
           },
           {
@@ -2288,7 +2288,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 518000000
+              "duration": 746000000
             }
           },
           {
@@ -2298,7 +2298,7 @@
             "name": "Add all existent filters and email \"lorenatest@test.com\" and phone \"+59834563\"",
             "result": {
               "status": "passed",
-              "duration": 57244000000
+              "duration": 44783000000
             }
           },
           {
@@ -2308,7 +2308,7 @@
             "name": "I check filter is disable",
             "result": {
               "status": "passed",
-              "duration": 290000000
+              "duration": 222000000
             }
           }
         ]
@@ -2370,7 +2370,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 32925000000
+              "duration": 27959000000
             }
           },
           {
@@ -2380,7 +2380,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 463000000
+              "duration": 334000000
             }
           },
           {
@@ -2390,7 +2390,7 @@
             "name": "I search \"Bruno\"",
             "result": {
               "status": "passed",
-              "duration": 9513000000
+              "duration": 8754000000
             }
           }
         ]
@@ -2415,7 +2415,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 26464000000
+              "duration": 33536000000
             }
           },
           {
@@ -2425,7 +2425,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 436000000
+              "duration": 330000000
             }
           },
           {
@@ -2435,7 +2435,7 @@
             "name": "I add columns to be shown",
             "result": {
               "status": "passed",
-              "duration": 4888000000
+              "duration": 4008000000
             }
           },
           {
@@ -2445,7 +2445,7 @@
             "name": "I check locked columns \"Given Name\" and \"Family Name\" are present",
             "result": {
               "status": "passed",
-              "duration": 116000000
+              "duration": 102000000
             }
           }
         ]
@@ -2470,7 +2470,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 30790000000
+              "duration": 40596000000
             }
           },
           {
@@ -2480,7 +2480,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 487000000
+              "duration": 399000000
             }
           },
           {
@@ -2490,7 +2490,7 @@
             "name": "I remove columns to be shown",
             "result": {
               "status": "passed",
-              "duration": 1969000000
+              "duration": 1538000000
             }
           },
           {
@@ -2500,7 +2500,7 @@
             "name": "I check locked columns \"Given Name\" and \"Family Name\" are present",
             "result": {
               "status": "passed",
-              "duration": 122000000
+              "duration": 123000000
             }
           }
         ]
@@ -2525,7 +2525,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 21685000000
+              "duration": 21524000000
             }
           },
           {
@@ -2535,7 +2535,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 480000000
+              "duration": 881000000
             }
           },
           {
@@ -2545,7 +2545,7 @@
             "name": "I sort column by asc and desc",
             "result": {
               "status": "passed",
-              "duration": 26030000000
+              "duration": 25872000000
             }
           }
         ]
@@ -2570,7 +2570,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 32205000000
+              "duration": 28580000000
             }
           },
           {
@@ -2580,7 +2580,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 1719000000
+              "duration": 607000000
             }
           },
           {
@@ -2590,7 +2590,7 @@
             "name": "I check all buttons from pagination",
             "result": {
               "status": "passed",
-              "duration": 29062000000
+              "duration": 29036000000
             }
           }
         ]
@@ -2615,7 +2615,7 @@
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 31368000000
+              "duration": 28938000000
             }
           },
           {
@@ -2625,7 +2625,7 @@
             "name": "I navigate to actual section",
             "result": {
               "status": "passed",
-              "duration": 561000000
+              "duration": 398000000
             }
           },
           {
@@ -2635,7 +2635,7 @@
             "name": "I check different rows per page",
             "result": {
               "status": "passed",
-              "duration": 51466000000
+              "duration": 50954000000
             }
           }
         ]

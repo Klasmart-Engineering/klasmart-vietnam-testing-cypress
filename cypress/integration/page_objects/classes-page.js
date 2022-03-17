@@ -25,6 +25,9 @@ class ClassesPage {
   deleteFinalButton = "button[type='submit']";
   nameInputMessages = "#class-dialog-name-helper-text";
   createWindowsMessage = "#scroll-dialog-title";
+  labelFilterAdded = "div:nth-child(2) > div:nth-child(1) > span:nth-child(1)";
+  addFilterButton = ".MuiChip-label";
+  dragAndDrop = '[data-testid="dropzone"]';
 
   /*----------------  End Web Element  ----------------*/
 
@@ -325,8 +328,208 @@ class ClassesPage {
     });
   }
 
-  getAgeRangesFromLabelFilterText() {
+  getAgeRangesFromFilterText() {
     cy.get(this.labelFilterAdded).should("include.text", "0 Year(s)");
+  }
+
+  getAgeRangesToFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "4 Year(s)");
+  }
+
+  selectionOfEditAgeRangesFromValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "1 Year(s)") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfEditAgeRangesToValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "2 Year(s)") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  getAgeRangesFromEditFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "1 Year(s)");
+  }
+
+  getAgeRangesToEditFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "2 Year(s)");
+  }
+
+  clickOnGradesColumn() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Grades") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfGradesValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Grade 1") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  getGradesFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "Grade 1");
+  }
+
+  selectionOfEditGradesValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Grade 2") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  getGradesEditFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "Grade 2");
+  }
+
+  clickOnProgramsColumn() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Programs") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfProgramsValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Bada Talk") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Bada Sound") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Bada STEM") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  getProgramsFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "Bada STEM");
+  }
+
+  getProgramsEditFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "Bada Math");
+  }
+
+  selectionOfEditProgramsValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Bada Rhyme") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Bada Math") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Bada Genius") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  clickOnSubjectsColumn() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Subjects") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfSubjectsValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Language/Literacy") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Language") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Math") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  getSubjectsFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "Math");
+  }
+
+  getSubjectsEditFilterText() {
+    cy.get(this.labelFilterAdded).should("include.text", "Science");
+  }
+
+  selectionOfEditSubjectsValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Language") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Science") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Literacy") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectFixtureFile() {
+    cy.get(this.dragAndDrop)
+      .should("be.visible")
+      .click({ force: true })
+      .attachFile("class_alpha.csv", {
+        subjectType: "drag-n-drop",
+        events: ["dragenter", "drop"],
+      });
+    cy.wait(4000);
+  }
+
+  selectMultipleFixtureFile() {
+    cy.get(this.dragAndDrop)
+      .should("be.visible")
+      .click({ force: true })
+      .attachFile("multiple_classes_alpha.csv", {
+        subjectType: "drag-n-drop",
+        events: ["dragenter", "drop"],
+      });
+    cy.wait(10400);
   }
 }
 
