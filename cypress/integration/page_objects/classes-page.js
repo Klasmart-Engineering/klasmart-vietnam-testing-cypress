@@ -28,6 +28,7 @@ class ClassesPage {
   labelFilterAdded = "div:nth-child(2) > div:nth-child(1) > span:nth-child(1)";
   addFilterButton = ".MuiChip-label";
   dragAndDrop = '[data-testid="dropzone"]';
+  classRosterWindowsText = ".MuiDialogContent-root .MuiPaper-root #tableTitle";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -529,6 +530,14 @@ class ClassesPage {
         events: ["dragenter", "drop"],
       });
     cy.wait(10400);
+  }
+
+  clickOnClassLink() {
+    cy.get("tbody tr:nth-child(1) td:nth-child(1) a").click();
+  }
+
+  getClassRosterWindowsText() {
+    return cy.get(this.classRosterWindowsText).contains("Class Roster");
   }
 }
 
