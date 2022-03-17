@@ -107,14 +107,6 @@ When(
   }
 );
 
-Then("All pagination buttons should work", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
-});
-
 Given("I check different rows per page", () => {
   cy.wait(8000);
   userPage.clickOnRowsPerPage();
@@ -582,14 +574,6 @@ Given("Add all existent filters", () => {
 
 Then("I check filter is disable", () => {
   userPage.getFilterMouseOverText();
-});
-
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
 });
 
 Then("Upload correct CSV file", () => {

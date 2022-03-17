@@ -309,7 +309,7 @@ Feature: Users
   #User should be able to see data paginated UD-T29
   @smoke
   Scenario: Pagination
-    And I check all buttons from pagination
+    And All pagination buttons should work
 
 
   #User should be able to paginate by rows per page UD-T162
@@ -321,12 +321,12 @@ Feature: Users
 
   Scenario: Sorting and pagination
     And I sort column by asc and desc
-    And I check all buttons from pagination
+    And All pagination buttons should work
 
   #User should be able to search and see the pagination according to inserted searching UD-T167
 
   Scenario: Search and pagination
-    And I check all buttons from pagination
+    And All pagination buttons should work
     And I search "Test"
 
   #User should be able to add multiple filter, search any user and change paginations that will no affect the result UD-T416
@@ -334,7 +334,7 @@ Feature: Users
   Scenario: Add multiple filters search and pagination
     Then Add all existent filters and email "lorenatest@test.com" and phone "+5982325463"
     And I search "Andres"
-    And I check all buttons from pagination
+    And All pagination buttons should work
 
   #User should be able to see first page from pagination UD-T166
 

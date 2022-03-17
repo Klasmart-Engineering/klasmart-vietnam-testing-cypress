@@ -250,14 +250,6 @@ And("I remove columns to be shown", () => {
   schoolPage.removeAllColumns();
 });
 
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
-});
-
 Then("I check different rows per page", () => {
   cy.wait(8000);
   userPage.clickOnRowsPerPage();
@@ -275,14 +267,6 @@ And("I sort column by asc and desc", () => {
   schoolPage.sortFirstDesc();
   userPage.sortSecondAsc();
   userPage.sortSecondDesc();
-});
-
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
 });
 
 And("I search {string}", (search) => {

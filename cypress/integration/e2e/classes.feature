@@ -38,7 +38,7 @@ Feature: Classes
   #User should be able to see data paginated UD-T102
   @smoke
   Scenario: Pagination
-    Given I check all buttons from pagination
+    Given All pagination buttons should work
 
   #User should be able to paginate by rows per page UD-T179
   @smoke
@@ -399,12 +399,12 @@ Feature: Classes
   Scenario: Add multiple filters search and pagination
     Given Add all existent filters
     Then I search class "Class"
-    And I check all buttons from pagination
+    And All pagination buttons should work
 
   #User should be able to search and see the pagination according to inserted searching UD-T184
 
   Scenario: Search and pagination
-    And I check all buttons from pagination
+    And All pagination buttons should work
     Then I search class "Class"
 
   #User should be able to create multiple classes UD-T101

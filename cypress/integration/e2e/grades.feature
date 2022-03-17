@@ -5,6 +5,7 @@ Feature: Grades
     When I navigate to the grades page
 
   #User should be able to create any grades UD-T135
+  #User should be able to search according to inserted searching UD-T134
 
   Scenario: Create grade
     Given I create a grade "Automation 01"
@@ -28,7 +29,7 @@ Feature: Grades
   #User should be able to see data paginated UD-T643
   @smoke
   # Scenario: Pagination
-  #   And I check all buttons from pagination
+  #   And All pagination buttons should work
 
   #User should be able to paginate by rows per page UD-T123 ----*** DEFECT AD-2234 ***----
   
@@ -36,46 +37,33 @@ Feature: Grades
     Then I check different rows per page
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T129
-
-  Scenario: Sorting and pagination
-    And I sort column by asc and desc
-    And I check all buttons from pagination
-
   #User should be able to search and see the pagination according to inserted searching UD-T176
-
-  # Scenario: Search and pagination
-  #   And I check all buttons from pagination
-  #   And I can search for grade "Grade"
-
   #User should be able to sort by ascending and descending order UD-T136
-  @smoke
-  # Scenario: Sorting
-  #   And I sort column by asc and desc
+@focus @smoke
+  Scenario: Sorting, searching and pagination
+    Given I sort grade columns by asc and desc
+    When I can search for grade "Grade"
+    Then All pagination buttons should work
 
   #User should be able to see first page from pagination UD-T127
 
   # Scenario: First page pagination
-  #   Then I check first page pagination
+    # Then I check first page pagination
 
   #User should be able to see last page from pagination UD-T126
 
   # Scenario: Last page pagination
-  #   Then I check last page pagination
+    # Then I check last page pagination
 
   #User should be able to see next page from pagination UD-T124
 
   # Scenario: Next page pagination
-  #   Then I check next page pagination
+    # Then I check next page pagination
 
   #User should be able to see previous page from pagination UD-T125
 
   # Scenario: Previous page pagination
   #   Then I check previous page pagination
-
-  #User should be able to search according to inserted searching UD-T134
-  @smoke
-  # Scenario: Search
-  #   And I can search for grade "Grade"
 
   #User should be able to add a filter on grades for Progress From UD-T139
   @smoke
@@ -173,7 +161,7 @@ Feature: Grades
   Then the order of values is correct on grades
 
   #User should be able to remove columns UD-T610
-@focus   @smoke
+  @smoke
   Scenario: Remove columns
     Given I remove columns to be shown from the grade list
     Then only the locked Name column should be visible 

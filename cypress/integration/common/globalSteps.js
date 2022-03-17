@@ -1,6 +1,7 @@
 import { Then } from "cypress-cucumber-preprocessor/steps";
 import { homePage } from "../page_objects/home-page";
 import {signInPage} from '../page_objects/sign-in-page';
+import {userPage} from '../page_objects/user-page';
 
 Then(`I see {string} in the title`, title => {
   cy.title().should("include", title);
@@ -22,3 +23,15 @@ Then("I should see the welcome message {string}", async (text) => {
  Then('I should see login page', () => {
    signInPage.checkURL();
  });
+
+ Then("All pagination buttons should work", () => {
+  cy.wait(8000);
+  userPage.clickOnNextPage();
+  userPage.clickOnPreviousPage();
+  userPage.clickOnLastPage();
+  userPage.getNextPageButtonState();
+  userPage.getLastPageButtonState();
+  userPage.clickOnFirstPage();
+  userPage.getPreviousPageButtonState();
+  userPage.getFirstPageButtonState();
+});

@@ -44,7 +44,7 @@ Feature: Roles
   #User should be able to see data paginated UD-T40
   @smoke
   Scenario: Pagination
-    And I check all buttons from pagination
+    And All pagination buttons should work
 
   #User should be able to paginate by rows per page UD-T572
   @smoke
@@ -55,12 +55,12 @@ Feature: Roles
   
   Scenario: Sorting and pagination
     And I sort column by asc and desc
-    And I check all buttons from pagination
+    And All pagination buttons should work
 
   #User should be able to search and see the pagination according to inserted searching UD-T577
  
   Scenario: Search and pagination
-    And I check all buttons from pagination
+    And All pagination buttons should work
     And I search new role to validate "Teacher"
 
   #User should be able to sort by ascending and descending order UD-T38

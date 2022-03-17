@@ -108,14 +108,6 @@ Then(
   }
 );
 
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
-});
-
 Then("I check different rows per page", () => {
   cy.wait(8000);
   userPage.clickOnRowsPerPage();
@@ -128,7 +120,7 @@ Then("I check different rows per page", () => {
   userPage.clickOnTwentyFivePages();
 });
 
-And("I sort column by asc and desc", () => {
+Given("I sort grade columns by asc and desc", () => {
   gradesPage.sortFirstAsc();
   schoolPage.sortFirstDesc();
   userPage.sortSecondAsc();
@@ -235,9 +227,17 @@ Then("I get a {string} message", (message) => {
 });
 
 Then("I can clear all the filters", () => {
-  userPage.clickClearFilter();
+  userPage.clickClearAllFilters();
   userPage.getAddFilterLabelState();
 });
+
+Given("I click add columns", () => {
+  userPage.clickOnAddColumns();
+});
+
+When("I select the columns to add", () => {
+  userPage.selectColumns();
+})
 
 Given("I open the filter window", () => {
   //Add progress from filter

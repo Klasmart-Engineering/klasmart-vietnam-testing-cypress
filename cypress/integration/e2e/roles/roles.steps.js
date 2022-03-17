@@ -103,14 +103,6 @@ And("I search new role to validate {string}", (search) => {
   rolesPage.getRoleName();
 });
 
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
-});
-
 Then("I check different rows per page", () => {
   cy.wait(8000);
   userPage.clickOnRowsPerPage();

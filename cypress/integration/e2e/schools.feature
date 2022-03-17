@@ -116,7 +116,7 @@ Feature: Schools
   #User should be able to see data paginated UD-T170
   @smoke
   Scenario: Pagination
-    And I check all buttons from pagination
+    And All pagination buttons should work
 
 
   #User should be able to paginate by rows per page UD-T171
@@ -128,12 +128,12 @@ Feature: Schools
  
   Scenario: Sorting and pagination
     And I sort column by asc and desc
-    And I check all buttons from pagination
+    And All pagination buttons should work
 
   #User should be able to search and see the pagination according to inserted searching UD-T176
   
   Scenario: Search and pagination
-    And I check all buttons from pagination
+    And All pagination buttons should work
     And I search "Automation"
 
   #User should be able to sort by ascending and descending order UD-T178
