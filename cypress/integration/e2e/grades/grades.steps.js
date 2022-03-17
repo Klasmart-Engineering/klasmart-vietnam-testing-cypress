@@ -200,7 +200,7 @@ Then("the progress filter should be applied", () => {
   gradesPage.getProgressLabelFilterText();
 });
 
-Then("I press cancel button", () => {
+When("I press the cancel button", () => {
   userPage.clickOnCancelFilterButton();
 });
 
@@ -234,14 +234,17 @@ Then("I get a {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-And("I clear the filter applied", () => {
+Then("I can clear all the filters", () => {
   userPage.clickClearFilter();
   userPage.getAddFilterLabelState();
 });
 
-Then("Add all existent filters", () => {
+Given("I open the filter window", () => {
   //Add progress from filter
   userPage.clickOnAddFilterButton();
+});
+
+When("I add all possible filters", () => {
   userPage.clickOnColumnFilter();
   gradesPage.clickOnProgressFromColumn();
   userPage.clickOnValuesFilter();
@@ -254,28 +257,30 @@ Then("Add all existent filters", () => {
   gradesPage.selectionOfProgressValues();
   userPage.closeListItems();
   userPage.clickOnAddFilterFinalButton();
-});
+})
 
 And("I clear all filters applied", () => {
   userPage.clickClearAllFilters();
   userPage.getAddFilterLabelState();
 });
 
-And("I check filter is disable", () => {
+Then("the filter option should be disabled", () => {
   userPage.getFilterMouseOverText();
 });
 
-Then("I check the order of values is correct on grades", () => {
-  userPage.clickOnAddFilterButton();
+When("I click on column filters", () => {
   userPage.clickOnColumnFilter();
+})
+
+Then("the order of values is correct on grades", () => {
   gradesPage.getFilterOrderValues();
 });
 
-And("I remove columns to be shown", () => {
+Given("I remove columns to be shown from the grade list", () => {
   gradesPage.removeAllColumns();
 });
 
-And("I check locked column {string} is present", () => {
+Then("only the locked Name column should be visible", () => {
   gradesPage.getColumnText();
 });
 
@@ -284,7 +289,8 @@ And("I add columns to be shown", () => {
   userPage.selectColumns();
 });
 
-And("I check locked columns {string} and {string} are present", () => {
+Then("columns {string}, {string} and {string} are visible in the list", () => {
+  // needs to create new methods to check that the progress to and from columns have been added 
   schoolPage.getFirstColumnText();
   gradesPage.getSecondColumnText();
 });

@@ -107,7 +107,7 @@ When(
   }
 );
 
-Given("I check all buttons from pagination", () => {
+Then("All pagination buttons should work", () => {
   cy.wait(8000);
   userPage.clickOnNextPage();
   userPage.clickOnPreviousPage();
@@ -189,15 +189,20 @@ Given("I remove columns to be shown", () => {
 });
 
 When("I check locked column {string} is present", () => {
+  // this doesn't use the string provided and doesn't check for it's value
   classesPage.getColumnText();
 });
 
-Given("I add columns to be shown", () => {
+Given("I click add columns", () => {
   userPage.clickOnAddColumns();
-  userPage.selectColumns();
 });
 
+When("I select the columns to add", () => {
+  userPage.selectColumns();
+})
+
 When("I check locked columns {string} and {string} are present", () => {
+  // this doesn't use the string provided and doesn't check for it's value
   schoolPage.getFirstColumnText();
   classesPage.getSecondColumnText();
 });

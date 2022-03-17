@@ -27,8 +27,8 @@ Feature: Grades
 
   #User should be able to see data paginated UD-T643
   @smoke
-  Scenario: Pagination
-    And I check all buttons from pagination
+  # Scenario: Pagination
+  #   And I check all buttons from pagination
 
   #User should be able to paginate by rows per page UD-T123
   @smoke
@@ -43,39 +43,39 @@ Feature: Grades
 
   #User should be able to search and see the pagination according to inserted searching UD-T176
 
-  Scenario: Search and pagination
-    And I check all buttons from pagination
-    And I can search for grade "Grade"
+  # Scenario: Search and pagination
+  #   And I check all buttons from pagination
+  #   And I can search for grade "Grade"
 
   #User should be able to sort by ascending and descending order UD-T136
   @smoke
-  Scenario: Sorting
-    And I sort column by asc and desc
+  # Scenario: Sorting
+  #   And I sort column by asc and desc
 
   #User should be able to see first page from pagination UD-T127
 
-  Scenario: First page pagination
-    Then I check first page pagination
+  # Scenario: First page pagination
+  #   Then I check first page pagination
 
   #User should be able to see last page from pagination UD-T126
 
-  Scenario: Last page pagination
-    Then I check last page pagination
+  # Scenario: Last page pagination
+  #   Then I check last page pagination
 
   #User should be able to see next page from pagination UD-T124
 
-  Scenario: Next page pagination
-    Then I check next page pagination
+  # Scenario: Next page pagination
+  #   Then I check next page pagination
 
   #User should be able to see previous page from pagination UD-T125
 
-  Scenario: Previous page pagination
-    Then I check previous page pagination
+  # Scenario: Previous page pagination
+  #   Then I check previous page pagination
 
   #User should be able to search according to inserted searching UD-T134
   @smoke
-  Scenario: Search
-    And I can search for grade "Grade"
+  # Scenario: Search
+  #   And I can search for grade "Grade"
 
   #User should be able to add a filter on grades for Progress From UD-T139
   @smoke
@@ -93,15 +93,17 @@ Feature: Grades
 
   #User should be able to cancel add a filter on grades for Progress From UD-T138
 
-  Scenario: Add filter Progress From Cancel
+  Scenario: Cancel adding filter Progress From 
     Given I open the filter from options
-    Then I press cancel button
+    When I press the cancel button
+    # needs a then step
 
   #User should be able to cancel add a filter on grades for Progress To UD-T147
 
-  Scenario: Add filter Progress To Cancel
+  Scenario: Cancel adding filter Progress To 
     Given I open the filter to options
-    Then I press cancel button
+    When I press the cancel button
+    # needs a then step
 
   #User should be able to edit filter on grades for Progress From UD-T143 and UD-T145
   @smoke
@@ -121,7 +123,7 @@ Feature: Grades
 
   #User should be able to cancel edit filter on grades for Progress From UD-T144
 
-  Scenario: Edit filter Progress From Cancel
+  Scenario: Cancel editing filter Progress From
     Given I open the filter from options
     When I add the filter
     And I try to edit the values on a filter 
@@ -129,7 +131,7 @@ Feature: Grades
 
   #User should be able to cancel edit filter on grades for Progress To UD-T152
 
-  Scenario: Edit filter Progress To Cancel
+  Scenario: Cancel editing filter Progress To Cancel
     Given I open the filter to options
     When I add the filter
     And I try to edit the values on a filter
@@ -140,47 +142,53 @@ Feature: Grades
   Scenario: Clear filter Progress From
     Given I open the filter from options
     When I add the filter
-    And I clear the filter applied
+    Then I can clear all the filters
 
   #User should be able to clear Progress To filter for grades UD-T150
   @smoke
   Scenario: Clear filter Progress To
     Given I open the filter to options
     When I add the filter
-    And I clear the filter applied
+    Then I can clear all the filters
 
   #User should be able to clear all filter for grades UD-T140
   @smoke
   Scenario: Clear all filters
-    Then Add all existent filters
-    And I clear all filters applied
+    Given I open the filter window
+    When I add all possible filters
+    Then I can clear all the filters
 
   #User should be able to disable filter for grades UD-T142
   @smoke
-  Scenario: Disable filter
-    Then Add all existent filters
-    And I check filter is disable
+  Scenario: Filter should be disabled if all filters where previously added
+    Given I open the filter window
+    When I add all possible filters
+    Then the filter option should be disabled
 
   #User should be able to see correct order for values on filters UD-T606
   @smoke
   Scenario: Filter order values
-    Then I check the order of values is correct on grades
+  Given I open the filter window
+  When I click on column filters
+  Then the order of values is correct on grades
 
   #User should be able to remove columns UD-T610
-  @smoke
+@focus   @smoke
   Scenario: Remove columns
-    And I remove columns to be shown
-    And I check locked column "Name" is present
+    Given I remove columns to be shown from the grade list
+    Then only the locked Name column should be visible 
 
   #User should be able to add columns UD-T130
   @smoke
   Scenario: Add columns
-    And I add columns to be shown
-    And I check locked columns "ID" and "School Name" are present
+    Given I click add columns
+    When I select the columns to add 
+    Then columns "ID", "Progress From" and "Progress To" are visible in the list
 
   #User should be able to add multiple filter, search any grade and change paginations that will no affect the result UD-T335
 
   Scenario: Add multiple filters search and pagination
-    Then Add all existent filters
-    And I can search for grade "Grade"
-    And I check all buttons from pagination
+    Given I open the filter window
+    When I add all possible filters
+    Then I can search for grade "Grade"
+    And All pagination buttons should work

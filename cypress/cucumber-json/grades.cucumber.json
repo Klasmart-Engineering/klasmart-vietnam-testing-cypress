@@ -12,12 +12,7 @@
         "keyword": "Scenario",
         "line": 9,
         "name": "Create grade",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 8
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -26,8 +21,7 @@
             "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 26608000000
+              "status": "skipped"
             }
           },
           {
@@ -36,8 +30,7 @@
             "line": 5,
             "name": "I navigate to the grades page",
             "result": {
-              "status": "passed",
-              "duration": 378000000
+              "status": "skipped"
             }
           },
           {
@@ -46,8 +39,7 @@
             "line": 10,
             "name": "I create a grade \"Automation 01\"",
             "result": {
-              "status": "passed",
-              "duration": 8056000000
+              "status": "skipped"
             }
           },
           {
@@ -56,8 +48,7 @@
             "line": 11,
             "name": "I get a \"Grade successfully created\" message",
             "result": {
-              "status": "passed",
-              "duration": 1118000000
+              "status": "skipped"
             }
           },
           {
@@ -66,8 +57,7 @@
             "line": 12,
             "name": "I can search for grade \"Automation 01\"",
             "result": {
-              "status": "passed",
-              "duration": 10191000000
+              "status": "skipped"
             }
           }
         ]
@@ -77,12 +67,7 @@
         "keyword": "Scenario",
         "line": 16,
         "name": "Edit grade",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 15
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -91,8 +76,7 @@
             "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 19223000000
+              "status": "skipped"
             }
           },
           {
@@ -101,8 +85,7 @@
             "line": 5,
             "name": "I navigate to the grades page",
             "result": {
-              "status": "passed",
-              "duration": 430000000
+              "status": "skipped"
             }
           },
           {
@@ -111,8 +94,7 @@
             "line": 17,
             "name": "I search \"Automation 01\" to be edited as \"Grade Edited\"",
             "result": {
-              "status": "passed",
-              "duration": 21024000000
+              "status": "skipped"
             }
           },
           {
@@ -121,8 +103,7 @@
             "line": 18,
             "name": "I get a \"Grade successfully saved\" message",
             "result": {
-              "status": "passed",
-              "duration": 576000000
+              "status": "skipped"
             }
           },
           {
@@ -131,8 +112,7 @@
             "line": 19,
             "name": "I can search for edited grade \"Grade Edited\"",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `input[placeholder='Search']`, but never found it.\n    at UserPage.searchInputText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/grades.feature:2490:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/grades.feature:184:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/grades.feature:28837:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/grades.feature:28158:35)"
+              "status": "skipped"
             }
           }
         ]
@@ -142,12 +122,7 @@
         "keyword": "Scenario",
         "line": 23,
         "name": "Delete grade",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 22
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -156,8 +131,7 @@
             "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 20866000000
+              "status": "skipped"
             }
           },
           {
@@ -166,8 +140,7 @@
             "line": 5,
             "name": "I navigate to the grades page",
             "result": {
-              "status": "passed",
-              "duration": 1052000000
+              "status": "skipped"
             }
           },
           {
@@ -176,8 +149,7 @@
             "line": 24,
             "name": "I search for grade \"Grade Edited\"",
             "result": {
-              "status": "passed",
-              "duration": 9961000000
+              "status": "skipped"
             }
           },
           {
@@ -186,8 +158,7 @@
             "line": 25,
             "name": "I delete the grade",
             "result": {
-              "status": "passed",
-              "duration": 7965000000
+              "status": "skipped"
             }
           },
           {
@@ -195,49 +166,6 @@
             "keyword": "Then ",
             "line": 26,
             "name": "I get a \"Grade successfully deleted\" message",
-            "result": {
-              "status": "passed",
-              "duration": 675000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "grades;pagination",
-        "keyword": "Scenario",
-        "line": 30,
-        "name": "Pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 29
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I navigate to the grades page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "I check all buttons from pagination",
             "result": {
               "status": "skipped"
             }
@@ -250,6 +178,10 @@
         "line": 35,
         "name": "Rows Per Page",
         "tags": [
+          {
+            "name": "@smoke",
+            "line": 29
+          },
           {
             "name": "@smoke",
             "line": 34
@@ -333,289 +265,19 @@
         ]
       },
       {
-        "id": "grades;search-and-pagination",
-        "keyword": "Scenario",
-        "line": 46,
-        "name": "Search and pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I navigate to the grades page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "I check all buttons from pagination",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 48,
-            "name": "I can search for grade \"Grade\"",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "grades;sorting",
-        "keyword": "Scenario",
-        "line": 52,
-        "name": "Sorting",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 51
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I navigate to the grades page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "I sort column by asc and desc",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "grades;first-page-pagination",
-        "keyword": "Scenario",
-        "line": 57,
-        "name": "First page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I navigate to the grades page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 58,
-            "name": "I check first page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "grades;last-page-pagination",
-        "keyword": "Scenario",
-        "line": 62,
-        "name": "Last page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I navigate to the grades page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 63,
-            "name": "I check last page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "grades;next-page-pagination",
-        "keyword": "Scenario",
-        "line": 67,
-        "name": "Next page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I navigate to the grades page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 68,
-            "name": "I check next page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "grades;previous-page-pagination",
-        "keyword": "Scenario",
-        "line": 72,
-        "name": "Previous page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I navigate to the grades page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 73,
-            "name": "I check previous page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "grades;search",
-        "keyword": "Scenario",
-        "line": 77,
-        "name": "Search",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 76
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I navigate to the grades page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 78,
-            "name": "I can search for grade \"Grade\"",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
         "id": "grades;add-filter-progress-from",
         "keyword": "Scenario",
         "line": 82,
         "name": "Add filter Progress From",
         "tags": [
+          {
+            "name": "@smoke",
+            "line": 51
+          },
+          {
+            "name": "@smoke",
+            "line": 76
+          },
           {
             "name": "@smoke",
             "line": 81
@@ -643,9 +305,18 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Given ",
             "line": 83,
-            "name": "Add filter for progress from",
+            "name": "I open the filter from options",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 84,
+            "name": "I add the filter",
             "result": {
               "status": "skipped"
             }
@@ -653,17 +324,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 84,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 85,
-            "name": "I check that progress filter was added",
+            "name": "the progress filter should be applied",
             "result": {
               "status": "skipped"
             }
@@ -703,9 +365,18 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Given ",
             "line": 90,
-            "name": "Add filter for progress to",
+            "name": "I open the filter to options",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 91,
+            "name": "I add the filter",
             "result": {
               "status": "skipped"
             }
@@ -713,17 +384,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 91,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 92,
-            "name": "I check that progress filter was added",
+            "name": "the progress filter should be applied",
             "result": {
               "status": "skipped"
             }
@@ -731,10 +393,10 @@
         ]
       },
       {
-        "id": "grades;add-filter-progress-from-cancel",
+        "id": "grades;cancel-adding-filter-progress-from",
         "keyword": "Scenario",
         "line": 96,
-        "name": "Add filter Progress From Cancel",
+        "name": "Cancel adding filter Progress From",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -758,9 +420,9 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Given ",
             "line": 97,
-            "name": "Add filter for progress from",
+            "name": "I open the filter from options",
             "result": {
               "status": "skipped"
             }
@@ -777,10 +439,10 @@
         ]
       },
       {
-        "id": "grades;add-filter-progress-to-cancel",
+        "id": "grades;cancel-adding-filter-progress-to",
         "keyword": "Scenario",
         "line": 102,
-        "name": "Add filter Progress To Cancel",
+        "name": "Cancel adding filter Progress To",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -804,9 +466,9 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Given ",
             "line": 103,
-            "name": "Add filter for progress to",
+            "name": "I open the filter to options",
             "result": {
               "status": "skipped"
             }
@@ -855,18 +517,18 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Given ",
             "line": 109,
-            "name": "Add filter for progress from",
+            "name": "I open the filter from options",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 110,
-            "name": "Filter is Added",
+            "name": "I add the filter",
             "result": {
               "status": "skipped"
             }
@@ -875,16 +537,16 @@
             "arguments": [],
             "keyword": "And ",
             "line": 111,
-            "name": "I edit values from added filter on progress",
+            "name": "I edit the values on a filter",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 112,
-            "name": "I check edited value was saved on progress",
+            "name": "the edited value should be saved on progress",
             "result": {
               "status": "skipped"
             }
@@ -924,18 +586,18 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Given ",
             "line": 117,
-            "name": "Add filter for progress to",
+            "name": "I open the filter to options",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 118,
-            "name": "Filter is Added",
+            "name": "I add the filter",
             "result": {
               "status": "skipped"
             }
@@ -944,16 +606,16 @@
             "arguments": [],
             "keyword": "And ",
             "line": 119,
-            "name": "I edit values from added filter on progress",
+            "name": "I edit the values on a filter",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 120,
-            "name": "I check edited value was saved on progress",
+            "name": "the edited value should be saved on progress",
             "result": {
               "status": "skipped"
             }
@@ -961,10 +623,10 @@
         ]
       },
       {
-        "id": "grades;edit-filter-progress-from-cancel",
+        "id": "grades;cancel-editing-filter-progress-from",
         "keyword": "Scenario",
         "line": 124,
-        "name": "Edit filter Progress From Cancel",
+        "name": "Cancel editing filter Progress From",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -988,18 +650,18 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Given ",
             "line": 125,
-            "name": "Add filter for progress from",
+            "name": "I open the filter from options",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 126,
-            "name": "Filter is Added",
+            "name": "I add the filter",
             "result": {
               "status": "skipped"
             }
@@ -1008,7 +670,16 @@
             "arguments": [],
             "keyword": "And ",
             "line": 127,
-            "name": "I edit value from added filter on progress but I press cancel",
+            "name": "I try to edit the values on a filter",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 128,
+            "name": "I should be able to cancel editing",
             "result": {
               "status": "skipped"
             }
@@ -1016,10 +687,10 @@
         ]
       },
       {
-        "id": "grades;edit-filter-progress-to-cancel",
+        "id": "grades;cancel-editing-filter-progress-to-cancel",
         "keyword": "Scenario",
-        "line": 131,
-        "name": "Edit filter Progress To Cancel",
+        "line": 132,
+        "name": "Cancel editing filter Progress To Cancel",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -1043,9 +714,27 @@
           },
           {
             "arguments": [],
+            "keyword": "Given ",
+            "line": 133,
+            "name": "I open the filter to options",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 134,
+            "name": "I add the filter",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
             "keyword": "And ",
-            "line": 132,
-            "name": "Add filter for progress to",
+            "line": 135,
+            "name": "I try to edit the values on a filter",
             "result": {
               "status": "skipped"
             }
@@ -1053,17 +742,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 133,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 134,
-            "name": "I edit value from added filter on progress but I press cancel",
+            "line": 136,
+            "name": "I should be able to cancel editing",
             "result": {
               "status": "skipped"
             }
@@ -1073,12 +753,12 @@
       {
         "id": "grades;clear-filter-progress-from",
         "keyword": "Scenario",
-        "line": 138,
+        "line": 140,
         "name": "Clear filter Progress From",
         "tags": [
           {
             "name": "@smoke",
-            "line": 137
+            "line": 139
           }
         ],
         "type": "scenario",
@@ -1103,9 +783,18 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 139,
-            "name": "Add filter for progress from",
+            "keyword": "Given ",
+            "line": 141,
+            "name": "I open the filter from options",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 142,
+            "name": "I add the filter",
             "result": {
               "status": "skipped"
             }
@@ -1113,17 +802,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 140,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 141,
-            "name": "I clear the filter applied",
+            "line": 143,
+            "name": "I can clear all the filters",
             "result": {
               "status": "skipped"
             }
@@ -1133,12 +813,12 @@
       {
         "id": "grades;clear-filter-progress-to",
         "keyword": "Scenario",
-        "line": 145,
+        "line": 147,
         "name": "Clear filter Progress To",
         "tags": [
           {
             "name": "@smoke",
-            "line": 144
+            "line": 146
           }
         ],
         "type": "scenario",
@@ -1163,9 +843,18 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 146,
-            "name": "Add filter for progress to",
+            "keyword": "Given ",
+            "line": 148,
+            "name": "I open the filter to options",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 149,
+            "name": "I add the filter",
             "result": {
               "status": "skipped"
             }
@@ -1173,17 +862,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 147,
-            "name": "Filter is Added",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 148,
-            "name": "I clear the filter applied",
+            "line": 150,
+            "name": "I can clear all the filters",
             "result": {
               "status": "skipped"
             }
@@ -1193,12 +873,12 @@
       {
         "id": "grades;clear-all-filters",
         "keyword": "Scenario",
-        "line": 152,
+        "line": 154,
         "name": "Clear all filters",
         "tags": [
           {
             "name": "@smoke",
-            "line": 151
+            "line": 153
           }
         ],
         "type": "scenario",
@@ -1223,18 +903,18 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 153,
-            "name": "Add all existent filters",
+            "keyword": "Given ",
+            "line": 155,
+            "name": "I add all existent filters",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 154,
-            "name": "I clear all filters applied",
+            "keyword": "Then ",
+            "line": 156,
+            "name": "I can clear all the filters",
             "result": {
               "status": "skipped"
             }
@@ -1242,14 +922,14 @@
         ]
       },
       {
-        "id": "grades;disable-filter",
+        "id": "grades;filter-should-be-disabled-if-all-filters-where-previously-added",
         "keyword": "Scenario",
-        "line": 158,
-        "name": "Disable filter",
+        "line": 160,
+        "name": "Filter should be disabled if all filters where previously added",
         "tags": [
           {
             "name": "@smoke",
-            "line": 157
+            "line": 159
           }
         ],
         "type": "scenario",
@@ -1274,18 +954,18 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 159,
-            "name": "Add all existent filters",
+            "keyword": "Given ",
+            "line": 161,
+            "name": "I add all existent filters",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 160,
-            "name": "I check filter is disable",
+            "keyword": "Then ",
+            "line": 162,
+            "name": "the filter option should be disabled",
             "result": {
               "status": "skipped"
             }
@@ -1295,12 +975,12 @@
       {
         "id": "grades;filter-order-values",
         "keyword": "Scenario",
-        "line": 164,
+        "line": 166,
         "name": "Filter order values",
         "tags": [
           {
             "name": "@smoke",
-            "line": 163
+            "line": 165
           }
         ],
         "type": "scenario",
@@ -1326,7 +1006,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 165,
+            "line": 167,
             "name": "I check the order of values is correct on grades",
             "result": {
               "status": "skipped"
@@ -1337,12 +1017,16 @@
       {
         "id": "grades;remove-columns",
         "keyword": "Scenario",
-        "line": 169,
+        "line": 171,
         "name": "Remove columns",
         "tags": [
           {
+            "name": "@focus",
+            "line": 170
+          },
+          {
             "name": "@smoke",
-            "line": 168
+            "line": 170
           }
         ],
         "type": "scenario",
@@ -1353,7 +1037,8 @@
             "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 24969000000
             }
           },
           {
@@ -1362,25 +1047,28 @@
             "line": 5,
             "name": "I navigate to the grades page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1182000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 170,
+            "keyword": "Given ",
+            "line": 172,
             "name": "I remove columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 498000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 171,
-            "name": "I check locked column \"Name\" is present",
+            "keyword": "Then ",
+            "line": 173,
+            "name": "only the locked Name column should be visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 34000000
             }
           }
         ]
@@ -1388,12 +1076,12 @@
       {
         "id": "grades;add-columns",
         "keyword": "Scenario",
-        "line": 175,
+        "line": 177,
         "name": "Add columns",
         "tags": [
           {
             "name": "@smoke",
-            "line": 174
+            "line": 176
           }
         ],
         "type": "scenario",
@@ -1418,8 +1106,8 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 176,
+            "keyword": "Given ",
+            "line": 178,
             "name": "I add columns to be shown",
             "result": {
               "status": "skipped"
@@ -1428,7 +1116,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 177,
+            "line": 179,
             "name": "I check locked columns \"ID\" and \"School Name\" are present",
             "result": {
               "status": "skipped"
@@ -1439,7 +1127,7 @@
       {
         "id": "grades;add-multiple-filters-search-and-pagination",
         "keyword": "Scenario",
-        "line": 181,
+        "line": 183,
         "name": "Add multiple filters search and pagination",
         "tags": [],
         "type": "scenario",
@@ -1464,17 +1152,17 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 182,
-            "name": "Add all existent filters",
+            "keyword": "Given ",
+            "line": 184,
+            "name": "I add all existent filters",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 183,
+            "keyword": "When ",
+            "line": 185,
             "name": "I can search for grade \"Grade\"",
             "result": {
               "status": "skipped"
@@ -1482,9 +1170,9 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 184,
-            "name": "I check all buttons from pagination",
+            "keyword": "Then ",
+            "line": 186,
+            "name": "All pagination buttons should work",
             "result": {
               "status": "skipped"
             }
