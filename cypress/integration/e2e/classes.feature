@@ -8,42 +8,42 @@ Feature: Classes
   #DATA NEEDS TO BE CHANGES FOR EACH RUN
   Scenario: Create class
     Given I create a class "Aut class 01"
-    When I get "Class created" message
+    When I get a "Class created" message
     Then I search class "Aut class 01"
 
   #User should be able to edit any class UD-T106
   #DATA NEEDS TO BE CHANGES FOR EACH RUN
 
   Scenario: Edit class
-    Given Add filter for status as active
-    When Filter is Added
-    Then I search "Aut class 01" to be edited as "Edit class 01" and get "Class has been saved successfully" message
-    And I search edited grade "Edit class 01"
+    Given I Add a filter for status as active
+    When I search "Aut class 01" to edit the class name to be "Edit class 01" 
+    Then I get a "Class has been saved successfully" message
+    And I can search for edited class "Edit class 01"
 
   #User should be able to delete any grade UD-T132
 
   Scenario: Delete grade
-    Given Add filter for status as active
-    When Filter is Added
-    Then I search "Edit class 01" to be deleted and get "Class has been deleted successfully" message
+    Given I Add a filter for status as active
+    When I search "Edit class 01" to be deleted
+    Then I get a "Class has been deleted successfully" message
 
   #User should be able to delete an existent class from edition mode UD-T582
   #DATA NEEDS TO BE CHANGES FOR EACH RUN
 
   Scenario: Delete class edition
-    Given Add filter for status as active
-    When Filter is Added
-    Then I search "Aut class 02" to be deleted on edition and get "Class has been deleted successfully" message
+    Given I Add a filter for status as active
+    When I search "Aut class 02" to be deleted on edition
+    Then I get a "Class has been deleted successfully" message
 
   #User should be able to see data paginated UD-T102
   @smoke
   Scenario: Pagination
-    Given I check all buttons from pagination
+    Given All pagination buttons should work
 
   #User should be able to paginate by rows per page UD-T179
   @smoke
   Scenario: Rows Per Page
-    Given I check different rows per page
+    Then I can display either "10,25,50" rows in the list
 
   #User should be able to see first page from pagination UD-T183
 
@@ -399,12 +399,12 @@ Feature: Classes
   Scenario: Add multiple filters search and pagination
     Given Add all existent filters
     Then I search class "Class"
-    And I check all buttons from pagination
+    And All pagination buttons should work
 
   #User should be able to search and see the pagination according to inserted searching UD-T184
 
   Scenario: Search and pagination
-    And I check all buttons from pagination
+    And All pagination buttons should work
     Then I search class "Class"
 
   #User should be able to create multiple classes UD-T101

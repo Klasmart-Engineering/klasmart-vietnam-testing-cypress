@@ -865,34 +865,34 @@ class UserPage {
     cy.wait(5000);
   }
 
-  clickOnTenPages() {
-    cy.viewport(1280, 750);
-    cy.get(this.tenPages)
-      .scrollIntoView()
-      .should("be.visible")
-      .click({ force: true });
-    cy.wait(5000);
-    cy.get("tbody tr").should("have.length", 10);
-  }
+  clickOnNumOfPages(numberPerPage)
+  {
+    var locator;
+    switch(numberPerPage)
+    {
+      case '10':
+        locator = this.tenPages;
+        break;
+      case '25':
+        locator = this.twentyFivePages;
+        break;
+      case '50':
+        locator = this.fiftyPages;
+        break;
+      default:
+        cy.log("defaulted");
+        break;
+    }
 
-  clickOnTwentyFivePages() {
     cy.viewport(1280, 750);
-    cy.get(this.twentyFivePages)
+    cy.get(locator)
       .scrollIntoView()
       .should("be.visible")
       .click({ force: true });
     cy.wait(5000);
-    cy.get("tbody tr").should("have.length", 25);
-  }
 
-  clickOnFiftyPages() {
-    cy.viewport(1280, 750);
-    cy.get(this.fiftyPages)
-      .scrollIntoView()
-      .should("be.visible")
-      .click({ force: true });
-    cy.wait(5000);
-    cy.get("tbody tr").should("have.length", 50);
+    // check the correct number of rows is displayed
+    cy.get("tbody tr").should("have.length", numberPerPage);
   }
 
   getFirstPageButtonState() {

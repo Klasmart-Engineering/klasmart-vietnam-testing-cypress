@@ -252,6 +252,7 @@ class ClassesPage {
     cy.get(":checkbox").uncheck({ force: true });
   }
 
+  // this checks for the same text as method below??
   getColumnText() {
     return cy
       .get("table thead:nth-child(1) tr th:nth-child(1)")

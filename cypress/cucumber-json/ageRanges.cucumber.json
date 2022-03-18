@@ -10,7 +10,7 @@
       {
         "id": "age-ranges;create-age-range",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 8,
         "name": "Create age range",
         "tags": [],
         "type": "scenario",
@@ -18,7 +18,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -26,9 +26,18 @@
           },
           {
             "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I navigate to the age ranges page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "I navigate to actual section",
+            "line": 10,
+            "name": "I create an age range from \"45\" months to \"23\" years",
             "result": {
               "status": "skipped"
             }
@@ -36,16 +45,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "I create an age range from \"44\" months to \"23\" years",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
+            "line": 11,
             "name": "I get \"Age range successfully created\" message",
             "result": {
               "status": "skipped"
@@ -56,42 +56,50 @@
       {
         "id": "age-ranges;edit-age-range",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 15,
         "name": "Edit age range",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 14
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 18545000000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "I navigate to actual section",
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I navigate to the age ranges page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1084000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
-            "name": "Add filter for age ranges",
+            "line": 17,
+            "name": "I add a filter for age ranges",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiChip-label`, but never found it.\n    at UserPage.clickOnAddFilterButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:1202:36)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:201:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:27707:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/ageRanges.feature:27028:35)"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
+            "keyword": "When ",
+            "line": 18,
             "name": "I edit an age range from \"55\" months to \"53\" years",
             "result": {
               "status": "skipped"
@@ -99,8 +107,8 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 18,
+            "keyword": "Then ",
+            "line": 19,
             "name": "I get \"Age range successfully created\" message",
             "result": {
               "status": "skipped"
@@ -109,14 +117,14 @@
         ]
       },
       {
-        "id": "age-ranges;add-filter-age-ranges-from",
+        "id": "age-ranges;add-age-ranges-(from)-filter",
         "keyword": "Scenario",
-        "line": 23,
-        "name": "Add filter Age Ranges From",
+        "line": 25,
+        "name": "Add Age Ranges (From) filter",
         "tags": [
           {
             "name": "@smoke",
-            "line": 22
+            "line": 24
           }
         ],
         "type": "scenario",
@@ -124,47 +132,35 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 25,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "passed",
-              "duration": 62513000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 26,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "passed",
-              "duration": 1362000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "Add filter for age ranges from",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiChip-label`, but never found it.\n    at UserPage.clickOnAddFilterButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:1182:36)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:208:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:27685:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:27006:35)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "Filter is Added",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "I check that age ranges from filter was added",
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I navigate to the age ranges page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I add a filter for age ranges from",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "The age ranges from filter should be added",
             "result": {
               "status": "skipped"
             }
@@ -172,14 +168,14 @@
         ]
       },
       {
-        "id": "age-ranges;add-filter-age-ranges-to",
+        "id": "age-ranges;add-age-ranges-(to)-filter",
         "keyword": "Scenario",
-        "line": 34,
-        "name": "Add filter Age Ranges To",
+        "line": 33,
+        "name": "Add Age Ranges (To) filter",
         "tags": [
           {
             "name": "@smoke",
-            "line": 33
+            "line": 32
           }
         ],
         "type": "scenario",
@@ -187,47 +183,35 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 36,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "passed",
-              "duration": 36098000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 37,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "passed",
-              "duration": 465000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "Add filter for age ranges to",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.MuiChip-label`, but never found it.\n    at UserPage.clickOnAddFilterButton (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:1182:36)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:221:22)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:27685:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress\\integration\\e2e\\ageRanges.feature:27006:35)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "Filter is Added",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "I check that age ranges to filter was added",
+            "keyword": "Given ",
+            "line": 34,
+            "name": "I navigate to the age ranges page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I add a filter for age ranges to",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "The age ranges to filter should be added",
             "result": {
               "status": "skipped"
             }

@@ -18,7 +18,7 @@ Given(
   }
 );
 
-When("I navigate to actual section", () => {
+When("I navigate to the schools page", () => {
   schoolPage.clickOnSchoolsTab();
 });
 
@@ -250,39 +250,11 @@ And("I remove columns to be shown", () => {
   schoolPage.removeAllColumns();
 });
 
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
-});
-
-Then("I check different rows per page", () => {
-  cy.wait(8000);
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTenPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnFiftyPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-});
-
 And("I sort column by asc and desc", () => {
   schoolPage.sortFirstAsc();
   schoolPage.sortFirstDesc();
   userPage.sortSecondAsc();
   userPage.sortSecondDesc();
-});
-
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
 });
 
 And("I search {string}", (search) => {
