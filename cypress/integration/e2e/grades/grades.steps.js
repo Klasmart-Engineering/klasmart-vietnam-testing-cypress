@@ -120,6 +120,10 @@ Then("I check different rows per page", () => {
   userPage.clickOnTwentyFivePages();
 });
 
+Then("the {string} filter should not be applied", (filterType) => {
+  gradesPage.checkFilterNotApplied(filterType);
+})
+
 Given("I sort grade columns by asc and desc", () => {
   gradesPage.sortFirstAsc();
   schoolPage.sortFirstDesc();

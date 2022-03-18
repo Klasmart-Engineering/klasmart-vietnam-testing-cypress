@@ -12,6 +12,8 @@ class GradesPage {
   gradeNameInput = "#gradeNameInput";
   progressFromInput = "#progressFromSelect";
   progressToInput = "#progressToSelect";
+  progressFromFilterIcon = "[data-testid=progressFromChipLabel]";
+  progressFromToFilterIcon = "[data-testid=progressToChipLabel]";
   gradeHelperText = "#gradeNameInput-helper-text";
   progressFromHelperText = "#progressFromSelect-helper-text";
   progressToHelperText = "#progressToSelect-helper-text";
@@ -73,6 +75,23 @@ class GradesPage {
     return cy
       .get(this.progressToHelperText, { timeout: 50000 })
       .should("be.visible");
+  }
+
+  checkFilterNotApplied(filterType) {
+    var locator;
+
+    if(filterType == "Progress From")
+    {
+      locator = this.progressFromFilterIcon;
+    }
+    else
+    {
+      locator = this.progressToFilterIcon;
+    }
+
+    // checking that the filter was not applied
+    cy.get(locator, {timeout: 5000})
+    .should('not.exist')
   }
 
   selectionProgressFrom() {

@@ -1,7 +1,21 @@
-import { Then } from "cypress-cucumber-preprocessor/steps";
+import { Then, When } from "cypress-cucumber-preprocessor/steps";
 import { homePage } from "../page_objects/home-page";
 import {signInPage} from '../page_objects/sign-in-page';
 import {userPage} from '../page_objects/user-page';
+
+Then("I can display either {string} rows in the list", (numbersPerPage) => {
+
+  // split the string into an array
+  var rows = numbersPerPage.split(",")
+
+  // loop over the array and update the number of rows to display each time
+  for(let number in rows)
+  {
+    cy.log(rows[number])
+    userPage.clickOnRowsPerPage();
+    userPage.clickOnNumOfPages(rows[number]);
+  }
+})
 
 Then(`I see {string} in the title`, title => {
   cy.title().should("include", title);

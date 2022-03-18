@@ -26,44 +26,21 @@ Feature: Grades
     When I delete the grade
     Then I get a "Grade successfully deleted" message
 
-  #User should be able to see data paginated UD-T643
-  @smoke
-  # Scenario: Pagination
-  #   And All pagination buttons should work
-
   #User should be able to paginate by rows per page UD-T123 ----*** DEFECT AD-2234 ***----
-  
+
   Scenario: Rows Per Page
-    Then I check different rows per page
+    Then I can display either "10,25,50" rows in the list
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T129
   #User should be able to search and see the pagination according to inserted searching UD-T176
   #User should be able to sort by ascending and descending order UD-T136
-@focus @smoke
+  #All paginations buttons are working covering UD-T127, UD-T126, UD-T124, UD-T125, UD-T643
+
+@smoke
   Scenario: Sorting, searching and pagination
     Given I sort grade columns by asc and desc
     When I can search for grade "Grade"
     Then All pagination buttons should work
-
-  #User should be able to see first page from pagination UD-T127
-
-  # Scenario: First page pagination
-    # Then I check first page pagination
-
-  #User should be able to see last page from pagination UD-T126
-
-  # Scenario: Last page pagination
-    # Then I check last page pagination
-
-  #User should be able to see next page from pagination UD-T124
-
-  # Scenario: Next page pagination
-    # Then I check next page pagination
-
-  #User should be able to see previous page from pagination UD-T125
-
-  # Scenario: Previous page pagination
-  #   Then I check previous page pagination
 
   #User should be able to add a filter on grades for Progress From UD-T139
   @smoke
@@ -84,14 +61,13 @@ Feature: Grades
   Scenario: Cancel adding filter Progress From 
     Given I open the filter from options
     When I press the cancel button
-    # needs a then step
-
+    Then the "Progress From" filter should not be applied
   #User should be able to cancel add a filter on grades for Progress To UD-T147
 
   Scenario: Cancel adding filter Progress To 
     Given I open the filter to options
     When I press the cancel button
-    # needs a then step
+    Then the "Progress To" filter should not be applied
 
   #User should be able to edit filter on grades for Progress From UD-T143 and UD-T145
   @smoke
