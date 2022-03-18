@@ -12,6 +12,7 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
+import "cypress-cucumber-attach-screenshots-to-failed-steps";
 import "cypress-real-events/support";
 // Import commands.js using ES2015 syntax:
 import "./commands";
@@ -28,3 +29,4 @@ Cypress.on("uncaught:exception", (err, runnable) => {
   // returning false here prevents Cypress from failing the test
   return false;
 });
+

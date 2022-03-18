@@ -19,7 +19,7 @@ Given(
   }
 );
 
-When("I navigate to the Classes Page", () => {
+When("I navigate to classes section", () => {
   classesPage.clickOnClassesTab();
 });
 
@@ -580,4 +580,13 @@ Then("Upload correct multiple CSV file", () => {
 
 And("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
+});
+
+Then("I press over an existent class {string}", (search) => {
+  userPage.searchInputText(search);
+  classesPage.clickOnClassLink();
+});
+
+And("I should see {string} window", (message) => {
+  classesPage.getClassRosterWindowsText(message);
 });

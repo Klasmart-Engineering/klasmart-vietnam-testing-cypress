@@ -2,7 +2,7 @@ Feature: Classes
 
   Background:
     Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
-    When I navigate to the Classes Page
+    When I navigate to classes section
 
   #User should be able to create any class UD-T592
   #DATA NEEDS TO BE CHANGES FOR EACH RUN
@@ -420,5 +420,13 @@ Feature: Classes
     #FILE NEEDS TO BE CHANGED ON FIXTURE FOLDER OR TEST DEPENDING ON ENVIRONMENT
     Then Upload correct CSV file
     And I get "Classes have been added successfully" message
+
+  #User should be able to see the class roster UD-T109
+
+  Scenario: Access Class Roster
+    Given Add filter for status as active
+    When Filter is Added
+    Then I press over an existent class "Class"
+    And I should see "Class Roster" window
 
 

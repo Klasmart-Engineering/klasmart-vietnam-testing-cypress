@@ -138,7 +138,7 @@ Feature: Login
 
 
   # User should be able to click on Privacy Notice link and see the information related UD-T3
-@focus   @smoke
+  @smoke
   Scenario: Privacy Notice Page
     Given I click privacy link
     When I should see a popup window called "Privacy Notice"
@@ -214,7 +214,7 @@ Feature: Login
 
 
   #User should see the url and correct language selected for current flag  UD-T615
- 
+
   Scenario: United States Flag
     Given auth United States page
     When verify the correct flag "Sign In" name
@@ -232,7 +232,7 @@ Feature: Login
     When verify the correct flag "Đăng nhập" name
 
   #User should see the url and correct language selected for current flag  UD-T618
- 
+
   Scenario: India Flag
     Given auth India page
     When verify the correct flag "Sign In" name
@@ -243,9 +243,8 @@ Feature: Login
     Given auth Pakistan page
     When verify the correct flag "Sign In" name
 
-
   #User should see the url and correct language selected for current flag  UD-T620
-  @smoke
+
   Scenario: Indonesia Flag
     Given auth Indonesia page
     When verify the correct flag "Masuk" name

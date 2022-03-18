@@ -10,7 +10,7 @@
     "cy:run:prod": "cypress open --env ENV=production",
     "cy:run:stg": "cypress open --env ENV=staging",
     "cy:run:qa": "cypress open --env ENV=alpha",
-    "e2e:reports": "node cypress/cucumber-html-report.js"
+    "e2e:reports": "node cucumber-html-report.js"
   },
   "keywords": [
     "cypress",
@@ -44,7 +44,7 @@
   "devDependencies": {
     "cucumber": "^7.0.0-rc.0",
     "cypress": "^7.6.0",
-    "cypress-cucumber-attach-screenshots-to-failed-steps": "1.0.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
