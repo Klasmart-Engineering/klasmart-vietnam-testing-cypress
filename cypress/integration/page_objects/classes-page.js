@@ -29,6 +29,17 @@ class ClassesPage {
   addFilterButton = ".MuiChip-label";
   dragAndDrop = '[data-testid="dropzone"]';
   classRosterWindowsText = ".MuiDialogContent-root .MuiPaper-root #tableTitle";
+  classRosterAddUserButton =
+    "div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(2) > button:nth-child(1)";
+  studentTabSchoolRoster =
+    "div:nth-child(7) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)";
+  teacherTabSchoolRoster =
+    "div:nth-child(7) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)";
+  schoolRosterAddUserButton =
+    ".MuiTypography-root.MuiTypography-inherit.MuiTypography-noWrap";
+  teacherTabClassRoster = '.MuiTabs-flexContainer > [tabindex="-1"]';
+  removeUserClassRoster = "li[role='menuitem'] p";
+  closeClassRosterWindow = "button[aria-label='close']";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -533,11 +544,62 @@ class ClassesPage {
   }
 
   clickOnClassLink() {
+    cy.viewport(1920, 1280);
     cy.get("tbody tr:nth-child(1) td:nth-child(1) a").click();
   }
 
   getClassRosterWindowsText() {
     return cy.get(this.classRosterWindowsText).contains("Class Roster");
+  }
+
+  clickOnClassRosterAddUserButton() {
+    cy.get(this.classRosterAddUserButton).should("be.visible").click();
+  }
+
+  clickOnStudentTabSchoolRoster() {
+    cy.get(this.studentTabSchoolRoster).should("be.visible").click();
+    cy.wait(7000);
+  }
+
+  selectStudentsAndTeachers() {
+    cy.xpath("(//tbody)[3]//tr/td[1]/span").eq(2).click({ force: true });
+    cy.xpath("(//tbody)[3]//tr/td[1]/span").eq(4).click({ force: true });
+    cy.wait(7000);
+  }
+
+  clickOnTeacherTabSchoolRoster() {
+    cy.get(this.teacherTabSchoolRoster).should("be.visible").click();
+    cy.wait(7000);
+  }
+
+  clickOnTeacherTabClassRoster() {
+    cy.get(this.teacherTabClassRoster).should("be.visible").click();
+    cy.wait(7000);
+  }
+
+  clickOnSchoolRosterAddUserButton() {
+    cy.get(this.schoolRosterAddUserButton).should("be.visible").click();
+    cy.wait(7000);
+  }
+
+  getStudents() {
+    return cy.xpath("(//tbody)[2]//tr/td[3]").contains("Student");
+  }
+
+  getTeachers() {
+    return cy.xpath("(//tbody)[2]//tr/td[3]").contains("Teacher");
+  }
+
+  clickMoreActionsClassRoster() {
+    cy.xpath("//tbody/tr[1]/td[6]/button[1]").click();
+  }
+
+  clickOnRemoveUser() {
+    cy.get(this.removeUserClassRoster).click();
+  }
+
+  clickOnCloseClassRosterWindow() {
+    cy.get(this.closeClassRosterWindow).click();
   }
 }
 

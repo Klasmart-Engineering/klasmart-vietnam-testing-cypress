@@ -613,3 +613,28 @@ Then("I press over an existent class {string}", (search) => {
 And("I should see {string} window", (message) => {
   classesPage.getClassRosterWindowsText(message);
 });
+
+And("I should be able to add users", () => {
+  classesPage.clickOnClassRosterAddUserButton();
+  classesPage.clickOnStudentTabSchoolRoster();
+  classesPage.selectStudentsAndTeachers();
+  classesPage.clickOnTeacherTabSchoolRoster();
+  classesPage.selectStudentsAndTeachers();
+  classesPage.clickOnSchoolRosterAddUserButton();
+  classesPage.getStudents();
+  classesPage.clickOnTeacherTabClassRoster();
+  classesPage.getTeachers();
+});
+
+And("I should be able to remove users", () => {
+  classesPage.clickMoreActionsClassRoster();
+  classesPage.clickOnRemoveUser();
+  userPage.sendDeleteText();
+  classesPage.clickOnDeleteFinalButton();
+  classesPage.clickOnTeacherTabClassRoster();
+  classesPage.clickMoreActionsClassRoster();
+  classesPage.clickOnRemoveUser();
+  userPage.sendDeleteText();
+  classesPage.clickOnDeleteFinalButton();
+  classesPage.clickOnCloseClassRosterWindow();
+});

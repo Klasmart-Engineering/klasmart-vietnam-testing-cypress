@@ -430,3 +430,21 @@ Feature: Classes
     And I should see "Class Roster" window
 
 
+  #User should be able to add users on class roster UD-T110
+
+  Scenario: Add Users to Class Roster
+    Given Add filter for status as active
+    When Filter is Added
+    Then I press over an existent class "Class"
+    And I should be able to add users
+
+
+  #User should be able to remove users on class roster UD-T344
+
+  Scenario: Remove Users from Class Roster
+    Given Add filter for status as active
+    When Filter is Added
+    Then I press over an existent class "Class"
+    And I should be able to remove users
+
+
