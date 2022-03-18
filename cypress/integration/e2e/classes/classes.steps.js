@@ -107,18 +107,6 @@ When(
   }
 );
 
-Given("I check different rows per page", () => {
-  cy.wait(8000);
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTenPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnFiftyPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-});
-
 Given("I check first page pagination", () => {
   cy.wait(8000);
   userPage.clickOnLastPage();

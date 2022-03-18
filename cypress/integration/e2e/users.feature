@@ -315,7 +315,7 @@ Feature: Users
   #User should be able to paginate by rows per page UD-T162
   @smoke
   Scenario: Rows Per Page
-    Then I check different rows per page
+    Then I can display either "10,25,50" rows in the list
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T168
 

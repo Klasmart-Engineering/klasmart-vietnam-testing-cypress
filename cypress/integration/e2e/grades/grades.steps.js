@@ -108,18 +108,6 @@ Then(
   }
 );
 
-Then("I check different rows per page", () => {
-  cy.wait(8000);
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTenPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnFiftyPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-});
-
 Then("the {string} filter should not be applied", (filterType) => {
   gradesPage.checkFilterNotApplied(filterType);
 })

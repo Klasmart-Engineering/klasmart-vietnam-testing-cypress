@@ -43,7 +43,7 @@ Feature: Classes
   #User should be able to paginate by rows per page UD-T179
   @smoke
   Scenario: Rows Per Page
-    Given I check different rows per page
+    Then I can display either "10,25,50" rows in the list
 
   #User should be able to see first page from pagination UD-T183
 

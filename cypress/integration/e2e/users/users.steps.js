@@ -443,18 +443,6 @@ And("I sort column by asc and desc", () => {
   userPage.sortSecondDesc();
 });
 
-Then("I check different rows per page", () => {
-  cy.wait(8000);
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTenPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnFiftyPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-});
-
 Then("I check first page pagination", () => {
   cy.wait(8000);
   userPage.clickOnLastPage();

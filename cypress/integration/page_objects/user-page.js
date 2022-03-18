@@ -895,41 +895,6 @@ class UserPage {
     cy.get("tbody tr").should("have.length", numberPerPage);
   }
 
-  checkNumOfRows(numberPerPage)
-  {
-    cy.get("tbody tr").should("have.length", numberPerPage);
-  }
-
-  clickOnTenPages() {
-    cy.viewport(1280, 750);
-    cy.get(this.tenPages)
-      .scrollIntoView()
-      .should("be.visible")
-      .click({ force: true });
-    cy.wait(5000);
-    cy.get("tbody tr").should("have.length", 10);
-  }
-
-  clickOnTwentyFivePages() {
-    cy.viewport(1280, 750);
-    cy.get(this.twentyFivePages)
-      .scrollIntoView()
-      .should("be.visible")
-      .click({ force: true });
-    cy.wait(5000);
-    cy.get("tbody tr").should("have.length", 25);
-  }
-
-  clickOnFiftyPages() {
-    cy.viewport(1280, 750);
-    cy.get(this.fiftyPages)
-      .scrollIntoView()
-      .should("be.visible")
-      .click({ force: true });
-    cy.wait(5000);
-    cy.get("tbody tr").should("have.length", 50);
-  }
-
   getFirstPageButtonState() {
     cy.viewport(1280, 750);
     cy.get(this.firstPage)
