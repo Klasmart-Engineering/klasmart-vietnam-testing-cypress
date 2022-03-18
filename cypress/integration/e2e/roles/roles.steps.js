@@ -19,7 +19,7 @@ Given(
   }
 );
 
-When("I navigate to actual section", () => {
+When("I navigate to the roles page", () => {
   rolesPage.clickOnRolesTab();
 });
 
@@ -101,26 +101,6 @@ And("I check locked column {string} is present", () => {
 And("I search new role to validate {string}", (search) => {
   userPage.searchInputText(search);
   rolesPage.getRoleName();
-});
-
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
-});
-
-Then("I check different rows per page", () => {
-  cy.wait(8000);
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTenPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnFiftyPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
 });
 
 And("I sort column by asc and desc", () => {

@@ -1,4 +1,4 @@
-import { When, Then } from "cypress-cucumber-preprocessor/steps";
+import { When, Then, Given } from "cypress-cucumber-preprocessor/steps";
 import { signInPage } from "../../page_objects/sign-in-page";
 import { userPage } from "../../page_objects/user-page";
 import { ageRangesPage } from "../../page_objects/ageRanges-page";
@@ -17,11 +17,11 @@ Given(
   }
 );
 
-When("I navigate to actual section", () => {
+Given("I navigate to the age ranges page", () => {
   ageRangesPage.clickOnAgeRangesTab();
 });
 
-Then(
+When(
   "I create an age range from {string} months to {string} years",
   (from, to) => {
     ageRangesPage.clickOnCreateAgeRangeButton();
@@ -35,11 +35,11 @@ Then(
   }
 );
 
-And("I get {string} message", (message) => {
+Then("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-Then(
+When(
   "I edit an age range from {string} months to {string} years",
   (from, to) => {
     ageRangesPage.clickOnCreateAgeRangeButton();
@@ -53,7 +53,7 @@ Then(
   }
 );
 
-And("Add filter for age ranges", () => {
+And("I add a filter for age ranges", () => {
   //Add age ranges from filter
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
@@ -70,32 +70,30 @@ And("Add filter for age ranges", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-And("Add filter for age ranges from", () => {
+When("I add a filter for age ranges from", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   ageRangesPage.clickOnAgeRangesFromColumn();
   userPage.clickOnValuesFilter();
   ageRangesPage.selectionOfFirstValueRange();
   userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
 });
 
-And("Add filter for age ranges to", () => {
+When("I add a filter for age ranges to", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   ageRangesPage.clickOnAgeRangesToColumn();
   userPage.clickOnValuesFilter();
   ageRangesPage.selectionOfFirstValueRange();
   userPage.closeListItems();
+  userPage.clickOnAddFilterFinalButton();
 });
 
-And("I check that age ranges to filter was added", () => {
+Then("The age ranges to filter should be added", () => {
   ageRangesPage.getAgeRangesToLabelFilterText();
 });
 
-And("I check that age ranges from filter was added", () => {
+Then("The age ranges from filter should be added", () => {
   ageRangesPage.getAgeRangesFromLabelFilterText();
-});
-
-Then("Filter is Added", () => {
-  userPage.clickOnAddFilterFinalButton();
 });

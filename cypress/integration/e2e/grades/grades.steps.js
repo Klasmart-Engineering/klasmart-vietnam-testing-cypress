@@ -18,11 +18,11 @@ Given(
   }
 );
 
-When("I navigate to actual section", () => {
-  gradesPage.clickOnGradesTab();
+When("I navigate to the grades page", () => {
+  gradesPage.clickOnGradesTab(); 
 });
 
-Then("I create a grade {string}", (gradeName) => {
+Given("I create a grade {string}", (gradeName) => {
   gradesPage.clickOnCreateGradeButton();
   gradesPage.clickOnCancelCreateButton();
   gradesPage.clickOnCreateGradeButton();
@@ -41,13 +41,23 @@ And("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-And("I search grade {string}", (search) => {
+Given("I search for grade {string}", (search) => {
   gradesPage.searchInputText(search);
   gradesPage.getGradeName();
 });
 
-Then(
-  "I search {string} to be edited as {string} and get {string} message",
+Then("I can search for grade {string}", (search) => {
+  gradesPage.searchInputText(search);
+  gradesPage.getGradeName();
+});
+
+Then("I can search for edited grade {string}", (search) => {
+  userPage.searchInputText(search);
+  gradesPage.getEditedGradeName();
+});
+
+Given(
+  "I search {string} to be edited as {string}",
   (search, name, message) => {
     gradesPage.searchInputText(search);
     gradesPage.clickMoreActions();
@@ -58,13 +68,19 @@ Then(
     gradesPage.clickOnProgressTo();
     gradesPage.editSelectionProgressTo();
     gradesPage.clickOnSaveEditionButton();
-    userPage.getNotificationText(message).contains(message);
   }
 );
 
 And("I search edited grade {string}", (search) => {
   gradesPage.searchInputText(search);
   gradesPage.getEditedGradeName();
+});
+
+When("I delete the grade", () => {
+  gradesPage.clickMoreActions();
+    userPage.clickOnMoreActionsDeleteButton();
+    userPage.sendDeleteText();
+    gradesPage.clickOnDeleteFinalButton();
 });
 
 Then(
@@ -92,27 +108,11 @@ Then(
   }
 );
 
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
-});
+Then("the {string} filter should not be applied", (filterType) => {
+  gradesPage.checkFilterNotApplied(filterType);
+})
 
-Then("I check different rows per page", () => {
-  cy.wait(8000);
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTenPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnFiftyPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-});
-
-And("I sort column by asc and desc", () => {
+Given("I sort grade columns by asc and desc", () => {
   gradesPage.sortFirstAsc();
   schoolPage.sortFirstDesc();
   userPage.sortSecondAsc();
@@ -158,7 +158,7 @@ Then("I check previous page pagination", () => {
   userPage.getFirstPageButtonState();
 });
 
-And("Add filter for progress from", () => {
+Given("I open the filter from options", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   gradesPage.clickOnProgressFromColumn();
@@ -167,7 +167,7 @@ And("Add filter for progress from", () => {
   userPage.closeListItems();
 });
 
-And("Add filter for progress to", () => {
+Given("I open the filter to options", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   gradesPage.clickOnProgressToColumn();
@@ -176,19 +176,19 @@ And("Add filter for progress to", () => {
   userPage.closeListItems();
 });
 
-Then("Filter is Added", () => {
+When("I add the filter", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-And("I check that progress filter was added", () => {
+Then("the progress filter should be applied", () => {
   gradesPage.getProgressLabelFilterText();
 });
 
-Then("I press cancel button", () => {
+When("I press the cancel button", () => {
   userPage.clickOnCancelFilterButton();
 });
 
-And("I edit values from added filter on progress", () => {
+And("I edit the values on a filter", () => {
   userPage.clickOnFilterLabel();
   userPage.clickOnValuesFilter();
   gradesPage.selectionOfProgressValues();
@@ -197,28 +197,46 @@ And("I edit values from added filter on progress", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-And("I check edited value was saved on progress", () => {
+Then("the edited value should be saved on progress", () => {
   gradesPage.getEditedLabelFilterTextProgress();
 });
 
-And("I edit value from added filter on progress but I press cancel", () => {
+When("I try to edit the values on a filter", () => {
   userPage.clickOnFilterLabel();
   userPage.clickOnValuesFilter();
   gradesPage.selectionOfProgressValues();
   gradesPage.editProgressFilterValues();
   userPage.closeListItems();
-  userPage.clickOnCancelFilterButton();
-  gradesPage.getProgressLabelFilterText();
 });
 
-And("I clear the filter applied", () => {
-  userPage.clickClearFilter();
+Then("I should be able to cancel editing", () => {
+  userPage.clickOnCancelFilterButton();
+  gradesPage.getProgressLabelFilterText();
+})
+
+Then("I get a {string} message", (message) => {
+  userPage.getNotificationText(message).contains(message);
+});
+
+Then("I can clear all the filters", () => {
+  userPage.clickClearAllFilters();
   userPage.getAddFilterLabelState();
 });
 
-Then("Add all existent filters", () => {
+Given("I click add columns", () => {
+  userPage.clickOnAddColumns();
+});
+
+When("I select the columns to add", () => {
+  userPage.selectColumns();
+})
+
+Given("I open the filter window", () => {
   //Add progress from filter
   userPage.clickOnAddFilterButton();
+});
+
+When("I add all possible filters", () => {
   userPage.clickOnColumnFilter();
   gradesPage.clickOnProgressFromColumn();
   userPage.clickOnValuesFilter();
@@ -231,28 +249,30 @@ Then("Add all existent filters", () => {
   gradesPage.selectionOfProgressValues();
   userPage.closeListItems();
   userPage.clickOnAddFilterFinalButton();
-});
+})
 
 And("I clear all filters applied", () => {
   userPage.clickClearAllFilters();
   userPage.getAddFilterLabelState();
 });
 
-And("I check filter is disable", () => {
+Then("the filter option should be disabled", () => {
   userPage.getFilterMouseOverText();
 });
 
-Then("I check the order of values is correct on grades", () => {
-  userPage.clickOnAddFilterButton();
+When("I click on column filters", () => {
   userPage.clickOnColumnFilter();
+})
+
+Then("the order of values is correct on grades", () => {
   gradesPage.getFilterOrderValues();
 });
 
-And("I remove columns to be shown", () => {
+Given("I remove columns to be shown from the grade list", () => {
   gradesPage.removeAllColumns();
 });
 
-And("I check locked column {string} is present", () => {
+Then("only the locked Name column should be visible", () => {
   gradesPage.getColumnText();
 });
 
@@ -261,7 +281,8 @@ And("I add columns to be shown", () => {
   userPage.selectColumns();
 });
 
-And("I check locked columns {string} and {string} are present", () => {
+Then("columns {string}, {string} and {string} are visible in the list", () => {
+  // needs to create new methods to check that the progress to and from columns have been added 
   schoolPage.getFirstColumnText();
   gradesPage.getSecondColumnText();
 });

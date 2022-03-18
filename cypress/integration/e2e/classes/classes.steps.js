@@ -53,37 +53,37 @@ When("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-Given(
-  "I search {string} to be edited as {string} and get {string} message",
+When(
+  "I search {string} to edit the class name to be {string}",
   (search, className, message) => {
     userPage.searchInputText(search);
     classesPage.clickMoreActions();
     classesPage.clickOnMoreActionsEditButton();
     classesPage.editClassName(className);
     classesPage.clickOnSaveEditionButton();
-    userPage.getNotificationText(message).contains(message);
   }
 );
 
-When("I search edited grade {string}", (search) => {
+Then("I get a {string} message", (message) => {
+  userPage.getNotificationText(message).contains(message);
+});
+
+Then("I can search for edited class {string}", (search) => {
   userPage.searchInputText(search);
   classesPage.getEditedClassName();
 });
 
-Given("Add filter for status as active", () => {
+Given("I Add a filter for status as active", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   userPage.clickOnStatusColumn();
   userPage.clickOnValuesFilter();
   userPage.selectActiveStatusValue();
-});
-
-When("Filter is Added", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-Then(
-  "I search {string} to be deleted and get {string} message",
+When(
+  "I search {string} to be deleted",
   (search, message) => {
     userPage.searchInputText(search);
     classesPage.clickMoreActions();
@@ -94,8 +94,8 @@ Then(
   }
 );
 
-Then(
-  "I search {string} to be deleted on edition and get {string} message",
+When(
+  "I search {string} to be deleted on edition",
   (search, message) => {
     userPage.searchInputText(search);
     classesPage.clickMoreActions();
@@ -106,26 +106,6 @@ Then(
     userPage.getNotificationText(message).contains(message);
   }
 );
-
-Given("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
-});
-
-Given("I check different rows per page", () => {
-  cy.wait(8000);
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTenPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnFiftyPages();
-  userPage.clickOnRowsPerPage();
-  userPage.clickOnTwentyFivePages();
-});
 
 Given("I check first page pagination", () => {
   cy.wait(8000);
@@ -189,15 +169,20 @@ Given("I remove columns to be shown", () => {
 });
 
 When("I check locked column {string} is present", () => {
+  // this doesn't use the string provided and doesn't check for it's value
   classesPage.getColumnText();
 });
 
-Given("I add columns to be shown", () => {
+Given("I click add columns", () => {
   userPage.clickOnAddColumns();
-  userPage.selectColumns();
 });
 
+When("I select the columns to add", () => {
+  userPage.selectColumns();
+})
+
 When("I check locked columns {string} and {string} are present", () => {
+  // this doesn't use the string provided and doesn't check for it's value
   schoolPage.getFirstColumnText();
   classesPage.getSecondColumnText();
 });
@@ -577,14 +562,6 @@ Given("Add all existent filters", () => {
 
 Then("I check filter is disable", () => {
   userPage.getFilterMouseOverText();
-});
-
-And("I check all buttons from pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnLastPage();
-  userPage.clickOnFirstPage();
 });
 
 Then("Upload correct CSV file", () => {
