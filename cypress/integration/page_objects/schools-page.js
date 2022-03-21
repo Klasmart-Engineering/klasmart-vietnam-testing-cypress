@@ -144,15 +144,17 @@ class SchoolPage {
       });
   }
 
-  getMaxNameLenghtText() {
+  getMaxNameLengthText(error) {
     return cy
       .get(this.schoolNameErrorMessages, { timeout: 50000 })
+      .contains(error)
       .should("be.visible");
   }
 
-  getMaxShortCodeLenghtText() {
+  getMaxShortCodeLengthText(error) {
     return cy
       .get(this.shortCodeErrorMessages, { timeout: 50000 })
+      .contains(error)
       .should("be.visible");
   }
 

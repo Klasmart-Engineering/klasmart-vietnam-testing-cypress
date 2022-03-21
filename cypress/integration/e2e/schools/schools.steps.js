@@ -22,37 +22,27 @@ When("I navigate to the schools page", () => {
   schoolPage.clickOnSchoolsTab();
 });
 
-Then("I press on create school button", () => {
+Given("I press on create school button", () => {
   schoolPage.clickOnCreateSchoolButton();
 });
 
-And(
-  "I add maximum characters on fields {string} and {string}",
-  (name, shortCode) => {
-    schoolPage.fillName(name);
-    schoolPage.fillShortCode(shortCode);
-    schoolPage.getNextButtonState();
-    schoolPage.getPreviousButtonState();
-  }
-);
+When("I enter {string} and {string} for name and shortcode", (name, shortCode) => {
+  schoolPage.fillName(name);
+  schoolPage.fillShortCode(shortCode);
+  schoolPage.getNextButtonState();
+  schoolPage.getPreviousButtonState();
+})
 
-And("I get following error messages {string} and {string}", () => {
-  schoolPage.getMaxNameLenghtText();
-  schoolPage.getMaxShortCodeLenghtText();
-});
+Then("I should receive error messages {string} and {string}", (error1, error2) => {
+  schoolPage.getMaxNameLengthText(error1);
+  schoolPage.getMaxShortCodeLengthText(error2);
+})
 
 And("I close creation of Schools", () => {
   schoolPage.clickOnCloseSchool();
 });
 
-And("I add spaces on fields {string} and {string}", (name, shortCode) => {
-  schoolPage.fillName(name);
-  schoolPage.fillShortCode(shortCode);
-  schoolPage.getNextButtonState();
-  schoolPage.getPreviousButtonState();
-});
-
-And("I add correct data on fields {string} and {string}", (name, shortCode) => {
+When("I enter a valid name and shortcode {string} and {string}", (name, shortCode) => {
   schoolPage.fillName(name);
   schoolPage.fillShortCode(shortCode);
   schoolPage.getNextButtonState();
