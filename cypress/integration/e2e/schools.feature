@@ -38,11 +38,12 @@ Feature: Schools
     Then a "ERROR!!! Duplicate shortcode" message is displayed
 
   #User should be able to create a Program to assign to a School UD-T44 (positive validation)
-@focus 
+
   Scenario: Create Program on School
     Given I press on create school button
     When I enter a valid name and shortcode "Automation School 01" and "ERDF566"
     And I fill all fields for a new program "Automation Program"
+    And I select an existing subject before confirming creation
     Then I get "Program has been successfully created" message
     And I search new program to validate "Automation Program"
 
@@ -60,7 +61,8 @@ Feature: Schools
     Given I press on create school button
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     And I fill all fields for a new program "Automation Program 02"
-    And I press on create subject "Automation Subject" and get "Subject has been successfully created" message
+    And I create a new subject "Automation Subject" 
+    Then I get a "Subject has been successfully created" message
     And I search new subject to validate "Automation Subject"
 
   #User should be able to create a Category to assign to a School UD-T46
@@ -69,8 +71,9 @@ Feature: Schools
     Given I press on create school button
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     And I fill all fields for a new program "Automation Program 02"
-    And I press on create subject "Automation Subject"
-    And I create a category "Automation Category" checking required message "The Category name is required." then getting "Category has been successfully created" message
+    And I press on create subject
+    And I create a category "Automation Category"
+    Then I get a "Category has been successfully created" message
 
   #User should be able to create a SubCategory to assign to a School UD-T47
 
@@ -78,19 +81,24 @@ Feature: Schools
     Given I press on create school button
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     And I fill all fields for a new program "Automation Program 02"
-    And I press on create subject "Automation Subject"
+    And I press on create subject
     And I select a category
-    And I create subcategory "Automation SubCategory" checking required message "The Subcategory name is required." then getting "Subcategory has been successfully created" message
+    And I create subcategory "Automation SubCategory"
+    Then I get a "Subcategory has been successfully created" message
 
   #User should be able to create edit a School UD-T49
 
   Scenario: Edit School
-    Then I search "Automation School 01" to be edited "Automation Edited 01" "345RTYE" and get "School has been saved successfully" message
+    Given I search for "Automation School 01" 
+    When I edit the school details to be "Automation Edited 01" and "345RTYE" 
+    Then I get a "School has been saved successfully" message
 
   #User should be able to create delete a School UD-T50
 
   Scenario: Delete School
-    Then I search "Automation Edited 01" to be deleted and get "School has been deleted successfully" message
+    Given I search for "Automation Edited 01"
+    When I delete the school
+    Then I get a "School has been deleted successfully" message
 
   #User should be able to add columns UD-T51
   @smoke

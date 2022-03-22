@@ -1,4 +1,4 @@
-import { When, Then } from "cypress-cucumber-preprocessor/steps";
+import { When, Then, And } from "cypress-cucumber-preprocessor/steps";
 import { signInPage } from "../../page_objects/sign-in-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
@@ -94,6 +94,7 @@ When("I fill all fields for a new program {string}", (progName) => {
   schoolPage.clickOnAgeRanges();
   schoolPage.selectionAgeRanges();
   userPage.closeListItems();
+  schoolPage.clickOnNextProgramButton();
 });
 
 When("I enter invalid details for a new program {string}", (progName) => {
@@ -130,22 +131,21 @@ And("I search new program to validate {string}", (search) => {
   schoolPage.getProgramName();
 });
 
+And("I select an existing subject before confirming creation", () => {
+  schoolPage.selectSubjectItems();
+  schoolPage.clickOnNextProgramButton();
+  schoolPage.clickCreateProgramFinal();
+})
+
 And(
-  "I press on create subject {string} and get {string} message",
-  (subName, message) => {
-    schoolPage.clickOnNextProgramButton();
+  "I create a new subject {string}",
+  (subName) => {
     schoolPage.clickOnCreateSubjectButton();
     schoolPage.clickOnCategory();
     schoolPage.selectSubCategoryAndCategoryItems();
     schoolPage.clickOnSelectButtonCategory();
-    schoolPage.clickOnSubCategory();
-    schoolPage.selectSubCategoryAndCategoryItems();
-    schoolPage.clickOnSelectButtonCategory();
-    schoolPage.clickOnAddMoreCategories();
-    schoolPage.clickOnRemoveAddMoreCategories();
     schoolPage.fillSubjectName(subName);
     schoolPage.clickOnCreateSubjectFinalButton();
-    userPage.getNotificationText(message).contains(message);
   }
 );
 
@@ -154,20 +154,18 @@ And("I search new subject to validate {string}", (search) => {
   schoolPage.getSubjectName();
 });
 
-And("I press on create subject {string}", () => {
-  schoolPage.clickOnNextProgramButton();
+And("I press on create subject", () => {
   schoolPage.clickOnCreateSubjectButton();
 });
 
 And(
-  "I create a category {string} checking required message {string} then getting {string} message",
-  (catName, textMess, message) => {
+  "I create a category {string}",
+  (catName) => {
     schoolPage.clickOnCategory();
     schoolPage.clickOnCreateCategory();
-    schoolPage.getCategoryRequiredText(textMess);
+    schoolPage.getCategoryRequiredText();
     schoolPage.fillCategoryName(catName);
     schoolPage.clickOnCreateCategoryFinalButton();
-    userPage.getNotificationText(message).contains(message);
   }
 );
 
@@ -182,44 +180,36 @@ And("I check locked column {string} is present", () => {
 });
 
 And(
-  "I create subcategory {string} checking required message {string} then getting {string} message",
-  (subCatName, textMess, message) => {
+  "I create subcategory {string}",
+  (subCatName) => {
     schoolPage.clickOnSubCategory();
     schoolPage.clickOnCreateSubCategory();
-    schoolPage.getSubCategoryRequiredText(textMess);
+    schoolPage.getSubCategoryRequiredText();
     schoolPage.fillSubCategoryName(subCatName);
     schoolPage.clickOnCreateSubCategoryFinalButton();
-    userPage.getNotificationText(message).contains(message);
   }
 );
 
-Then(
-  "I search {string} to be edited {string} {string} and get {string} message",
-  (search, name, shortCode, message) => {
+Given("I search for {string}", (search) => {
     userPage.searchInputText(search);
-    schoolPage.clickMoreActions();
-    userPage.clickOnMoreActionsEditButton();
-    schoolPage.clickOnPreviousButtonEdition();
-    schoolPage.clickOnPreviousButtonEdition();
-    schoolPage.editName(name);
-    schoolPage.editShortCode(shortCode);
-    schoolPage.clickOnNextButtonEdition();
-    schoolPage.selectProgramItems();
-    schoolPage.clickOnNextButtonEdition();
-    schoolPage.clickOnSaveButtonEdition();
-    userPage.getNotificationText(message).contains(message);
   }
 );
 
-Then(
-  "I search {string} to be deleted and get {string} message",
-  (search, message) => {
-    userPage.searchInputText(search);
+When("I edit the school details to be {string} and {string}", (name, shortCode) => {
+  schoolPage.clickMoreActions();
+  userPage.clickOnMoreActionsEditButton();
+  schoolPage.editName(name);
+  schoolPage.editShortCode(shortCode);
+  schoolPage.clickOnNextButtonEdition();
+  schoolPage.clickOnNextButtonEdition();
+  schoolPage.clickOnSaveButtonEdition();
+})
+
+When("I delete the school",() => {
     schoolPage.clickMoreActions();
     userPage.clickOnMoreActionsDeleteButton();
     userPage.sendDeleteText();
     userPage.clickOnDeleteFinalButton();
-    userPage.getNotificationText(message).contains(message);
   }
 );
 

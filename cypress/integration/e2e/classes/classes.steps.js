@@ -64,10 +64,6 @@ When(
   }
 );
 
-Then("I get a {string} message", (message) => {
-  userPage.getNotificationText(message).contains(message);
-});
-
 Then("I can search for edited class {string}", (search) => {
   userPage.searchInputText(search);
   classesPage.getEditedClassName();

@@ -26,6 +26,10 @@ Given("I sort the {string} column by asc and desc", (columnName) => {
   userPage.sortSecondDesc();
 });
 
+Then("I get a {string} message", (message) => {
+  userPage.getNotificationText(message).contains(message);
+});
+
 Then(`I see {string} in the title`, title => {
   cy.title().should("include", title);
 });
