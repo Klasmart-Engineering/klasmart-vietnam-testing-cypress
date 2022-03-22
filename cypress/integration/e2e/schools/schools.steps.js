@@ -61,17 +61,30 @@ And("I select other existing programs", () => {
   schoolPage.clickOnNextButton();
 });
 
-And("I create a new school and get {string} message", (message) => {
+And("I create the new school", () => {
   schoolPage.clickOnCreateFinalButton();
+})
+
+Then("a {string} message is displayed", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-And("I search new school to validate {string}", (search) => {
+And("I search {string} to validate school exists", (search) => {
   userPage.searchInputText(search);
   schoolPage.getSchoolName();
 });
 
-And("I fill all fields for a new program {string}", (progName) => {
+When("I try to create a duplicate school with the details {string} and {string}", (name, shortCode) => {
+  schoolPage.fillName(name);
+  schoolPage.fillShortCode(shortCode);
+  schoolPage.getNextButtonState();
+  schoolPage.getPreviousButtonState();
+  schoolPage.clickOnNextButton();
+  schoolPage.selectOtherProgramItems();
+  schoolPage.clickOnNextButton();
+})
+
+When("I fill all fields for a new program {string}", (progName) => {
   schoolPage.clickOnNextButton();
   schoolPage.clickOnCreateProgram();
   schoolPage.fillProgramName(progName);
@@ -83,7 +96,9 @@ And("I fill all fields for a new program {string}", (progName) => {
   userPage.closeListItems();
 });
 
-And("I add maximum value {string}", (progName) => {
+When("I enter invalid details for a new program {string}", (progName) => {
+  schoolPage.clickOnNextButton();
+  schoolPage.clickOnCreateProgram();
   schoolPage.editProgramName(progName);
   schoolPage.clickOnGrades();
   schoolPage.clickOnSelectAllItems();
@@ -97,7 +112,7 @@ And("I add maximum value {string}", (progName) => {
   schoolPage.getPreviousProgramButtonState();
 });
 
-And(
+Then(
   "I get error messages {string} {string} {string}",
   (progMessage, gradesMessage, ageMessage) => {
     schoolPage.getProgramErrorMessageText(progMessage);
@@ -106,21 +121,7 @@ And(
   }
 );
 
-And("I add valid data for a new program {string}", (progName) => {
-  schoolPage.editProgramName(progName);
-  schoolPage.clickOnGrades();
-  schoolPage.selectionGrades();
-  userPage.closeListItems();
-  schoolPage.clickOnAgeRanges();
-  schoolPage.selectionAgeRanges();
-  userPage.closeListItems();
-  schoolPage.clickOnNextProgramButton();
-  schoolPage.selectSubjectItems();
-  schoolPage.clickOnNextProgramButton();
-  schoolPage.clickOnCreateProgramButton();
-});
-
-And("I create a new program and get {string} message", (message) => {
+Then("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
@@ -240,14 +241,7 @@ And("I remove columns to be shown", () => {
   schoolPage.removeAllColumns();
 });
 
-And("I sort column by asc and desc", () => {
-  schoolPage.sortFirstAsc();
-  schoolPage.sortFirstDesc();
-  userPage.sortSecondAsc();
-  userPage.sortSecondDesc();
-});
-
-And("I search {string}", (search) => {
+When("I search {string}", (search) => {
   userPage.searchInputText(search);
   userPage.getUserSearch();
 });

@@ -74,7 +74,7 @@ Feature: Classes
   #User should be able to sort by ascending and descending order UD-T188 ----*** DEFECT AD-2246 ***----
 
   Scenario: Sorting
-    Given I sort column by asc and desc
+    Given I sort the "name" column by asc and desc
 
   #User should be able to see correct order for values on filters UD-T608
   @smoke

@@ -112,13 +112,6 @@ Then("the {string} filter should not be applied", (filterType) => {
   gradesPage.checkFilterNotApplied(filterType);
 })
 
-Given("I sort grade columns by asc and desc", () => {
-  gradesPage.sortFirstAsc();
-  schoolPage.sortFirstDesc();
-  userPage.sortSecondAsc();
-  userPage.sortSecondDesc();
-});
-
 Then("I check first page pagination", () => {
   cy.wait(8000);
   userPage.clickOnLastPage();

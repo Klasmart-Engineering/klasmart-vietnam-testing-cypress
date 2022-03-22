@@ -151,13 +151,6 @@ Given("I search class {string}", (search) => {
   classesPage.getSearchClassName();
 });
 
-Given("I sort column by asc and desc", () => {
-  classesPage.sortFirstAsc();
-  schoolPage.sortFirstDesc();
-  userPage.sortSecondAsc();
-  userPage.sortSecondDesc();
-});
-
 Given("I check the order of values is correct on classes", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();

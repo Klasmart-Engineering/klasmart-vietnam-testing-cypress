@@ -436,13 +436,6 @@ And("I remove columns to be shown", () => {
   userPage.clickOnRemoveJoinDateColumnsButton();
 });
 
-And("I sort column by asc and desc", () => {
-  userPage.sortFirstAsc();
-  userPage.sortFirstDesc();
-  userPage.sortSecondAsc();
-  userPage.sortSecondDesc();
-});
-
 Then("I check first page pagination", () => {
   cy.wait(8000);
   userPage.clickOnLastPage();

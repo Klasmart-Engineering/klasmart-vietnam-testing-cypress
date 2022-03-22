@@ -54,7 +54,7 @@ Feature: Roles
   #User should be able to see correct pagination when applies ascending and descending order UD-T578
   
   Scenario: Sorting and pagination
-    And I sort column by asc and desc
+    Given I sort the "name" column by asc and desc
     And All pagination buttons should work
 
   #User should be able to search and see the pagination according to inserted searching UD-T577
@@ -66,7 +66,7 @@ Feature: Roles
   #User should be able to sort by ascending and descending order UD-T38
   @smoke
   Scenario: Sorting
-    And I sort column by asc and desc
+    Given I sort the "name" column by asc and desc
 
   #User should be able to see first page from pagination UD-T576
  

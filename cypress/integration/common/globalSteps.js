@@ -2,6 +2,8 @@ import { Then, When } from "cypress-cucumber-preprocessor/steps";
 import { homePage } from "../page_objects/home-page";
 import {signInPage} from '../page_objects/sign-in-page';
 import {userPage} from '../page_objects/user-page';
+import {gradesPage} from '../page_objects/grades-page';
+import {schoolPage} from '../page_objects/schools-page';
 
 Then("I can display either {string} rows in the list", (numbersPerPage) => {
 
@@ -16,6 +18,13 @@ Then("I can display either {string} rows in the list", (numbersPerPage) => {
     userPage.clickOnNumOfPages(rows[number]);
   }
 })
+
+Given("I sort the {string} column by asc and desc", (columnName) => {
+  gradesPage.sortFirstAsc(columnName);
+  schoolPage.sortFirstDesc();
+  userPage.sortSecondAsc();
+  userPage.sortSecondDesc();
+});
 
 Then(`I see {string} in the title`, title => {
   cy.title().should("include", title);

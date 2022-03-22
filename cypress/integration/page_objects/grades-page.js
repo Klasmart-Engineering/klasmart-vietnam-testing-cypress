@@ -193,8 +193,8 @@ class GradesPage {
     cy.get(this.deleteFinalButton).should("be.visible").click();
   }
 
-  sortFirstAsc() {
-    cy.get("table thead:nth-child(1) tr th:nth-child(4)").click();
+  sortFirstAsc(column) {
+    cy.get("span[data-testid$='" + column + "SortHandler']").click();
     cy.get(":checkbox").uncheck({ force: true });
     cy.get(":checkbox").check({ force: true });
     cy.get("body").trigger("keydown", { keyCode: 27 });

@@ -38,7 +38,7 @@ Feature: Grades
 
 @smoke
   Scenario: Sorting, searching and pagination
-    Given I sort grade columns by asc and desc
+    Given I sort the "name" column by asc and desc
     When I can search for grade "Grade"
     Then All pagination buttons should work
 
