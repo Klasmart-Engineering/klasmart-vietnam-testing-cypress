@@ -103,13 +103,6 @@ And("I search new role to validate {string}", (search) => {
   rolesPage.getRoleName();
 });
 
-And("I sort column by asc and desc", () => {
-  gradesPage.sortFirstAsc();
-  schoolPage.sortFirstDesc();
-  userPage.sortSecondAsc();
-  userPage.sortSecondDesc();
-});
-
 Then("I check first page pagination", () => {
   cy.wait(8000);
   userPage.clickOnLastPage();

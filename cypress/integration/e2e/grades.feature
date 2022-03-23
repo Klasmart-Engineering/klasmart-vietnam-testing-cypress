@@ -38,7 +38,7 @@ Feature: Grades
 
 @smoke
   Scenario: Sorting, searching and pagination
-    Given I sort grade columns by asc and desc
+    Given I sort the "name" column by asc and desc
     When I can search for grade "Grade"
     Then All pagination buttons should work
 
@@ -139,13 +139,14 @@ Feature: Grades
   #User should be able to remove columns UD-T610
   @smoke
   Scenario: Remove columns
-    Given I remove columns to be shown from the grade list
+    Given I click on add columns
+    When I remove columns from the grade list
     Then only the locked Name column should be visible 
 
   #User should be able to add columns UD-T130
   @smoke
   Scenario: Add columns
-    Given I click add columns
+    Given I click on add columns
     When I select the columns to add 
     Then columns "ID", "Progress From" and "Progress To" are visible in the list
 

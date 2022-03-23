@@ -22,6 +22,7 @@ class SchoolPage {
     "span:nth-child(2) button:nth-child(1) div:nth-child(1) p:nth-child(1)";
   createProgramSchool =
     "div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > span:nth-child(2) > button:nth-child(1)";
+  createProgramFinal = ".jss314 > .css-zk51sn > :nth-child(2) > .MuiButton-root";
   inputProgramName = "div:nth-child(1) > div > div > input";
   inputAgeRangesProgram =
     "div[data-testid='Age RangesSelectTextField'] div div[role='button']";
@@ -42,7 +43,7 @@ class SchoolPage {
   subjectNameInput = "#subjectName";
   subjectCategoryField =
     "div:nth-child(2) > div:nth-child(1) > span:nth-child(2) > button:nth-child(1)";
-  subjectSubCategoryField = "span:nth-child(5) > button:nth-child(1)";
+  subjectSubCategoryField = ":nth-child(5) > .MuiButton-root > .css-1xhj18k > [data-testid='ArrowDropDownIcon']";
   selectButton =
     "div:nth-child(12) > div:nth-child(3) > div:nth-child(1) > div:nth-child(4) > span:nth-child(3) > button:nth-child(1)";
   createSubjectFinalButton =
@@ -144,15 +145,17 @@ class SchoolPage {
       });
   }
 
-  getMaxNameLenghtText() {
+  getMaxNameLengthText(error) {
     return cy
       .get(this.schoolNameErrorMessages, { timeout: 50000 })
+      .contains(error)
       .should("be.visible");
   }
 
-  getMaxShortCodeLenghtText() {
+  getMaxShortCodeLengthText(error) {
     return cy
       .get(this.shortCodeErrorMessages, { timeout: 50000 })
+      .contains(error)
       .should("be.visible");
   }
 
@@ -196,6 +199,11 @@ class SchoolPage {
       .should("be.visible")
       .scrollIntoView()
       .click({ force: true });
+  }
+
+  clickCreateProgramFinal()
+  {
+    cy.get(this.createProgramFinal).should("be.visible").click();
   }
 
   clickOnCreateFinalButton() {
@@ -245,15 +253,18 @@ class SchoolPage {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "Grade 1") {
+      } 
+      else if ($el.text() == "Grade 1") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
-      } else if ($el.text() == "Automation 01") {
-        cy.wrap($el).click();
-        cy.log("Element found");
-        return;
-      } else if ($el.text() == "Grade 3") {
+      } 
+      // else if ($el.text() == "Automation 01") {
+      // //   cy.wrap($el).click();
+      // //   cy.log("Element found");
+      // //   return;
+      // } 
+      else if ($el.text() == "Grade 3") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
