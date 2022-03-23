@@ -561,7 +561,7 @@ class UserPage {
   }
 
   getFilterMouseOverText() {
-    cy.get("div[role='button'][tabindex='-1']").realHover();
+    cy.get('[aria-label="All columns already have a filter specified"]').realHover();
     cy.contains("All columns already have a filter specified");
   }
 

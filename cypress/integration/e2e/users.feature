@@ -254,7 +254,7 @@ Feature: Users
     And I clear the filter applied
 
   #User should be able to clear schools filter for users UD-T428
-  @focus @smoke
+  @smoke
   Scenario: Clear filter Schools
     And Add filter for school
     Then Filter is Added

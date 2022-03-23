@@ -8,7 +8,7 @@
   "defaultCommandTimeout": 30000,
   "responseTimeout": 60000,
   "requestTimeout": 60000,
-  "video": false,
+  "video": true,
   "videosFolder": "./cypress/videos",
   "screenshotOnRunFailure": true,
   "screenshotsFolder": "./cypress/screenshots",

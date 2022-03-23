@@ -13,7 +13,8 @@ class ClassesPage {
   gradeField = ":nth-child(4) >.MuiOutlinedInput-root.MuiInputBase-root";
   ageRangeField = ":nth-child(5) >.MuiOutlinedInput-root.MuiInputBase-root";
   subjectsField = ":nth-child(6) >.MuiOutlinedInput-root.MuiInputBase-root";
-  moreActionsViewDetails = '[tabindex="0"] > .MuiTypography-root';
+  moreActionsViewDetails =
+    "body div:nth-child(5) div:nth-child(3) ul:nth-child(1) li:nth-child(1)";
   moreActionsEdit = "ul:nth-child(1) > li:nth-child(2) > p:nth-child(2)";
   moreActionsDelete = "ul:nth-child(1) > li:nth-child(3) > p:nth-child(2)";
   saveEditionButton =
@@ -40,6 +41,13 @@ class ClassesPage {
   teacherTabClassRoster = '.MuiTabs-flexContainer > [tabindex="-1"]';
   removeUserClassRoster = "li[role='menuitem'] p";
   closeClassRosterWindow = "button[aria-label='close']";
+  searchInputClassRosterField =
+    "input[placeholder='Search for students by their names, address, email and phone number']";
+  rowsPerPageClassRoster =
+    "div.MuiDialog-container.MuiDialog-scrollPaper > div > div > div > div.MuiTablePagination-root > div > div.MuiInputBase-root.MuiInputBase-colorPrimary";
+  rowsPerPageSchoolRoster =
+    "body > div:nth-child(7) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(8) > div:nth-child(1) > div:nth-child(3)";
+  pagesSelector = ".MuiButton-root > [data-testid=ArrowDropDownIcon]";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -263,7 +271,6 @@ class ClassesPage {
     cy.get(":checkbox").uncheck({ force: true });
   }
 
-  // this checks for the same text as method below??
   getColumnText() {
     return cy
       .get("table thead:nth-child(1) tr th:nth-child(1)")
@@ -332,7 +339,7 @@ class ClassesPage {
 
   selectionOfAgeRangesToValues() {
     cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.text() == "4 Year(s)") {
+      if ($el.text() == "2 Month(s)") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
@@ -345,7 +352,7 @@ class ClassesPage {
   }
 
   getAgeRangesToFilterText() {
-    cy.get(this.labelFilterAdded).should("include.text", "4 Year(s)");
+    cy.get(this.labelFilterAdded).should("include.text", "2 Month(s)");
   }
 
   selectionOfEditAgeRangesFromValues() {
@@ -601,6 +608,138 @@ class ClassesPage {
 
   clickOnCloseClassRosterWindow() {
     cy.get(this.closeClassRosterWindow).click();
+  }
+
+  sortRosterFirstAsc() {
+    cy.get(
+      "table thead:nth-child(1) tr th:nth-child(6) button[aria-label='Add columns']"
+    ).click();
+    cy.get(":checkbox").uncheck({ force: true });
+    cy.get(":checkbox").check({ force: true });
+    cy.get("body").trigger("keydown", { keyCode: 27 });
+    cy.wait(500);
+    cy.get("body").trigger("keyup", { keyCode: 27 });
+    cy.get("[data-testid=idSortHandler]").click({ force: true });
+    cy.wait(5000);
+    cy.get("tbody tr td:nth-child(1)").then((items) => {
+      const unsortedItems = items
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
+        .get();
+      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
+      const sortedItems = unsortedItems.slice().sort();
+      expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(
+        sortedItems
+      );
+      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
+    });
+  }
+
+  searchInputClassRoster(search) {
+    cy.viewport(1280, 750);
+    cy.get(this.searchInputClassRosterField).clear();
+    cy.get(this.searchInputClassRosterField)
+      .should("be.visible")
+      .type(search)
+      .type("{enter}");
+    cy.wait(7000);
+  }
+
+  getClassRosterName() {
+    cy.get("table td:nth-child(1)").each(($el) => {
+      if ($el.text() == "A") {
+        cy.log("Name was found");
+        return;
+      } else {
+        $el.text() == "No records to display";
+        cy.log("ERROR!!! no items are present");
+        return;
+      }
+    });
+    cy.get(this.searchInputClassRosterField).clear();
+  }
+
+  sortSchoolRosterFirstAsc() {
+    cy.get(
+      "div[role='presentation'] th:nth-child(7) button:nth-child(1)"
+    ).click();
+    cy.get(":checkbox").uncheck({ force: true });
+    cy.get(":checkbox").check({ force: true });
+    cy.get("body").trigger("keydown", { keyCode: 27 });
+    cy.wait(500);
+    cy.get("body").trigger("keyup", { keyCode: 27 });
+    cy.get("[data-testid=idSortHandler]").click({ force: true });
+    cy.wait(5000);
+    cy.get("tbody tr td:nth-child(1)").then((items) => {
+      const unsortedItems = items
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
+        .get();
+      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
+      const sortedItems = unsortedItems.slice().sort();
+      expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(
+        sortedItems
+      );
+      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
+    });
+  }
+
+  clickOnRowsPerPageClassRoster() {
+    cy.viewport(1280, 750);
+    cy.get(this.rowsPerPageClassRoster)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+  }
+
+  clickOnRowsPerPageSchoolRoster() {
+    cy.viewport(1280, 750);
+    cy.get(this.rowsPerPageSchoolRoster)
+      .scrollIntoView()
+      .should("be.visible")
+      .click({ force: true });
+    cy.wait(5000);
+  }
+
+  clickOnPagesSelector() {
+    cy.get(this.pagesSelector).should("be.visible").click();
+  }
+
+  clickOnThisPageSelector() {
+    cy.wait(3000);
+    cy.get("ul[role='menu'] li:nth-child(1) p:nth-child(1)")
+      .should("be.visible")
+      .click();
+  }
+
+  clickOnNonePageSelector() {
+    cy.wait(3000);
+    cy.get("ul[role='menu'] li:nth-child(2) p:nth-child(1")
+      .should("be.visible")
+      .click();
+  }
+
+  getSelectedItemsText() {
+    cy.get(
+      "body > div:nth-child(7) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)"
+    )
+      .invoke("text")
+      .then((text) => {
+        let splitText = text.split(" ")[0];
+        expect(parseInt(splitText));
+        const countOfElements = parseInt(splitText);
+        cy.wrap(countOfElements).as("totalNumberText");
+      });
+  }
+
+  getQuantityOfItemsSelected() {
+    cy.get(
+      "body > div:nth-child(7) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(7) > table:nth-child(1) > tbody:nth-child(3)"
+    )
+      .find("tbody tr td:nth-child(1) span:nth-child(3)")
+      .then(($elements) => {
+        const countOfElements = $elements.length;
+        cy.wrap(countOfElements).as("usersCount");
+      });
   }
 }
 

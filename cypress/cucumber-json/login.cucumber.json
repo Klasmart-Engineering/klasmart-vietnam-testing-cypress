@@ -8,14 +8,18 @@
     "uri": "login.feature",
     "elements": [
       {
-        "id": "login;tailand-flag",
+        "id": "login;login-with-custom-credentials",
         "keyword": "Scenario",
-        "line": 255,
-        "name": "Tailand Flag",
+        "line": 6,
+        "name": "Login with custom credentials",
         "tags": [
           {
+            "name": "@focus",
+            "line": 5
+          },
+          {
             "name": "@smoke",
-            "line": 254
+            "line": 5
           }
         ],
         "type": "scenario",
@@ -23,21 +27,1374 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 256,
-            "name": "auth Tailand page",
+            "line": 7,
+            "name": "I click can't find your country or region",
             "result": {
               "status": "passed",
-              "duration": 6588000000
+              "duration": 20871000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 257,
-            "name": "verify the correct flag \"เข้าสู่ระบบ\" name",
+            "line": 8,
+            "name": "I enter custom email as \"lorenab+custom@bluetrailsoft.com\"",
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 9532000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I enter custom password as \"Custom01!\"",
+            "result": {
+              "status": "passed",
+              "duration": 20203000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I should see custom welcome message",
+            "result": {
+              "status": "passed",
+              "duration": 8079000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-invalid-profile",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Login with invalid profile",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I enter invalid email as \"lorenab+invalid@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I enter invalid password as \"Invalid01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I should see the invalid message \"Hi cadet!\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-student-credentials",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Login with student credentials",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I enter student email as \"lorenab+student@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I enter student password as \"Student01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I should see student welcome message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-parent-credentials",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Login with parent credentials",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 32
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I enter parent email as \"lorenab+parent@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "I enter parent password as \"Parent01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I should see parent welcome message \"👋 Welcome Parent, how are you doing today?\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-teacher-credentials",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Login with teacher credentials",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 41
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I enter teacher email as \"lorenab+teacher@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I enter teacher password as \"Teacher01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "I should see teacher welcome message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-school-admin-credentials",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "Login with school admin credentials",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 50
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 53,
+            "name": "I enter school admin email as \"lorenab+schooladmin@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "I enter school admin password as \"Schooladmin01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "I should see school admin welcome message \"👋 Welcome School Admin, how are you doing today?\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-organization-admin-credentials",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "Login with organization admin credentials",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 59
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 61,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 62,
+            "name": "I enter organization admin email as \"lorenab+organization@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "I enter organization admin password as \"Organization01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "I should see organization admin welcome message \"👋 Welcome Organization Admin, how are you doing today?\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 69,
+        "name": "Login with valid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 70,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 71,
+            "name": "I enter a valid email as \"lorenab+organization@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 72,
+            "name": "I enter a valid password as \"Organization01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "I should see the \"Home\" tab and \"👋 Welcome Organization Admin, how are you doing today?\" message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-invalid-email/phone",
+        "keyword": "Scenario",
+        "line": 78,
+        "name": "Login with invalid email/phone",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 77
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 79,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 80,
+            "name": "I enter an invalid email as \"lo$#$%$!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 81,
+            "name": "I enter an invalid password as \"ER34!$%/&()'¿.,0\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 82,
+            "name": "I should see the error message \"Please enter a valid email address\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-empty-credentials",
+        "keyword": "Scenario",
+        "line": 87,
+        "name": "Login with empty credentials",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 86
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 88,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 89,
+            "name": "I enter an invalid email as \"   \"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 90,
+            "name": "I enter an invalid password as \"   \"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 91,
+            "name": "I should see the error message \"Please enter a valid email address\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-email-spaces",
+        "keyword": "Scenario",
+        "line": 96,
+        "name": "Login with email spaces",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 95
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 97,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 98,
+            "name": "I enter an invalid email as \"   \"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 99,
+            "name": "I enter an invalid password as \"Trabajo21!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 100,
+            "name": "I should see the error message \"Please enter a valid email address\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-password-spaces",
+        "keyword": "Scenario",
+        "line": 104,
+        "name": "Login with password spaces",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 105,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 106,
+            "name": "I enter an invalid email as \"lorenab+organization@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 107,
+            "name": "I enter an invalid password as \"    \"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 108,
+            "name": "I get the error message \"Missing required element [Password]\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-password-as-empty",
+        "keyword": "Scenario",
+        "line": 112,
+        "name": "Login with password as empty",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 113,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 114,
+            "name": "I enter a valid email as \"lorenab+organization@bluetrailsoft.com\" with password as empty",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 115,
+            "name": "I should see a password error message \"Cannot be empty\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-email-as-empty",
+        "keyword": "Scenario",
+        "line": 120,
+        "name": "Login with email as empty",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 119
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 121,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 122,
+            "name": "I enter a valid password as \"Trabajo21!\" with email as empty",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 123,
+            "name": "I should see a email error message \"Cannot be empty\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;create-an-account-page",
+        "keyword": "Scenario",
+        "line": 127,
+        "name": "Create an Account Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 128,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 129,
+            "name": "I click on email or phone link",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 130,
+            "name": "I should see the page for create a new account with title as \"Create account\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;forgot-password-page",
+        "keyword": "Scenario",
+        "line": 134,
+        "name": "Forgot Password Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 135,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 136,
+            "name": "I click forgot password link",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 137,
+            "name": "I should see the page with \"Let's reset your password.\" as title to recovery it",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;privacy-notice-page",
+        "keyword": "Scenario",
+        "line": 142,
+        "name": "Privacy Notice Page",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 141
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 143,
+            "name": "I click privacy link",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 144,
+            "name": "I should see a popup window called \"Privacy Notice\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;selection-of-country-or-region-not-listed",
+        "keyword": "Scenario",
+        "line": 148,
+        "name": "Selection of country or region not listed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 149,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 150,
+            "name": "I should be redirected to \"Login\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;switch-between-roles---organization-admin-to-other-organization-admin",
+        "keyword": "Scenario",
+        "line": 155,
+        "name": "Switch between Roles - Organization Admin to other Organization Admin",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 154
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 156,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 157,
+            "name": "I enter a valid email as \"lorenab+organization@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 158,
+            "name": "I enter a valid password as \"Organization01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 159,
+            "name": "Change from \"Organization Admin\" profile and validate other \"Organization Admin\" account is present",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;switch-between-roles---organization-admin-to-custom",
+        "keyword": "Scenario",
+        "line": 164,
+        "name": "Switch between Roles - Organization Admin to Custom",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 163
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 165,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 166,
+            "name": "I enter a valid email as \"lorenab+custom@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 167,
+            "name": "I enter a valid password as \"Custom01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 168,
+            "name": "Change from \"Teacher\" profile and validate \"Organization Admin\" account is present",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;switch-between-roles---organization-admin-to-student",
+        "keyword": "Scenario",
+        "line": 172,
+        "name": "Switch between Roles - Organization Admin to Student",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 173,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 174,
+            "name": "I enter a valid email as \"lorenab+student@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 175,
+            "name": "I enter a valid password as \"Student01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 176,
+            "name": "Change from \"Student\" profile and validate other \"Organization Admin\" account is present",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;switch-between-roles---organization-admin-to-parent",
+        "keyword": "Scenario",
+        "line": 180,
+        "name": "Switch between Roles - Organization Admin to Parent",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 181,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 182,
+            "name": "I enter a valid email as \"lorenab+parent@bluetrailsoft.com\t\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 183,
+            "name": "I enter a valid password as \"Parent01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 184,
+            "name": "Change from \"Parent\" profile and validate other \"Organization Admin\" account is present",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;switch-between-roles---organization-admin-to-school-admin",
+        "keyword": "Scenario",
+        "line": 188,
+        "name": "Switch between Roles - Organization Admin to School Admin",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 187
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 189,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 190,
+            "name": "I enter a valid email as \"lorenab+schooladmin@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 191,
+            "name": "I enter a valid password as \"Schooladmin01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 192,
+            "name": "Change from \"School Admin\" profile and validate other \"Organization Admin\" account is present",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;switch-between-roles---organization-admin-to-teacher",
+        "keyword": "Scenario",
+        "line": 196,
+        "name": "Switch between Roles - Organization Admin to Teacher",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 195
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 197,
+            "name": "I click can't find your country or region",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 198,
+            "name": "I enter a valid email as \"lorenab+teacher@bluetrailsoft.com\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 199,
+            "name": "I enter a valid password as \"Teacher01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 200,
+            "name": "Change from \"Teacher\" profile and validate other \"Organization Admin\" account is present",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;united-kingdom-flag",
+        "keyword": "Scenario",
+        "line": 205,
+        "name": "United Kingdom Flag",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 204
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 206,
+            "name": "auth United Kingdom page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 207,
+            "name": "verify the correct flag \"Sign In\" name",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;sri-lanka-flag",
+        "keyword": "Scenario",
+        "line": 211,
+        "name": "Sri Lanka Flag",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 210
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 212,
+            "name": "auth Sri Lanka page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 213,
+            "name": "verify the correct flag \"Sign In\" name",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;united-states-flag",
+        "keyword": "Scenario",
+        "line": 218,
+        "name": "United States Flag",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 219,
+            "name": "auth United States page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 220,
+            "name": "verify the correct flag \"Sign In\" name",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;korea-flag",
+        "keyword": "Scenario",
+        "line": 224,
+        "name": "Korea Flag",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 225,
+            "name": "auth Korea page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 226,
+            "name": "verify the correct flag \"로그인\" name",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;viet-nam-flag",
+        "keyword": "Scenario",
+        "line": 230,
+        "name": "Viet Nam Flag",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 231,
+            "name": "auth Viet Nam page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 232,
+            "name": "verify the correct flag \"Đăng nhập\" name",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;india-flag",
+        "keyword": "Scenario",
+        "line": 236,
+        "name": "India Flag",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 237,
+            "name": "auth India page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 238,
+            "name": "verify the correct flag \"Sign In\" name",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;pakistan-flag",
+        "keyword": "Scenario",
+        "line": 242,
+        "name": "Pakistan Flag",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 241
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 243,
+            "name": "auth Pakistan page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 244,
+            "name": "verify the correct flag \"Sign In\" name",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;indonesia-flag",
+        "keyword": "Scenario",
+        "line": 248,
+        "name": "Indonesia Flag",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 249,
+            "name": "auth Indonesia page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 250,
+            "name": "verify the correct flag \"Masuk\" name",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;tailand-flag",
+        "keyword": "Scenario",
+        "line": 254,
+        "name": "Tailand Flag",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 253
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 255,
+            "name": "auth Tailand page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 256,
+            "name": "verify the correct flag \"เข้าสู่ระบบ\" name",
+            "result": {
+              "status": "skipped"
             }
           }
         ]
