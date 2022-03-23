@@ -8,19 +8,19 @@ Feature: Schools
   #User should not be able to create a School with spaces UD-T624
 
   @smoke
-  # Scenario Outline: Create School with <type> details
-  #   Given I press on create school button
-  #   When I enter <name> and <shortcode> for name and shortcode
-  #   Then I should receive error messages <error1> and <error2>
-  #   And I close creation of Schools
+  Scenario Outline: Create School with <type> details
+    Given I press on create school button
+    When I enter <name> and <shortcode> for name and shortcode
+    Then I should receive error messages <error1> and <error2>
+    And I close creation of Schools
 
-  #   Examples:
-  #     | type                     | name                                                                                                                        | shortcode     | error1                          | error2                                    |
-  #     | invalid character length | "Try maximum allowed on automation test insert text as long as possible to break the functionality and get some errors ins" | "4357643JURT" | "Max length of 120 characters." | "Input needs to be maximum 10 characters" |
-  #     | blank                    | " "                                                                                                                         | " "           | "The school name is required."  | "The value is not alphanumeric"           |
+    Examples:
+      | type                     | name                                                                                                                        | shortcode     | error1                          | error2                                    |
+      | invalid character length | "Try maximum allowed on automation test insert text as long as possible to break the functionality and get some errors ins" | "4357643JURT" | "Max length of 120 characters." | "Input needs to be maximum 10 characters" |
+      | blank                    | " "                                                                                                                         | " "           | "The school name is required."  | "The value is not alphanumeric"           |
 
-  #User should be able to create a School UD-T41
-  #User should be able to search a School UD-T53
+  # User should be able to create a School UD-T41
+  # User should be able to search a School UD-T53
 
   Scenario: Create School
     Given I press on create school button
