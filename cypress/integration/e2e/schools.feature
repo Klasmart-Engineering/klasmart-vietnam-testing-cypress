@@ -103,14 +103,16 @@ Feature: Schools
   #User should be able to add columns UD-T51
   @smoke
   Scenario: Add columns
-    And I add columns to be shown
-    And I check locked columns "ID" and "School Name" are present
+    Given I click on add columns
+    When I select columns to add
+    Then columns "ID" and "School Name" should be present
 
   #User should be able to remove columns UD-T611 ----*** DEFECT AD-1628 ***----
   @smoke
   Scenario: Remove columns
-    And I remove columns to be shown
-    And I check locked column "School Name" is present
+    Given I click on add columns
+    When I remove columns from school list
+    Then only the locked column School Name is present
 
 
   #User should be able to paginate by rows per page UD-T171
@@ -133,15 +135,17 @@ Feature: Schools
 
   Scenario: Create Multiple Schools with CSV file
     #FILE NEEDS TO BE CHANGED ON FIXTURE FOLDER OR TEST DEPENDING ON ENVIRONMENT AND DATA
-    Then Upload correct multiple CSV file
-    And I get "Schools have been added successfully" message
+    Given I click on upload csv
+    When I upload a correct CSV file with multiple schools
+    Then I get a "Schools have been added successfully" message
 
   #User should be able to create a school using CSV file UD-T55
 
   Scenario: Create School with CSV file
     #FILE NEEDS TO BE CHANGED ON FIXTURE FOLDER OR TEST DEPENDING ON ENVIRONMENT AND DATA
-    Then Upload correct CSV file
-    And I get "Schools have been added successfully" message
+    Given I click on upload csv
+    When I upload a correct CSV file with a single school
+    Then I get a "Schools have been added successfully" message
 
   #User should be able to select different subcategories for a program on schools UD-T48 ----*** DEFECT AD-1798 ***----
 
@@ -149,39 +153,33 @@ Feature: Schools
     Given I press on create school button
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     And I fill all fields for a new program "Automation Program 02"
-    And I press on create subject "Automation Subject"
+    And I press on create subject
     And I select a category
-    And I select all categories and unselect them
+    And I select all subcategories and unselect them
+    Then an error should be displayed for not selecting any subcategories
 
   #User should be able to select different programs for a school UD-T43
+  #User should be able to not select any program inside schools UD-T343
   @smoke
   Scenario: Programs Page Selection
     Given I press on create school button
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
-    And I select all programs and unselect them
+    Then I can select all programs
+    And I can unselect all programs by clicking none
 
   #User should be able to check all pages on programs inside schools UD-T341 ----*** DEFECT AD-75 ***----
 
   Scenario: Check All Pages on Programs
     Given I press on create school button
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
-    And I select all pages on programs
+    Then I can select all pages on programs
 
   #User should be able to check the actual page on programs inside schools UD-T342
   @smoke
   Scenario: Check This Page on Programs
     Given I press on create school button
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
-    And I select this page on programs
-
-  #User should be able to not select any program inside schools UD-T343
-  @smoke
-  Scenario: Check None Page on Programs
-    Given I press on create school button
-    When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
-    And I select none page on programs
-
-
+    Then I can select this page on programs
 
 
 

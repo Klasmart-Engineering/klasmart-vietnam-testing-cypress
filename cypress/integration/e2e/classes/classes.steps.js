@@ -153,7 +153,7 @@ Given("I check the order of values is correct on classes", () => {
   classesPage.getFilterOrderValues();
 });
 
-Given("I remove columns to be shown", () => {
+When("I remove columns to be shown", () => {
   classesPage.removeAllColumns();
 });
 

@@ -1,4 +1,4 @@
-import { When, Then, And } from "cypress-cucumber-preprocessor/steps";
+import { When, Then, And, Given } from "cypress-cucumber-preprocessor/steps";
 import { signInPage } from "../../page_objects/sign-in-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
@@ -213,21 +213,16 @@ When("I delete the school",() => {
   }
 );
 
-And("I add columns to be shown", () => {
-  userPage.clickOnAddColumns();
-  userPage.selectColumns();
-});
-
-And("I check locked columns {string} and {string} are present", () => {
+Then("columns {string} and {string} should be present", () => {
   schoolPage.getFirstColumnText();
   schoolPage.getSecondColumnText();
 });
 
-And("I check locked column {string} is present", () => {
+Then("only the locked column School Name is present", () => {
   schoolPage.getSecondColumnText();
 });
 
-And("I remove columns to be shown", () => {
+When("I remove columns from school list", () => {
   schoolPage.removeAllColumns();
 });
 
@@ -275,15 +270,15 @@ Then("I check previous page pagination", () => {
   userPage.getFirstPageButtonState();
 });
 
-Then("Upload correct CSV file", () => {
-  userPage.clickOnUploadCsvButton();
+Given 
+
+When("I upload a correct CSV file with a single school", () => {
   schoolPage.selectFixtureFile();
   userPage.getValidationCsvText();
   userPage.clickOnUploadCsvFinalButton();
 });
 
-Then("Upload correct multiple CSV file", () => {
-  userPage.clickOnUploadCsvButton();
+When("I upload a correct CSV file with multiple schools", () => {
   schoolPage.selectMultipleFixtureFile();
   userPage.getValidationCsvText();
   userPage.clickOnUploadCsvFinalButton();
@@ -293,16 +288,19 @@ And("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-And("I select all categories and unselect them", () => {
+And("I select all subcategories and unselect them", () => {
   schoolPage.clickOnSubCategory();
   schoolPage.clickOnAllSubcategoriesItems();
   schoolPage.clickOnAllSubcategoriesItems();
   schoolPage.clickOnSelectButtonCategory();
   cy.wait(2000);
-  schoolPage.getSubCategoryErrorMessageText();
 });
 
-And("I select all programs and unselect them", () => {
+Then("an error should be displayed for not selecting any subcategories", () => {
+  schoolPage.getSubCategoryErrorMessageText();
+})
+
+Then("I can select all programs", () => {
   schoolPage.clickOnNextButton();
   schoolPage.clickOnAllProgramsItems();
   schoolPage.getSelectedItemsText();
@@ -315,11 +313,9 @@ And("I select all programs and unselect them", () => {
       expect($tn).to.equal($pc);
     });
   });
-  schoolPage.clickOnAllProgramsItems();
-  schoolPage.getProgramRequiredTextItems();
 });
 
-And("I select all pages on programs", () => {
+Then("I can select all pages on programs", () => {
   schoolPage.clickOnNextButton();
   cy.wait(2000);
   schoolPage.clickOnProgramPagesSelector();
@@ -334,7 +330,7 @@ And("I select all pages on programs", () => {
   });
 });
 
-And("I select this page on programs", () => {
+Then("I can select this page on programs", () => {
   schoolPage.clickOnNextButton();
   cy.wait(2000);
   schoolPage.clickOnProgramPagesSelector();
@@ -349,9 +345,7 @@ And("I select this page on programs", () => {
   });
 });
 
-And("I select none page on programs", () => {
-  schoolPage.clickOnNextButton();
-  cy.wait(2000);
+And("I can unselect all programs by clicking none", () => {
   schoolPage.clickOnProgramPagesSelector();
   schoolPage.clickOnNonePageSelector();
   schoolPage.getProgramRequiredTextItems();

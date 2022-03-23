@@ -19,6 +19,18 @@ Then("I can display either {string} rows in the list", (numbersPerPage) => {
   }
 })
 
+Given("I click on add columns", () => {
+  userPage.clickOnAddColumns();
+})
+
+Given("I click on upload csv", () => {
+  userPage.clickOnUploadCsvButton();
+})
+
+When("I select columns to add", () => {
+  userPage.selectColumns();
+});
+
 Given("I sort the {string} column by asc and desc", (columnName) => {
   gradesPage.sortFirstAsc(columnName);
   schoolPage.sortFirstDesc();
@@ -52,7 +64,7 @@ Then("I should see the welcome message {string}", async (text) => {
  });
 
  Then("All pagination buttons should work", () => {
-  cy.wait(8000);
+  cy.wait(5000);
   userPage.clickOnNextPage();
   userPage.clickOnPreviousPage();
   userPage.clickOnLastPage();
