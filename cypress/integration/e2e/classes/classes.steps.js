@@ -64,10 +64,6 @@ When(
   }
 );
 
-Then("I get a {string} message", (message) => {
-  userPage.getNotificationText(message).contains(message);
-});
-
 Then("I can search for edited class {string}", (search) => {
   userPage.searchInputText(search);
   classesPage.getEditedClassName();
@@ -151,20 +147,13 @@ Given("I search class {string}", (search) => {
   classesPage.getSearchClassName();
 });
 
-Given("I sort column by asc and desc", () => {
-  classesPage.sortFirstAsc();
-  schoolPage.sortFirstDesc();
-  userPage.sortSecondAsc();
-  userPage.sortSecondDesc();
-});
-
 Given("I check the order of values is correct on classes", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   classesPage.getFilterOrderValues();
 });
 
-Given("I remove columns to be shown", () => {
+When("I remove columns to be shown", () => {
   classesPage.removeAllColumns();
 });
 

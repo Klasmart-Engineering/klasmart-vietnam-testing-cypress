@@ -2,6 +2,8 @@ import { Then, When } from "cypress-cucumber-preprocessor/steps";
 import { homePage } from "../page_objects/home-page";
 import {signInPage} from '../page_objects/sign-in-page';
 import {userPage} from '../page_objects/user-page';
+import {gradesPage} from '../page_objects/grades-page';
+import {schoolPage} from '../page_objects/schools-page';
 
 Then("I can display either {string} rows in the list", (numbersPerPage) => {
 
@@ -16,6 +18,29 @@ Then("I can display either {string} rows in the list", (numbersPerPage) => {
     userPage.clickOnNumOfPages(rows[number]);
   }
 })
+
+Given("I click on add columns", () => {
+  userPage.clickOnAddColumns();
+})
+
+Given("I click on upload csv", () => {
+  userPage.clickOnUploadCsvButton();
+})
+
+When("I select columns to add", () => {
+  userPage.selectColumns();
+});
+
+Given("I sort the {string} column by asc and desc", (columnName) => {
+  gradesPage.sortFirstAsc(columnName);
+  schoolPage.sortFirstDesc();
+  userPage.sortSecondAsc();
+  userPage.sortSecondDesc();
+});
+
+Then("I get a {string} message", (message) => {
+  userPage.getNotificationText(message).contains(message);
+});
 
 Then(`I see {string} in the title`, title => {
   cy.title().should("include", title);
@@ -39,7 +64,7 @@ Then("I should see the welcome message {string}", async (text) => {
  });
 
  Then("All pagination buttons should work", () => {
-  cy.wait(8000);
+  cy.wait(5000);
   userPage.clickOnNextPage();
   userPage.clickOnPreviousPage();
   userPage.clickOnLastPage();

@@ -1,4 +1,4 @@
-import { When, Then } from "cypress-cucumber-preprocessor/steps";
+import { When, Then, Given } from "cypress-cucumber-preprocessor/steps";
 import { signInPage } from "../../page_objects/sign-in-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
@@ -111,13 +111,6 @@ Then(
 Then("the {string} filter should not be applied", (filterType) => {
   gradesPage.checkFilterNotApplied(filterType);
 })
-
-Given("I sort grade columns by asc and desc", () => {
-  gradesPage.sortFirstAsc();
-  schoolPage.sortFirstDesc();
-  userPage.sortSecondAsc();
-  userPage.sortSecondDesc();
-});
 
 Then("I check first page pagination", () => {
   cy.wait(8000);
@@ -268,17 +261,12 @@ Then("the order of values is correct on grades", () => {
   gradesPage.getFilterOrderValues();
 });
 
-Given("I remove columns to be shown from the grade list", () => {
+When("I remove columns from the grade list", () => {
   gradesPage.removeAllColumns();
 });
 
 Then("only the locked Name column should be visible", () => {
   gradesPage.getColumnText();
-});
-
-And("I add columns to be shown", () => {
-  userPage.clickOnAddColumns();
-  userPage.selectColumns();
 });
 
 Then("columns {string}, {string} and {string} are visible in the list", () => {

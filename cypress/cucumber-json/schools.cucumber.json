@@ -8,167 +8,22 @@
     "uri": "schools.feature",
     "elements": [
       {
-        "id": "schools;create-school-with-maximum-characters",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "Create School with maximum characters",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 4
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "passed",
-              "duration": 45815000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "passed",
-              "duration": 1527000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "I press on create school button",
-            "result": {
-              "status": "passed",
-              "duration": 493000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I add maximum characters on fields \"Try maximum allowed on automation test insert text as long as possible to break the functionality and get some errors ins\" and \"4357643JURT\"",
-            "result": {
-              "status": "passed",
-              "duration": 5825000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I get following error messages \"Max length of 120 characters.\" and \"Input needs to be maximum 10 characters\"",
-            "result": {
-              "status": "passed",
-              "duration": 74000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I close creation of Schools",
-            "result": {
-              "status": "passed",
-              "duration": 304000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;create-school-with-spaces",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Create School with spaces",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 15
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "passed",
-              "duration": 32801000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "passed",
-              "duration": 504000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I press on create school button",
-            "result": {
-              "status": "passed",
-              "duration": 374000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "I add spaces on fields \" \" and \" \"",
-            "result": {
-              "status": "passed",
-              "duration": 1215000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "I get following error messages \"The school name is required.\" and \"The value is not alphanumeric\"",
-            "result": {
-              "status": "passed",
-              "duration": 72000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "I close creation of Schools",
-            "result": {
-              "status": "passed",
-              "duration": 378000000
-            }
-          }
-        ]
-      },
-      {
         "id": "schools;create-school",
         "keyword": "Scenario",
-        "line": 26,
+        "line": 25,
         "name": "Create School",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 10
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 27,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -177,16 +32,16 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 28,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
+            "keyword": "Given ",
+            "line": 26,
             "name": "I press on create school button",
             "result": {
               "status": "skipped"
@@ -194,9 +49,9 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "I add correct data on fields \"Automation School 01\" and \"ERDF566\"",
+            "keyword": "When ",
+            "line": 27,
+            "name": "I enter a valid name and shortcode \"Automation School 01\" and \"ERDF566\"",
             "result": {
               "status": "skipped"
             }
@@ -204,7 +59,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 31,
+            "line": 28,
             "name": "I select an existing program",
             "result": {
               "status": "skipped"
@@ -213,8 +68,17 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
-            "name": "I create a new school and get \"School has been created successfully\" message",
+            "line": 29,
+            "name": "I create the new school",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "a \"School has been created successfully\" message is displayed",
             "result": {
               "status": "skipped"
             }
@@ -222,8 +86,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
-            "name": "I search new school to validate \"Automation School 01\"",
+            "line": 31,
+            "name": "I search \"Automation School 01\" to validate school exists",
             "result": {
               "status": "skipped"
             }
@@ -233,7 +97,7 @@
       {
         "id": "schools;create-duplicate-school",
         "keyword": "Scenario",
-        "line": 37,
+        "line": 35,
         "name": "Create Duplicate School",
         "tags": [],
         "type": "scenario",
@@ -241,7 +105,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 38,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -250,16 +114,16 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 39,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
+            "keyword": "Given ",
+            "line": 36,
             "name": "I press on create school button",
             "result": {
               "status": "skipped"
@@ -267,36 +131,9 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "I add correct data on fields \"Automation School 01\" and \"ERDF566\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "I select an existing program",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 43,
-            "name": "I create a new school and get \"School has been created successfully\" message",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "I search new school to validate \"Automation School 01\"",
+            "keyword": "When ",
+            "line": 37,
+            "name": "I try to create a duplicate school with the details \"Automation School 01\" and \"ERDF566\"",
             "result": {
               "status": "skipped"
             }
@@ -304,44 +141,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 45,
-            "name": "I press on create school button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 46,
-            "name": "I add correct data on fields \"Automation School 01\" and \"ERDF566\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "I select other existing programs",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 48,
-            "name": "I create a new school and get \"ERROR!!! Duplicate shortcode\" message",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "I search new school to validate \"Automation School 01\"",
+            "line": 38,
+            "name": "a \"ERROR!!! Duplicate shortcode\" message is displayed",
             "result": {
               "status": "skipped"
             }
@@ -351,7 +152,7 @@
       {
         "id": "schools;create-program-on-school",
         "keyword": "Scenario",
-        "line": 54,
+        "line": 42,
         "name": "Create Program on School",
         "tags": [],
         "type": "scenario",
@@ -359,7 +160,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 55,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -368,16 +169,16 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 56,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 57,
+            "keyword": "Given ",
+            "line": 43,
             "name": "I press on create school button",
             "result": {
               "status": "skipped"
@@ -385,9 +186,9 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 58,
-            "name": "I add correct data on fields \"Automation School 01\" and \"ERDF566\"",
+            "keyword": "When ",
+            "line": 44,
+            "name": "I enter a valid name and shortcode \"Automation School 01\" and \"ERDF566\"",
             "result": {
               "status": "skipped"
             }
@@ -395,7 +196,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 59,
+            "line": 45,
             "name": "I fill all fields for a new program \"Automation Program\"",
             "result": {
               "status": "skipped"
@@ -404,8 +205,17 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 60,
-            "name": "I add maximum value \"This is a test for max characters to\"",
+            "line": 46,
+            "name": "I select an existing subject before confirming creation",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "I get \"Program has been successfully created\" message",
             "result": {
               "status": "skipped"
             }
@@ -413,35 +223,72 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 61,
-            "name": "I get error messages \"The program name has a max length of 35 characters.\" \"The Grade is required.\" \"The Age Range is required.\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 62,
-            "name": "I add valid data for a new program \"Automation Program\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 63,
-            "name": "I create a new program and get \"Program has been successfully created\" message",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 64,
+            "line": 48,
             "name": "I search new program to validate \"Automation Program\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "schools;validation-for-creating-programs-during-school-creation",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "validation for creating programs during school creation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I navigate to the schools page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 53,
+            "name": "I press on create school button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 54,
+            "name": "I enter a valid name and shortcode \"Automation School 01\" and \"ERDF566\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "I enter invalid details for a new program \"This is a test for max characters to\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "I get error messages \"The program name has a max length of 35 characters.\" \"The Grade is required.\" \"The Age Range is required.\"",
             "result": {
               "status": "skipped"
             }
@@ -451,7 +298,7 @@
       {
         "id": "schools;create-subject-on-school",
         "keyword": "Scenario",
-        "line": 69,
+        "line": 60,
         "name": "Create Subject on School",
         "tags": [],
         "type": "scenario",
@@ -459,7 +306,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 70,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -468,16 +315,16 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 71,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 72,
+            "keyword": "Given ",
+            "line": 61,
             "name": "I press on create school button",
             "result": {
               "status": "skipped"
@@ -485,9 +332,9 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 73,
-            "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
+            "keyword": "When ",
+            "line": 62,
+            "name": "I enter a valid name and shortcode \"Automation School 02\" and \"RTEYUR\"",
             "result": {
               "status": "skipped"
             }
@@ -495,7 +342,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 74,
+            "line": 63,
             "name": "I fill all fields for a new program \"Automation Program 02\"",
             "result": {
               "status": "skipped"
@@ -504,8 +351,17 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 75,
-            "name": "I press on create subject \"Automation Subject\" and get \"Subject has been successfully created\" message",
+            "line": 64,
+            "name": "I create a new subject \"Automation Subject\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 65,
+            "name": "I get a \"Subject has been successfully created\" message",
             "result": {
               "status": "skipped"
             }
@@ -513,7 +369,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 76,
+            "line": 66,
             "name": "I search new subject to validate \"Automation Subject\"",
             "result": {
               "status": "skipped"
@@ -524,7 +380,7 @@
       {
         "id": "schools;create-category-on-school",
         "keyword": "Scenario",
-        "line": 80,
+        "line": 70,
         "name": "Create Category on School",
         "tags": [],
         "type": "scenario",
@@ -532,7 +388,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 81,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -541,16 +397,16 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 82,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 83,
+            "keyword": "Given ",
+            "line": 71,
             "name": "I press on create school button",
             "result": {
               "status": "skipped"
@@ -558,9 +414,9 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 84,
-            "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
+            "keyword": "When ",
+            "line": 72,
+            "name": "I enter a valid name and shortcode \"Automation School 02\" and \"RTEYUR\"",
             "result": {
               "status": "skipped"
             }
@@ -568,7 +424,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 85,
+            "line": 73,
             "name": "I fill all fields for a new program \"Automation Program 02\"",
             "result": {
               "status": "skipped"
@@ -577,8 +433,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 86,
-            "name": "I press on create subject \"Automation Subject\"",
+            "line": 74,
+            "name": "I press on create subject",
             "result": {
               "status": "skipped"
             }
@@ -586,8 +442,17 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 87,
-            "name": "I create a category \"Automation Category\" checking required message \"The Category name is required.\" then getting \"Category has been successfully created\" message",
+            "line": 75,
+            "name": "I create a category \"Automation Category\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "I get a \"Category has been successfully created\" message",
             "result": {
               "status": "skipped"
             }
@@ -597,7 +462,7 @@
       {
         "id": "schools;create-subcategory-on-school",
         "keyword": "Scenario",
-        "line": 91,
+        "line": 80,
         "name": "Create SubCategory on School",
         "tags": [],
         "type": "scenario",
@@ -605,7 +470,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 92,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -614,16 +479,16 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 93,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 94,
+            "keyword": "Given ",
+            "line": 81,
             "name": "I press on create school button",
             "result": {
               "status": "skipped"
@@ -631,9 +496,9 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 95,
-            "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
+            "keyword": "When ",
+            "line": 82,
+            "name": "I enter a valid name and shortcode \"Automation School 02\" and \"RTEYUR\"",
             "result": {
               "status": "skipped"
             }
@@ -641,7 +506,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 96,
+            "line": 83,
             "name": "I fill all fields for a new program \"Automation Program 02\"",
             "result": {
               "status": "skipped"
@@ -650,8 +515,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 97,
-            "name": "I press on create subject \"Automation Subject\"",
+            "line": 84,
+            "name": "I press on create subject",
             "result": {
               "status": "skipped"
             }
@@ -659,7 +524,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 98,
+            "line": 85,
             "name": "I select a category",
             "result": {
               "status": "skipped"
@@ -668,8 +533,17 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 99,
-            "name": "I create subcategory \"Automation SubCategory\" checking required message \"The Subcategory name is required.\" then getting \"Subcategory has been successfully created\" message",
+            "line": 86,
+            "name": "I create subcategory \"Automation SubCategory\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 87,
+            "name": "I get a \"Subcategory has been successfully created\" message",
             "result": {
               "status": "skipped"
             }
@@ -679,7 +553,7 @@
       {
         "id": "schools;edit-school",
         "keyword": "Scenario",
-        "line": 103,
+        "line": 91,
         "name": "Edit School",
         "tags": [],
         "type": "scenario",
@@ -687,7 +561,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 104,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -696,8 +570,26 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 105,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 92,
+            "name": "I search for \"Automation School 01\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 93,
+            "name": "I edit the school details to be \"Automation Edited 01\" and \"345RTYE\"",
             "result": {
               "status": "skipped"
             }
@@ -705,8 +597,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 106,
-            "name": "I search \"Automation School 01\" to be edited \"Automation Edited 01\" \"345RTYE\" and get \"School has been saved successfully\" message",
+            "line": 94,
+            "name": "I get a \"School has been saved successfully\" message",
             "result": {
               "status": "skipped"
             }
@@ -716,7 +608,7 @@
       {
         "id": "schools;delete-school",
         "keyword": "Scenario",
-        "line": 110,
+        "line": 98,
         "name": "Delete School",
         "tags": [],
         "type": "scenario",
@@ -724,7 +616,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 111,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -733,8 +625,26 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 112,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 99,
+            "name": "I search for \"Automation Edited 01\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 100,
+            "name": "I delete the school",
             "result": {
               "status": "skipped"
             }
@@ -742,8 +652,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 113,
-            "name": "I search \"Automation Edited 01\" to be deleted and get \"School has been deleted successfully\" message",
+            "line": 101,
+            "name": "I get a \"School has been deleted successfully\" message",
             "result": {
               "status": "skipped"
             }
@@ -753,12 +663,12 @@
       {
         "id": "schools;add-columns",
         "keyword": "Scenario",
-        "line": 117,
+        "line": 105,
         "name": "Add columns",
         "tags": [
           {
             "name": "@smoke",
-            "line": 116
+            "line": 104
           }
         ],
         "type": "scenario",
@@ -766,41 +676,46 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 119,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 29991000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 120,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
-              "status": "passed",
-              "duration": 1119000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 121,
-            "name": "I add columns to be shown",
+            "keyword": "Given ",
+            "line": 106,
+            "name": "I click on add columns",
             "result": {
-              "status": "passed",
-              "duration": 1793000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 122,
-            "name": "I check locked columns \"ID\" and \"School Name\" are present",
+            "keyword": "When ",
+            "line": 107,
+            "name": "I select columns to add",
             "result": {
-              "status": "passed",
-              "duration": 127000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 108,
+            "name": "columns \"ID\" and \"School Name\" should be present",
+            "result": {
+              "status": "skipped"
             }
           }
         ]
@@ -808,12 +723,12 @@
       {
         "id": "schools;remove-columns",
         "keyword": "Scenario",
-        "line": 126,
+        "line": 112,
         "name": "Remove columns",
         "tags": [
           {
             "name": "@smoke",
-            "line": 125
+            "line": 111
           }
         ],
         "type": "scenario",
@@ -821,131 +736,46 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 128,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 29351000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 129,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
-              "status": "passed",
-              "duration": 1399000000
+              "status": "skipped"
             }
           },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 130,
-            "name": "I remove columns to be shown",
-            "result": {
-              "status": "passed",
-              "duration": 744000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 131,
-            "name": "I check locked column \"School Name\" is present",
-            "result": {
-              "status": "passed",
-              "duration": 58000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;search-school",
-        "keyword": "Scenario",
-        "line": 135,
-        "name": "Search school",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 134
-          }
-        ],
-        "type": "scenario",
-        "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 137,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "line": 113,
+            "name": "I click on add columns",
             "result": {
-              "status": "passed",
-              "duration": 29038000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 138,
-            "name": "I navigate to actual section",
+            "line": 114,
+            "name": "I remove columns from school list",
             "result": {
-              "status": "passed",
-              "duration": 1340000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 139,
-            "name": "I search new school to validate \"Automation School\"",
+            "keyword": "Then ",
+            "line": 115,
+            "name": "only the locked column School Name is present",
             "result": {
-              "status": "passed",
-              "duration": 8914000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;pagination",
-        "keyword": "Scenario",
-        "line": 143,
-        "name": "Pagination",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 142
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 145,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "passed",
-              "duration": 29259000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 146,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "passed",
-              "duration": 1539000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 147,
-            "name": "I check all buttons from pagination",
-            "result": {
-              "status": "passed",
-              "duration": 29246000000
+              "status": "skipped"
             }
           }
         ]
@@ -953,12 +783,12 @@
       {
         "id": "schools;rows-per-page",
         "keyword": "Scenario",
-        "line": 152,
+        "line": 120,
         "name": "Rows Per Page",
         "tags": [
           {
             "name": "@smoke",
-            "line": 151
+            "line": 119
           }
         ],
         "type": "scenario",
@@ -966,47 +796,49 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 154,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 32855000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 155,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
-              "status": "passed",
-              "duration": 397000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 156,
-            "name": "I check different rows per page",
+            "line": 121,
+            "name": "I can display either \"10,25,50\" rows in the list",
             "result": {
-              "status": "passed",
-              "duration": 51444000000
+              "status": "skipped"
             }
           }
         ]
       },
       {
-        "id": "schools;sorting-and-pagination",
+        "id": "schools;sorting,-searching-and-pagination",
         "keyword": "Scenario",
-        "line": 160,
-        "name": "Sorting and pagination",
-        "tags": [],
+        "line": 129,
+        "name": "Sorting, searching and pagination",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 128
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 162,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -1015,45 +847,17 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 163,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
               "status": "skipped"
             }
           },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 164,
-            "name": "I sort column by asc and desc",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 165,
-            "name": "I check all buttons from pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;search-and-pagination",
-        "keyword": "Scenario",
-        "line": 169,
-        "name": "Search and pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 171,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "line": 130,
+            "name": "I sort the \"name\" column by asc and desc",
             "result": {
               "status": "skipped"
             }
@@ -1061,219 +865,17 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 172,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 173,
-            "name": "I check all buttons from pagination",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 174,
+            "line": 131,
             "name": "I search \"Automation\"",
             "result": {
               "status": "skipped"
             }
-          }
-        ]
-      },
-      {
-        "id": "schools;sorting",
-        "keyword": "Scenario",
-        "line": 178,
-        "name": "Sorting",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 177
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 180,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "passed",
-              "duration": 34203000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 181,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "passed",
-              "duration": 495000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 182,
-            "name": "I sort column by asc and desc",
-            "result": {
-              "status": "passed",
-              "duration": 37114000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;first-page-pagination",
-        "keyword": "Scenario",
-        "line": 186,
-        "name": "First page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 188,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 189,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 190,
-            "name": "I check first page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;last-page-pagination",
-        "keyword": "Scenario",
-        "line": 194,
-        "name": "Last page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 196,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 197,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 198,
-            "name": "I check last page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;next-page-pagination",
-        "keyword": "Scenario",
-        "line": 202,
-        "name": "Next page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 204,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 205,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 206,
-            "name": "I check next page pagination",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;previous-page-pagination",
-        "keyword": "Scenario",
-        "line": 210,
-        "name": "Previous page pagination",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 212,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 213,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 214,
-            "name": "I check previous page pagination",
+            "line": 132,
+            "name": "All pagination buttons should work",
             "result": {
               "status": "skipped"
             }
@@ -1283,7 +885,7 @@
       {
         "id": "schools;create-multiple-schools-with-csv-file",
         "keyword": "Scenario",
-        "line": 218,
+        "line": 136,
         "name": "Create Multiple Schools with CSV file",
         "tags": [],
         "type": "scenario",
@@ -1291,7 +893,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 220,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -1300,8 +902,26 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 221,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 138,
+            "name": "I click on upload csv",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 139,
+            "name": "I upload a correct CSV file with multiple schools",
             "result": {
               "status": "skipped"
             }
@@ -1309,17 +929,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 222,
-            "name": "Upload correct multiple CSV file",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 223,
-            "name": "I get \"Schools have been added successfully\" message",
+            "line": 140,
+            "name": "I get a \"Schools have been added successfully\" message",
             "result": {
               "status": "skipped"
             }
@@ -1329,7 +940,7 @@
       {
         "id": "schools;create-school-with-csv-file",
         "keyword": "Scenario",
-        "line": 227,
+        "line": 144,
         "name": "Create School with CSV file",
         "tags": [],
         "type": "scenario",
@@ -1337,7 +948,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 229,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -1346,8 +957,26 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 230,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 146,
+            "name": "I click on upload csv",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 147,
+            "name": "I upload a correct CSV file with a single school",
             "result": {
               "status": "skipped"
             }
@@ -1355,17 +984,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 231,
-            "name": "Upload correct CSV file",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 232,
-            "name": "I get \"Schools have been added successfully\" message",
+            "line": 148,
+            "name": "I get a \"Schools have been added successfully\" message",
             "result": {
               "status": "skipped"
             }
@@ -1375,94 +995,12 @@
       {
         "id": "schools;subcategories-page-selection",
         "keyword": "Scenario",
-        "line": 236,
+        "line": 152,
         "name": "Subcategories Page Selection",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 237,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 238,
-            "name": "I navigate to actual section",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 239,
-            "name": "I press on create school button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 240,
-            "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 241,
-            "name": "I fill all fields for a new program \"Automation Program 02\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 242,
-            "name": "I press on create subject \"Automation Subject\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 243,
-            "name": "I select a category",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 244,
-            "name": "I select all categories and unselect them",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;programs-page-selection",
-        "keyword": "Scenario",
-        "line": 248,
-        "name": "Programs Page Selection",
         "tags": [
           {
-            "name": "@smoke",
-            "line": 247
+            "name": "@focus",
+            "line": 151
           }
         ],
         "type": "scenario",
@@ -1470,51 +1008,165 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 249,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "passed",
-              "duration": 34637000000
+              "duration": 44996000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 250,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
               "status": "passed",
-              "duration": 414000000
+              "duration": 2275000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 153,
+            "name": "I press on create school button",
+            "result": {
+              "status": "passed",
+              "duration": 291000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 154,
+            "name": "I enter a valid name and shortcode \"Automation School 02\" and \"RTEYUR\"",
+            "result": {
+              "status": "passed",
+              "duration": 1801000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 155,
+            "name": "I fill all fields for a new program \"Automation Program 02\"",
+            "result": {
+              "status": "passed",
+              "duration": 14072000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 156,
+            "name": "I press on create subject",
+            "result": {
+              "status": "passed",
+              "duration": 534000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 157,
+            "name": "I select a category",
+            "result": {
+              "status": "passed",
+              "duration": 9005000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 158,
+            "name": "I select all subcategories and unselect them",
+            "result": {
+              "status": "passed",
+              "duration": 5750000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 251,
+            "line": 159,
+            "name": "an error should be displayed for not selecting any subcategories",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 50000ms: expected '<p.MuiFormHelperText-root.Mui-error.jss333.css-622e5>' to contain text 'Minimum 1 subcategory is required.', but the text was '​'\n    + expected - actual\n\n    -'​'\n    +'Minimum 1 subcategory is required.'\n\n    at SchoolPage.getSubCategoryErrorMessageText (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/schools.feature:1724:10)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/schools.feature:526:27)\n    at Context.resolveAndRunStepDefinition (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/schools.feature:38643:29)\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/schools.feature:37964:35)"
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "schools;programs-page-selection",
+        "keyword": "Scenario",
+        "line": 164,
+        "name": "Programs Page Selection",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 163
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I navigate to the schools page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 165,
             "name": "I press on create school button",
             "result": {
-              "status": "passed",
-              "duration": 967000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 166,
+            "name": "I enter a valid name and shortcode \"Automation School 02\" and \"RTEYUR\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 167,
+            "name": "I can select all programs",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 252,
-            "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
+            "line": 168,
+            "name": "I can unselect all programs by clicking none",
             "result": {
-              "status": "passed",
-              "duration": 2155000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 253,
-            "name": "I select all programs and unselect them",
-            "result": {
-              "status": "passed",
-              "duration": 4266000000
+              "status": "skipped"
             }
           }
         ]
@@ -1522,7 +1174,7 @@
       {
         "id": "schools;check-all-pages-on-programs",
         "keyword": "Scenario",
-        "line": 257,
+        "line": 172,
         "name": "Check All Pages on Programs",
         "tags": [],
         "type": "scenario",
@@ -1530,7 +1182,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 258,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
               "status": "skipped"
@@ -1539,16 +1191,16 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 259,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 260,
+            "keyword": "Given ",
+            "line": 173,
             "name": "I press on create school button",
             "result": {
               "status": "skipped"
@@ -1556,18 +1208,18 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 261,
-            "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
+            "keyword": "When ",
+            "line": 174,
+            "name": "I enter a valid name and shortcode \"Automation School 02\" and \"RTEYUR\"",
             "result": {
               "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 262,
-            "name": "I select all pages on programs",
+            "keyword": "Then ",
+            "line": 175,
+            "name": "I can select all pages on programs",
             "result": {
               "status": "skipped"
             }
@@ -1577,12 +1229,12 @@
       {
         "id": "schools;check-this-page-on-programs",
         "keyword": "Scenario",
-        "line": 266,
+        "line": 179,
         "name": "Check This Page on Programs",
         "tags": [
           {
             "name": "@smoke",
-            "line": 265
+            "line": 178
           }
         ],
         "type": "scenario",
@@ -1590,116 +1242,46 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 267,
+            "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 28211000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 268,
-            "name": "I navigate to actual section",
+            "line": 5,
+            "name": "I navigate to the schools page",
             "result": {
-              "status": "passed",
-              "duration": 721000000
+              "status": "skipped"
             }
           },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 269,
-            "name": "I press on create school button",
-            "result": {
-              "status": "passed",
-              "duration": 453000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 270,
-            "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
-            "result": {
-              "status": "passed",
-              "duration": 2192000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 271,
-            "name": "I select this page on programs",
-            "result": {
-              "status": "passed",
-              "duration": 10458000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "schools;check-none-page-on-programs",
-        "keyword": "Scenario",
-        "line": 275,
-        "name": "Check None Page on Programs",
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 274
-          }
-        ],
-        "type": "scenario",
-        "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 276,
-            "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
+            "line": 180,
+            "name": "I press on create school button",
             "result": {
-              "status": "passed",
-              "duration": 32047000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 277,
-            "name": "I navigate to actual section",
+            "line": 181,
+            "name": "I enter a valid name and shortcode \"Automation School 02\" and \"RTEYUR\"",
             "result": {
-              "status": "passed",
-              "duration": 768000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 278,
-            "name": "I press on create school button",
+            "line": 182,
+            "name": "I can select this page on programs",
             "result": {
-              "status": "passed",
-              "duration": 729000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 279,
-            "name": "I add correct data on fields \"Automation School 02\" and \"RTEYUR\"",
-            "result": {
-              "status": "passed",
-              "duration": 2090000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 280,
-            "name": "I select none page on programs",
-            "result": {
-              "status": "passed",
-              "duration": 10279000000
+              "status": "skipped"
             }
           }
         ]
