@@ -9,10 +9,9 @@ Feature: Schools
 
   @smoke
   Scenario Outline: Create School with <type> details
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter <name> and <shortcode> for name and shortcode
     Then I should receive error messages <error1> and <error2>
-    And I close creation of Schools
 
     Examples:
       | type                     | name                                                                                                                        | shortcode     | error1                          | error2                                    |
@@ -23,24 +22,22 @@ Feature: Schools
   # User should be able to search a School UD-T53
 
   Scenario: Create School
-    Given I press on create school button
-    When I enter a valid name and shortcode "Automation School 01" and "ERDF566"
-    And I select an existing program
-    And I create the new school
+    Given I am in the school creation window
+    When I create a new school with name "Automation School 01" and shortcode "ERDF566"
     Then a "School has been created successfully" message is displayed
-    And I search "Automation School 01" to validate school exists
+    And "Automation School 01" exists in the schools list
 
   #User should not be able to create a School with same shortcode UD-T54  ----*** DEFECT AD-693 ***----
 
   Scenario: Create Duplicate School
-    Given I press on create school button
+    Given I am in the school creation window
     When I try to create a duplicate school with the details "Automation School 01" and "ERDF566"
     Then a "ERROR!!! Duplicate shortcode" message is displayed
 
   #User should be able to create a Program to assign to a School UD-T44 (positive validation)
 
   Scenario: Create Program on School
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 01" and "ERDF566"
     And I fill all fields for a new program "Automation Program"
     And I select an existing subject before confirming creation
@@ -50,7 +47,7 @@ Feature: Schools
   #User should be able to create a Program to assign to a School UD-T44 (negative validation)
 
   Scenario: validation for creating programs during school creation
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 01" and "ERDF566"
     And I enter invalid details for a new program "This is a test for max characters to"
     Then I get error messages "The program name has a max length of 35 characters." "The Grade is required." "The Age Range is required."
@@ -58,7 +55,7 @@ Feature: Schools
   #User should be able to create a Subject to assign to a School UD-T45
 
   Scenario: Create Subject on School
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     And I fill all fields for a new program "Automation Program 02"
     And I create a new subject "Automation Subject" 
@@ -68,7 +65,7 @@ Feature: Schools
   #User should be able to create a Category to assign to a School UD-T46
 
   Scenario: Create Category on School
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     And I fill all fields for a new program "Automation Program 02"
     And I press on create subject
@@ -78,7 +75,7 @@ Feature: Schools
   #User should be able to create a SubCategory to assign to a School UD-T47
 
   Scenario: Create SubCategory on School
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     And I fill all fields for a new program "Automation Program 02"
     And I press on create subject
@@ -150,7 +147,7 @@ Feature: Schools
   #User should be able to select different subcategories for a program on schools UD-T48 ----*** DEFECT AD-1798 ***----
 
   Scenario: Subcategories Page Selection
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     And I fill all fields for a new program "Automation Program 02"
     And I press on create subject
@@ -162,7 +159,7 @@ Feature: Schools
   #User should be able to not select any program inside schools UD-T343
   @smoke
   Scenario: Programs Page Selection
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     Then I can select all programs
     And I can unselect all programs by clicking none
@@ -170,14 +167,14 @@ Feature: Schools
   #User should be able to check all pages on programs inside schools UD-T341 ----*** DEFECT AD-75 ***----
 
   Scenario: Check All Pages on Programs
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     Then I can select all pages on programs
 
   #User should be able to check the actual page on programs inside schools UD-T342
   @smoke
   Scenario: Check This Page on Programs
-    Given I press on create school button
+    Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     Then I can select this page on programs
 

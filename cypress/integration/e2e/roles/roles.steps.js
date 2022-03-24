@@ -5,20 +5,6 @@ import { rolesPage } from "../../page_objects/roles-page";
 import { gradesPage } from "../../page_objects/grades-page";
 import { schoolPage } from "../../page_objects/schools-page";
 
-Given(
-  "I sign in with valid credentials {string} and {string}",
-  (email, pass) => {
-    signInPage.goToHomePage();
-    signInPage.getClickOnYourCountryOrRegionText();
-    signInPage.enterEmailOrPhone(email);
-    signInPage.enterPassword(pass);
-    signInPage.clickOnSignInButton();
-    signInPage.clickSelectProfile();
-    signInPage.clickOnContinueButton();
-    signInPage.clickOnCurrentProfile();
-  }
-);
-
 When("I navigate to the roles page", () => {
   rolesPage.clickOnRolesTab();
 });

@@ -4,25 +4,11 @@ import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
 import { assert } from "chai";
 
-Given(
-  "I sign in with valid credentials {string} and {string}",
-  (email, pass) => {
-    signInPage.goToHomePage();
-    signInPage.getClickOnYourCountryOrRegionText();
-    signInPage.enterEmailOrPhone(email);
-    signInPage.enterPassword(pass);
-    signInPage.clickOnSignInButton();
-    signInPage.clickSelectProfile();
-    signInPage.clickOnContinueButton();
-    signInPage.clickOnCurrentProfile();
-  }
-);
-
 When("I navigate to the schools page", () => {
   schoolPage.clickOnSchoolsTab();
 });
 
-Given("I press on create school button", () => {
+Given("I am in the school creation window", () => {
   schoolPage.clickOnCreateSchoolButton();
 });
 
@@ -38,9 +24,16 @@ Then("I should receive error messages {string} and {string}", (error1, error2) =
   schoolPage.getMaxShortCodeLengthText(error2);
 })
 
-And("I close creation of Schools", () => {
-  schoolPage.clickOnCloseSchool();
-});
+When("I create a new school with name {string} and shortcode (string)", (name, shortCode) => {
+  schoolPage.fillName(name);
+  schoolPage.fillShortCode(shortCode);
+  schoolPage.getNextButtonState();
+  schoolPage.getPreviousButtonState();
+  schoolPage.clickOnNextButton();
+  schoolPage.selectProgramItems();
+  schoolPage.clickOnNextButton();
+  schoolPage.clickOnCreateFinalButton();
+})
 
 When("I enter a valid name and shortcode {string} and {string}", (name, shortCode) => {
   schoolPage.fillName(name);
@@ -49,27 +42,17 @@ When("I enter a valid name and shortcode {string} and {string}", (name, shortCod
   schoolPage.getPreviousButtonState();
 });
 
-And("I select an existing program", () => {
-  schoolPage.clickOnNextButton();
-  schoolPage.selectProgramItems();
-  schoolPage.clickOnNextButton();
-});
-
 And("I select other existing programs", () => {
   schoolPage.clickOnNextButton();
   schoolPage.selectOtherProgramItems();
   schoolPage.clickOnNextButton();
 });
 
-And("I create the new school", () => {
-  schoolPage.clickOnCreateFinalButton();
-})
-
 Then("a {string} message is displayed", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-And("I search {string} to validate school exists", (search) => {
+And("{string} exists in the schools list", (search) => {
   userPage.searchInputText(search);
   schoolPage.getSchoolName();
 });
