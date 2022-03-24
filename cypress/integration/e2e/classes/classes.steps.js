@@ -3,10 +3,9 @@ import { signInPage } from "../../page_objects/sign-in-page";
 import { classesPage } from "../../page_objects/classes-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
-import { gradesPage } from "../../page_objects/grades-page";
 
 
-When("I navigate to classes section", () => {
+When("I navigate to the classes page", () => {
   classesPage.clickOnClassesTab();
 });
 
@@ -31,7 +30,12 @@ Given("I create a class {string}", (className) => {
   classesPage.clickOnCreateFinalButton();
 });
 
-Then("I search class {string}", (search) => {
+Then("I search for class {string}", (search) => {
+  userPage.searchInputText(search);
+  classesPage.getClassName();
+});
+
+When("I search for class {string}", (search) => {
   userPage.searchInputText(search);
   classesPage.getClassName();
 });
@@ -40,33 +44,37 @@ When("I get {string} message", (message) => {
   userPage.getNotificationText(message).contains(message);
 });
 
-When(
-  "I search {string} to edit the class name to be {string}",
+Given(
+  "I search {string} to be edited as {string} and get {string} message",
   (search, className, message) => {
     userPage.searchInputText(search);
     classesPage.clickMoreActions();
     classesPage.clickOnMoreActionsEditButton();
     classesPage.editClassName(className);
     classesPage.clickOnSaveEditionButton();
+    userPage.getNotificationText(message).contains(message);
   }
 );
 
-Then("I can search for edited class {string}", (search) => {
+When("I search edited class {string}", (search) => {
   userPage.searchInputText(search);
   classesPage.getEditedClassName();
 });
 
-Given("I Add a filter for status as active", () => {
+Given("Add filter for status as active", () => {
   userPage.clickOnAddFilterButton();
   userPage.clickOnColumnFilter();
   userPage.clickOnStatusColumn();
   userPage.clickOnValuesFilter();
   userPage.selectActiveStatusValue();
+});
+
+When("I add the filter", () => {
   userPage.clickOnAddFilterFinalButton();
 });
 
-When(
-  "I search {string} to be deleted",
+Then(
+  "I search {string} to be deleted and get {string} message",
   (search, message) => {
     userPage.searchInputText(search);
     classesPage.clickMoreActions();
@@ -77,8 +85,15 @@ When(
   }
 );
 
-When(
-  "I search {string} to be deleted on edition",
+Given("I sort class columns by asc and desc", () => {
+  classesPage.sortFirstAsc();
+  schoolPage.sortFirstDesc();
+  userPage.sortSecondAsc();
+  userPage.sortSecondDesc();
+});
+
+Then(
+  "I search {string} to be deleted on edition and get {string} message",
   (search, message) => {
     userPage.searchInputText(search);
     classesPage.clickMoreActions();
@@ -90,43 +105,18 @@ When(
   }
 );
 
-Given("I check first page pagination", () => {
+Then("I search {string} to see the details of the class", (search) => {
+  userPage.searchInputText(search);
+  classesPage.clickMoreActions();
+  classesPage.clickOnMoreActionsViewDetailsButton();
+});
+
+Given("I check all buttons from pagination", () => {
   cy.wait(8000);
+  userPage.clickOnNextPage();
+  userPage.clickOnPreviousPage();
   userPage.clickOnLastPage();
   userPage.clickOnFirstPage();
-  userPage.getNextPageButtonState();
-  userPage.getLastPageButtonState();
-});
-
-Given("I check last page pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnLastPage();
-  userPage.getNextPageButtonState();
-  userPage.getLastPageButtonState();
-});
-
-Given("I check next page pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.getNextPageButtonState();
-  userPage.getLastPageButtonState();
-  userPage.getPreviousPageButtonState();
-  userPage.getFirstPageButtonState();
-});
-
-Given("I check previous page pagination", () => {
-  cy.wait(8000);
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnNextPage();
-  userPage.clickOnNextPage();
-  userPage.clickOnNextPage();
-  userPage.clickOnPreviousPage();
-  userPage.clickOnPreviousPage();
-  userPage.getNextPageButtonState();
-  userPage.getLastPageButtonState();
-  userPage.getPreviousPageButtonState();
-  userPage.getFirstPageButtonState();
 });
 
 Given("I search class {string}", (search) => {
@@ -140,25 +130,20 @@ Given("I check the order of values is correct on classes", () => {
   classesPage.getFilterOrderValues();
 });
 
-When("I remove columns to be shown", () => {
+Given("I remove columns to be shown", () => {
   classesPage.removeAllColumns();
 });
 
 When("I check locked column {string} is present", () => {
-  // this doesn't use the string provided and doesn't check for it's value
   classesPage.getColumnText();
 });
 
-Given("I click add columns", () => {
+Given("I add columns to be shown", () => {
   userPage.clickOnAddColumns();
+  userPage.selectColumns();
 });
 
-When("I select the columns to add", () => {
-  userPage.selectColumns();
-})
-
 When("I check locked columns {string} and {string} are present", () => {
-  // this doesn't use the string provided and doesn't check for it's value
   schoolPage.getFirstColumnText();
   classesPage.getSecondColumnText();
 });
@@ -540,6 +525,14 @@ Then("I check filter is disable", () => {
   userPage.getFilterMouseOverText();
 });
 
+And("I check all buttons from pagination", () => {
+  cy.wait(8000);
+  userPage.clickOnNextPage();
+  userPage.clickOnPreviousPage();
+  userPage.clickOnLastPage();
+  userPage.clickOnFirstPage();
+});
+
 Then("Upload correct CSV file", () => {
   userPage.clickOnUploadCsvButton();
   classesPage.selectFixtureFile();
@@ -565,4 +558,171 @@ Then("I press over an existent class {string}", (search) => {
 
 And("I should see {string} window", (message) => {
   classesPage.getClassRosterWindowsText(message);
+});
+
+And("I should be able to add users", () => {
+  classesPage.clickOnClassRosterAddUserButton();
+  classesPage.clickOnStudentTabSchoolRoster();
+  classesPage.selectStudentsAndTeachers();
+  classesPage.clickOnTeacherTabSchoolRoster();
+  classesPage.selectStudentsAndTeachers();
+  classesPage.clickOnSchoolRosterAddUserButton();
+  classesPage.getStudents();
+  classesPage.clickOnTeacherTabClassRoster();
+  classesPage.getTeachers();
+});
+
+And("I should be able to remove users", () => {
+  classesPage.clickMoreActionsClassRoster();
+  classesPage.clickOnRemoveUser();
+  userPage.sendDeleteText();
+  classesPage.clickOnDeleteFinalButton();
+  classesPage.clickOnTeacherTabClassRoster();
+  classesPage.clickMoreActionsClassRoster();
+  classesPage.clickOnRemoveUser();
+  userPage.sendDeleteText();
+  classesPage.clickOnDeleteFinalButton();
+  classesPage.clickOnCloseClassRosterWindow();
+});
+
+When("I sort class roster columns by asc and desc", () => {
+  classesPage.sortRosterFirstAsc();
+  schoolPage.sortFirstDesc();
+  userPage.sortSecondAsc();
+  userPage.sortSecondDesc();
+});
+
+Given(
+  "I access to an existent class {string} on class roster for student",
+  (search) => {
+    userPage.clickOnAddFilterButton();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnStatusColumn();
+    userPage.clickOnValuesFilter();
+    userPage.selectActiveStatusValue();
+    userPage.clickOnAddFilterFinalButton();
+    userPage.searchInputText(search);
+    classesPage.clickOnClassLink();
+  }
+);
+
+And("I search a student on class roster {string}", (search) => {
+  classesPage.searchInputClassRoster(search);
+  classesPage.getClassRosterName();
+});
+
+Given(
+  "I access to an existent class {string} on class roster for teacher",
+  (search) => {
+    userPage.clickOnAddFilterButton();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnStatusColumn();
+    userPage.clickOnValuesFilter();
+    userPage.selectActiveStatusValue();
+    userPage.clickOnAddFilterFinalButton();
+    userPage.searchInputText(search);
+    classesPage.clickOnClassLink();
+    classesPage.clickOnTeacherTabClassRoster();
+  }
+);
+
+And("I search a teacher on class roster {string}", (search) => {
+  classesPage.searchInputClassRoster(search);
+  classesPage.getClassRosterName();
+});
+
+Given(
+  "I access to an existent class {string} on school roster for teacher",
+  (search) => {
+    userPage.clickOnAddFilterButton();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnStatusColumn();
+    userPage.clickOnValuesFilter();
+    userPage.selectActiveStatusValue();
+    userPage.clickOnAddFilterFinalButton();
+    userPage.searchInputText(search);
+    classesPage.clickOnClassLink();
+    classesPage.clickOnClassRosterAddUserButton();
+    classesPage.clickOnTeacherTabSchoolRoster();
+  }
+);
+
+And("I search a teacher on school roster {string}", (search) => {
+  classesPage.searchInputClassRoster(search);
+  classesPage.getClassRosterName();
+});
+
+Given(
+  "I access to an existent class {string} on school roster for student",
+  (search) => {
+    userPage.clickOnAddFilterButton();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnStatusColumn();
+    userPage.clickOnValuesFilter();
+    userPage.selectActiveStatusValue();
+    userPage.clickOnAddFilterFinalButton();
+    userPage.searchInputText(search);
+    classesPage.clickOnClassLink();
+    classesPage.clickOnClassRosterAddUserButton();
+  }
+);
+
+And("I search a student on school roster {string}", (search) => {
+  classesPage.searchInputClassRoster(search);
+  classesPage.getClassRosterName();
+});
+
+When("I sort school roster columns by asc and desc", () => {
+  classesPage.sortSchoolRosterFirstAsc();
+  schoolPage.sortFirstDesc();
+  userPage.sortSecondAsc();
+  userPage.sortSecondDesc();
+});
+
+Then(
+  "I can display either {string} rows in the list on class roster",
+  (numbersPerPage) => {
+    // split the string into an array
+    var rows = numbersPerPage.split(",");
+
+    // loop over the array and update the number of rows to display each time
+    for (let number in rows) {
+      cy.log(rows[number]);
+      classesPage.clickOnRowsPerPageClassRoster();
+      userPage.clickOnNumOfPages(rows[number]);
+    }
+  }
+);
+
+Then(
+  "I can display either {string} rows in the list on school roster",
+  (numbersPerPage) => {
+    // split the string into an array
+    var rows = numbersPerPage.split(",");
+
+    // loop over the array and update the number of rows to display each time
+    for (let number in rows) {
+      cy.log(rows[number]);
+      classesPage.clickOnRowsPerPageSchoolRoster();
+      userPage.clickOnNumOfPages(rows[number]);
+    }
+  }
+);
+
+Then("I select none page school roster", () => {
+  classesPage.clickOnPagesSelector();
+  classesPage.clickOnNonePageSelector();
+});
+
+Then("I select this page on school roster", () => {
+  classesPage.clickOnPagesSelector();
+  classesPage.clickOnThisPageSelector();
+  classesPage.getSelectedItemsText();
+  classesPage.getQuantityOfItemsSelected();
+
+  cy.get("@usersCount").then(($uc) => {
+    cy.get("@totalNumberText").then(($tn) => {
+      expect($uc).to.equal($tn);
+    });
+  });
 });

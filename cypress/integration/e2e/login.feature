@@ -2,7 +2,7 @@ Feature: Login
 
   #User should be able to sing in without any problem and have access according permissions UD-T17
 
-@focus   @smoke
+  @smoke
   Scenario: Login with custom credentials
     Given I click can't find your country or region
     When I enter custom email as "lorenab+custom@bluetrailsoft.com"
@@ -179,7 +179,7 @@ Feature: Login
   #User should be able to switch between accounts according level of permissions UD-T467
   Scenario: Switch between Roles - Organization Admin to Parent
     Given I click can't find your country or region
-    When I enter a valid email as "lorenab+parent@bluetrailsoft.com	"
+    When I enter a valid email as "lorenab+parent@bluetrailsoft.com"
     Then I enter a valid password as "Parent01!"
     And Change from "Parent" profile and validate other "Organization Admin" account is present
 
