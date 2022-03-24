@@ -4,19 +4,6 @@ import { classesPage } from "../../page_objects/classes-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
 
-Given(
-  "I sign in with valid credentials {string} and {string}",
-  (email, pass) => {
-    signInPage.goToHomePage();
-    signInPage.getClickOnYourCountryOrRegionText();
-    signInPage.enterEmailOrPhone(email);
-    signInPage.enterPassword(pass);
-    signInPage.clickOnSignInButton();
-    signInPage.clickSelectProfile();
-    signInPage.clickOnContinueButton();
-    signInPage.clickOnCurrentProfile();
-  }
-);
 
 When("I navigate to the classes page", () => {
   classesPage.clickOnClassesTab();

@@ -3,20 +3,6 @@ import { signInPage } from "../../page_objects/sign-in-page";
 import { userPage } from "../../page_objects/user-page";
 import { ageRangesPage } from "../../page_objects/ageRanges-page";
 
-Given(
-  "I sign in with valid credentials {string} and {string}",
-  (email, pass) => {
-    signInPage.goToHomePage();
-    signInPage.getClickOnYourCountryOrRegionText();
-    signInPage.enterEmailOrPhone(email);
-    signInPage.enterPassword(pass);
-    signInPage.clickOnSignInButton();
-    signInPage.clickSelectProfile();
-    signInPage.clickOnContinueButton();
-    signInPage.clickOnCurrentProfile();
-  }
-);
-
 Given("I navigate to the age ranges page", () => {
   ageRangesPage.clickOnAgeRangesTab();
 });

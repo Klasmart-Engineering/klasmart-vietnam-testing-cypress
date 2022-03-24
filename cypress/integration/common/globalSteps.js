@@ -3,6 +3,20 @@ import { homePage } from "../page_objects/home-page";
 import { signInPage } from "../page_objects/sign-in-page";
 import { userPage } from "../page_objects/user-page";
 
+Given(
+  "I sign in with valid credentials {string} and {string}",
+  (email, pass) => {
+    signInPage.goToHomePage();
+    signInPage.getClickOnYourCountryOrRegionText();
+    signInPage.enterEmailOrPhone(email);
+    signInPage.enterPassword(pass);
+    signInPage.clickOnSignInButton();
+    signInPage.clickSelectProfile();
+    signInPage.clickOnContinueButton();
+    signInPage.clickOnCurrentProfile();
+  }
+);
+
 Then("I can display either {string} rows in the list", (numbersPerPage) => {
   // split the string into an array
   var rows = numbersPerPage.split(",");
