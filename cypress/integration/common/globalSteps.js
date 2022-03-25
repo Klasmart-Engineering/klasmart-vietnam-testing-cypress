@@ -2,6 +2,9 @@ import { Then, When } from "cypress-cucumber-preprocessor/steps";
 import { homePage } from "../page_objects/home-page";
 import { signInPage } from "../page_objects/sign-in-page";
 import { userPage } from "../page_objects/user-page";
+import { gradesPage } from "../page_objects/grades-page";
+import { schoolPage } from "../page_objects/schools-page";
+
 
 Given(
   "I sign in with valid credentials {string} and {string}",
