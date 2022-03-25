@@ -85,13 +85,6 @@ Then(
   }
 );
 
-Given("I sort class columns by asc and desc", () => {
-  classesPage.sortFirstAsc();
-  schoolPage.sortFirstDesc();
-  userPage.sortSecondAsc();
-  userPage.sortSecondDesc();
-});
-
 Then(
   "I search {string} to be deleted on edition and get {string} message",
   (search, message) => {

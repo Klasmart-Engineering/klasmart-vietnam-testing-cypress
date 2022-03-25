@@ -2,6 +2,9 @@ import { Then, When } from "cypress-cucumber-preprocessor/steps";
 import { homePage } from "../page_objects/home-page";
 import { signInPage } from "../page_objects/sign-in-page";
 import { userPage } from "../page_objects/user-page";
+import { gradesPage } from "../page_objects/grades-page";
+import { schoolPage } from "../page_objects/schools-page";
+
 
 Given(
   "I sign in with valid credentials {string} and {string}",
@@ -16,6 +19,12 @@ Given(
     signInPage.clickOnCurrentProfile();
   }
 );
+
+Given("I sort column {string} called {string} by asc and desc", (columnNumber, columnName) => {
+  // desc first because by default the column is sorted in asc order
+  gradesPage.sortColumn(columnName, columnNumber, "desc");
+  gradesPage.sortColumn(columnName, columnNumber, "asc");
+});
 
 Then("I can display either {string} rows in the list", (numbersPerPage) => {
   // split the string into an array

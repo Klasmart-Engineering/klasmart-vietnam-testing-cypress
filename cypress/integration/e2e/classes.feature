@@ -58,7 +58,7 @@ Feature: Classes
   # ----*** DEFECT AD-2246 ***----
 
   Scenario: Sorting, searching and pagination
-    Given I sort class columns by asc and desc
+    Given I sort column "1" called "name" by asc and desc
     When I search for class "Class"
     Then All pagination buttons should work
 
