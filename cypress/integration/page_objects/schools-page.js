@@ -570,44 +570,6 @@ class SchoolPage {
     cy.get(":checkbox").uncheck({ force: true });
   }
 
-  sortFirstAsc() {
-    cy.get("table thead:nth-child(1) tr th:nth-child(3)").click();
-    cy.get(":checkbox").uncheck({ force: true });
-    cy.get(":checkbox").check({ force: true });
-    cy.get("body").trigger("keydown", { keyCode: 27 });
-    cy.wait(500);
-    cy.get("body").trigger("keyup", { keyCode: 27 });
-    cy.xpath("//div[contains(text(),'I')]").click({ force: true });
-    cy.wait(5000);
-    cy.get("tbody tr td:nth-child(1)").then((items) => {
-      const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text().toLowerCase())
-        .get();
-      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
-      const sortedItems = unsortedItems.slice().sort();
-      expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(
-        sortedItems
-      );
-      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
-    });
-  }
-
-  sortFirstDesc() {
-    cy.xpath("//div[contains(text(),'I')]").click();
-    cy.wait(9000);
-    cy.get("tbody tr td:nth-child(1)").then((items) => {
-      const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text().toLowerCase())
-        .get();
-      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
-      const sortedItems = unsortedItems.reverse();
-      expect(unsortedItems, "Items are sorted in desc order").to.deep.equal(
-        sortedItems
-      );
-      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
-    });
-  }
-
   selectFixtureFile() {
     cy.get(this.dragAndDrop)
       .should("be.visible")

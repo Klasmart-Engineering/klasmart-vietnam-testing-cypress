@@ -124,7 +124,7 @@ Feature: Schools
   
   @smoke
   Scenario: Sorting, searching and pagination
-    Given I sort the "name" column by asc and desc
+    Given I sort column "1" called "name" by asc and desc
     When I search "Automation"
     Then All pagination buttons should work
 

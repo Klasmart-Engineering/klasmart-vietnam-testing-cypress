@@ -758,68 +758,6 @@ class UserPage {
     });
   }
 
-  sortFirstAsc() {
-    cy.get("tbody tr td:nth-child(1) span:nth-child(2)").then((items) => {
-      const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text().toLowerCase())
-        .get();
-      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
-      const sortedItems = unsortedItems.slice().sort();
-      expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(
-        sortedItems
-      );
-      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
-    });
-  }
-
-  sortFirstDesc() {
-    cy.get("table thead:nth-child(1) tr th:nth-child(1)").click();
-    cy.wait(5000);
-    cy.get("tbody tr td:nth-child(1) span:nth-child(2)").then((items) => {
-      const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text().toLowerCase())
-        .get();
-      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
-      const sortedItems = unsortedItems.reverse();
-      expect(unsortedItems, "Items are sorted in desc order").to.deep.equal(
-        sortedItems
-      );
-      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
-    });
-  }
-
-  sortSecondAsc() {
-    cy.get("table thead:nth-child(1) tr th:nth-child(2)").click();
-    cy.wait(9000);
-    cy.get("tbody tr td:nth-child(2)").then((items) => {
-      const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text().toLowerCase())
-        .get();
-      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
-      const sortedItems = unsortedItems.slice().sort();
-      expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(
-        sortedItems
-      );
-      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
-    });
-  }
-
-  sortSecondDesc() {
-    cy.get("table thead:nth-child(1) tr th:nth-child(2)").click();
-    cy.wait(9000);
-    cy.get("tbody tr td:nth-child(2)").then((items) => {
-      const unsortedItems = items
-        .map((index, html) => Cypress.$(html).text().toLowerCase())
-        .get();
-      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
-      const sortedItems = unsortedItems.reverse();
-      expect(unsortedItems, "Items are sorted in desc order").to.deep.equal(
-        sortedItems
-      );
-      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
-    });
-  }
-
   clickOnNextPage() {
     cy.viewport(1280, 750);
     cy.get(this.nextPage)
