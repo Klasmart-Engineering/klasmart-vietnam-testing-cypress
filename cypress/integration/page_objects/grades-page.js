@@ -193,6 +193,35 @@ class GradesPage {
     cy.get(this.deleteFinalButton).should("be.visible").click();
   }
 
+  sortColumn(columnName, columnNumber, order) {
+    cy.get(`span[data-testid$='${columnName}SortHandler']`).click();
+    // cy.get(":checkbox").uncheck({ force: true });
+    // cy.get(":checkbox").check({ force: true });
+    // cy.get("body").trigger("keydown", { keyCode: 27 });
+    // cy.wait(500);
+    // cy.get("body").trigger("keyup", { keyCode: 27 });
+    // cy.xpath("//div[contains(text(),'I')]").click({ force: true });
+    cy.wait(5000);
+    cy.get(`tbody tr td:nth-child(${columnNumber})`).then((items) => {
+      const unsortedItems = items
+        .map((index, html) => Cypress.$(html).text().toLowerCase())
+        .get();
+      unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
+      const sortedItems;
+      if(order == "asc")
+      {
+        sortedItems = unsortedItems.slice().sort();
+        expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(sortedItems);
+      }
+      else // should be sorted in desc order 
+      {
+        sortedItems = unsortedItems.reverse();
+        expect(unsortedItems, "Items are sorted in desc order").to.deep.equal(sortedItems);
+      }
+      sortedItems.forEach((sortedItems) => cy.log(sortedItems));
+    });
+  }
+
   sortFirstAsc(column) {
     cy.get("span[data-testid$='" + column + "SortHandler']").click();
     cy.get(":checkbox").uncheck({ force: true });

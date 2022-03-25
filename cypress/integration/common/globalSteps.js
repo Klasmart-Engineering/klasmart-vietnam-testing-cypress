@@ -17,6 +17,16 @@ Given(
   }
 );
 
+Given("I sort column {string} called {string} by asc and desc", (columnNumber, columnName) => {
+  // desc first because by default the column is sorted in asc order
+  gradesPage.sortColumn(columnName, columnNumber, "desc");
+  gradesPage.sortColumn(columnName, columnNumber, "asc");
+  // schoolPage.sortFirstDesc(column);
+  // gradesPage.sortFirstAsc(column);
+  userPage.sortSecondAsc();
+  userPage.sortSecondDesc();
+});
+
 Then("I can display either {string} rows in the list", (numbersPerPage) => {
   // split the string into an array
   var rows = numbersPerPage.split(",");
