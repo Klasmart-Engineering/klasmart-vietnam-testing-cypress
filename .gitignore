@@ -65,3 +65,6 @@ cypress/screenshots
 test-reports/
 cypress/cucumber-json/
 xunit.xml
+
+# Misc
+.DS_Store
