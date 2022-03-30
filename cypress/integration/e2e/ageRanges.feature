@@ -1,7 +1,7 @@
 Feature: Age Ranges
 
   Background: Login
-    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    Given I sign in with valid credentials "qavn1@calmid.com" and "Abc012345"
 
   #User should be able to create any age range UD-T
 
