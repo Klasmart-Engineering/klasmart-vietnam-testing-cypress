@@ -1,13 +1,15 @@
+This repo is a fork of https://github.com/KL-Global/testing-cypress, KLVN will make some changes so that we can run with VN environments.
+
 # Cypress setup on Windows
 
 Following steps to set cypress on windows machine:
 
-1.Install Download | Node.js
-2.Install IDE https://code.visualstudio.com/Download
-3.Execute PowerShell
-4.cd to your project folder e.g: cd kidsloop
-5.Run command Set-ExecutionPolicy Unrestricted -Scope Process (Set A to change your policies)
-6.Run ./node_modules/.bin/cypress open (This command will execute cypress)
+1. Install Download | Node.js
+2. Install IDE https://code.visualstudio.com/Download
+3. Execute PowerShell
+4. cd to your project folder e.g: cd kidsloop
+5. Run command Set-ExecutionPolicy Unrestricted -Scope Process (Set A to change your policies)
+6. Run `./node_modules/.bin/cypress open` (This command will execute cypress)
 
 NOTE: Most of the configuration files will be found on cypress.json
 e.g: video, screenshots, folders to be located, environments, etc
@@ -130,7 +132,7 @@ Run `./node_modules/.bin/cypress-tags run -e TAGS='@another-tag-to-include and @
 
 ###### combinations
 
-Keep in mind that order matters and use parentheses wisely. The following commands will yield different results:  
+Keep in mind that order matters and use parentheses wisely. The following commands will yield different results:
 `./node_modules/.bin/cypress-tags run -e TAGS='@tag-to-include or @another-tag-to-include and not @github-tag'`
 
 `./node_modules/.bin/cypress-tags run -e TAGS='(@tag-to-include or @another-tag-to-include) and not @github-tag'`
