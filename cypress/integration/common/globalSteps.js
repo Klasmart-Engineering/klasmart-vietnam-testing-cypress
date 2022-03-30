@@ -12,7 +12,7 @@ Given(
     signInPage.enterEmailOrPhone(email);
     signInPage.enterPassword(pass);
     signInPage.clickOnSignInButton();
-    signInPage.clickSelectProfile();
+    // signInPage.clickSelectProfile();
     signInPage.clickOnContinueButton();
     signInPage.clickOnCurrentProfile();
   }

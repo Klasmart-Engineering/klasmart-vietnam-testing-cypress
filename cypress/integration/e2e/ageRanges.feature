@@ -1,7 +1,7 @@
 Feature: Age Ranges
 
   Background:
-    Given I sign in with valid credentials "lorenab+organization@bluetrailsoft.com" and "Organization01!"
+    Given I sign in with valid credentials "qavn1@calmid.com" and "Abc012345"
     When I navigate to age ranges page
 
   #User should be able to create any age range UD-T155
@@ -88,4 +88,3 @@ Feature: Age Ranges
   Scenario: Cancel create age range
     When I enter an age range value for from "40" and "10"
     Then I cancel creation of age range
-

@@ -1,7 +1,7 @@
 {
   "ignoreTestFiles": "*.js",
   "testFiles": "**/*.feature",
-  "baseUrl": "https://hub.alpha.kidsloop.net",
+  "baseUrl": "https://hub.beta.kidsloop.vn",
   "env": {
     "staging": "https://hub.stage.kidsloop.live"
   },
