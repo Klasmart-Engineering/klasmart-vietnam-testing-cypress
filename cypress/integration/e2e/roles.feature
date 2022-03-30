@@ -31,7 +31,7 @@ Feature: Roles
     And I check locked columns "Id" and "Role" are present
 
   #User should be able to remove columns UD-T562
-  @smoke
+@focus   @smoke
   Scenario: Remove columns
     And I remove columns to be shown
     And I check locked column "Role" is present

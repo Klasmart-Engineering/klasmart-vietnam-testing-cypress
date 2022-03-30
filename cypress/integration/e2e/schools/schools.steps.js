@@ -1,8 +1,6 @@
 import { When, Then, And, Given } from "cypress-cucumber-preprocessor/steps";
-import { signInPage } from "../../page_objects/sign-in-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
-import { assert } from "chai";
 
 When("I navigate to the schools page", () => {
   schoolPage.clickOnSchoolsTab();

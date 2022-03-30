@@ -1,6 +1,6 @@
 import { When, Then } from "cypress-cucumber-preprocessor/steps";
-import { signInPage } from "../../page_objects/sign-in-page";
 import { userPage } from "../../page_objects/user-page";
+import { gradesPage } from "../../page_objects/grades-page";
 
 When("I navigate to the users page", () => {
   userPage.clickOnUsersTab();
@@ -338,6 +338,22 @@ Then(
     userPage.addPhoneText(phone);
     userPage.clickOnAddFilterFinalButton();
     //Add phone filter
+    userPage.clickAddMoreFilters();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnClassColumn();
+    userPage.clickOnValuesFilter();
+    userPage.selectionOfClassValues();
+    userPage.closeListItems();
+    userPage.clickOnAddFilterFinalButton();
+    //Add class filter
+    userPage.clickAddMoreFilters();
+    userPage.clickOnColumnFilter();
+    userPage.clickOnGradeColumn();
+    userPage.clickOnValuesFilter();
+    userPage.selectionOfGradeValues();
+    userPage.closeListItems();
+    userPage.clickOnAddFilterFinalButton();
+    //Add grade filter
   }
 );
 
@@ -346,7 +362,7 @@ And("I clear all filters applied", () => {
   userPage.getAddFilterLabelState();
 });
 
-And("I check filter is disable", () => {
+Then("I check filter is disable", () => {
   userPage.getFilterMouseOverText();
 });
 
@@ -478,3 +494,12 @@ Then("Upload correct CSV file", () => {
   userPage.getValidationCsvText();
   userPage.clickOnUploadCsvFinalButton();
 });
+
+Given(
+  "I sort column {string} called {string} by asc and desc",
+  (columnNumber, columnName) => {
+    // desc first because by default the column is sorted in asc order
+    gradesPage.sortColumn(columnName, columnNumber, "desc");
+    gradesPage.sortColumn(columnName, columnNumber, "asc");
+  }
+);

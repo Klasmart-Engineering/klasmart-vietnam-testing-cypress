@@ -250,7 +250,7 @@ Feature: Login
     When verify the correct flag "Masuk" name
 
   #User should see the url and correct language selected for current flag  UD-T621
-  @smoke
-  Scenario: Tailand Flag
+  
+   Scenario: Tailand Flag
     Given auth Tailand page
     When verify the correct flag "เข้าสู่ระบบ" name
