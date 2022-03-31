@@ -388,6 +388,50 @@ class UserPage {
     });
   }
 
+  selectionOfClassValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.eq() == "2020") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "ABB 01") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "ABB 02") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "ABB 03") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfGradeValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.eq() == "Grade 1") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Grade 2") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Grade 3") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Grade 4") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
   searchInputText(search) {
     cy.viewport(1280, 750);
     cy.get(this.searchInput).clear();
