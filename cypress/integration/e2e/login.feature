@@ -199,7 +199,6 @@ Feature: Login
     Then I enter a valid password as "Teacher01!"
     And Change from "Teacher" profile and validate other "Organization Admin" account is present
 
-
   #User should see the url and correct language selected for current flag  UD-T614
   @smoke
   Scenario: United Kingdom Flag
@@ -207,7 +206,7 @@ Feature: Login
     When verify the correct flag "Sign In" name
 
   #User should see the url and correct language selected for current flag  UD-T4
-  @smoke
+
   Scenario: Sri Lanka Flag
     Given auth Sri Lanka page
     When verify the correct flag "Sign In" name
@@ -250,7 +249,7 @@ Feature: Login
     When verify the correct flag "Masuk" name
 
   #User should see the url and correct language selected for current flag  UD-T621
-  
-   Scenario: Tailand Flag
+
+  Scenario: Tailand Flag
     Given auth Tailand page
     When verify the correct flag "เข้าสู่ระบบ" name

@@ -24,10 +24,6 @@ Given("I create a program {string}", (programName) => {
   schoolPage.clickOnCreateFinalButton();
 });
 
-Then("I get a {string} message", (message) => {
-  userPage.getNotificationText(message).contains(message);
-});
-
 Then("I can search for program {string}", (search) => {
   userPage.searchInputText(search);
   programsPage.getProgramName();

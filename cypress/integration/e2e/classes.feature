@@ -6,14 +6,14 @@ Feature: Classes
 
   #User should be able to create any class UD-T592
   #User should be able to search according to inserted searching UD-T104
-  #DATA NEEDS TO BE CHANGES FOR EACH RUN
+  #DATA NEEDS TO BE CHANGED FOR EACH RUN
   Scenario: Create class
     Given I create a class "AUT AB 01"
-    When I get "Class created" message
+    Then I get "Class created" message
     Then I search for class "AUT AB 01"
 
   #User should be able to edit any class UD-T106
-  #DATA NEEDS TO BE CHANGES FOR EACH RUN
+  #DATA NEEDS TO BE CHANGED FOR EACH RUN
 
   Scenario: Edit class
     Given Add filter for status as active
@@ -29,7 +29,7 @@ Feature: Classes
     Then I search "EDIT AUT AB 01" to be deleted and get "Class has been deleted successfully" message
 
   #User should be able to delete an existent class from edition mode UD-T582
-  #DATA NEEDS TO BE CHANGES FOR EACH RUN
+  #DATA NEEDS TO BE CHANGED FOR EACH RUN
 
   Scenario: Delete class edition
     Given Add filter for status as active

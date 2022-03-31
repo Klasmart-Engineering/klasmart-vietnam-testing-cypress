@@ -303,7 +303,7 @@ Feature: Users
 
   #User should be able to sort data from users UD-T169
   #----*** DEFECT AD-2246 ***----
-  @smoke
+
   Scenario: Sorting
     Given I sort column "1" called "givenName" by asc and desc
 
@@ -311,7 +311,6 @@ Feature: Users
   @smoke
   Scenario: Pagination
     And All pagination buttons should work
-
 
   #User should be able to paginate by rows per page UD-T162
   @smoke

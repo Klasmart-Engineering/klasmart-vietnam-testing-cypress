@@ -13,7 +13,16 @@ class AgeRangesPage {
     "div[data-testid='To UnitSelectTextField'] div div[role='button']";
   createFinalButton =
     "span:nth-child(3) button:nth-child(1) div:nth-child(1) p:nth-child(1)";
-  labelFilterAdded = "div:nth-child(2) > div:nth-child(1) > span:nth-child(1)";
+  moreActionsEdit = "ul:nth-child(1) > li:nth-child(1) > p:nth-child(2)";
+  moreActionsDelete = "ul:nth-child(1) > li:nth-child(2) > p:nth-child(2)";
+  deleteOnEdition =
+    "span:nth-child(1) button:nth-child(1) div:nth-child(1) p:nth-child(1)";
+  saveEditionButton =
+    ":nth-child(4) > .MuiButton-root > .MuiBox-root > .MuiTypography-root";
+  ageRangeFromHelperText = "#age-range-from-helper-text";
+  ageRangeToHelperText = "#age-range-to-helper-text";
+  cancelButton =
+    "span:nth-child(2) > button:nth-child(1) > div:nth-child(1) > p:nth-child(1)";
 
   /*----------------  End Web Element  ----------------*/
 
@@ -36,6 +45,14 @@ class AgeRangesPage {
 
   clickOnCreateFinalButton() {
     cy.get(this.createFinalButton).should("be.visible").click();
+  }
+
+  clickOnCancelButton() {
+    cy.get(this.cancelButton).should("be.visible").click();
+  }
+
+  clickOnSaveEditionButton() {
+    cy.get(this.saveEditionButton).should("be.visible").click();
   }
 
   unitMonthSelection() {
@@ -74,57 +91,54 @@ class AgeRangesPage {
       .type("{enter}");
   }
 
-  clickOnAgeRangesToColumn() {
-    cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.text() == "Age Ranges (To)") {
-        cy.wrap($el).click();
-        cy.log("Element found");
-        return;
-      }
-    });
+  clickMoreActions() {
+    cy.get("tbody tr:nth-child(1) td:nth-child(2) button:nth-child(1)").click();
   }
 
-  clickOnAgeRangesFromColumn() {
-    cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.text() == "Age Ranges (From)") {
-        cy.wrap($el).click();
-        cy.log("Element found");
-        return;
-      }
-    });
+  clickOnMoreActionsDeleteButton() {
+    cy.get(this.moreActionsDelete).should("be.visible").click();
+    cy.wait(7000);
   }
 
-  selectionOfFirstValueRange() {
-    cy.get("ul[role='listbox']>li").eq(1).click();
-    cy.log("Element found");
+  clickOnMoreActionsEditButton() {
+    cy.get(this.moreActionsEdit).should("be.visible").click();
+    cy.wait(7000);
   }
 
-  selectionOfEditedAgeRangesFromValues() {
-    cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.eq() == "3 Year(s)") {
-        cy.wrap($el).click();
-        cy.log("Element found");
-        return;
-      }
-    });
+  clickOnDeleteEdition() {
+    cy.get(this.deleteOnEdition).should("be.visible").click();
+    cy.wait(7000);
   }
 
-  selectionOfEditedAgeRangesToValues() {
-    cy.get("ul[role='listbox']>li").each(($el) => {
-      if ($el.eq() == "23 Year(s)") {
-        cy.wrap($el).click();
-        cy.log("Element found");
-        return;
-      }
-    });
+  getFromHelperText(message1) {
+    return cy
+      .get(this.ageRangeFromHelperText, { timeout: 50000 })
+      .contains(message1)
+      .should("be.visible");
   }
 
-  getAgeRangesFromLabelFilterText() {
-    cy.get(this.labelFilterAdded).should("include.text", "Age Ranges (From)");
+  getToHelperText(message2) {
+    return cy
+      .get(this.ageRangeToHelperText, { timeout: 50000 })
+      .contains(message2)
+      .should("be.visible");
   }
 
-  getAgeRangesToLabelFilterText() {
-    cy.get(this.labelFilterAdded).should("include.text", "Age Ranges (To)");
+  removeAllColumns() {
+    cy.get("table thead:nth-child(1) tr th:nth-child(2)").click();
+    cy.get(":checkbox").uncheck({ force: true });
+  }
+
+  getColumnText() {
+    return cy
+      .get("table thead:nth-child(1) tr th:nth-child(1)")
+      .contains("Age Range");
+  }
+
+  getSecondColumnText() {
+    return cy
+      .get("table thead:nth-child(1) tr th:nth-child(2)")
+      .contains("Age Range");
   }
 }
 

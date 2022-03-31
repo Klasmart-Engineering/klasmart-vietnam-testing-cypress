@@ -31,7 +31,7 @@ Feature: Roles
     And I check locked columns "Id" and "Role" are present
 
   #User should be able to remove columns UD-T562
-@focus   @smoke
+  @smoke
   Scenario: Remove columns
     And I remove columns to be shown
     And I check locked column "Role" is present
@@ -52,13 +52,13 @@ Feature: Roles
     Then I can display either "10,25,50" rows in the list
 
   #User should be able to see correct pagination when applies ascending and descending order UD-T578
-  
+
   Scenario: Sorting and pagination
-    Given I sort the "name" column by asc and desc
+    Given I sort column "1" called "name" by asc and desc
     And All pagination buttons should work
 
   #User should be able to search and see the pagination according to inserted searching UD-T577
- 
+
   Scenario: Search and pagination
     And All pagination buttons should work
     And I search new role to validate "Teacher"
@@ -69,27 +69,27 @@ Feature: Roles
     Given I sort the "name" column by asc and desc
 
   #User should be able to see first page from pagination UD-T576
- 
+
   Scenario: First page pagination
     Then I check first page pagination
 
   #User should be able to see last page from pagination UD-T575
- 
+
   Scenario: Last page pagination
     Then I check last page pagination
 
   #User should be able to see next page from pagination UD-T573
- 
+
   Scenario: Next page pagination
     Then I check next page pagination
 
   #User should be able to see previous page from pagination UD-T574
-  
+
   Scenario: Previous page pagination
     Then I check previous page pagination
 
   #User should be able to cancel creation of a new role UD-T571
- 
+
   Scenario: Cancel create role
     Then I create a new role with name as "Automation Role" and description as "Test" and I cancel it
 

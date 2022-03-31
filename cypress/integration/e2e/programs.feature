@@ -8,14 +8,14 @@ Feature: Programs
 
     Scenario: Create program
         Given I create a program "Automation Program"
-        When I get a "Program has been successfully created" message
+        Then I get "Program has been successfully created" message
         Then I can search for program "Automation Program"
 
     #User should be able to edit any customized program UD-T70
 
     Scenario: Edit program
         Given I search program "Automation Program" to be edited as "Automation Program Edited"
-        When I get a "Program has been successfully saved" message
+        Then I get "Program has been successfully saved" message
         Then I can search for edited program "Automation Program Edited"
 
     #User should be able to delete any program UD-T71
@@ -23,10 +23,10 @@ Feature: Programs
     Scenario: Delete program
         Then I can search for program "Automation Program Edited"
         And I delete the program
-        Then I get a "Program successfully deleted" message
+        Then I get "Program successfully deleted" message
 
     #User should be able to paginate by rows per page UD-T58
-
+    @smoke
     Scenario: Rows Per Page
         Then I can display either "10,25,50" rows in the list
 
@@ -255,7 +255,7 @@ Feature: Programs
     Scenario: Create Subject on Program
         Given I press on create program "Automation Program"
         And I create a new subject "Automation Subject"
-        Then I get a "Subject has been successfully created" message
+        Then I get "Subject has been successfully created" message
         And I search new subject to validate "Automation Subject"
 
     #User should be able to create a Category to assign to a Program UD-T67
@@ -264,7 +264,7 @@ Feature: Programs
         Given I press on create program "Automation Program"
         When I press on create subject
         And I create a category "Automation Category"
-        Then I get a "Category has been successfully created" message
+        Then I get "Category has been successfully created" message
 
     #User should be able to create a SubCategory to assign to a Program UD-T68
 
@@ -273,4 +273,4 @@ Feature: Programs
         When I press on create subject
         And I select a category
         And I create subcategory "Automation SubCategory"
-        Then I get a "Subcategory has been successfully created" message
+        Then I get "Subcategory has been successfully created" message

@@ -38,10 +38,6 @@ When("I search for class {string}", (search) => {
   classesPage.getClassName();
 });
 
-When("I get {string} message", (message) => {
-  userPage.getNotificationText(message).contains(message);
-});
-
 Given(
   "I search {string} to be edited as {string} and get {string} message",
   (search, className, message) => {

@@ -44,9 +44,9 @@
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 12,
-            "name": "I get a \"Grade successfully created\" message",
+            "name": "I get \"Grade successfully created\" message",
             "result": {
               "status": "skipped"
             }
@@ -99,9 +99,9 @@
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 19,
-            "name": "I get a \"Grade successfully saved\" message",
+            "name": "I get \"Grade successfully saved\" message",
             "result": {
               "status": "skipped"
             }
@@ -165,7 +165,7 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 27,
-            "name": "I get a \"Grade successfully deleted\" message",
+            "name": "I get \"Grade successfully deleted\" message",
             "result": {
               "status": "skipped"
             }
@@ -214,16 +214,7 @@
         "keyword": "Scenario",
         "line": 40,
         "name": "Sorting, searching and pagination",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 39
-          },
-          {
-            "name": "@smoke",
-            "line": 39
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -232,8 +223,7 @@
             "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "passed",
-              "duration": 44591000000
+              "status": "skipped"
             }
           },
           {
@@ -242,8 +232,7 @@
             "line": 5,
             "name": "I navigate to the grades page",
             "result": {
-              "status": "passed",
-              "duration": 2101000000
+              "status": "skipped"
             }
           },
           {
@@ -252,14 +241,8 @@
             "line": 41,
             "name": "I sort column \"1\" called \"name\" by asc and desc",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Items are sorted in asc order: expected [ Array(50) ] to deeply equal [ Array(50) ]\n    + expected - actual\n\n       'new grade 01',\n       'none specified',\n       'none specified',\n       'pino grade',\n    +  'pk 20',\n       'pk10',\n    -  'pk 20',\n       'pk50',\n       'pk60',\n       'pk8',\n       'pk9',\n\n    at Context.eval (https://hub.alpha.kidsloop.net/__cypress/tests?p=cypress/integration/e2e/grades.feature:735:74)"
-            },
-            "embeddings": [
-              {
-                "mime_type": "image/png"
-              }
-            ]
+              "status": "skipped"
+            }
           },
           {
             "arguments": [],
@@ -1084,6 +1067,10 @@
         "name": "Remove columns",
         "tags": [
           {
+            "name": "@focus",
+            "line": 140
+          },
+          {
             "name": "@smoke",
             "line": 140
           }
@@ -1096,7 +1083,8 @@
             "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 61386000000
             }
           },
           {
@@ -1105,34 +1093,28 @@
             "line": 5,
             "name": "I navigate to the grades page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2049000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 142,
-            "name": "I click on add columns",
+            "name": "I remove columns to be shown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 785000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 143,
-            "name": "I remove columns from the grade list",
+            "name": "I check locked column \"Name\" is present",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 144,
-            "name": "only the locked Name column should be visible",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 104000000
             }
           }
         ]
@@ -1140,12 +1122,16 @@
       {
         "id": "grades;add-columns",
         "keyword": "Scenario",
-        "line": 148,
+        "line": 147,
         "name": "Add columns",
         "tags": [
           {
+            "name": "@focus",
+            "line": 146
+          },
+          {
             "name": "@smoke",
-            "line": 147
+            "line": 146
           }
         ],
         "type": "scenario",
@@ -1156,7 +1142,8 @@
             "line": 4,
             "name": "I sign in with valid credentials \"lorenab+organization@bluetrailsoft.com\" and \"Organization01!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 36819000000
             }
           },
           {
@@ -1165,34 +1152,28 @@
             "line": 5,
             "name": "I navigate to the grades page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2458000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 149,
-            "name": "I click on add columns",
+            "line": 148,
+            "name": "I add columns to be shown",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 150,
-            "name": "I select the columns to add",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1866000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 151,
+            "line": 149,
             "name": "columns \"ID\", \"Progress From\" and \"Progress To\" are visible in the list",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 133000000
             }
           }
         ]
@@ -1200,7 +1181,7 @@
       {
         "id": "grades;add-multiple-filters-search-and-pagination",
         "keyword": "Scenario",
-        "line": 155,
+        "line": 153,
         "name": "Add multiple filters search and pagination",
         "tags": [],
         "type": "scenario",
@@ -1226,7 +1207,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 156,
+            "line": 154,
             "name": "I open the filter window",
             "result": {
               "status": "skipped"
@@ -1235,7 +1216,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 157,
+            "line": 155,
             "name": "I add all possible filters",
             "result": {
               "status": "skipped"
@@ -1244,7 +1225,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 158,
+            "line": 156,
             "name": "I can search for grade \"Grade\"",
             "result": {
               "status": "skipped"
@@ -1253,7 +1234,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 159,
+            "line": 157,
             "name": "All pagination buttons should work",
             "result": {
               "status": "skipped"
