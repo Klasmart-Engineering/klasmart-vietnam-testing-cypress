@@ -2,7 +2,7 @@ name: Hub E2E Tests on Chrome
 on:
   workflow_dispatch:
   schedule:
-    - cron: "43 16 * * *"
+    - cron: "0 1 * * *" # UTC
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -43,21 +43,21 @@ jobs:
           name: test reports
           path: test-reports
       - name: Send Slack message on failure
-        uses: archive/github-actions-slack@v2.0.0
+        uses: tokorom/action-slack-incoming-webhook@main
         if: failure()
+        env:
+          INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
-          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
-          slack-channel: C034HBAFK8E
-          slack-text: |
-            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
+          text: |
+            Cypress tests finished with ${{ steps.cypresstest.outcome }}
             ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
             ${{ env.OUTPUT }}
       - name: Send Slack message
-        uses: archive/github-actions-slack@v2.0.0
+        uses: tokorom/action-slack-incoming-webhook@main
+        env:
+          INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
-          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
-          slack-channel: C034HBAFK8E
-          slack-text: |
-            Admin cypress tests finished with ${{ steps.cypresstest.outcome }} 
+          text: |
+            Cypress tests finished with ${{ steps.cypresstest.outcome }}
             ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
             ${{ env.OUTPUT }}
