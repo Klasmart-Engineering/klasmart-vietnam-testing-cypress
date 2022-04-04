@@ -58,8 +58,8 @@ Feature: Schools
     Given I am in the school creation window
     When I enter a valid name and shortcode "Automation School 02" and "RTEYUR"
     And I fill all fields for a new program "Automation Program 02"
-    And I create a new subject "Automation Subject" 
-    Then I get a "Subject has been successfully created" message
+    And I create a new subject "Automation Subject"
+    Then I get "Subject has been successfully created" message
     And I search new subject to validate "Automation Subject"
 
   #User should be able to create a Category to assign to a School UD-T46
@@ -70,7 +70,7 @@ Feature: Schools
     And I fill all fields for a new program "Automation Program 02"
     And I press on create subject
     And I create a category "Automation Category"
-    Then I get a "Category has been successfully created" message
+    Then I get "Category has been successfully created" message
 
   #User should be able to create a SubCategory to assign to a School UD-T47
 
@@ -81,35 +81,33 @@ Feature: Schools
     And I press on create subject
     And I select a category
     And I create subcategory "Automation SubCategory"
-    Then I get a "Subcategory has been successfully created" message
+    Then I get "Subcategory has been successfully created" message
 
   #User should be able to create edit a School UD-T49
 
   Scenario: Edit School
-    Given I search for "Automation School 01" 
-    When I edit the school details to be "Automation Edited 01" and "345RTYE" 
-    Then I get a "School has been saved successfully" message
+    Given I search for "Automation School 01"
+    When I edit the school details to be "Automation Edited 01" and "345RTYE"
+    Then I get "School has been saved successfully" message
 
   #User should be able to create delete a School UD-T50
 
   Scenario: Delete School
     Given I search for "Automation Edited 01"
     When I delete the school
-    Then I get a "School has been deleted successfully" message
+    Then I get "School has been deleted successfully" message
 
   #User should be able to add columns UD-T51
   @smoke
   Scenario: Add columns
-    Given I click on add columns
-    When I select columns to add
-    Then columns "ID" and "School Name" should be present
+    Given I add columns to be shown
+    When I check locked columns "ID" and "School Name" are present
 
-  #User should be able to remove columns UD-T611 ----*** DEFECT AD-1628 ***----
+  #User should be able to remove columns UD-T611
   @smoke
   Scenario: Remove columns
-    Given I click on add columns
-    When I remove columns from school list
-    Then only the locked column School Name is present
+    Given I remove columns to be shown
+    When I check locked column "School Name" is present
 
 
   #User should be able to paginate by rows per page UD-T171
@@ -121,7 +119,7 @@ Feature: Schools
   #User should be able to sort by ascending and descending order UD-T178
   #User should be able to see data paginated covering test cases UD-T170,UD-T175,UD-T174,UD-T172,UD-T173
   #User should be able to search and see the pagination according to inserted searching UD-T176
-  
+
   @smoke
   Scenario: Sorting, searching and pagination
     Given I sort column "1" called "name" by asc and desc
@@ -134,7 +132,7 @@ Feature: Schools
     #FILE NEEDS TO BE CHANGED ON FIXTURE FOLDER OR TEST DEPENDING ON ENVIRONMENT AND DATA
     Given I click on upload csv
     When I upload a correct CSV file with multiple schools
-    Then I get a "Schools have been added successfully" message
+    Then I get "Schools have been added successfully" message
 
   #User should be able to create a school using CSV file UD-T55
 
@@ -142,7 +140,7 @@ Feature: Schools
     #FILE NEEDS TO BE CHANGED ON FIXTURE FOLDER OR TEST DEPENDING ON ENVIRONMENT AND DATA
     Given I click on upload csv
     When I upload a correct CSV file with a single school
-    Then I get a "Schools have been added successfully" message
+    Then I get "Schools have been added successfully" message
 
   #User should be able to select different subcategories for a program on schools UD-T48 ----*** DEFECT AD-1798 ***----
 

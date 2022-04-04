@@ -10,35 +10,47 @@ Given("I am in the school creation window", () => {
   schoolPage.clickOnCreateSchoolButton();
 });
 
-When("I enter {string} and {string} for name and shortcode", (name, shortCode) => {
-  schoolPage.fillName(name);
-  schoolPage.fillShortCode(shortCode);
-  schoolPage.getNextButtonState();
-  schoolPage.getPreviousButtonState();
-})
+When(
+  "I enter {string} and {string} for name and shortcode",
+  (name, shortCode) => {
+    schoolPage.fillName(name);
+    schoolPage.fillShortCode(shortCode);
+    schoolPage.getNextButtonState();
+    schoolPage.getPreviousButtonState();
+  }
+);
 
-Then("I should receive error messages {string} and {string}", (error1, error2) => {
-  schoolPage.getMaxNameLengthText(error1);
-  schoolPage.getMaxShortCodeLengthText(error2);
-})
+Then(
+  "I should receive error messages {string} and {string}",
+  (error1, error2) => {
+    schoolPage.getMaxNameLengthText(error1);
+    schoolPage.getMaxShortCodeLengthText(error2);
+  }
+);
 
-When("I create a new school with name {string} and shortcode (string)", (name, shortCode) => {
-  schoolPage.fillName(name);
-  schoolPage.fillShortCode(shortCode);
-  schoolPage.getNextButtonState();
-  schoolPage.getPreviousButtonState();
-  schoolPage.clickOnNextButton();
-  schoolPage.selectProgramItems();
-  schoolPage.clickOnNextButton();
-  schoolPage.clickOnCreateFinalButton();
-})
+When(
+  "I create a new school with name {string} and shortcode (string)",
+  (name, shortCode) => {
+    schoolPage.fillName(name);
+    schoolPage.fillShortCode(shortCode);
+    schoolPage.getNextButtonState();
+    schoolPage.getPreviousButtonState();
+    schoolPage.clickOnNextButton();
+    schoolPage.selectProgramItems();
+    schoolPage.clickOnNextButton();
+    schoolPage.clickOnCreateFinalButton();
+  }
+);
 
-When("I enter a valid name and shortcode {string} and {string}", (name, shortCode) => {
-  schoolPage.fillName(name);
-  schoolPage.fillShortCode(shortCode);
-  schoolPage.getNextButtonState();
-  schoolPage.getPreviousButtonState();
-});
+When(
+  "I enter a valid name and shortcode {string} and {string}",
+  (name, shortCode) => {
+    schoolPage.fillName(name);
+    schoolPage.fillShortCode(shortCode);
+    schoolPage.getNextButtonState();
+    schoolPage.getPreviousButtonState();
+  }
+);
 
 And("I select other existing programs", () => {
   schoolPage.clickOnNextButton();
@@ -55,15 +67,18 @@ And("{string} exists in the schools list", (search) => {
   schoolPage.getSchoolName();
 });
 
-When("I try to create a duplicate school with the details {string} and {string}", (name, shortCode) => {
-  schoolPage.fillName(name);
-  schoolPage.fillShortCode(shortCode);
-  schoolPage.getNextButtonState();
-  schoolPage.getPreviousButtonState();
-  schoolPage.clickOnNextButton();
-  schoolPage.selectOtherProgramItems();
-  schoolPage.clickOnNextButton();
-})
+When(
+  "I try to create a duplicate school with the details {string} and {string}",
+  (name, shortCode) => {
+    schoolPage.fillName(name);
+    schoolPage.fillShortCode(shortCode);
+    schoolPage.getNextButtonState();
+    schoolPage.getPreviousButtonState();
+    schoolPage.clickOnNextButton();
+    schoolPage.selectOtherProgramItems();
+    schoolPage.clickOnNextButton();
+  }
+);
 
 When("I fill all fields for a new program {string}", (progName) => {
   schoolPage.clickOnNextButton();
@@ -103,10 +118,6 @@ Then(
   }
 );
 
-Then("I get {string} message", (message) => {
-  userPage.getNotificationText(message).contains(message);
-});
-
 And("I search new program to validate {string}", (search) => {
   schoolPage.searchProgramInputText(search);
   schoolPage.getProgramName();
@@ -116,19 +127,16 @@ And("I select an existing subject before confirming creation", () => {
   schoolPage.selectSubjectItems();
   schoolPage.clickOnNextProgramButton();
   schoolPage.clickCreateProgramFinal();
-})
+});
 
-And(
-  "I create a new subject {string}",
-  (subName) => {
-    schoolPage.clickOnCreateSubjectButton();
-    schoolPage.clickOnCategory();
-    schoolPage.selectSubCategoryAndCategoryItems();
-    schoolPage.clickOnSelectButtonCategory();
-    schoolPage.fillSubjectName(subName);
-    schoolPage.clickOnCreateSubjectFinalButton();
-  }
-);
+And("I create a new subject {string}", (subName) => {
+  schoolPage.clickOnCreateSubjectButton();
+  schoolPage.clickOnCategory();
+  schoolPage.selectSubCategoryAndCategoryItems();
+  schoolPage.clickOnSelectButtonCategory();
+  schoolPage.fillSubjectName(subName);
+  schoolPage.clickOnCreateSubjectFinalButton();
+});
 
 And("I search new subject to validate {string}", (search) => {
   schoolPage.searchSubjectInputText(search);
@@ -139,16 +147,13 @@ And("I press on create subject", () => {
   schoolPage.clickOnCreateSubjectButton();
 });
 
-And(
-  "I create a category {string}",
-  (catName) => {
-    schoolPage.clickOnCategory();
-    schoolPage.clickOnCreateCategory();
-    schoolPage.getCategoryRequiredText();
-    schoolPage.fillCategoryName(catName);
-    schoolPage.clickOnCreateCategoryFinalButton();
-  }
-);
+And("I create a category {string}", (catName) => {
+  schoolPage.clickOnCategory();
+  schoolPage.clickOnCreateCategory();
+  schoolPage.getCategoryRequiredText();
+  schoolPage.fillCategoryName(catName);
+  schoolPage.clickOnCreateCategoryFinalButton();
+});
 
 And("I select a category", () => {
   schoolPage.clickOnCategory();
@@ -160,51 +165,40 @@ And("I check locked column {string} is present", () => {
   schoolPage.getColumnText();
 });
 
-And(
-  "I create subcategory {string}",
-  (subCatName) => {
-    schoolPage.clickOnSubCategory();
-    schoolPage.clickOnCreateSubCategory();
-    schoolPage.getSubCategoryRequiredText();
-    schoolPage.fillSubCategoryName(subCatName);
-    schoolPage.clickOnCreateSubCategoryFinalButton();
-  }
-);
+And("I create subcategory {string}", (subCatName) => {
+  schoolPage.clickOnSubCategory();
+  schoolPage.clickOnCreateSubCategory();
+  schoolPage.getSubCategoryRequiredText();
+  schoolPage.fillSubCategoryName(subCatName);
+  schoolPage.clickOnCreateSubCategoryFinalButton();
+});
 
 Given("I search for {string}", (search) => {
-    userPage.searchInputText(search);
-  }
-);
+  userPage.searchInputText(search);
+});
 
-When("I edit the school details to be {string} and {string}", (name, shortCode) => {
-  schoolPage.clickMoreActions();
-  userPage.clickOnMoreActionsEditButton();
-  schoolPage.editName(name);
-  schoolPage.editShortCode(shortCode);
-  schoolPage.clickOnNextButtonEdition();
-  schoolPage.clickOnNextButtonEdition();
-  schoolPage.clickOnSaveButtonEdition();
-})
-
-When("I delete the school",() => {
+When(
+  "I edit the school details to be {string} and {string}",
+  (name, shortCode) => {
     schoolPage.clickMoreActions();
-    userPage.clickOnMoreActionsDeleteButton();
-    userPage.sendDeleteText();
-    userPage.clickOnDeleteFinalButton();
+    userPage.clickOnMoreActionsEditButton();
+    schoolPage.editName(name);
+    schoolPage.editShortCode(shortCode);
+    schoolPage.clickOnNextButtonEdition();
+    schoolPage.clickOnNextButtonEdition();
+    schoolPage.clickOnSaveButtonEdition();
   }
 );
 
-Then("columns {string} and {string} should be present", () => {
-  schoolPage.getFirstColumnText();
-  schoolPage.getSecondColumnText();
+When("I delete the school", () => {
+  schoolPage.clickMoreActions();
+  userPage.clickOnMoreActionsDeleteButton();
+  userPage.sendDeleteText();
+  userPage.clickOnDeleteFinalButton();
 });
 
 Then("only the locked column School Name is present", () => {
   schoolPage.getSecondColumnText();
-});
-
-When("I remove columns from school list", () => {
-  schoolPage.removeAllColumns();
 });
 
 When("I search {string}", (search) => {
@@ -251,7 +245,7 @@ Then("I check previous page pagination", () => {
   userPage.getFirstPageButtonState();
 });
 
-Given 
+Given;
 
 When("I upload a correct CSV file with a single school", () => {
   schoolPage.selectFixtureFile();
@@ -279,7 +273,7 @@ And("I select all subcategories and unselect them", () => {
 
 Then("an error should be displayed for not selecting any subcategories", () => {
   schoolPage.getSubCategoryErrorMessageText();
-})
+});
 
 Then("I can select all programs", () => {
   schoolPage.clickOnNextButton();
@@ -330,4 +324,22 @@ And("I can unselect all programs by clicking none", () => {
   schoolPage.clickOnProgramPagesSelector();
   schoolPage.clickOnNonePageSelector();
   schoolPage.getProgramRequiredTextItems();
+});
+
+Given("I add columns to be shown", () => {
+  userPage.clickOnAddColumns();
+  userPage.selectColumns();
+});
+
+When("I check locked columns {string} and {string} are present", () => {
+  schoolPage.getFirstColumnText();
+  schoolPage.getSecondColumnText();
+});
+
+Given("I remove columns to be shown", () => {
+  schoolPage.removeAllColumns();
+});
+
+When("I check locked column {string} is present", () => {
+  schoolPage.getColumnText();
 });

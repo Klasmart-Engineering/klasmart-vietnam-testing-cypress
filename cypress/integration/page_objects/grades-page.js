@@ -80,18 +80,14 @@ class GradesPage {
   checkFilterNotApplied(filterType) {
     var locator;
 
-    if(filterType == "Progress From")
-    {
+    if (filterType == "Progress From") {
       locator = this.progressFromFilterIcon;
-    }
-    else
-    {
+    } else {
       locator = this.progressToFilterIcon;
     }
 
     // checking that the filter was not applied
-    cy.get(locator, {timeout: 5000})
-    .should('not.exist')
+    cy.get(locator, { timeout: 5000 }).should("not.exist");
   }
 
   selectionProgressFrom() {
@@ -208,15 +204,17 @@ class GradesPage {
         .get();
       unsortedItems.forEach((unsortedItems) => cy.log(unsortedItems));
       var sortedItems;
-      if(order == "asc")
-      {
+      if (order == "asc") {
         sortedItems = unsortedItems.slice().sort();
-        expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(sortedItems);
-      }
-      else // should be sorted in desc order 
-      {
+        expect(unsortedItems, "Items are sorted in asc order").to.deep.equal(
+          sortedItems
+        );
+      } // should be sorted in desc order
+      else {
         sortedItems = unsortedItems.reverse();
-        expect(unsortedItems, "Items are sorted in desc order").to.deep.equal(sortedItems);
+        expect(unsortedItems, "Items are sorted in desc order").to.deep.equal(
+          sortedItems
+        );
       }
       sortedItems.forEach((sortedItems) => cy.log(sortedItems));
     });
