@@ -1,13 +1,8 @@
 Feature: Age Ranges
 
-<<<<<<< HEAD
-  Background: Login
-    Given I sign in with valid credentials "qavn1@calmid.com" and "Abc012345"
-=======
   Background:
     Given I sign in with valid credentials "qavn1@calmid.com" and "Abc012345"
     When I navigate to age ranges page
->>>>>>> 9d58f2a0af91217a5c35a238fe6c113e8552ba2e
 
   #User should be able to create any age range UD-T155
   #DATA NEEDS TO BE CHANGED FOR EACH RUN
