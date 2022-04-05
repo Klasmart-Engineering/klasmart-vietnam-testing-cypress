@@ -302,15 +302,15 @@ Feature: Users
     And I check locked columns "Given Name" and "Family Name" are present
 
   #User should be able to sort data from users UD-T169
-  @smoke
+  #----*** DEFECT AD-2246 ***----
+
   Scenario: Sorting
-    Given I sort the "name" column by asc and desc
+    Given I sort column "1" called "givenName" by asc and desc
 
   #User should be able to see data paginated UD-T29
   @smoke
   Scenario: Pagination
     And All pagination buttons should work
-
 
   #User should be able to paginate by rows per page UD-T162
   @smoke

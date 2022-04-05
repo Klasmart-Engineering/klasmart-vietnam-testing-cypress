@@ -294,6 +294,26 @@ class UserPage {
     });
   }
 
+  clickOnGradeColumn() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Grade") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  clickOnClassColumn() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.text() == "Class") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
   clickOnSchoolsColumn() {
     cy.get("ul[role='listbox']>li").each(($el) => {
       if ($el.text() == "Schools") {
@@ -339,7 +359,9 @@ class UserPage {
   }
 
   clickOnAddFilterFinalButton() {
-    cy.get(this.addFilterFinalButton).should("be.visible").click({ force: true });
+    cy.get(this.addFilterFinalButton)
+      .should("be.visible")
+      .click({ force: true });
   }
 
   clickOnCancelFilterButton() {
@@ -381,6 +403,50 @@ class UserPage {
         cy.log("Element found");
         return;
       } else if ($el.text() == "Automation 103") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfClassValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.eq() == "2020") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "ABB 01") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "ABB 02") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "ABB 03") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      }
+    });
+  }
+
+  selectionOfGradeValues() {
+    cy.get("ul[role='listbox']>li").each(($el) => {
+      if ($el.eq() == "Grade 1") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Grade 2") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Grade 3") {
+        cy.wrap($el).click();
+        cy.log("Element found");
+        return;
+      } else if ($el.text() == "Grade 4") {
         cy.wrap($el).click();
         cy.log("Element found");
         return;
@@ -561,7 +627,9 @@ class UserPage {
   }
 
   getFilterMouseOverText() {
-    cy.get('[aria-label="All columns already have a filter specified"]').realHover();
+    cy.get(
+      '[aria-label="All columns already have a filter specified"]'
+    ).realHover();
     cy.contains("All columns already have a filter specified");
   }
 
@@ -803,18 +871,16 @@ class UserPage {
     cy.wait(5000);
   }
 
-  clickOnNumOfPages(numberPerPage)
-  {
+  clickOnNumOfPages(numberPerPage) {
     var locator;
-    switch(numberPerPage)
-    {
-      case '10':
+    switch (numberPerPage) {
+      case "10":
         locator = this.tenPages;
         break;
-      case '25':
+      case "25":
         locator = this.twentyFivePages;
         break;
-      case '50':
+      case "50":
         locator = this.fiftyPages;
         break;
       default:

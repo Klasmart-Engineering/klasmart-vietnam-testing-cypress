@@ -1,11 +1,10 @@
 import { When, Then, Given } from "cypress-cucumber-preprocessor/steps";
-import { signInPage } from "../../page_objects/sign-in-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
 import { gradesPage } from "../../page_objects/grades-page";
 
 When("I navigate to the grades page", () => {
-  gradesPage.clickOnGradesTab(); 
+  gradesPage.clickOnGradesTab();
 });
 
 Given("I create a grade {string}", (gradeName) => {
@@ -42,20 +41,17 @@ Then("I can search for edited grade {string}", (search) => {
   gradesPage.getEditedGradeName();
 });
 
-Given(
-  "I search {string} to be edited as {string}",
-  (search, name, message) => {
-    gradesPage.searchInputText(search);
-    gradesPage.clickMoreActions();
-    userPage.clickOnMoreActionsEditButton();
-    gradesPage.editName(name);
-    gradesPage.clickOnProgressFrom();
-    gradesPage.editSelectionProgressFrom();
-    gradesPage.clickOnProgressTo();
-    gradesPage.editSelectionProgressTo();
-    gradesPage.clickOnSaveEditionButton();
-  }
-);
+Given("I search {string} to be edited as {string}", (search, name, message) => {
+  gradesPage.searchInputText(search);
+  gradesPage.clickMoreActions();
+  userPage.clickOnMoreActionsEditButton();
+  gradesPage.editName(name);
+  gradesPage.clickOnProgressFrom();
+  gradesPage.editSelectionProgressFrom();
+  gradesPage.clickOnProgressTo();
+  gradesPage.editSelectionProgressTo();
+  gradesPage.clickOnSaveEditionButton();
+});
 
 And("I search edited grade {string}", (search) => {
   gradesPage.searchInputText(search);
@@ -64,9 +60,9 @@ And("I search edited grade {string}", (search) => {
 
 When("I delete the grade", () => {
   gradesPage.clickMoreActions();
-    userPage.clickOnMoreActionsDeleteButton();
-    userPage.sendDeleteText();
-    gradesPage.clickOnDeleteFinalButton();
+  userPage.clickOnMoreActionsDeleteButton();
+  userPage.sendDeleteText();
+  gradesPage.clickOnDeleteFinalButton();
 });
 
 Then(
@@ -96,7 +92,7 @@ Then(
 
 Then("the {string} filter should not be applied", (filterType) => {
   gradesPage.checkFilterNotApplied(filterType);
-})
+});
 
 Then("I check first page pagination", () => {
   cy.wait(8000);
@@ -191,10 +187,6 @@ When("I try to edit the values on a filter", () => {
 Then("I should be able to cancel editing", () => {
   userPage.clickOnCancelFilterButton();
   gradesPage.getProgressLabelFilterText();
-})
-
-Then("I get a {string} message", (message) => {
-  userPage.getNotificationText(message).contains(message);
 });
 
 Then("I can clear all the filters", () => {
@@ -202,13 +194,9 @@ Then("I can clear all the filters", () => {
   userPage.getAddFilterLabelState();
 });
 
-Given("I click add columns", () => {
-  userPage.clickOnAddColumns();
-});
-
 When("I select the columns to add", () => {
   userPage.selectColumns();
-})
+});
 
 Given("I open the filter window", () => {
   //Add progress from filter
@@ -228,7 +216,7 @@ When("I add all possible filters", () => {
   gradesPage.selectionOfProgressValues();
   userPage.closeListItems();
   userPage.clickOnAddFilterFinalButton();
-})
+});
 
 And("I clear all filters applied", () => {
   userPage.clickClearAllFilters();
@@ -241,22 +229,27 @@ Then("the filter option should be disabled", () => {
 
 When("I click on column filters", () => {
   userPage.clickOnColumnFilter();
-})
+});
 
 Then("the order of values is correct on grades", () => {
   gradesPage.getFilterOrderValues();
 });
 
-When("I remove columns from the grade list", () => {
+Then("columns {string}, {string} and {string} are visible in the list", () => {
+  // needs to create new methods to check that the progress to and from columns have been added
+  schoolPage.getFirstColumnText();
+  gradesPage.getSecondColumnText();
+});
+
+Given("I add columns to be shown", () => {
+  userPage.clickOnAddColumns();
+  userPage.selectColumns();
+});
+
+Given("I remove columns to be shown", () => {
   gradesPage.removeAllColumns();
 });
 
-Then("only the locked Name column should be visible", () => {
+When("I check locked column {string} is present", () => {
   gradesPage.getColumnText();
-});
-
-Then("columns {string}, {string} and {string} are visible in the list", () => {
-  // needs to create new methods to check that the progress to and from columns have been added 
-  schoolPage.getFirstColumnText();
-  gradesPage.getSecondColumnText();
 });

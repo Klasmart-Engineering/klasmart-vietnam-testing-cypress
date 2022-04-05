@@ -9,14 +9,14 @@ Feature: Grades
 
   Scenario: Create grade
     Given I create a grade "Automation 01"
-    When I get a "Grade successfully created" message
+    Then I get "Grade successfully created" message
     Then I can search for grade "Automation 01"
 
   #User should be able to edit any customized grade UD-T131
 
   Scenario: Edit grade
-    Given I search "Automation 01" to be edited as "Grade Edited" 
-    When I get a "Grade successfully saved" message
+    Given I search "Automation 01" to be edited as "Grade Edited"
+    Then I get "Grade successfully saved" message
     Then I can search for edited grade "Grade Edited"
 
   #User should be able to delete any grade UD-T132
@@ -24,7 +24,7 @@ Feature: Grades
   Scenario: Delete grade
     Given I search for grade "Grade Edited"
     When I delete the grade
-    Then I get a "Grade successfully deleted" message
+    Then I get "Grade successfully deleted" message
 
   #User should be able to paginate by rows per page UD-T123 ----*** DEFECT AD-2234 ***----
 
@@ -35,8 +35,8 @@ Feature: Grades
   #User should be able to search and see the pagination according to inserted searching UD-T176
   #User should be able to sort by ascending and descending order UD-T136
   #All paginations buttons are working covering UD-T127, UD-T126, UD-T124, UD-T125, UD-T643
+  # ----*** DEFECT AD-2234 ***----
 
-@smoke
   Scenario: Sorting, searching and pagination
     Given I sort column "1" called "name" by asc and desc
     When I can search for grade "Grade"
@@ -58,13 +58,13 @@ Feature: Grades
 
   #User should be able to cancel add a filter on grades for Progress From UD-T138
 
-  Scenario: Cancel adding filter Progress From 
+  Scenario: Cancel adding filter Progress From
     Given I open the filter from options
     When I press the cancel button
     Then the "Progress From" filter should not be applied
   #User should be able to cancel add a filter on grades for Progress To UD-T147
 
-  Scenario: Cancel adding filter Progress To 
+  Scenario: Cancel adding filter Progress To
     Given I open the filter to options
     When I press the cancel button
     Then the "Progress To" filter should not be applied
@@ -90,7 +90,7 @@ Feature: Grades
   Scenario: Cancel editing filter Progress From
     Given I open the filter from options
     When I add the filter
-    And I try to edit the values on a filter 
+    And I try to edit the values on a filter
     Then I should be able to cancel editing
 
   #User should be able to cancel edit filter on grades for Progress To UD-T152
@@ -132,22 +132,20 @@ Feature: Grades
   #User should be able to see correct order for values on filters UD-T606
   @smoke
   Scenario: Filter order values
-  Given I open the filter window
-  When I click on column filters
-  Then the order of values is correct on grades
+    Given I open the filter window
+    When I click on column filters
+    Then the order of values is correct on grades
 
   #User should be able to remove columns UD-T610
   @smoke
   Scenario: Remove columns
-    Given I click on add columns
-    When I remove columns from the grade list
-    Then only the locked Name column should be visible 
+    Given I remove columns to be shown
+    When I check locked column "Name" is present
 
   #User should be able to add columns UD-T130
   @smoke
   Scenario: Add columns
-    Given I click on add columns
-    When I select the columns to add 
+    Given I add columns to be shown
     Then columns "ID", "Progress From" and "Progress To" are visible in the list
 
   #User should be able to add multiple filter, search any grade and change paginations that will no affect the result UD-T335

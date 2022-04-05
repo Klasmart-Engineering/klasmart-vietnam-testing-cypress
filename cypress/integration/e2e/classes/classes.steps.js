@@ -1,9 +1,7 @@
 import { When, Then, Given } from "cypress-cucumber-preprocessor/steps";
-import { signInPage } from "../../page_objects/sign-in-page";
 import { classesPage } from "../../page_objects/classes-page";
 import { userPage } from "../../page_objects/user-page";
 import { schoolPage } from "../../page_objects/schools-page";
-
 
 When("I navigate to the classes page", () => {
   classesPage.clickOnClassesTab();
@@ -38,10 +36,6 @@ Then("I search for class {string}", (search) => {
 When("I search for class {string}", (search) => {
   userPage.searchInputText(search);
   classesPage.getClassName();
-});
-
-When("I get {string} message", (message) => {
-  userPage.getNotificationText(message).contains(message);
 });
 
 Given(
