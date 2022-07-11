@@ -2,7 +2,7 @@ name: Hub E2E Tests on Chrome
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * *" # UTC
+    - cron: "0 1 * 12 *" # UTC
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
